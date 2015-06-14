@@ -22,14 +22,14 @@
 <div id="overflow-container" class="overflow-container">
 	<div id="max-width" class="max-width">
 		<header class="site-header" id="site-header" role="banner">
-			<button id="toggle-navigation" class="toggle-navigation">
-				<span class="screen-reader-text"><?php _e('open menu', 'chosen'); ?></span>
-				<?php echo ct_chosen_svg_output( 'toggle-navigation' ); ?>
-			</button>
 			<div id="menu-primary-container" class="menu-primary-container">
 				<?php get_template_part( 'menu', 'primary' ); ?>
 				<?php ct_chosen_social_icons_output('header'); ?>
 			</div>
+			<button id="toggle-navigation" class="toggle-navigation">
+				<span class="screen-reader-text"><?php _e('open menu', 'chosen'); ?></span>
+				<?php echo ct_chosen_svg_output( 'toggle-navigation' ); ?>
+			</button>
 			<div id="title-container" class="title-container">
 				<?php get_template_part('logo')  ?>
 				<?php if ( get_bloginfo( 'description' ) ) {

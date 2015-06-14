@@ -7,4 +7,11 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.title-container {
+  margin: $baseline-height * 1.5 0;
 }

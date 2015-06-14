@@ -1,6 +1,50 @@
 .menu-primary {
+  margin-bottom: $baseline-height * 1.5;
 
   ul {
     list-style: none;
+    margin: 0;
+  }
+  li {
+    margin-bottom: $baseline-height;
+  }
+  a {
+    @extend %twelve-pixels;
+    @extend %uppercase;
+
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+.menu-primary-items {
+
+  ul {
+    margin: $baseline-height / 2 0 $baseline-height;
+
+    li {
+      margin-bottom: $baseline-height / 2;
+    }
+  }
+}
+.toggle-dropdown {
+  margin: 0 -16px 0 6px; // margin on left and  moves itself over to keep the menu item centered
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  background: none;
+  border: none;
+  color: $color-gray-40;
+  transition: transform 0.1s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
   }
 }
