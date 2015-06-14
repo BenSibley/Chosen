@@ -471,10 +471,28 @@ a img {
 }
 
 .menu-primary-items ul {
-  margin: 0.75em 0 1.5em;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items ul li {
   margin-bottom: 0.75em;
+}
+.menu-primary-items ul li:first-child {
+  margin-top: 0.75em;
+}
+.menu-primary-items ul li:last-child {
+  margin-bottom: 0;
+}
+.menu-primary-items .open ul {
+  max-height: 999px;
+}
+.menu-primary-items .open .toggle-dropdown {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .toggle-dropdown {

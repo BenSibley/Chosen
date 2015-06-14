@@ -138,6 +138,9 @@ jQuery(document).ready(function($){
             // remove open class
             menuItem.removeClass('open');
 
+            // remove max-height added by JS when opened
+            $(this).siblings('ul').css('max-height', 0);
+
             // change screen reader text
             //$(this).children('span').text(objectL10n.openMenu);
 
@@ -147,6 +150,21 @@ jQuery(document).ready(function($){
 
             // add class to open the menu
             menuItem.addClass('open');
+
+            // set var for current height
+            var ulHeight = 0;
+
+            // get all dropdown children and use their height to set the new max height
+            $(this).siblings('ul').find('li').each(function () {
+                ulHeight = ulHeight + $(this).height() + ( $(this).height() * 1.5 );
+            });
+
+            // set the new max height (for smoother transitions)
+            $(this).siblings('ul').css('max-height', ulHeight);
+
+            // expand entire menu for dropdowns
+            // doesn't need to be precise. Just needs to allow the menu to get taller
+            menuPrimaryContainer.css('max-height', 'none');
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.closeMenu);
