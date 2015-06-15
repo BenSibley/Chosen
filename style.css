@@ -592,6 +592,7 @@ a img {
     text-align: left;
   }
   .menu-primary li {
+    position: relative;
     display: inline-block;
     margin: 0 1.5em 0 0;
   }
@@ -601,6 +602,47 @@ a img {
 
   .menu-primary-items ul {
     position: absolute;
+    max-height: none;
+    z-index: 29;
+    visibility: hidden;
+    overflow: visible;
+    opacity: 0;
+    top: 100%;
+    top: calc(100% + 6px);
+    left: -1.5em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: white;
+    padding: 0 1.5em 0.75em;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .menu-primary-items ul:hover, .menu-primary-items ul.focused {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+  }
+  .menu-primary-items ul li {
+    display: block;
+    z-index: 9;
+    white-space: nowrap;
+  }
+  .menu-primary-items .menu-item-has-children > a {
+    position: relative;
+    z-index: 9;
+  }
+  .menu-primary-items .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children > a:focus ~ ul {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+  }
+  .menu-primary-items .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children > a:active:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 24px;
   }
 
   .toggle-dropdown {

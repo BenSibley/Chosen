@@ -88,6 +88,7 @@
     text-align: left;
 
     li {
+      position: relative;
       display: inline-block;
       margin: 0 $baseline-height 0 0;
     }
@@ -99,6 +100,60 @@
 
     ul {
       position: absolute;
+      max-height: none;
+      z-index: 29;
+      visibility: hidden;
+      overflow: visible;
+      opacity: 0;
+      top: 100%;
+      top: calc(100% + 6px);
+      left: -$baseline-height;
+      backface-visibility: hidden;
+      background: white;
+      padding: 0 $baseline-height $baseline-height / 2;
+      transition: all 0.1s ease-in-out;
+
+      &:hover,
+      &.focused {
+        visibility: visible;
+        top: 100%;
+        opacity: 1;
+      }
+      li {
+        display: block;
+        z-index: 9;
+        white-space: nowrap;
+      }
+    }
+    .menu-item-has-children {
+
+      > a {
+        position: relative;
+        z-index: 9;
+
+        &:hover,
+        &:active,
+        &:focus {
+
+          ~ ul {
+            visibility: visible;
+            top: 100%;
+            opacity: 1;
+          }
+        }
+        &:hover,
+        &:active {
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 24px;
+          }
+        }
+      }
     }
   }
   .toggle-dropdown {
