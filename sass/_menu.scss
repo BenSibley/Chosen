@@ -85,7 +85,9 @@
     overflow: visible;
   }
   .menu-primary {
+    display: inline-block;
     text-align: left;
+    float: left;
 
     li {
       position: relative;

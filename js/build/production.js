@@ -116,7 +116,7 @@ jQuery(document).ready(function($){
         } else {
             menuPrimaryContainer.addClass('open');
 
-            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight();
+            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight(true);
 
             menuPrimaryContainer.css('max-height', menuHeight);
 
