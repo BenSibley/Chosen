@@ -622,10 +622,24 @@ a img {
     top: 100%;
     opacity: 1;
   }
+  .menu-primary-items ul a {
+    width: 100%;
+  }
   .menu-primary-items ul li {
     display: block;
     z-index: 9;
     white-space: nowrap;
+  }
+  .menu-primary-items ul .toggle-dropdown:after {
+    content: '\f105';
+  }
+  .menu-primary-items .menu-item-has-children:hover > button {
+    -webkit-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  .menu-primary-items .menu-item-has-children li {
+    margin-right: 0;
   }
   .menu-primary-items .menu-item-has-children > a {
     position: relative;
@@ -636,6 +650,11 @@ a img {
     top: 100%;
     opacity: 1;
   }
+  .menu-primary-items .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children > a:focus + button {
+    -webkit-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
   .menu-primary-items .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children > a:active:after {
     content: '';
     position: absolute;
@@ -643,6 +662,35 @@ a img {
     left: 0;
     right: 0;
     height: 24px;
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button {
+    -webkit-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus + button {
+    -webkit-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus ~ ul {
+    top: -12px;
+    left: calc(100% + 14px);
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active:after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 24px;
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children ul {
+    left: 100%;
+    left: calc(100% + 20px);
+    top: -12px;
+  }
+  .menu-primary-items .menu-item-has-children .menu-item-has-children ul:hover, .menu-primary-items .menu-item-has-children .menu-item-has-children ul.focused {
+    top: -12px;
+    left: calc(100% + 14px);
   }
 
   .toggle-dropdown {
