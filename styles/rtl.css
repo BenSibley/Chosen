@@ -41,7 +41,14 @@ textarea, input[type="submit"], .menu-primary a {
   /* 18px */
 }
 
-.menu-primary a {
+.tagline {
+  font-size: 0.625em;
+  /* 10px / 16px */
+  line-height: 1.8;
+  /* 18px */
+}
+
+.tagline, .menu-primary a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -455,6 +462,10 @@ a img {
 
 .title-container {
   margin: 2.25em 0;
+}
+
+.tagline {
+  margin: 0;
 }
 
 .menu-primary-container {
