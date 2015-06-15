@@ -510,6 +510,21 @@ a img {
     display: none;
   }
 }
+@media all and (min-width: 62.5em) {
+  .site-title {
+    font-size: 4.188em;
+    /* 67px / 16px */
+    line-height: 1.343;
+    /* 90px */
+  }
+
+  .tagline {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+  }
+}
 .menu-primary-container {
   max-height: 0;
   overflow: hidden;

@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
     //var sidebarPrimary = $('#sidebar-primary');
     //var sidebarPrimaryContent = $('#sidebar-primary-content');
     //var sidebarWidgets = $('#sidebar-primary-widgets');
-    //var socialMediaIcons = siteHeader.find('.social-media-icons');
+    var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
     toggleNavigation.on('click', openPrimaryMenu);
@@ -33,9 +33,9 @@ jQuery(document).ready(function($){
         } else {
             menuPrimaryContainer.addClass('open');
 
-            var maxHeight = menuPrimary.outerHeight(true);
+            var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight();
 
-            menuPrimaryContainer.css('max-height', maxHeight);
+            menuPrimaryContainer.css('max-height', menuHeight);
 
             // change screen reader text
             $(this).children('span').text(objectL10n.closeMenu);
