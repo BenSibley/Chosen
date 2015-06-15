@@ -443,8 +443,9 @@ a img {
 }
 
 .toggle-navigation {
+  display: block;
   background: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: none;
 }
@@ -454,6 +455,13 @@ a img {
 
 .title-container {
   margin: 2.25em 0;
+}
+
+.menu-primary-container {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
 }
 
 .menu-primary {
@@ -515,4 +523,8 @@ a img {
 .toggle-dropdown:after {
   content: '\f107';
   font-family: 'FontAwesome';
+}
+
+.open.menu-primary-container {
+  max-height: 999px;
 }

@@ -104,7 +104,8 @@ jQuery(document).ready(function($){
 
         if( menuPrimaryContainer.hasClass('open') ) {
             menuPrimaryContainer.removeClass('open');
-            $(this).removeClass('open');
+
+            menuPrimaryContainer.css('max-height', '');
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.openMenu);
@@ -114,7 +115,10 @@ jQuery(document).ready(function($){
 
         } else {
             menuPrimaryContainer.addClass('open');
-            $(this).addClass('open');
+
+            var maxHeight = menuPrimary.outerHeight(true);
+
+            menuPrimaryContainer.css('max-height', maxHeight);
 
             // change screen reader text
             //$(this).children('span').text(objectL10n.closeMenu);

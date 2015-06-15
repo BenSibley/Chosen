@@ -3,8 +3,9 @@
   padding: $baseline-height * 2 $column 0;
 }
 .toggle-navigation {
+  display: block;
   background: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: none;
 
