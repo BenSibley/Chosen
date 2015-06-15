@@ -19,6 +19,13 @@ Chosen is distributed under the terms of the GNU GPL
 /* Social Media Brand Colors */
 /*===== Mixins =====*/
 /***** Silent Classes *****/
+.site-title {
+  font-size: 2.375em;
+  /* 38px / 16px */
+  line-height: 1.342;
+  /* 51px */
+}
+
 h1 {
   font-size: 1.75em;
   /* 28px / 16px */
@@ -41,16 +48,16 @@ textarea, input[type="submit"], .menu-primary a {
   /* 18px */
 }
 
-.tagline {
+.more-link, .comments-link, .tagline, .post-date {
   font-size: 0.625em;
   /* 10px / 16px */
   line-height: 1.8;
   /* 18px */
 }
 
-.tagline, .menu-primary a {
+.more-link, .comments-link, .tagline, .menu-primary a, .post-date {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 /*===== Basic Styles =====*/
@@ -75,10 +82,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 .overflow-container {
@@ -86,6 +89,7 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  padding: 0 4.167%;
 }
 
 .main {
@@ -275,6 +279,31 @@ a img {
 .max-width {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.more-link {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-right: 12px;
+  border: solid 1px #ababab;
+}
+
+.comments-link {
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+.comments-link i {
+  margin-right: 3px;
+}
+.comments-link a:hover, .comments-link a:active, .comments-link a:focus {
+  text-decoration: underline;
+}
+
+.blog .post-content p:last-of-type,
+.archive .post-content p:last-of-type,
+.search .post-content p:last-of-type {
+  display: inline-block;
+  margin: 0;
 }
 
 /* gallery styles copied from Hybrid Core */
@@ -538,4 +567,33 @@ a img {
 
 .open.menu-primary-container {
   max-height: 999px;
+}
+
+.entry {
+  margin-bottom: 3em;
+}
+
+.featured-image {
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.featured-image > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+}
+
+.post-header {
+  margin: 1.5em 0;
+}
+
+.post-date {
+  display: block;
 }

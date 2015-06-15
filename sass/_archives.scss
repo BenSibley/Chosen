@@ -1,0 +1,38 @@
+.more-link {
+  @extend %ten-pixels;
+  @extend %uppercase;
+  display: inline-block;
+  padding: 8px 18px;
+  margin-right: 12px;
+  border: solid 1px $color-gray-67;
+}
+.comments-link {
+  @extend %ten-pixels;
+  @extend %uppercase;
+  transition: color 0.1s ease-in-out;
+
+  i {
+    margin-right: 3px;
+  }
+  a {
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+// allow comments to sit next to button
+.blog,
+.archive,
+.search {
+
+  .post-content {
+
+    p:last-of-type {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}

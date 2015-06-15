@@ -16,6 +16,9 @@
 .title-container {
   margin: $baseline-height * 1.5 0;
 }
+.site-title {
+  @extend %thirty-eight-pixels;
+}
 .tagline {
   @extend %ten-pixels;
   @extend %uppercase;

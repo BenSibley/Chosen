@@ -21,15 +21,13 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
 }
 .overflow-container {
   position: relative;
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  padding: 0 $column;
 }
 .main {
   margin: 0 auto;
