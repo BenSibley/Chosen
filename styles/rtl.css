@@ -475,7 +475,7 @@ a img {
 
 .site-header {
   text-align: center;
-  padding: 3em 4.167% 0;
+  padding-top: 3em;
 }
 
 .toggle-navigation {
@@ -497,6 +497,19 @@ a img {
   margin: 0;
 }
 
+@media all and (min-width: 50em) {
+  .site-title {
+    font-size: 3.188em;
+    /* 51px / 16px */
+    line-height: 1.314;
+    /* 67px */
+  }
+}
+@media all and (min-width: 56.25em) {
+  .toggle-navigation {
+    display: none;
+  }
+}
 .menu-primary-container {
   max-height: 0;
   overflow: hidden;
@@ -569,6 +582,31 @@ a img {
   max-height: 999px;
 }
 
+@media all and (min-width: 56.25em) {
+  .menu-primary-container {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .menu-primary {
+    text-align: right;
+  }
+  .menu-primary li {
+    display: inline-block;
+    margin: 0 0 0 1.5em;
+  }
+  .menu-primary a {
+    display: inline-block;
+  }
+
+  .menu-primary-items ul {
+    position: absolute;
+  }
+
+  .toggle-dropdown {
+    margin-left: 1px;
+  }
+}
 .entry {
   margin-bottom: 3em;
 }

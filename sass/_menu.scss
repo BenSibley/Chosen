@@ -77,3 +77,31 @@
 .open.menu-primary-container {
   max-height: 999px;
 }
+
+@media all and (min-width: $nine-hundred) {
+
+  .menu-primary-container {
+    max-height: none;
+    overflow: visible;
+  }
+  .menu-primary {
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin: 0 $baseline-height 0 0;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+  .menu-primary-items {
+
+    ul {
+      position: absolute;
+    }
+  }
+  .toggle-dropdown {
+    margin-right: 1px;
+  }
+}

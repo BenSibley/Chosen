@@ -1,6 +1,6 @@
 .site-header {
   text-align: center;
-  padding: $baseline-height * 2 $column 0;
+  padding-top: $baseline-height * 2;
 }
 .toggle-navigation {
   display: block;
@@ -23,4 +23,18 @@
   @extend %ten-pixels;
   @extend %uppercase;
   margin: 0;
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .site-title {
+    font-size: 3.188em; /* 51px / 16px */
+    line-height: 1.314; /* 67px */
+  }
+}
+@media all and (min-width: $nine-hundred) {
+
+  .toggle-navigation {
+    display: none;
+  }
 }
