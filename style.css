@@ -103,6 +103,8 @@ p {
 a {
   color: #2b2b2b;
   text-decoration: none;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 a:link, a:visited {
   color: #2b2b2b;
@@ -303,9 +305,32 @@ a img {
 .archive .post-content p:last-of-type,
 .search .post-content p:last-of-type {
   display: inline-block;
-  margin: 0;
+  margin: 0.75em 0 0;
 }
 
+@media all and (min-width: 43.75em) {
+  .more-link,
+  .comments-link {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+    letter-spacing: 0.05em;
+  }
+}
+@media all and (min-width: 56.25em) {
+  .blog .entry,
+  .archive .entry,
+  .search .entry {
+    width: 47.69132%;
+    float: left;
+  }
+  .blog .entry:nth-of-type(odd),
+  .archive .entry:nth-of-type(odd),
+  .search .entry:nth-of-type(odd) {
+    margin-right: 4.167%;
+  }
+}
 /* gallery styles copied from Hybrid Core */
 /**
  * Cleaner Gallery Stylesheet
@@ -509,12 +534,20 @@ a img {
   margin-right: 0;
 }
 
-@media all and (min-width: 50em) {
+@media all and (min-width: 43.75em) {
   .site-title {
     font-size: 3.188em;
     /* 51px / 16px */
     line-height: 1.314;
     /* 67px */
+  }
+
+  .tagline {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+    letter-spacing: 0.05em;
   }
 }
 @media all and (min-width: 56.25em) {
@@ -546,15 +579,20 @@ a img {
     line-height: 1.343;
     /* 90px */
   }
-
-  .tagline {
-    font-size: 0.75em;
-    /* 12px / 16px */
-    line-height: 1.5;
-    /* 18px */
-    letter-spacing: 0.05em;
-  }
 }
+.loop-pagination {
+  clear: both;
+}
+
+.main:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 .menu-primary-container {
   max-height: 0;
   overflow: hidden;
@@ -771,4 +809,25 @@ a img {
 
 .post-date {
   display: block;
+}
+
+@media all and (min-width: 43.75em) {
+  .entry {
+    margin-bottom: 4.5em;
+  }
+
+  .post-title {
+    font-size: 2.375em;
+    /* 38px / 16px */
+    line-height: 1.342;
+    /* 51px */
+  }
+
+  .post-date {
+    font-size: 0.75em;
+    /* 12px / 16px */
+    line-height: 1.5;
+    /* 18px */
+    letter-spacing: 0.05em;
+  }
 }

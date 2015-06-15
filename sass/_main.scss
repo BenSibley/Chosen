@@ -1,0 +1,6 @@
+.main {
+
+  &:after {
+    @include clearfix;
+  }
+}

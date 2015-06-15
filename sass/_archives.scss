@@ -32,7 +32,34 @@
 
     p:last-of-type {
       display: inline-block;
-      margin: 0;
+      margin: $baseline-height / 2 0 0;
+    }
+  }
+}
+
+@media all and (min-width: $seven-hundred) {
+
+  .more-link,
+  .comments-link {
+    font-size: 0.75em; /* 12px / 16px */
+    line-height: 1.5; /* 18px */
+    letter-spacing: 0.05em;
+  }
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .blog,
+  .archive,
+  .search {
+
+    .entry {
+      width: $column * 10.5 * 1.09;
+      float: left;
+
+      &:nth-of-type(odd) {
+        margin-right: $column;
+      }
     }
   }
 }
