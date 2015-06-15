@@ -9,6 +9,12 @@ function ct_chosen_load_scripts_styles() {
 
 	// main JS file
 	wp_enqueue_script('ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
+	wp_localize_script( 'ct-chosen-js', 'objectL10n', array(
+		'openMenu'       => __( 'open menu', 'chosen' ),
+		'closeMenu'      => __( 'close menu', 'chosen' ),
+		'openChildMenu'  => __( 'open dropdown menu', 'chosen' ),
+		'closeChildMenu' => __( 'close dropdown menu', 'chosen' )
+	) );
 
 	// Google Fonts
 	wp_enqueue_style('ct-chosen-google-fonts');
