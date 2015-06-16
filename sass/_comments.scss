@@ -1,4 +1,5 @@
-.comments-number {
+.comments-number,
+.comment-reply-title {
   @extend %twenty-one-pixels;
 }
 
@@ -79,7 +80,8 @@
 
 @media all and (min-width: $seven-hundred) {
 
-  .comments-number {
+  .comments-number,
+  .comment-reply-title {
     font-size: 1.75em; /* 28px / 16px */
     line-height: 1.357; /* 38px */
   }

@@ -33,22 +33,23 @@ h1 {
   /* 38px */
 }
 
-h2, .comments-number {
+h2, .comments-number,
+.comment-reply-title {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
   /* 24px */
 }
 
-.post-content, .further-reading a {
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
+textarea, .post-content, .further-reading a {
   font-size: 1.0625em;
   /* 17px / 16px */
   line-height: 1.4118;
   /* 24px */
 }
 
-.wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .comment-footer span,
+.wp-caption-text, input[type="submit"], .comment-respond label, .comment-footer span,
 .comment-footer a, .menu-primary a, .post-categories,
 .post-tags {
   font-size: 0.75em;
@@ -239,7 +240,7 @@ textarea {
   width: 100%;
   font-family: "Raleway", sans-serif;
   padding: 10px 12px;
-  max-width: 27.75em;
+  max-width: 25.5em;
   background: #ededed;
   color: #545454;
   border: solid 1px #dedede;
@@ -262,17 +263,20 @@ textarea {
 
 input[type="submit"] {
   font-family: "Raleway", sans-serif;
-  padding: 10px 12px;
-  width: 100%;
+  padding: 9px 16px;
   color: white;
   background: #3a3a3a;
   outline: none;
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 input[type="submit"]:hover {
   cursor: pointer;
+}
+input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
   background: #666666;
 }
 
@@ -459,6 +463,11 @@ a img {
     padding: 0 18.16812%;
   }
 }
+.comment-respond label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 .comment-list {
   margin: 3em 0;
   list-style: none;
@@ -538,7 +547,8 @@ a img {
 }
 
 @media all and (min-width: 43.75em) {
-  .comments-number {
+  .comments-number,
+  .comment-reply-title {
     font-size: 1.75em;
     /* 28px / 16px */
     line-height: 1.357;

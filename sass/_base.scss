@@ -164,11 +164,11 @@ img,
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea {
-  @extend %twelve-pixels;
+  @extend %seventeen-pixels;
   width: 100%;
   font-family: $raleway;
   padding: 10px 12px;
-  max-width: $baseline-height * 10 * 1.85;
+  max-width: $baseline-height * 17;
   background: $color-gray-93;
   color: $color-gray-33;
   border: solid 1px $color-gray-87;
@@ -188,17 +188,21 @@ textarea {
 input[type="submit"] {
   @extend %twelve-pixels;
   font-family: $raleway;
-  padding: 10px 12px;
-  width: 100%;
+  padding: 9px 16px;
   color: white;
   background: $color-gray-23;
   outline: none;
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
+  transition: all 0.1s ease-in-out;
 
   &:hover {
     cursor: pointer;
+  }
+  &:hover,
+  &:active,
+  &:focus {
     background: $color-gray-40;
   }
 }
