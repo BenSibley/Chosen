@@ -4,8 +4,6 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-
-
 html {
   height: 100%;
 }
@@ -17,7 +15,7 @@ body {
   font-family: $raleway;
   line-height: 1.5;
   background: white;
-  color: $color-gray-40;
+  color: $color-gray-33;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;

@@ -40,6 +40,13 @@ h2 {
   /* 24px */
 }
 
+.post-content {
+  font-size: 1.0625em;
+  /* 17px / 16px */
+  line-height: 1.4118;
+  /* 24px */
+}
+
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea, input[type="submit"], .menu-primary a {
   font-size: 0.75em;
@@ -78,7 +85,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   background: white;
-  color: #666666;
+  color: #545454;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -312,7 +319,7 @@ a img {
 
 .more-link {
   display: inline-block;
-  padding: 8px 18px;
+  padding: 8px 12px;
   margin-left: 12px;
   border: solid 1px #ababab;
 }
@@ -328,11 +335,6 @@ a img {
   text-decoration: underline;
 }
 
-.blog .post-header,
-.archive .post-header,
-.search .post-header {
-  text-align: center;
-}
 .blog .post-content,
 .archive .post-content,
 .search .post-content {
@@ -349,6 +351,8 @@ a img {
 .blog .post-content p:last-of-type,
 .archive .post-content p:last-of-type,
 .search .post-content p:last-of-type {
+  font-size: 0.9412em;
+  line-height: 1.5;
   display: inline-block;
   margin: 0.75em 0 0;
 }
@@ -360,7 +364,6 @@ a img {
     /* 12px / 16px */
     line-height: 1.5;
     /* 18px */
-    letter-spacing: 0.05em;
   }
 }
 @media all and (min-width: 56.25em) {
@@ -636,7 +639,6 @@ a img {
     /* 12px / 16px */
     line-height: 1.5;
     /* 18px */
-    letter-spacing: 0.05em;
   }
 }
 @media all and (min-width: 56.25em) {
@@ -894,6 +896,7 @@ a img {
 
 .post-header {
   margin: 1.5em 0;
+  text-align: center;
 }
 
 .post-date {
@@ -917,6 +920,33 @@ a img {
     /* 12px / 16px */
     line-height: 1.5;
     /* 18px */
-    letter-spacing: 0.05em;
+  }
+}
+@media all and (min-width: 56.25em) {
+  .singular .post-header,
+  .singular .post-content,
+  .singular .post-meta {
+    padding: 0 9.08406%;
+  }
+  .singular .post-header {
+    margin: 2.25em 0;
+  }
+  .singular .post-title {
+    font-size: 3.188em;
+    /* 51px / 16px */
+    line-height: 1.314;
+    /* 67px */
+  }
+}
+@media all and (min-width: 68.75em) {
+  .singular .post-content,
+  .singular .post-meta {
+    padding: 0 13.62609%;
+  }
+}
+@media all and (min-width: 75em) {
+  .singular .post-content,
+  .singular .post-meta {
+    padding: 0 18.16812%;
   }
 }

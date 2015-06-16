@@ -108,6 +108,11 @@ $tencent-weibo: #20b8e5;
   font-size: 1.3125em; /* 21px / 16px */
   line-height: 1.143; /* 24px */
 }
+// 17px font
+%seventeen-pixels {
+  font-size: 1.0625em; /* 17px / 16px */
+  line-height: 1.4118; /* 24px */
+}
 // 12px font
 %twelve-pixels {
   font-size: 0.75em; /* 12px / 16px */

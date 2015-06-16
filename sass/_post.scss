@@ -20,6 +20,10 @@
 }
 .post-header {
   margin: $baseline-height 0;
+  text-align: center;
+}
+.post-content {
+  @extend %seventeen-pixels; // just a bit too hard to read at 16px;
 }
 .post-date {
   @extend %ten-pixels;
@@ -39,6 +43,46 @@
   .post-date {
     font-size: 0.75em; /* 12px / 16px */
     line-height: 1.5; /* 18px */
-    letter-spacing: 0.05em;
+  }
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .singular {
+
+    .post-header,
+    .post-content,
+    .post-meta {
+      padding: 0 $column * 2 * 1.09;
+    }
+    .post-header {
+      margin: $baseline-height * 1.5 0;
+    }
+    .post-title {
+      font-size: 3.188em; /* 51px / 16px */
+      line-height: 1.314; /* 67px */
+    }
+  }
+}
+
+@media all and (min-width: $eleven-hundred) {
+
+  .singular {
+
+    .post-content,
+    .post-meta {
+      padding: 0 $column * 3 * 1.09;
+    }
+  }
+}
+
+@media all and (min-width: $twelve-hundred) {
+
+  .singular {
+
+    .post-content,
+    .post-meta {
+      padding: 0 $column * 4 * 1.09;
+    }
   }
 }

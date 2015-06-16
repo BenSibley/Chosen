@@ -2,7 +2,7 @@
   @extend %ten-pixels;
   @extend %uppercase;
   display: inline-block;
-  padding: 8px 18px;
+  padding: 8px 12px;
   margin-right: 12px;
   border: solid 1px $color-gray-67;
 }
@@ -28,9 +28,6 @@
 .archive,
 .search {
 
-  .post-header {
-    text-align: center;
-  }
   .post-content {
     text-align: center;
 
@@ -41,6 +38,8 @@
       text-align: left;
     }
     p:last-of-type {
+      font-size: 0.9412em;
+      line-height: 1.5; // to keep from scaling up smaller text due to 17px post-content
       display: inline-block;
       margin: $baseline-height / 2 0 0;
     }
@@ -53,7 +52,6 @@
   .comments-link {
     font-size: 0.75em; /* 12px / 16px */
     line-height: 1.5; /* 18px */
-    letter-spacing: 0.05em;
   }
 }
 
