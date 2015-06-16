@@ -169,13 +169,17 @@ textarea {
   font-family: $raleway;
   padding: 10px 12px;
   max-width: $baseline-height * 10 * 1.85;
-//  background: $background;
-//  color: $gray-medium;
-//  outline: solid 1px $gray-light;
-  border: none;
+  background: $color-gray-93;
+  color: $color-gray-33;
+  border: solid 1px $color-gray-87;
   border-radius: 0;
   -webkit-appearance: none;
   transition: all 0.1s ease-in-out;
+
+  &:focus {
+    outline: none;
+    background: white;
+  }
 }
 textarea {
   max-width: $baseline-height * 15 * 1.85;
@@ -187,7 +191,7 @@ input[type="submit"] {
   padding: 10px 12px;
   width: 100%;
   color: white;
-//  background: $orange;
+  background: $color-gray-23;
   outline: none;
   border: none;
   border-radius: 0;
@@ -195,31 +199,26 @@ input[type="submit"] {
 
   &:hover {
     cursor: pointer;
-    //  background: $orange-dark;
+    background: $color-gray-40;
   }
 }
 
 input[type="search"] {
-//  margin-right: $baseline-height;
-//  padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
+  margin-right: $baseline-height;
+  padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
 }
-//::-webkit-input-placeholder {
-//  color: $gray-medium;
-//}
-//:-moz-placeholder /* Firefox 18- */ {
-//  color: $gray-medium;
-//}
-//::-moz-placeholder /* Firefox 19+ */ {
-//  color: $gray-medium;
-//}
-//:-ms-input-placeholder {
-//  color: $gray-medium;
-//}
-//
-///* sticky */
-//.excerpt.sticky {
-//  outline: solid 3px $orange;
-//}
+::-webkit-input-placeholder {
+  color: $color-gray-40;
+}
+:-moz-placeholder /* Firefox 18- */ {
+  color: $color-gray-40;
+}
+::-moz-placeholder /* Firefox 19+ */ {
+  color: $color-gray-40;
+}
+:-ms-input-placeholder {
+  color: $color-gray-40;
+}
 
 /* ie image border fix */
 
@@ -262,7 +261,7 @@ a img {
   color: white !important;
   z-index: 99;
   padding: $baseline-height;
-//  background: $color-gray-20;
+  background: $color-gray-23;
   transition: top 0.2s ease-in-out;
 
   &:focus {

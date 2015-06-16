@@ -240,11 +240,18 @@ textarea {
   font-family: "Raleway", sans-serif;
   padding: 10px 12px;
   max-width: 27.75em;
-  border: none;
+  background: #ededed;
+  color: #545454;
+  border: solid 1px #dedede;
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):focus,
+textarea:focus {
+  outline: none;
+  background: white;
 }
 
 textarea {
@@ -258,6 +265,7 @@ input[type="submit"] {
   padding: 10px 12px;
   width: 100%;
   color: white;
+  background: #3a3a3a;
   outline: none;
   border: none;
   border-radius: 0;
@@ -265,6 +273,29 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   cursor: pointer;
+  background: #666666;
+}
+
+input[type="search"] {
+  margin-right: 1.5em;
+  padding-right: 0.375em;
+  /* so safari 'x' doesn't get cut off */
+}
+
+::-webkit-input-placeholder {
+  color: #666666;
+}
+
+:-moz-placeholder {
+  color: #666666;
+}
+
+::-moz-placeholder {
+  color: #666666;
+}
+
+:-ms-input-placeholder {
+  color: #666666;
 }
 
 /* ie image border fix */
@@ -304,6 +335,7 @@ a img {
   color: white !important;
   z-index: 99;
   padding: 1.5em;
+  background: #3a3a3a;
   -webkit-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
 }
