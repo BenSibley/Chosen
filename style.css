@@ -147,6 +147,33 @@ li li {
 }
 
 /* Markup styles */
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background: #ededed;
+  border: solid 1px #dedede;
+  padding: 0.75em;
+}
+
+code {
+  background: #ededed;
+  padding: 0 0.375em;
+}
+
+blockquote {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding-left: 1.5em;
+  border-left: solid 3px #3a3a3a;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
 /* Table styles */
 table {
   border-spacing: 0;
@@ -301,6 +328,24 @@ a img {
   text-decoration: underline;
 }
 
+.blog .post-header,
+.archive .post-header,
+.search .post-header {
+  text-align: center;
+}
+.blog .post-content,
+.archive .post-content,
+.search .post-content {
+  text-align: center;
+}
+.blog .post-content ul,
+.blog .post-content p:not(:last-of-type),
+.archive .post-content ul,
+.archive .post-content p:not(:last-of-type),
+.search .post-content ul,
+.search .post-content p:not(:last-of-type) {
+  text-align: left;
+}
 .blog .post-content p:last-of-type,
 .archive .post-content p:last-of-type,
 .search .post-content p:last-of-type {
@@ -325,10 +370,54 @@ a img {
     width: 47.69132%;
     float: left;
   }
-  .blog .entry:nth-of-type(odd),
-  .archive .entry:nth-of-type(odd),
-  .search .entry:nth-of-type(odd) {
+  .blog .entry:nth-of-type(even),
+  .archive .entry:nth-of-type(even),
+  .search .entry:nth-of-type(even) {
     margin-right: 4.167%;
+  }
+  .blog .entry:first-of-type,
+  .archive .entry:first-of-type,
+  .search .entry:first-of-type {
+    width: 100%;
+    float: none;
+  }
+  .blog .entry:first-of-type .post-title,
+  .archive .entry:first-of-type .post-title,
+  .search .entry:first-of-type .post-title {
+    font-size: 3.188em;
+    /* 51px / 16px */
+    line-height: 1.314;
+    /* 67px */
+  }
+  .blog .entry:first-of-type .post-header,
+  .blog .entry:first-of-type .post-content,
+  .archive .entry:first-of-type .post-header,
+  .archive .entry:first-of-type .post-content,
+  .search .entry:first-of-type .post-header,
+  .search .entry:first-of-type .post-content {
+    padding: 0 9.08406%;
+  }
+  .blog .entry:not(:first-of-type) .post-header,
+  .blog .entry:not(:first-of-type) .post-content,
+  .archive .entry:not(:first-of-type) .post-header,
+  .archive .entry:not(:first-of-type) .post-content,
+  .search .entry:not(:first-of-type) .post-header,
+  .search .entry:not(:first-of-type) .post-content {
+    text-align: left;
+  }
+}
+@media all and (min-width: 68.75em) {
+  .blog .entry:first-of-type .post-content,
+  .archive .entry:first-of-type .post-content,
+  .search .entry:first-of-type .post-content {
+    padding: 0 13.62609%;
+  }
+}
+@media all and (min-width: 75em) {
+  .blog .entry:first-of-type .post-content,
+  .archive .entry:first-of-type .post-content,
+  .search .entry:first-of-type .post-content {
+    padding: 0 18.16812%;
   }
 }
 /* gallery styles copied from Hybrid Core */

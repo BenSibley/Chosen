@@ -28,8 +28,18 @@
 .archive,
 .search {
 
+  .post-header {
+    text-align: center;
+  }
   .post-content {
+    text-align: center;
 
+    // so i can un-center everything except the p containing more-link
+    // this allows the more-link and comments link to both be centered next to each other
+    ul,
+    p:not(:last-of-type) {
+      text-align: left;
+    }
     p:last-of-type {
       display: inline-block;
       margin: $baseline-height / 2 0 0;
@@ -57,8 +67,64 @@
       width: $column * 10.5 * 1.09;
       float: left;
 
-      &:nth-of-type(odd) {
+      &:nth-of-type(even) {
         margin-right: $column;
+      }
+      &:first-of-type {
+        width: 100%;
+        float: none;
+
+        .post-title {
+          font-size: 3.188em; /* 51px / 16px */
+          line-height: 1.314; /* 67px */
+        }
+        .post-header,
+        .post-content {
+          padding: 0 $column * 2 * 1.09;
+        }
+      }
+      &:not(:first-of-type) {
+
+        .post-header,
+        .post-content {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: $eleven-hundred) {
+
+  .blog,
+  .archive,
+  .search {
+
+    .entry {
+
+      &:first-of-type {
+
+        .post-content {
+          padding: 0 $column * 3 * 1.09;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: $twelve-hundred) {
+
+  .blog,
+  .archive,
+  .search {
+
+    .entry {
+
+      &:first-of-type {
+
+        .post-content {
+          padding: 0 $column * 4 * 1.09;
+        }
       }
     }
   }

@@ -88,28 +88,31 @@ li li {
 
 /* Markup styles */
 
-//pre {
-//  word-wrap: break-word;
-//  background: $off-white;
-//  padding: $baseline-height / 2;
-//}
-//code {
-//  background: $off-white;
-//  padding: 0 $baseline-height / 4;
-//}
-//blockquote {
-//  margin: $baseline-height $baseline-height $baseline-height 0;
-//  padding-left: $baseline-height;
-//  border-left: solid 3px $orange;
-//
-//  cite {
-//    display: block;
-//    text-align: right;
-//  }
-//}
-//hr {
-//  margin: $baseline-height 0;
-//}
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;;
+  background: $color-gray-93;
+  border: solid 1px $color-gray-87;
+  padding: $baseline-height / 2;
+}
+code {
+  background: $color-gray-93;
+  padding: 0 $baseline-height / 4;
+}
+blockquote {
+  margin: $baseline-height $baseline-height $baseline-height 0;
+  padding-left: $baseline-height;
+  border-left: solid 3px $color-gray-23;
+
+  cite {
+    display: block;
+    text-align: right;
+  }
+}
+hr {
+  margin: $baseline-height 0;
+}
+
 /* Table styles */
 table {
   border-spacing: 0;
