@@ -33,7 +33,7 @@ h1 {
   /* 38px */
 }
 
-h2 {
+h2, .comments-number {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -48,7 +48,8 @@ h2 {
 }
 
 .wp-caption-text, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .menu-primary a, .post-categories,
+textarea, input[type="submit"], .comment-footer span,
+.comment-footer a, .menu-primary a, .post-categories,
 .post-tags {
   font-size: 0.75em;
   /* 12px / 16px */
@@ -63,7 +64,8 @@ textarea, input[type="submit"], .menu-primary a, .post-categories,
   /* 18px */
 }
 
-.more-link, .comments-link, .tagline, .menu-primary a, .post-date, .post-categories span,
+.more-link, .comments-link, .comment-footer span,
+.comment-footer a, .tagline, .menu-primary a, .post-date, .post-categories span,
 .post-tags span, .further-reading span {
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -422,6 +424,107 @@ a img {
   .blog .entry:first-of-type .post-content,
   .archive .entry:first-of-type .post-content,
   .search .entry:first-of-type .post-content {
+    padding: 0 18.16812%;
+  }
+}
+.comment-list {
+  margin: 3em 0;
+  list-style: none;
+}
+.comment-list li {
+  margin: 3em 0;
+}
+.comment-list ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 1.5em;
+  border-right: solid 1px #d9d9d9;
+}
+
+.comment-content {
+  font-size: 1.0625em;
+  /* 17px / 16px */
+  line-height: 1.4118;
+  /* 24px */
+}
+.comment-content li {
+  margin: 0;
+}
+.comment-content ul {
+  list-style: disc;
+  margin: 1.5em 0;
+  padding-right: 0;
+  border: none;
+}
+.comment-content ul ul {
+  margin: 0 1.5em 0 0;
+}
+
+.comment-author {
+  margin-bottom: 1.5em;
+}
+.comment-author:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.comment-author img {
+  float: right;
+  margin-left: 0.75em;
+  height: 2.25em;
+  width: 2.25em;
+}
+.comment-author .author-name {
+  font-size: 1.0625em;
+  /* 17px / 16px */
+  line-height: 2.118;
+  /* 36px / 17px */
+}
+
+.comment-footer {
+  margin-top: 1.5em;
+}
+
+.comment-reply-link,
+.comment-edit-link {
+  position: relative;
+  margin-right: 16px;
+  border-color: transparent;
+}
+.comment-reply-link:after,
+.comment-edit-link:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -11px;
+  height: 100%;
+  width: 1px;
+  background: #d9d9d9;
+}
+
+@media all and (min-width: 43.75em) {
+  .comments-number {
+    font-size: 1.75em;
+    /* 28px / 16px */
+    line-height: 1.357;
+    /* 38px */
+  }
+}
+@media all and (min-width: 56.25em) {
+  .comments {
+    padding: 0 9.08406%;
+  }
+}
+@media all and (min-width: 68.75em) {
+  .comments {
+    padding: 0 13.62609%;
+  }
+}
+@media all and (min-width: 75em) {
+  .comments {
     padding: 0 18.16812%;
   }
 }
