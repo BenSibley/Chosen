@@ -2,24 +2,44 @@
   @extend %ten-pixels;
   @extend %uppercase;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 16px;
   margin-right: 12px;
-  border: solid 1px $color-gray-67;
+  background: $color-gray-17;
+  color: white;
+  transition: all 0.1s ease-in-out;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-gray-33;
+    color: white;
+  }
 }
 .comments-link {
   @extend %ten-pixels;
   @extend %uppercase;
   transition: color 0.1s ease-in-out;
+  color: $color-gray-17;
 
   i {
     margin-right: 3px;
   }
   a {
+    color: $color-gray-17;
 
+    &:link,
+    &:visited {
+      color: $color-gray-17;
+    }
     &:hover,
     &:active,
     &:focus {
       text-decoration: underline;
+      color: $color-gray-17;
     }
   }
 }
