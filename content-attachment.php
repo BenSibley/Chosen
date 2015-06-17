@@ -5,8 +5,8 @@
 		</div>
 		<div class="post-content">
 			<?php the_content(); ?>
+			<?php get_template_part('content/post-nav-attachment'); ?>
 		</div>
-		<?php get_template_part('content/post-nav-attachment'); ?>
 	</article>
 	<?php comments_template(); ?>
 </div>
