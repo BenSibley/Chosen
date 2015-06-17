@@ -5,7 +5,7 @@
  */
 function ct_chosen_load_scripts_styles() {
 
-	wp_register_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300');
+	wp_register_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic');
 
 	// main JS file
 	wp_enqueue_script('ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
