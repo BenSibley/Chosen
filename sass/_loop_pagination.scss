@@ -1,3 +1,21 @@
 .loop-pagination {
   clear: both;
+  margin: $baseline-height * 2 auto;
+  text-align: center;
+
+  a,
+  span {
+    display: inline-block;
+    margin: 0 $baseline-height;
+  }
+  a {
+
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  .current {
+    border: solid 1px $color-gray-23;
+    padding: 5px 12px;
+  }
 }

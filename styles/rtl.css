@@ -844,6 +844,20 @@ a img {
 }
 .loop-pagination {
   clear: both;
+  margin: 3em auto;
+  text-align: center;
+}
+.loop-pagination a,
+.loop-pagination span {
+  display: inline-block;
+  margin: 0 1.5em;
+}
+.loop-pagination a:focus {
+  text-decoration: underline;
+}
+.loop-pagination .current {
+  border: solid 1px #3a3a3a;
+  padding: 5px 12px;
 }
 
 .main:after {
