@@ -16,12 +16,17 @@
     }
   }
   li {
-    margin-bottom: $baseline-height;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   a {
     @extend %twelve-pixels;
     @extend %uppercase;
     display: inline-block;
+    padding: 9px 12px;
 
     &:focus {
       text-decoration: underline;
@@ -31,7 +36,6 @@
   .current_page_item {
 
     > a {
-      padding: 11px 22px;
       outline: solid 1px $color-gray-23;
     }
   }
@@ -106,7 +110,14 @@
     li {
       position: relative;
       display: inline-block;
-      margin: 0 $baseline-height 0 0;
+      margin: 0;
+    }
+    ul {
+
+      > .current-menu-item:first-child,
+      > .current_page_item:first-child {
+        margin-top: 0;
+      }
     }
   }
   .menu-primary-items {
