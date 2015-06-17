@@ -886,8 +886,16 @@ a img {
 .menu-primary li {
   margin-bottom: 1.5em;
 }
+.menu-primary a {
+  display: inline-block;
+}
 .menu-primary a:focus {
   text-decoration: underline;
+}
+.menu-primary .current-menu-item > a,
+.menu-primary .current_page_item > a {
+  padding: 11px 22px;
+  outline: solid 1px #3a3a3a;
 }
 
 .menu-primary-items ul {
@@ -956,9 +964,6 @@ a img {
     position: relative;
     display: inline-block;
     margin: 0 0 0 1.5em;
-  }
-  .menu-primary a {
-    display: inline-block;
   }
 
   .menu-primary-items ul {

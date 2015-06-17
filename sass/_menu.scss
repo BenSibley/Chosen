@@ -16,9 +16,18 @@
   a {
     @extend %twelve-pixels;
     @extend %uppercase;
+    display: inline-block;
 
     &:focus {
       text-decoration: underline;
+    }
+  }
+  .current-menu-item,
+  .current_page_item {
+
+    > a {
+      padding: 11px 22px;
+      outline: solid 1px $color-gray-23;
     }
   }
 }
@@ -93,9 +102,6 @@
       position: relative;
       display: inline-block;
       margin: 0 $baseline-height 0 0;
-    }
-    a {
-      display: inline-block;
     }
   }
   .menu-primary-items {
