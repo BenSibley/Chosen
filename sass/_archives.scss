@@ -43,6 +43,13 @@
     }
   }
 }
+.full-post {
+
+  .comments-link {
+    display: block;
+    margin: $baseline-height * 2 0;
+  }
+}
 // allow comments to sit next to button
 .blog,
 .archive,
