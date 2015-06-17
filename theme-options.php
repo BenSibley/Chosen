@@ -2,21 +2,29 @@
 
 /* create theme options page */
 function ct_chosen_register_theme_page(){
-	add_theme_page( 'chosen Dashboard', 'chosen Dashboard', 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content');
+	add_theme_page( 'Chosen Dashboard', 'Chosen Dashboard', 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content');
 }
 add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
 
 /* callback used to add content to options page */
 function ct_chosen_options_content(){
+
+	$customizer_url = add_query_arg(
+		array(
+			'url'    => site_url(),
+			'return' => admin_url('themes.php?page=chosen-options')
+		),
+		admin_url('customize.php')
+	);
 	?>
 	<div id="chosen-dashboard-wrap" class="wrap">
-		<h2><?php _e('chosen Dashboard', 'chosen'); ?></h2>
+		<h2><?php _e('Chosen Dashboard', 'chosen'); ?></h2>
 		<?php hybrid_do_atomic( 'theme_options_before' ); ?>
 		<div class="content content-customization">
 			<h3><?php _e('Customization', 'chosen'); ?></h3>
-			<p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing chosen', 'chosen'); ?>.</p>
+			<p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing Chosen', 'chosen'); ?>.</p>
 			<p>
-				<a class="button-primary" href="<?php echo admin_url('customize.php'); ?>"><?php _e('Use Customizer', 'chosen') ?></a>
+				<a class="button-primary" href="<?php echo esc_url( $customizer_url ); ?>"><?php _e('Use Customizer', 'chosen') ?></a>
 			</p>
 		</div>
 		<div class="content content-support">
@@ -27,8 +35,8 @@ function ct_chosen_options_content(){
 			</p>
 		</div>
 		<div class="content content-premium-upgrade">
-			<h3><?php _e('Upgrade to chosen Pro', 'chosen'); ?></h3>
-			<p><?php _e('chosen Pro is the premium upgrade for chosen. It has custom colors, new layouts, background images, and more', 'chosen'); ?>...</p>
+			<h3><?php _e('Upgrade to Chosen Pro', 'chosen'); ?></h3>
+			<p><?php _e('Chosen Pro is the premium upgrade for Chosen. It has custom colors, new layouts, sliders, and more', 'chosen'); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/chosen-pro/"><?php _e('See Full Feature List', 'chosen'); ?></a>
 			</p>
@@ -43,11 +51,7 @@ function ct_chosen_options_content(){
 		<div class="content content-delete-settings">
 			<h3><?php _e('Reset Customizer Settings', 'chosen'); ?></h3>
 			<p>
-				<?php
-				$url = admin_url('customize.php');
-				$text = sprintf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>', 'chosen' ), esc_url( $url ) );
-				echo $text . ".";
-				?>
+				<?php printf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>.', 'chosen' ), esc_url( $customizer_url ) ); ?>
 			</p>
 			<form method="post">
 				<input type="hidden" name="chosen_reset_customizer" value="chosen_reset_customizer_settings" />

@@ -122,8 +122,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_chosen_social_media_icons', array(
-		'title'          => __('Social Media Icons', 'chosen'),
-		'priority'       => 25,
+		'title'    => __('Social Media Icons', 'chosen'),
+		'priority' => 25,
 	) );
 
 	// create a setting and control for each social site
@@ -154,9 +154,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			// control
 			$wp_customize->add_control( new ct_chosen_url_input_control(
 				$wp_customize, $social_site, array(
-					'label'   => $social_site . ' ' . __('url:', 'chosen' ),
-					'section' => 'ct_chosen_social_media_icons',
-					'priority'=> $priority,
+					'label'    => $social_site . ' ' . __('url:', 'chosen' ),
+					'section'  => 'ct_chosen_social_media_icons',
+					'priority' => $priority,
 				)
 			) );
 		}
@@ -213,7 +213,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'settings'       => 'full_post',
 		'type'           => 'radio',
 		'choices'        => array(
-			'yes'   => __('Yes', 'chosen'),
+			'yes' => __('Yes', 'chosen'),
 			'no'  => __('No', 'chosen'),
 		)
 	) );
@@ -257,10 +257,10 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'settings'       => 'comments_display',
 			'type'           => 'multi-checkbox',
 			'choices'        => array(
-				'post'   => __('Posts', 'chosen'),
-				'page'  => __('Pages', 'chosen'),
+				'post'        => __('Posts', 'chosen'),
+				'page'        => __('Pages', 'chosen'),
 				'attachment'  => __('Attachments', 'chosen'),
-				'none'  => __('Do not show', 'chosen')
+				'none'        => __('Do not show', 'chosen')
 			)
 		)
 	) );
@@ -323,10 +323,10 @@ function ct_chosen_sanitize_comments_setting($input){
 
 	// valid data
 	$valid = array(
-		'post'   => __('Posts', 'chosen'),
-		'page'  => __('Pages', 'chosen'),
+		'post'        => __('Posts', 'chosen'),
+		'page'        => __('Pages', 'chosen'),
 		'attachment'  => __('Attachments', 'chosen'),
-		'none'  => __('Do not show', 'chosen')
+		'none'        => __('Do not show', 'chosen')
 	);
 
 	// loop through array
@@ -345,7 +345,7 @@ function ct_chosen_sanitize_comments_setting($input){
 
 function ct_chosen_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">View the chosen Pro Upgrade <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">View the Chosen Pro Upgrade <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_chosen_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js');
