@@ -1,0 +1,21 @@
+.archive-header {
+  margin-bottom: $baseline-height;
+
+  h2 {
+    @extend %seventeen-pixels;
+    font-family: $raleway;
+  }
+  span {
+    font-weight: 600;
+  }
+  i {
+    margin-right: 2px;
+  }
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .archive-header {
+    margin-bottom: $baseline-height * 2;
+  }
+}

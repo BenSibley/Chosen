@@ -42,7 +42,7 @@ h2, .comments-number,
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, .post-content, .further-reading a {
+textarea, .archive-header h2, .post-content, .further-reading a {
   font-size: 1.0625em;
   /* 17px / 16px */
   line-height: 1.4118;
@@ -479,6 +479,24 @@ a img {
   .archive .entry:first-of-type .post-content,
   .search .entry:first-of-type .post-content {
     padding: 0 18.16812%;
+  }
+}
+.archive-header {
+  margin-bottom: 1.5em;
+}
+.archive-header h2 {
+  font-family: "Raleway", sans-serif;
+}
+.archive-header span {
+  font-weight: 600;
+}
+.archive-header i {
+  margin-left: 2px;
+}
+
+@media all and (min-width: 56.25em) {
+  .archive-header {
+    margin-bottom: 3em;
   }
 }
 .comment-respond label {
