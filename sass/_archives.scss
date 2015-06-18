@@ -72,6 +72,19 @@
     }
   }
 }
+.entry.sticky {
+  position: relative;
+}
+.sticky-status {
+  @extend %twelve-pixels;
+  @extend %uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 18px;
+  background: $color-gray-17;
+  color: white;
+}
 
 @media all and (min-width: $seven-hundred) {
 

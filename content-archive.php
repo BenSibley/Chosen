@@ -2,6 +2,7 @@
 	<article>
 		<?php ct_chosen_featured_image(); ?>
 		<div class='post-header'>
+			<?php hybrid_do_atomic( 'sticky_post_status' ); ?>
 			<h2 class='post-title'>
 				<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
 			</h2>
