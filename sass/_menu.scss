@@ -150,8 +150,14 @@
         display: block;
         z-index: 9;
         white-space: nowrap;
+        margin: 0 0 6px 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
       .toggle-dropdown {
+        margin-left: -2px;
 
         &:after {
           content: '\f105';
@@ -217,7 +223,7 @@
               transform: translate(2px, 0);
             }
             ~ ul {
-              top: -12px;
+              top: 0;
               left: calc(100% + 14px);
             }
           }
@@ -235,11 +241,11 @@
         ul {
           left: 100%;
           left: calc(100% + 20px);
-          top: -12px;
+          top: 0;
 
           &:hover,
           &.focused {
-            top: -12px;
+            top: 0;
             left: calc(100% + 14px);
           }
         }
@@ -247,6 +253,6 @@
     }
   }
   .toggle-dropdown {
-    margin-right: 1px;
+    margin: 0 0 0 -8px;
   }
 }
