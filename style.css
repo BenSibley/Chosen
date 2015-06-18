@@ -912,6 +912,14 @@ a img {
 .menu-primary .current_page_item > a {
   outline: solid 1px #3a3a3a;
 }
+.menu-primary .current-menu-item.menu-item-has-children > a,
+.menu-primary .current_page_item.menu-item-has-children > a {
+  margin-left: 16px;
+}
+.menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown,
+.menu-primary .current_page_item.menu-item-has-children > a + .toggle-dropdown {
+  margin: 0 0 0 8px;
+}
 
 .menu-primary-items ul {
   margin: 0;
@@ -921,13 +929,7 @@ a img {
   transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items ul li {
-  margin-bottom: 0.75em;
-}
-.menu-primary-items ul li:first-child {
-  margin-top: 0.75em;
-}
-.menu-primary-items ul li:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 .menu-primary-items .open ul {
   max-height: 999px;
@@ -939,7 +941,7 @@ a img {
 }
 
 .toggle-dropdown {
-  margin: 0 -16px 0 6px;
+  margin: 0 0 0 -8px;
   padding: 0;
   font-size: 1em;
   line-height: 1;
@@ -1005,6 +1007,7 @@ a img {
   .menu-primary-items ul:hover, .menu-primary-items ul.focused {
     visibility: visible;
     top: 100%;
+    top: calc(100% + 1px);
     opacity: 1;
   }
   .menu-primary-items ul a {
@@ -1040,6 +1043,7 @@ a img {
   .menu-primary-items .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children > a:focus ~ ul {
     visibility: visible;
     top: 100%;
+    top: calc(100% + 1px);
     opacity: 1;
   }
   .menu-primary-items .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children > a:focus + button {
@@ -1083,6 +1087,10 @@ a img {
   .menu-primary-items .menu-item-has-children .menu-item-has-children ul:hover, .menu-primary-items .menu-item-has-children .menu-item-has-children ul.focused {
     top: 0;
     left: calc(100% + 14px);
+  }
+
+  .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {
+    margin: 0 12px 0 8px;
   }
 
   .toggle-dropdown {
