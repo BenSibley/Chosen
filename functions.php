@@ -522,8 +522,10 @@ function ct_chosen_body_class( $classes ) {
 	// get pagination page on blog/archive
 	$pagination = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
+	$full_width_post = get_theme_mod('full_width_post');
+
 	// if on blog and on the first page
-	if( is_home() && $pagination == 1 ) {
+	if( is_home() && $pagination == 1 && $full_width_post != 'no' ) {
 		$classes[] = 'posts-page-1';
 	}
 	return $classes;

@@ -460,6 +460,13 @@ a img {
     margin-right: 4.167%;
   }
 
+  .blog:not(.posts-page-1) .entry:nth-child(odd) {
+    margin-right: 4.167%;
+  }
+  .blog:not(.posts-page-1) .entry:nth-child(even) {
+    margin-right: 0;
+  }
+
   .posts-page-1 .entry:first-of-type {
     width: 100%;
     float: none;

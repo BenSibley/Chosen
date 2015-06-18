@@ -92,7 +92,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_chosen_logo_upload', array(
 		'title'      => __( 'Logo Upload', 'chosen' ),
-		'priority'   => 30,
+		'priority'   => 20,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting
@@ -237,12 +237,39 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		)
 	) );
 
+	/***** Additional Options *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_additional', array(
+		'title'      => __( 'Additional Options', 'chosen' ),
+		'priority'   => 70,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'full_width_post', array(
+		'default'           => 'yes',
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings',
+	) );
+	// control
+	$wp_customize->add_control( 'full_width_post', array(
+		'label'    => __( 'Make first post on blog extra wide?', 'chosen' ),
+		'section'  => 'chosen_additional',
+		'settings' => 'full_width_post',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __('Yes', 'chosen'),
+			'no'  => __('No', 'chosen')
+		)
+	) );
+
 	/***** Custom CSS *****/
 
 	// section
 	$wp_customize->add_section( 'chosen_custom_css', array(
 		'title'      => __( 'Custom CSS', 'chosen' ),
-		'priority'   => 65,
+		'priority'   => 75,
 		'capability' => 'edit_theme_options'
 	) );
 	// setting

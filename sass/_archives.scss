@@ -111,6 +111,15 @@
       }
     }
   }
+  .blog:not(.posts-page-1) {
+
+    .entry:nth-child(odd) {
+      margin-right: $column;
+    }
+    .entry:nth-child(even) {
+      margin-right: 0;
+    }
+  }
   // make first post extra wide on first page of blog/archives
   .posts-page-1 {
 
