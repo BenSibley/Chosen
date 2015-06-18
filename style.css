@@ -436,53 +436,38 @@ a img {
     width: 47.69132%;
     float: left;
   }
-  .blog .entry:nth-of-type(even),
-  .archive .entry:nth-of-type(even),
-  .search .entry:nth-of-type(even) {
+  .blog .entry:nth-child(even),
+  .archive .entry:nth-child(even),
+  .search .entry:nth-child(even) {
     margin-right: 4.167%;
   }
-  .blog .entry:first-of-type,
-  .archive .entry:first-of-type,
-  .search .entry:first-of-type {
+
+  .posts-page-1 .entry:first-of-type {
     width: 100%;
     float: none;
   }
-  .blog .entry:first-of-type .post-title,
-  .archive .entry:first-of-type .post-title,
-  .search .entry:first-of-type .post-title {
+  .posts-page-1 .entry:first-of-type .post-title {
     font-size: 3.188em;
     /* 51px / 16px */
     line-height: 1.314;
     /* 67px */
   }
-  .blog .entry:first-of-type .post-header,
-  .blog .entry:first-of-type .post-content,
-  .archive .entry:first-of-type .post-header,
-  .archive .entry:first-of-type .post-content,
-  .search .entry:first-of-type .post-header,
-  .search .entry:first-of-type .post-content {
+  .posts-page-1 .entry:first-of-type .post-header,
+  .posts-page-1 .entry:first-of-type .post-content {
     padding: 0 9.08406%;
   }
-  .blog .entry:not(:first-of-type) .post-header,
-  .blog .entry:not(:first-of-type) .post-content,
-  .archive .entry:not(:first-of-type) .post-header,
-  .archive .entry:not(:first-of-type) .post-content,
-  .search .entry:not(:first-of-type) .post-header,
-  .search .entry:not(:first-of-type) .post-content {
+  .posts-page-1 .entry:not(:first-of-type) .post-header,
+  .posts-page-1 .entry:not(:first-of-type) .post-content {
     text-align: left;
   }
 }
 @media all and (min-width: 68.75em) {
-  .blog .entry:first-of-type .post-content,
-  .archive .entry:first-of-type .post-content,
-  .search .entry:first-of-type .post-content {
+  .posts-page-1 .entry:first-of-type .post-content {
     padding: 0 13.62609%;
   }
 }
 @media all and (min-width: 75em) {
-  .blog .entry:first-of-type .post-content,
-  .archive .entry:first-of-type .post-content,
-  .search .entry:first-of-type .post-content {
+  .posts-page-1 .entry:first-of-type .post-content {
     padding: 0 18.16812%;
   }
 }

@@ -84,6 +84,7 @@
 
 @media all and (min-width: $nine-hundred) {
 
+  // put posts into 2 columns
   .blog,
   .archive,
   .search {
@@ -92,9 +93,16 @@
       width: $column * 10.5 * 1.09;
       float: left;
 
-      &:nth-of-type(even) {
+      &:nth-child(even) {
         margin-right: $column;
       }
+    }
+  }
+  // make first post extra wide on first page of blog/archives
+  .posts-page-1 {
+
+    .entry {
+
       &:first-of-type {
         width: 100%;
         float: none;
@@ -121,9 +129,7 @@
 
 @media all and (min-width: $eleven-hundred) {
 
-  .blog,
-  .archive,
-  .search {
+  .posts-page-1 {
 
     .entry {
 
@@ -139,9 +145,7 @@
 
 @media all and (min-width: $twelve-hundred) {
 
-  .blog,
-  .archive,
-  .search {
+  .posts-page-1 {
 
     .entry {
 

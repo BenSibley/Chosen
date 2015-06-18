@@ -518,6 +518,14 @@ function ct_chosen_body_class( $classes ) {
 	if( $full_post == 'yes' ) {
 		$classes[] = 'full-post';
 	}
+
+	// get pagination page on blog/archive
+	$pagination = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+	// if on blog and on the first page
+	if( is_home() && $pagination == 1 ) {
+		$classes[] = 'posts-page-1';
+	}
 	return $classes;
 }
 add_filter( 'body_class', 'ct_chosen_body_class' );
