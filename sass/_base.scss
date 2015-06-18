@@ -188,7 +188,8 @@ textarea {
 input[type="submit"] {
   @extend %twelve-pixels;
   font-family: $raleway;
-  padding: 9px 16px;
+  padding: 14px 16px;
+  min-width: 100px;
   color: white;
   background: $color-gray-17;
   outline: none;
@@ -208,7 +209,6 @@ input[type="submit"] {
 }
 
 input[type="search"] {
-  margin-right: $baseline-height;
   padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
 }
 ::-webkit-input-placeholder {

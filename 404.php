@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<div class="entry">
 		<article>
 			<div class="post-padding-container">
@@ -8,10 +7,9 @@
 				</div>
 				<div class="post-content">
 					<?php _e('Looks like nothing was found on this url.  Double-check that the url is correct or try the search form below to find what you were looking for.', 'chosen'); ?>
+					<?php get_search_form(); ?>
 				</div>
-				<?php get_search_form(); ?>
 			</div>
 		</article>
 	</div>
-
 <?php get_footer(); ?>

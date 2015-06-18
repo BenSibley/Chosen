@@ -263,7 +263,8 @@ textarea {
 
 input[type="submit"] {
   font-family: "Raleway", sans-serif;
-  padding: 9px 16px;
+  padding: 14px 16px;
+  min-width: 100px;
   color: white;
   background: #2b2b2b;
   outline: none;
@@ -281,7 +282,6 @@ input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:fo
 }
 
 input[type="search"] {
-  margin-right: 1.5em;
   padding-right: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -355,6 +355,11 @@ a img {
 .max-width {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.search-form-container {
+  margin: 3em auto 4.5em;
+  text-align: center;
 }
 
 .more-link {
@@ -1208,13 +1213,18 @@ a img {
 @media all and (min-width: 56.25em) {
   .singular .post-header,
   .singular .post-content,
-  .singular .post-meta {
+  .singular .post-meta,
+  .error-404 .post-header,
+  .error-404 .post-content,
+  .error-404 .post-meta {
     padding: 0 9.08406%;
   }
-  .singular .post-header {
+  .singular .post-header,
+  .error-404 .post-header {
     margin: 2.25em 0;
   }
-  .singular .post-title {
+  .singular .post-title,
+  .error-404 .post-title {
     font-size: 3.188em;
     /* 51px / 16px */
     line-height: 1.314;
@@ -1223,13 +1233,24 @@ a img {
 }
 @media all and (min-width: 68.75em) {
   .singular .post-content,
-  .singular .post-meta {
+  .singular .post-meta,
+  .error-404 .post-content,
+  .error-404 .post-meta {
     padding: 0 13.62609%;
   }
 }
 @media all and (min-width: 75em) {
   .singular .post-content,
-  .singular .post-meta {
+  .singular .post-meta,
+  .error-404 .post-content,
+  .error-404 .post-meta {
     padding: 0 18.16812%;
   }
+}
+.search-bottom {
+  clear: both;
+  text-align: center;
+}
+.search-bottom .search-form-container {
+  margin-top: 1.5em;
 }

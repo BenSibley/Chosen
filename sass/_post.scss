@@ -116,7 +116,8 @@
 
 @media all and (min-width: $nine-hundred) {
 
-  .singular {
+  .singular,
+  .error-404 {
 
     .post-header,
     .post-content,
@@ -135,7 +136,8 @@
 
 @media all and (min-width: $eleven-hundred) {
 
-  .singular {
+  .singular,
+  .error-404 {
 
     .post-content,
     .post-meta {
@@ -146,7 +148,8 @@
 
 @media all and (min-width: $twelve-hundred) {
 
-  .singular {
+  .singular,
+  .error-404 {
 
     .post-content,
     .post-meta {
