@@ -157,7 +157,7 @@
         }
       }
       .toggle-dropdown {
-        margin-left: -2px;
+        margin: 0 0 0 -2px;
 
         &:after {
           content: '\f105';
@@ -253,6 +253,6 @@
     }
   }
   .toggle-dropdown {
-    margin: 0 0 0 -8px;
+    margin: 0 12px 0 -8px;
   }
 }
