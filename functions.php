@@ -101,7 +101,7 @@ if( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 					'depth'      => $depth,
 					'max_depth'  => $args['max_depth']
 				) ) ); ?>
-				<?php edit_comment_link( 'Edit' ); ?>
+				<?php edit_comment_link( __('Edit', 'chosen') ); ?>
 			</div>
 		</article>
 	<?php
