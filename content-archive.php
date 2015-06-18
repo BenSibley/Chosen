@@ -2,9 +2,9 @@
 	<article>
 		<?php ct_chosen_featured_image(); ?>
 		<div class='post-header'>
-			<h1 class='post-title'>
+			<h2 class='post-title'>
 				<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-			</h1>
+			</h2>
 			<span class="post-date">
 				<?php
 				$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date('r') ) );
