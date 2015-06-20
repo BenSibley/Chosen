@@ -979,10 +979,10 @@ a img {
 .menu-primary-items ul li {
   margin: 0;
 }
-.menu-primary-items .open ul {
+.menu-primary-items .open > ul {
   max-height: 999px;
 }
-.menu-primary-items .open .toggle-dropdown {
+.menu-primary-items .open > .toggle-dropdown {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);

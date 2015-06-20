@@ -64,10 +64,10 @@
   }
   .open {
 
-    ul {
+    > ul {
       max-height: 999px;
     }
-    .toggle-dropdown {
+    > .toggle-dropdown {
       transform: rotate(180deg);
     }
   }
