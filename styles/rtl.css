@@ -883,7 +883,7 @@ a img {
 .loop-pagination a,
 .loop-pagination span {
   display: inline-block;
-  margin: 0 1.5em;
+  margin: 0 18px;
 }
 .loop-pagination a:focus {
   text-decoration: underline;
