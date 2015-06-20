@@ -110,6 +110,9 @@
         margin-right: $column;
       }
     }
+    .post-header {
+      text-align: left;
+    }
   }
   .blog:not(.posts-page-1) {
 
@@ -129,6 +132,9 @@
         width: 100%;
         float: none;
 
+        .post-header {
+          text-align: center;
+        }
         .post-title {
           font-size: 3.188em; /* 51px / 16px */
           line-height: 1.314; /* 67px */
@@ -136,13 +142,6 @@
         .post-header,
         .post-content {
           padding: 0 $column * 2 * 1.09;
-        }
-      }
-      &:not(:first-of-type) {
-
-        .post-header,
-        .post-content {
-          text-align: left;
         }
       }
     }
