@@ -150,6 +150,13 @@
       a {
         width: 100%;
       }
+      // make room for dropdown button
+      .menu-item-has-children {
+
+        > a {
+          width: calc(100% - 16px);
+        }
+      }
       li {
         display: block;
         z-index: 9;

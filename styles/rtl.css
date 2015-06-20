@@ -1070,6 +1070,9 @@ a img {
   .menu-primary-items ul a {
     width: 100%;
   }
+  .menu-primary-items ul .menu-item-has-children > a {
+    width: calc(100% - 16px);
+  }
   .menu-primary-items ul li {
     display: block;
     z-index: 9;
