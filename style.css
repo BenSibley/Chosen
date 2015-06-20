@@ -1096,7 +1096,7 @@ a img {
   .menu-primary-items ul .toggle-dropdown:after {
     content: '\f105';
   }
-  .menu-primary-items .menu-item-has-children:hover > button {
+  .menu-primary-items .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children.focused > button {
     -webkit-transform: translate(0, 2px);
     -ms-transform: translate(0, 2px);
     transform: translate(0, 2px);
@@ -1127,7 +1127,7 @@ a img {
     right: 0;
     height: 24px;
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button {
+  .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children .menu-item-has-children.focused > button {
     -webkit-transform: translate(2px, 0);
     -ms-transform: translate(2px, 0);
     transform: translate(2px, 0);

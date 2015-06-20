@@ -198,7 +198,8 @@
     }
     .menu-item-has-children {
 
-      &:hover {
+      &:hover,
+      &.focused {
 
         > button {
           transform: translate(0, 2px);
@@ -241,7 +242,8 @@
       // tier 3
       .menu-item-has-children {
 
-        &:hover {
+        &:hover,
+        &.focused {
 
           > button {
             transform: translate(2px, 0);
