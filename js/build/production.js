@@ -194,10 +194,10 @@ jQuery(document).ready(function($){
 
     /* allow keyboard access/visibility for dropdown menu items */
     menuLink.focus(function(){
-        $(this).parents('ul').addClass('focused');
+        $(this).parents('ul, li').addClass('focused');
     });
     menuLink.focusout(function(){
-        $(this).parents('ul').removeClass('focused');
+        $(this).parents('ul, li').removeClass('focused');
     });
 });
 

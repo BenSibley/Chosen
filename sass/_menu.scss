@@ -114,6 +114,16 @@
       position: relative;
       display: inline-block;
       margin: 0;
+
+      &:not(.current-menu-item) {
+
+        > a {
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
     }
     .current-menu-item,
     .current_page_item {
@@ -131,12 +141,6 @@
       > .current-menu-item:first-child,
       > .current_page_item:first-child {
         margin-top: 0;
-      }
-    }
-    a {
-
-      &:focus {
-        outline: none;
       }
     }
   }
