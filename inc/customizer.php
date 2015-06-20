@@ -87,6 +87,50 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		}
 	}
 
+	/* Ad Controls */
+	class chosen_description_header_image_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> for advanced header image functionality.', 'chosen'), $link ) . "</p>";
+		}
+	}
+	class chosen_description_color_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your colors.', 'chosen'), $link ) . "</p>";
+		}
+	}
+	class chosen_description_font_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your font.', 'chosen'), $link ) . "</p>";
+		}
+	}
+	class chosen_description_display_control_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to get hide/show controls.', 'chosen'), $link ) . "</p>";
+		}
+	}
+	class chosen_description_footer_text_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to customize the footer text.', 'chosen'), $link ) . "</p>";
+		}
+	}
+	class chosen_description_layout_control extends WP_Customize_Control {
+
+		public function render_content() {
+			$link = 'https://www.competethemes.com/chosen-pro/';
+			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your layout.', 'chosen'), $link ) . "</p>";
+		}
+	}
+
 	/***** Logo Upload *****/
 
 	// section
@@ -284,6 +328,142 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'label'          => __( 'Add Custom CSS Here:', 'chosen' ),
 			'section'        => 'chosen_custom_css',
 			'settings'       => 'custom_css',
+		)
+	) );
+
+	/*
+	 * PRO only sections
+	 */
+
+	/***** Header Image *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_header_image', array(
+		'title'      => __( 'Header Image', 'chosen' ),
+		'priority'   => 35,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'header_image_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_header_image_control(
+		$wp_customize, 'header_image_ad', array(
+			'section'        => 'chosen_header_image',
+			'settings'       => 'header_image_ad'
+		)
+	) );
+
+	/***** Colors *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_colors', array(
+		'title'      => __( 'Colors', 'chosen' ),
+		'priority'   => 50,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'colors_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_color_control(
+		$wp_customize, 'colors_ad', array(
+			'section'        => 'chosen_colors',
+			'settings'       => 'colors_ad'
+		)
+	) );
+
+	/***** Fonts *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_font', array(
+		'title'      => __( 'Font', 'chosen' ),
+		'priority'   => 40,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'font_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_font_control(
+		$wp_customize, 'font_ad', array(
+			'section'        => 'chosen_font',
+			'settings'       => 'font_ad'
+		)
+	) );
+
+	/***** Display Control *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_display_control', array(
+		'title'      => __( 'Display Controls', 'chosen' ),
+		'priority'   => 70,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'display_control_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_display_control_control(
+		$wp_customize, 'display_control_ad', array(
+			'section'        => 'chosen_display_control',
+			'settings'       => 'display_control_ad'
+		)
+	) );
+
+	/***** Footer Text *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_footer_text', array(
+		'title'      => __( 'Footer Text', 'chosen' ),
+		'priority'   => 85,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'footer_text_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_footer_text_control(
+		$wp_customize, 'footer_text_ad', array(
+			'section'        => 'chosen_footer_text',
+			'settings'       => 'footer_text_ad'
+		)
+	) );
+
+	/***** Layout *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_layout', array(
+		'title'      => __( 'Layout', 'chosen' ),
+		'priority'   => 47,
+		'capability' => 'edit_theme_options'
+	) );
+	// setting
+	$wp_customize->add_setting( 'layout_text_ad', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'absint',
+	) );
+	// control
+	$wp_customize->add_control( new chosen_description_layout_control(
+		$wp_customize, 'layout_ad', array(
+			'section'        => 'chosen_layout',
+			'settings'       => 'layout_text_ad'
 		)
 	) );
 }
