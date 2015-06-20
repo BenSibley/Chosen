@@ -11,6 +11,10 @@ jQuery(document).ready(function($){
     var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
+    $(window).resize(function(){
+        removeToggleDropdownKeyboard();
+    });
+
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
     });
@@ -94,6 +98,16 @@ jQuery(document).ready(function($){
             $(this).attr('aria-expanded', 'true');
         }
     }
+
+    function removeToggleDropdownKeyboard() {
+
+        if( $(window).width() > 799 ) {
+            toggleDropdown.attr('tabindex', -1);
+        } else {
+            toggleDropdown.attr('tabindex', '');
+        }
+    }
+    removeToggleDropdownKeyboard();
 
     /* allow keyboard access/visibility for dropdown menu items */
     menuLink.focus(function(){
