@@ -530,6 +530,15 @@ a img {
   margin-bottom: 0.5em;
 }
 
+.comment .comment-respond {
+  margin-top: 1.5em;
+}
+.comment #cancel-comment-reply-link {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 6px;
+}
+
 .comment-list {
   margin: 3em 0;
   list-style: none;
