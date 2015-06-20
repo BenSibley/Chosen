@@ -1131,7 +1131,7 @@ a img {
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus ~ ul {
     top: 0;
-    right: calc(100% + 14px);
+    right: 100%;
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active:after {
     top: 0;
@@ -1141,12 +1141,12 @@ a img {
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children ul {
     right: 100%;
-    right: calc(100% + 20px);
+    right: calc(100% + 6px);
     top: 0;
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children ul:hover, .menu-primary-items .menu-item-has-children .menu-item-has-children ul.focused {
     top: 0;
-    right: calc(100% + 14px);
+    right: 100%;
   }
 
   .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {

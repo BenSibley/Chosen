@@ -236,7 +236,7 @@
             }
             ~ ul {
               top: 0;
-              left: calc(100% + 14px);
+              left: 100%;
             }
           }
           &:hover,
@@ -252,13 +252,13 @@
         }
         ul {
           left: 100%;
-          left: calc(100% + 20px);
+          left: calc(100% + 6px);
           top: 0;
 
           &:hover,
           &.focused {
             top: 0;
-            left: calc(100% + 14px);
+            left: 100%;
           }
         }
       }
