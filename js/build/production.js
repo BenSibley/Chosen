@@ -91,12 +91,12 @@ jQuery(document).ready(function($){
     var menuPrimary = $('#menu-primary');
     var menuPrimaryItems = $('#menu-primary-items');
     var toggleDropdown = $('.toggle-dropdown');
-    //var toggleSidebar = $('#toggle-sidebar');
-    //var sidebarPrimary = $('#sidebar-primary');
-    //var sidebarPrimaryContent = $('#sidebar-primary-content');
-    //var sidebarWidgets = $('#sidebar-primary-widgets');
     var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
+
+    $('.post-content').fitVids({
+        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
+    });
 
     toggleNavigation.on('click', openPrimaryMenu);
 
