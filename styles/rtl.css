@@ -49,7 +49,8 @@ textarea, .archive-header h2, .post-content, .further-reading a {
   /* 24px */
 }
 
-.wp-caption-text, input[type="submit"], .sticky-status, .comment-respond label, .comment-footer span,
+.wp-caption-text,
+.gallery-caption, input[type="submit"], .sticky-status, .comment-respond label, .comment-footer span,
 .comment-footer a, .menu-primary a, .post-categories,
 .post-tags {
   font-size: 0.75em;
@@ -232,6 +233,11 @@ img,
 .size-thumbnail {
   max-width: 100%;
   height: auto;
+}
+
+.wp-caption-text,
+.gallery-caption {
+  margin: 0 0 1.84502em;
 }
 
 /* Form styles */
@@ -604,6 +610,18 @@ a img {
     /* 28px / 16px */
     line-height: 1.357;
     /* 38px */
+  }
+
+  .comment-pagination {
+    margin: 3em 0;
+  }
+  .comment-pagination p {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+  .comment-pagination .next-comment {
+    text-align: left;
   }
 }
 @media all and (min-width: 56.25em) {

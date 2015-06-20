@@ -154,10 +154,10 @@ img,
   max-width: 100%;
   height: auto;
 }
-.wp-caption-text {
+.wp-caption-text,
+.gallery-caption {
   @extend %twelve-pixels;
-//  margin: 0 0 $baseline-height / 0.813;
-//  color: $gray-medium;
+  margin: 0 0 $baseline-height / 0.813;
 }
 
 /* Form styles */

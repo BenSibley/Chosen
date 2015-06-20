@@ -85,6 +85,18 @@
     font-size: 1.75em; /* 28px / 16px */
     line-height: 1.357; /* 38px */
   }
+  .comment-pagination {
+    margin: $baseline-height * 2 0;
+
+    p {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+    .next-comment {
+      text-align: right;
+    }
+  }
 }
 
 @media all and (min-width: $nine-hundred) {
