@@ -1039,6 +1039,11 @@ a img {
     display: inline-block;
     margin: 0;
   }
+  .menu-primary .current-menu-item.menu-item-has-children > a, .menu-primary .current-menu-item.page_item_has_children > a,
+  .menu-primary .current_page_item.menu-item-has-children > a,
+  .menu-primary .current_page_item.page_item_has_children > a {
+    margin-left: 0;
+  }
   .menu-primary ul > .current-menu-item:first-child,
   .menu-primary ul > .current_page_item:first-child {
     margin-top: 0;
