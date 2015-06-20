@@ -133,6 +133,12 @@
         margin-top: 0;
       }
     }
+    a {
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
   .menu-primary-items {
 

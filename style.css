@@ -1048,6 +1048,9 @@ a img {
   .menu-primary ul > .current_page_item:first-child {
     margin-top: 0;
   }
+  .menu-primary a:focus {
+    outline: none;
+  }
 
   .menu-primary-items ul {
     position: absolute;
