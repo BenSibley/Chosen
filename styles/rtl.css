@@ -466,8 +466,11 @@ a img {
     margin-left: 4.167%;
   }
   .blog .post-header,
+  .blog .post-content,
   .archive .post-header,
-  .search .post-header {
+  .archive .post-content,
+  .search .post-header,
+  .search .post-content {
     text-align: right;
   }
 
@@ -482,9 +485,6 @@ a img {
     width: 100%;
     float: none;
   }
-  .posts-page-1 .entry:first-of-type .post-header {
-    text-align: center;
-  }
   .posts-page-1 .entry:first-of-type .post-title {
     font-size: 3.188em;
     /* 51px / 16px */
@@ -494,6 +494,7 @@ a img {
   .posts-page-1 .entry:first-of-type .post-header,
   .posts-page-1 .entry:first-of-type .post-content {
     padding: 0 9.08406%;
+    text-align: center;
   }
 }
 @media all and (min-width: 68.75em) {
