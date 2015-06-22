@@ -151,7 +151,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		$wp_customize, 'logo_image', array(
 			'label'    => __( 'Upload custom logo.', 'chosen' ),
 			'section'  => 'ct_chosen_logo_upload',
-			'settings' => 'logo_upload',
+			'settings' => 'logo_upload'
 		)
 	) );
 
@@ -166,7 +166,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// section
 	$wp_customize->add_section( 'ct_chosen_social_media_icons', array(
 		'title'    => __('Social Media Icons', 'chosen'),
-		'priority' => 25,
+		'priority' => 25
 	) );
 
 	// create a setting and control for each social site
@@ -177,29 +177,27 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			$wp_customize->add_setting( "$social_site", array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'ct_chosen_sanitize_email',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'ct_chosen_sanitize_email'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
 				'label'   => $social_site . ' ' . __('address:', 'chosen' ),
 				'section' => 'ct_chosen_social_media_icons',
-				'priority'=> $priority,
+				'priority'=> $priority
 			) );
 		} else {
 			// setting
 			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'esc_url_raw',
-				'transport'         => 'postMessage'
+				'sanitize_callback' => 'esc_url_raw'
 			) );
 			// control
 			$wp_customize->add_control( new ct_chosen_url_input_control(
 				$wp_customize, $social_site, array(
 					'label'    => $social_site . ' ' . __('url:', 'chosen' ),
 					'section'  => 'ct_chosen_social_media_icons',
-					'priority' => $priority,
+					'priority' => $priority
 				)
 			) );
 		}
@@ -230,7 +228,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'type'           => 'radio',
 		'choices'        => array(
 			'yes' => __('Yes', 'chosen'),
-			'no'  => __('No', 'chosen'),
+			'no'  => __('No', 'chosen')
 		)
 	) );
 	// setting
@@ -238,7 +236,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'default'           => '25',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new ct_chosen_number_input_control(
@@ -246,7 +244,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'label'          => __( 'Excerpt length', 'chosen' ),
 			'section'        => 'chosen_blog',
 			'settings'       => 'excerpt_length',
-			'type'           => 'number',
+			'type'           => 'number'
 		)
 	) );
 
@@ -263,7 +261,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'default'           => array('post','page','attachment','none'),
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_chosen_sanitize_comments_setting',
+		'sanitize_callback' => 'ct_chosen_sanitize_comments_setting'
 	) );
 	// control
 	$wp_customize->add_control( new ct_chosen_Multi_Checkbox_Control(
@@ -294,7 +292,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'default'           => 'yes',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings',
+		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings'
 	) );
 	// control
 	$wp_customize->add_control( 'full_width_post', array(
@@ -320,14 +318,14 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'custom_css', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'wp_filter_nohtml_kses',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
 	) );
 	// control
 	$wp_customize->add_control( new ct_chosen_textarea_control(
 		$wp_customize, 'custom_css', array(
 			'label'          => __( 'Add Custom CSS Here:', 'chosen' ),
 			'section'        => 'chosen_custom_css',
-			'settings'       => 'custom_css',
+			'settings'       => 'custom_css'
 		)
 	) );
 
@@ -347,7 +345,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'header_image_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_header_image_control(
@@ -369,7 +367,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'colors_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_color_control(
@@ -391,7 +389,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'font_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_font_control(
@@ -413,7 +411,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'display_control_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_display_control_control(
@@ -435,7 +433,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'footer_text_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_footer_text_control(
@@ -457,7 +455,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_setting( 'layout_text_ad', array(
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'absint',
+		'sanitize_callback' => 'absint'
 	) );
 	// control
 	$wp_customize->add_control( new chosen_description_layout_control(
