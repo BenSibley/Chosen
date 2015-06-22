@@ -1,0 +1,522 @@
+# Copyright (C) 2015 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Chosen 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-06-22 13:32:08+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr ""
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "Be First to Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:26 comments.php:45 comments.php:66 content/comments-link.php:5
+#: content/comments-link.php:8
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:58
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this "
+"post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:79 comments.php:85
+msgid "Comments are closed."
+msgstr ""
+
+#: content/archive-header.php:6
+msgid "archive icon"
+msgstr ""
+
+#: content/archive-header.php:7
+msgid "You are viewing the <span>%s</span> category archive."
+msgstr ""
+
+#: content/archive-header.php:16
+msgid "tag icon"
+msgstr ""
+
+#: content/archive-header.php:17
+msgid "You are viewing the <span>%s</span> tag archive."
+msgstr ""
+
+#: content/archive-header.php:27
+msgid "author icon"
+msgstr ""
+
+#: content/archive-header.php:28
+msgid "You are viewing <span>%s</span>'s post archive."
+msgstr ""
+
+#: content/archive-header.php:37
+msgid "calendar icon"
+msgstr ""
+
+#: content/archive-header.php:38
+msgid "You are viewing the date archive for <span>%s</span>."
+msgstr ""
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr ""
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr ""
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr ""
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr ""
+
+#: content/post-categories.php:16
+msgid "Categories:"
+msgstr ""
+
+#: content/post-categories.php:19
+msgid "View all posts in %s"
+msgstr ""
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr ""
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr ""
+
+#: content/post-nav.php:11
+msgid "Previous Post"
+msgstr ""
+
+#: content/post-nav.php:13
+msgid "The Previous Post"
+msgstr ""
+
+#: content/post-nav.php:20
+msgid "No Older Posts"
+msgstr ""
+
+#: content/post-nav.php:22 content/post-nav.php:44
+msgid "Return to Blog"
+msgstr ""
+
+#: content/post-nav.php:33
+msgid "Next Post"
+msgstr ""
+
+#: content/post-nav.php:35
+msgid "The Next Post"
+msgstr ""
+
+#: content/post-nav.php:42
+msgid "No Newer Posts"
+msgstr ""
+
+#: content/post-tags.php:6
+msgid "Tags:"
+msgstr ""
+
+#: content/post-tags.php:9
+msgid "View all posts tagged %s"
+msgstr ""
+
+#: content-archive.php:12 content.php:9
+msgid "Published %s"
+msgstr ""
+
+#: content-page.php:9 content.php:15
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:11
+msgid "<a href=\"%s\">Chosen WordPress Theme</a> by Compete Themes."
+msgstr ""
+
+#: functions.php:37
+msgid "Primary"
+msgstr ""
+
+#: functions.php:69
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:71
+msgid ""
+"Widgets in this area will be shown in the sidebar next to the main post "
+"content"
+msgstr ""
+
+#: functions.php:92
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:100
+msgid "Reply"
+msgstr ""
+
+#: functions.php:104
+msgid "Edit"
+msgstr ""
+
+#: functions.php:125
+msgid "optional"
+msgstr ""
+
+#: functions.php:133
+msgid "Name"
+msgstr ""
+
+#: functions.php:140
+msgid "Email"
+msgstr ""
+
+#: functions.php:147
+msgid "Website"
+msgstr ""
+
+#: functions.php:162
+msgid "Comment"
+msgstr ""
+
+#: functions.php:200 functions.php:207 functions.php:220
+msgid "Continue reading"
+msgstr ""
+
+#: functions.php:407
+msgid "email icon"
+msgstr ""
+
+#: functions.php:413
+msgid "%s icon"
+msgstr ""
+
+#: functions.php:459 header.php:24 inc/scripts.php:13
+msgid "open menu"
+msgstr ""
+
+#: functions.php:470
+msgid "Featured Post"
+msgstr ""
+
+#: functions.php:505
+msgid "Customizer settings deleted"
+msgstr ""
+
+#: header.php:14
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:12
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:14
+msgid "Menus"
+msgstr ""
+
+#: inc/customizer.php:95
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> for advanced "
+"header image functionality."
+msgstr ""
+
+#: inc/customizer.php:102
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
+"colors."
+msgstr ""
+
+#: inc/customizer.php:109
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
+"font."
+msgstr ""
+
+#: inc/customizer.php:116
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to get hide/show "
+"controls."
+msgstr ""
+
+#: inc/customizer.php:123
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to customize the "
+"footer text."
+msgstr ""
+
+#: inc/customizer.php:130
+msgid ""
+"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
+"layout."
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "Logo Upload"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "address:"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "url:"
+msgstr ""
+
+#: inc/customizer.php:212
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:230 inc/customizer.php:304 inc/customizer.php:525
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:231 inc/customizer.php:305 inc/customizer.php:526
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:244
+msgid "Excerpt length"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Comment Display"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "Show comments on:"
+msgstr ""
+
+#: inc/customizer.php:274 inc/customizer.php:503
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer.php:275 inc/customizer.php:504
+msgid "Pages"
+msgstr ""
+
+#: inc/customizer.php:276 inc/customizer.php:505
+msgid "Attachments"
+msgstr ""
+
+#: inc/customizer.php:277 inc/customizer.php:506
+msgid "Do not show"
+msgstr ""
+
+#: inc/customizer.php:286
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:299
+msgid "Make first post on blog extra wide?"
+msgstr ""
+
+#: inc/customizer.php:313
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:326
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/customizer.php:340
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer.php:362
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:384
+msgid "Font"
+msgstr ""
+
+#: inc/customizer.php:406
+msgid "Display Controls"
+msgstr ""
+
+#: inc/customizer.php:428
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:450
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:478
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:479
+msgid "Hide"
+msgstr ""
+
+#: inc/scripts.php:14
+msgid "close menu"
+msgstr ""
+
+#: inc/scripts.php:15
+msgid "open dropdown menu"
+msgstr ""
+
+#: inc/scripts.php:16
+msgid "close dropdown menu"
+msgstr ""
+
+#: search.php:9
+msgid "%d search result for \"%s\""
+msgid_plural "%d search results for \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr ""
+
+#: search.php:36
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+msgid "Go"
+msgstr ""
+
+#: theme-options.php:21
+msgid "Chosen Dashboard"
+msgstr ""
+
+#: theme-options.php:24
+msgid "Customization"
+msgstr ""
+
+#: theme-options.php:25
+msgid ""
+"Click the \"Customize\" link in your menu, or use the button below to get "
+"started customizing Chosen"
+msgstr ""
+
+#: theme-options.php:27
+msgid "Use Customizer"
+msgstr ""
+
+#: theme-options.php:31
+msgid "Support"
+msgstr ""
+
+#: theme-options.php:32
+msgid ""
+"You can find the knowledgebase, changelog, support forum, and more in the "
+"chosen Support Center"
+msgstr ""
+
+#: theme-options.php:34
+msgid "Visit Support Center"
+msgstr ""
+
+#: theme-options.php:38
+msgid "Upgrade to Chosen Pro"
+msgstr ""
+
+#: theme-options.php:39
+msgid ""
+"Chosen Pro is the premium upgrade for Chosen. It has custom colors, new "
+"layouts, sliders, and more"
+msgstr ""
+
+#: theme-options.php:41
+msgid "See Full Feature List"
+msgstr ""
+
+#: theme-options.php:45
+msgid "WordPress Resources"
+msgstr ""
+
+#: theme-options.php:46
+msgid ""
+"Save time and money searching for WordPress products by following our "
+"recommendations"
+msgstr ""
+
+#: theme-options.php:48
+msgid "View Resources"
+msgstr ""
+
+#: theme-options.php:52 theme-options.php:60
+msgid "Reset Customizer Settings"
+msgstr ""
+
+#: theme-options.php:54
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase your current "
+"settings in the <a href=\"%s\">Customizer</a>."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Chosen"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://competethemes.com/chosen/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Chosen is a bold and minimalist theme for publishers who want to get their "
+"visitors' attention and keep it. Present your best content in a clean, "
+"uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
+"See our fully-setup live demo here: "
+"https://www.competethemes.com/chosen-live-demo/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Compete Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://competethemes.com/"
+msgstr ""
