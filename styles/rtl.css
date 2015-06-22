@@ -1173,6 +1173,15 @@ a img {
   .toggle-dropdown {
     margin: 0 -8px 0 12px;
   }
+
+  .rtl .menu-primary-items ul .menu-item-has-children > button:after {
+    content: '\f104';
+  }
+  .rtl .menu-primary-items ul .menu-item-has-children > a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children > a:active + button, .rtl .menu-primary-items ul .menu-item-has-children > a:focus + button {
+    -webkit-transform: translate(-2px, 0);
+    -ms-transform: translate(-2px, 0);
+    transform: translate(-2px, 0);
+  }
 }
 .entry {
   margin-bottom: 3em;

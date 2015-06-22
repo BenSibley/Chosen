@@ -298,4 +298,31 @@
   .toggle-dropdown {
     margin: 0 12px 0 -8px;
   }
+  // CSSJanus can't do this for RTL stylesheet
+  .rtl {
+
+    .menu-primary-items ul {
+
+      .menu-item-has-children {
+
+        > button {
+
+          &:after {
+            content: '\f104';
+          }
+        }
+        > a {
+
+          &:hover,
+          &:active,
+          &:focus {
+
+            + button {
+              transform: translate(-2px, 0);
+            }
+          }
+        }
+      }
+    }
+  }
 }
