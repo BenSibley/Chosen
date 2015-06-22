@@ -585,7 +585,7 @@ a img {
 }
 .comment-author img {
   float: right;
-  margin-left: 0.75em;
+  margin: 0 0 0 0.75em;
   height: 2.25em;
   width: 2.25em;
 }
