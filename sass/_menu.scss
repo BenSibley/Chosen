@@ -104,11 +104,16 @@
   .menu-primary-container {
     max-height: none;
     overflow: visible;
+
+    &:after {
+      @include clearfix;
+    }
   }
   .menu-primary {
     display: inline-block;
     text-align: left;
     float: left;
+    margin-bottom: 0;
 
     li {
       position: relative;
