@@ -1,4 +1,5 @@
 <div <?php post_class(); ?>>
+	<?php hybrid_do_atomic( 'archive_post_before' ); ?>
 	<article>
 		<?php ct_chosen_featured_image(); ?>
 		<div class='post-header'>
@@ -18,4 +19,5 @@
 			<?php get_template_part('content/comments-link'); ?>
 		</div>
 	</article>
+	<?php hybrid_do_atomic( 'archive_post_after' ); ?>
 </div>
