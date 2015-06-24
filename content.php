@@ -14,8 +14,8 @@
 	    <div class="post-content">
 	        <?php the_content(); ?>
 	        <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','chosen'), 'after' => '</p>', ) ); ?>
+	        <?php hybrid_do_atomic( 'post_after' ); ?>
 	    </div>
-		<?php hybrid_do_atomic( 'post_after' ); ?>
 		<div class="post-meta">
 			<?php get_template_part('content/post-categories'); ?>
 			<?php get_template_part('content/post-tags'); ?>

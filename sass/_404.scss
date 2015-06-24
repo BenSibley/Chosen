@@ -1,4 +1,8 @@
-.search-form-container {
-  margin: $baseline-height * 2 auto $baseline-height * 3;
-  text-align: center;
+.error-404,
+.search {
+
+  .search-form-container {
+    margin: $baseline-height * 2 auto $baseline-height * 3;
+    text-align: center;
+  }
 }
