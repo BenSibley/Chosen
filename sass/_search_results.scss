@@ -1,6 +1,13 @@
+.search {
+
+  .search-header {
+    text-align: center;
+  }
+}
 .search-bottom {
   clear: both;
   text-align: center;
+  margin-top: $baseline-height * 3;
 
   .search-form-container {
     margin-top: $baseline-height;

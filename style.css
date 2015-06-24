@@ -1329,9 +1329,18 @@ a img {
     padding: 0 18.16812%;
   }
 }
+.search-form-container .search-field {
+  vertical-align: top;
+}
+
+.search .search-header {
+  text-align: center;
+}
+
 .search-bottom {
   clear: both;
   text-align: center;
+  margin-top: 4.5em;
 }
 .search-bottom .search-form-container {
   margin-top: 1.5em;
