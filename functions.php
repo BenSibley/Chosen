@@ -61,18 +61,6 @@ function ct_chosen_remove_cleaner_gallery() {
 }
 add_action( 'after_setup_theme', 'ct_chosen_remove_cleaner_gallery', 11 );
 
-// register widget areas
-function ct_chosen_register_widget_areas(){
-
-    /* register after post content widget area */
-    hybrid_register_sidebar( array(
-        'name'         => __( 'Primary Sidebar', 'chosen' ),
-        'id'           => 'sidebar',
-        'description'  => __( 'Widgets in this area will be shown in the sidebar next to the main post content', 'chosen' )
-    ) );
-}
-add_action('widgets_init','ct_chosen_register_widget_areas');
-
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
 if( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 	function ct_chosen_customize_comments( $comment, $args, $depth ) {
