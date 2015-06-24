@@ -879,7 +879,7 @@ a img {
 }
 @media all and (min-width: 56.25em) {
   .site-header {
-    padding-top: 2.25em;
+    padding-top: 1.5em;
   }
 
   .title-container {
