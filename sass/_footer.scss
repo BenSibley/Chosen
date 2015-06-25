@@ -1,5 +1,10 @@
 .site-footer {
-  padding: $baseline-height 0 $baseline-height / 2;
+  position: relative;
+  left: -4.6%;
+  width: 109.2%;
+  padding: $baseline-height $column;
   margin-top: $baseline-height * 2;
   text-align: center;
+  background: $color-gray-96;
+  border-top: solid 1px $color-gray-93;
 }
