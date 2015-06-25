@@ -92,6 +92,7 @@
   .post-categories,
   .post-tags {
     display: inline-block;
+    margin: $baseline-height 0;
   }
   .post-categories {
     margin-right: $baseline-height;

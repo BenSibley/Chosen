@@ -1277,6 +1277,7 @@ a img {
   .post-categories,
   .post-tags {
     display: inline-block;
+    margin: 1.5em 0;
   }
 
   .post-categories {
