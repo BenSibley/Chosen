@@ -107,7 +107,7 @@
       float: left;
 
       &:nth-child(even) {
-        margin-right: $column;
+        margin-right: $column * 1.09;
       }
     }
     .post-header,
@@ -118,7 +118,7 @@
   .blog:not(.posts-page-1) {
 
     .entry:nth-child(odd) {
-      margin-right: $column;
+      margin-right: $column * 1.09;
     }
     .entry:nth-child(even) {
       margin-right: 0;

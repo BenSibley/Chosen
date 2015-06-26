@@ -464,7 +464,7 @@ a img {
   .blog .entry:nth-child(even),
   .archive .entry:nth-child(even),
   .search .entry:nth-child(even) {
-    margin-right: 4.167%;
+    margin-right: 4.54203%;
   }
   .blog .post-header,
   .blog .post-content,
@@ -476,7 +476,7 @@ a img {
   }
 
   .blog:not(.posts-page-1) .entry:nth-child(odd) {
-    margin-right: 4.167%;
+    margin-right: 4.54203%;
   }
   .blog:not(.posts-page-1) .entry:nth-child(even) {
     margin-right: 0;
