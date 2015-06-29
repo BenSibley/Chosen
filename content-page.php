@@ -8,8 +8,8 @@
 		<div class="post-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','chosen'), 'after' => '</p>', ) ); ?>
+			<?php hybrid_do_atomic( 'page_after' ); ?>
 		</div>
-		<?php hybrid_do_atomic( 'page_after' ); ?>
 	</article>
 	<?php comments_template(); ?>
 </div>
