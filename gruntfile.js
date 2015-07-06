@@ -7,8 +7,7 @@ module.exports = function(grunt) {
         concat: {
             basic_and_extras: {
                 files: {
-                    'js/build/production.js': ['js/fitvids.js', 'js/functions.js'],
-                    'js/build/customizer.js': ['js/customizer.js', 'js/multiple-select.js']
+                    'js/build/production.js': ['js/fitvids.js', 'js/functions.js']
                 }
             }
         },
@@ -16,7 +15,6 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'js/build/production.min.js' : 'js/build/production.js',
-                    'js/build/customizer.min.js' : 'js/build/customizer.js',
                     'js/build/postMessage.min.js' : 'js/postMessage.js',
                     'js/build/html5shiv.min.js' : 'js/html5shiv.js',
                     'js/build/respond.min.js' : 'js/respond.js'
