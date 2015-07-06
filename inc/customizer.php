@@ -248,37 +248,6 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		)
 	) );
 
-	/***** Comment Display *****/
-
-	// section
-	$wp_customize->add_section( 'ct_chosen_comments_display', array(
-		'title'      => __( 'Comment Display', 'chosen' ),
-		'priority'   => 65,
-		'capability' => 'edit_theme_options'
-	) );
-	// setting
-	$wp_customize->add_setting( 'comments_display', array(
-		'default'           => array('post','page','attachment','none'),
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'ct_chosen_sanitize_comments_setting'
-	) );
-	// control
-	$wp_customize->add_control( new ct_chosen_Multi_Checkbox_Control(
-		$wp_customize, 'comments_display', array(
-			'label'          => __( 'Show comments on:', 'chosen' ),
-			'section'        => 'ct_chosen_comments_display',
-			'settings'       => 'comments_display',
-			'type'           => 'multi-checkbox',
-			'choices'        => array(
-				'post'        => __('Posts', 'chosen'),
-				'page'        => __('Pages', 'chosen'),
-				'attachment'  => __('Attachments', 'chosen'),
-				'none'        => __('Do not show', 'chosen')
-			)
-		)
-	) );
-
 	/***** Additional Options *****/
 
 	// section
