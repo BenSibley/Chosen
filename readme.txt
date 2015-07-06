@@ -11,7 +11,7 @@ https://www.competethemes.com/documentation/chosen-support-center/
 Additional support resources:
 
 Support forum: http://wordpress.org/support/theme/chosen
-Changelog: https://www.competethemes.com/chosen-changelog
+Changelog: https://www.competethemes.com/chosen-changelog/
 Chosen on Github: https://github.com/BenSibley/chosen
 
 -------------------------------------------------------
@@ -24,7 +24,6 @@ Chosen includes the following features:
     * Social media icons
     * Show full posts or experts
     * Custom excerpt length
-    * Turn comment display on/off by post type (Posts, Pages, and Attachments)
     * Make first post on blog extra wide
     * Custom CSS
 
