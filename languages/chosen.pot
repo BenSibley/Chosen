@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chosen 1.04\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-07-06 19:27:31+00:00\n"
+"POT-Creation-Date: 2015-07-27 13:05:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -232,38 +232,38 @@ msgstr ""
 
 #: inc/customizer.php:95
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> for advanced "
-"header image functionality."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> for "
+"advanced header image functionality."
 msgstr ""
 
 #: inc/customizer.php:102
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
-"colors."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
+"change your colors."
 msgstr ""
 
 #: inc/customizer.php:109
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
-"font."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
+"change your font."
 msgstr ""
 
 #: inc/customizer.php:116
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to get hide/show "
-"controls."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to get "
+"hide/show controls."
 msgstr ""
 
 #: inc/customizer.php:123
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to customize the "
-"footer text."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
+"customize the footer text."
 msgstr ""
 
 #: inc/customizer.php:130
 msgid ""
-"Activate <a target=\"_blank\" href=\"%s\">Chosen Pro</a> to change your "
-"layout."
+"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
+"change your layout."
 msgstr ""
 
 #: inc/customizer.php:138
@@ -441,13 +441,13 @@ msgid "Visit Support Center"
 msgstr ""
 
 #: theme-options.php:38
-msgid "Upgrade to Chosen Pro"
+msgid "Get More Features & Flexibility"
 msgstr ""
 
 #: theme-options.php:39
 msgid ""
-"Chosen Pro is the premium upgrade for Chosen. It has custom colors, new "
-"layouts, sliders, and more"
+"Download the Chosen Pro plugin and unlock custom colors, new layouts, "
+"sliders, and more"
 msgstr ""
 
 #: theme-options.php:41
