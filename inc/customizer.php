@@ -92,42 +92,42 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> for advanced header image functionality.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> for advanced header image functionality.', 'chosen'), $link ) . "</p>";
 		}
 	}
 	class chosen_description_color_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your colors.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your colors.', 'chosen'), $link ) . "</p>";
 		}
 	}
 	class chosen_description_font_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your font.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your font.', 'chosen'), $link ) . "</p>";
 		}
 	}
 	class chosen_description_display_control_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to get hide/show controls.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to get hide/show controls.', 'chosen'), $link ) . "</p>";
 		}
 	}
 	class chosen_description_footer_text_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to customize the footer text.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to customize the footer text.', 'chosen'), $link ) . "</p>";
 		}
 	}
 	class chosen_description_layout_control extends WP_Customize_Control {
 
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p>" . sprintf( __('Activate <a target="_blank" href="%s">Chosen Pro</a> to change your layout.', 'chosen'), $link ) . "</p>";
+			echo "<p>" . sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your layout.', 'chosen'), $link ) . "</p>";
 		}
 	}
 
@@ -506,7 +506,7 @@ function ct_chosen_sanitize_yes_no_settings($input){
 
 function ct_chosen_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">View the Chosen Pro Upgrade <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">View the Chosen Pro Plugin <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_chosen_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js');

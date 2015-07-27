@@ -35,8 +35,8 @@ function ct_chosen_options_content(){
 			</p>
 		</div>
 		<div class="content content-premium-upgrade">
-			<h3><?php _e('Upgrade to Chosen Pro', 'chosen'); ?></h3>
-			<p><?php _e('Chosen Pro is the premium upgrade for Chosen. It has custom colors, new layouts, sliders, and more', 'chosen'); ?>...</p>
+			<h3><?php _e('Get More Features & Flexibility', 'chosen'); ?></h3>
+			<p><?php _e('Download the Chosen Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen'); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/chosen-pro/"><?php _e('See Full Feature List', 'chosen'); ?></a>
 			</p>
