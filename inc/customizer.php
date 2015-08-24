@@ -133,7 +133,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_chosen_logo_upload', array(
-		'title'      => __( 'Logo Upload', 'chosen' ),
+		'title'      => __( 'Logo', 'chosen' ),
 		'priority'   => 20,
 		'capability' => 'edit_theme_options'
 	) );
