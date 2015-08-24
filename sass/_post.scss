@@ -24,6 +24,10 @@
 }
 .post-content {
   @extend %seventeen-pixels; // just a bit too hard to read at 16px;
+
+  iframe {
+    max-width: 100%;
+  }
 }
 .post-date {
   @extend %ten-pixels;

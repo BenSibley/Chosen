@@ -1215,6 +1215,10 @@ a img {
   text-align: center;
 }
 
+.post-content iframe {
+  max-width: 100%;
+}
+
 .post-date {
   display: block;
 }
