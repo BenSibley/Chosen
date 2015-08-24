@@ -309,42 +309,44 @@ if ( function_exists( 'dsq_options' ) ) {
 }
 
 // associative array of social media sites
-function ct_chosen_social_array() {
+if ( !function_exists( 'ct_chosen_social_array' ) ) {
+	function ct_chosen_social_array() {
 
-	$social_sites = array(
-		'twitter'       => 'chosen_twitter_profile',
-		'facebook'      => 'chosen_facebook_profile',
-		'google-plus'   => 'chosen_googleplus_profile',
-		'pinterest'     => 'chosen_pinterest_profile',
-		'linkedin'      => 'chosen_linkedin_profile',
-		'youtube'       => 'chosen_youtube_profile',
-		'vimeo'         => 'chosen_vimeo_profile',
-		'tumblr'        => 'chosen_tumblr_profile',
-		'instagram'     => 'chosen_instagram_profile',
-		'flickr'        => 'chosen_flickr_profile',
-		'dribbble'      => 'chosen_dribbble_profile',
-		'rss'           => 'chosen_rss_profile',
-		'reddit'        => 'chosen_reddit_profile',
-		'soundcloud'    => 'chosen_soundcloud_profile',
-		'spotify'       => 'chosen_spotify_profile',
-		'vine'          => 'chosen_vine_profile',
-		'yahoo'         => 'chosen_yahoo_profile',
-		'behance'       => 'chosen_behance_profile',
-		'codepen'       => 'chosen_codepen_profile',
-		'delicious'     => 'chosen_delicious_profile',
-		'stumbleupon'   => 'chosen_stumbleupon_profile',
-		'deviantart'    => 'chosen_deviantart_profile',
-		'digg'          => 'chosen_digg_profile',
-		'git'           => 'chosen_git_profile',
-		'hacker-news'   => 'chosen_hacker-news_profile',
-		'steam'         => 'chosen_steam_profile',
-		'vk'            => 'chosen_vk_profile',
-		'weibo'         => 'chosen_weibo_profile',
-		'tencent-weibo' => 'chosen_tencent_weibo_profile',
-		'email'         => 'chosen_email_profile'
-	);
+		$social_sites = array(
+			'twitter'       => 'chosen_twitter_profile',
+			'facebook'      => 'chosen_facebook_profile',
+			'google-plus'   => 'chosen_googleplus_profile',
+			'pinterest'     => 'chosen_pinterest_profile',
+			'linkedin'      => 'chosen_linkedin_profile',
+			'youtube'       => 'chosen_youtube_profile',
+			'vimeo'         => 'chosen_vimeo_profile',
+			'tumblr'        => 'chosen_tumblr_profile',
+			'instagram'     => 'chosen_instagram_profile',
+			'flickr'        => 'chosen_flickr_profile',
+			'dribbble'      => 'chosen_dribbble_profile',
+			'rss'           => 'chosen_rss_profile',
+			'reddit'        => 'chosen_reddit_profile',
+			'soundcloud'    => 'chosen_soundcloud_profile',
+			'spotify'       => 'chosen_spotify_profile',
+			'vine'          => 'chosen_vine_profile',
+			'yahoo'         => 'chosen_yahoo_profile',
+			'behance'       => 'chosen_behance_profile',
+			'codepen'       => 'chosen_codepen_profile',
+			'delicious'     => 'chosen_delicious_profile',
+			'stumbleupon'   => 'chosen_stumbleupon_profile',
+			'deviantart'    => 'chosen_deviantart_profile',
+			'digg'          => 'chosen_digg_profile',
+			'git'           => 'chosen_git_profile',
+			'hacker-news'   => 'chosen_hacker-news_profile',
+			'steam'         => 'chosen_steam_profile',
+			'vk'            => 'chosen_vk_profile',
+			'weibo'         => 'chosen_weibo_profile',
+			'tencent-weibo' => 'chosen_tencent_weibo_profile',
+			'email'         => 'chosen_email_profile'
+		);
 
-	return $social_sites;
+		return apply_filters( 'ct_chosen_social_array_filter', $social_sites );
+	}
 }
 
 // used in ct_chosen_social_icons_output to return urls
