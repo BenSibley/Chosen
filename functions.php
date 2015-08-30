@@ -414,7 +414,7 @@ if( ! function_exists('ct_chosen_social_icons_output') ) {
 		            </li>
 	            <?php } else { ?>
 		            <li>
-			            <a class="<?php echo $active_site; ?>" target="_blank" href="<?php echo esc_url( ct_chosen_get_social_url( $source, $key ) ); ?>">
+			            <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( ct_chosen_get_social_url( $source, $key ) ); ?>">
 				            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'chosen'), $active_site ); ?>"></i>
 			            </a>
 		            </li>
