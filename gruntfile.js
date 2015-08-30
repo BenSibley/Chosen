@@ -122,7 +122,6 @@ module.exports = function(grunt) {
                 colors: true
             }
         },
-        secret: grunt.file.readJSON('secret.json'),
         excludeFiles: '--exclude "*.gitignore" --exclude ".sass-cache/" --exclude "*.DS_Store" --exclude ".git/" --exclude ".idea/" --exclude "gruntfile.js" --exclude "node_modules/" --exclude "package.json" --exclude "sass/"',
         shell: {
             zip: {
