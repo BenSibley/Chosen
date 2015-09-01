@@ -545,3 +545,19 @@ function ct_chosen_svg_output($type) {
 
 	return $svg;
 }
+
+function ct_chosen_loop_pagination(){
+
+	/* Set up some default arguments for the paginate_links() function. */
+	$defaults = array(
+		'base'         => add_query_arg( 'paged', '%#%' ),
+		'format'       => '',
+		'mid_size'     => 1
+	);
+
+	$loop_pagination = '<nav class="pagination loop-pagination">';
+	$loop_pagination .= paginate_links( $defaults );
+	$loop_pagination .= '</nav>';
+
+	return $loop_pagination;
+}
