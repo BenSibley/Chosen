@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.07\n"
+"Project-Id-Version: Chosen 1.08\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-08-30 14:44:20+00:00\n"
+"POT-Creation-Date: 2015-09-01 15:48:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -158,63 +158,63 @@ msgstr ""
 msgid "<a href=\"%s\">Chosen WordPress Theme</a> by Compete Themes."
 msgstr ""
 
-#: functions.php:37
+#: functions.php:33
 msgid "Primary"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:55
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:88
+#: functions.php:63
 msgid "Reply"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:67
 msgid "Edit"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:88
 msgid "optional"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:96
 msgid "Name"
 msgstr ""
 
-#: functions.php:128
+#: functions.php:103
 msgid "Email"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:110
 msgid "Website"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:125
 msgid "Comment"
 msgstr ""
 
-#: functions.php:188 functions.php:195 functions.php:208
+#: functions.php:163 functions.php:170 functions.php:183
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:412
+#: functions.php:381
 msgid "email icon"
 msgstr ""
 
-#: functions.php:418
+#: functions.php:387
 msgid "%s icon"
 msgstr ""
 
-#: functions.php:464 header.php:27 inc/scripts.php:13
+#: functions.php:424 header.php:27 inc/scripts.php:13
 msgid "open menu"
 msgstr ""
 
-#: functions.php:475
+#: functions.php:435
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:510
+#: functions.php:470
 msgid "Customizer settings deleted"
 msgstr ""
 
