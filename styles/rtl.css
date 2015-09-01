@@ -618,6 +618,13 @@ a img {
   background: #d9d9d9;
 }
 
+.bypostauthor .author-name:after {
+  content: '(author)';
+  margin-right: 6px;
+  font-size: 12px;
+  display: inline-block;
+}
+
 @media all and (min-width: 43.75em) {
   .comments-number,
   .comment-reply-title {
