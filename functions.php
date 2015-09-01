@@ -1,20 +1,8 @@
 <?php
 
-// Load the core theme framework.
-require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
-new Hybrid();
-
 // theme setup
 if( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 	function ct_chosen_theme_setup() {
-
-		/* Get action/filter hook prefix. */
-		$prefix = hybrid_get_prefix();
-
-		// add Hybrid core functionality
-		add_theme_support( 'hybrid-core-template-hierarchy' );
-		add_theme_support( 'loop-pagination' );
-		add_theme_support( 'cleaner-gallery' );
 
 		// add functionality from WordPress core
 		add_theme_support( 'post-thumbnails' );
@@ -39,27 +27,6 @@ if( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'ct_chosen_theme_setup', 10 );
-
-// remove filters adding partial micro-data due to validation issues
-function chosen_remove_hybrid_filters() {
-    remove_filter( 'the_author_posts_link', 'hybrid_the_author_posts_link', 5 );
-    remove_filter( 'get_comment_author_link', 'hybrid_get_comment_author_link', 5 );
-    remove_filter( 'get_comment_author_url_link', 'hybrid_get_comment_author_url_link', 5 );
-    remove_filter( 'comment_reply_link', 'hybrid_comment_reply_link_filter', 5 );
-    remove_filter( 'get_avatar', 'hybrid_get_avatar', 5 );
-    remove_filter( 'post_thumbnail_html', 'hybrid_post_thumbnail_html', 5 );
-    remove_filter( 'comments_popup_link_attributes', 'hybrid_comments_popup_link_attributes', 5 );
-}
-add_action('after_setup_theme', 'chosen_remove_hybrid_filters');
-
-// turn off cleaner gallery if Jetpack gallery functions being used
-function ct_chosen_remove_cleaner_gallery() {
-
-	if( class_exists( 'Jetpack' ) && ( Jetpack::is_module_active( 'carousel' ) || Jetpack::is_module_active( 'tiled-gallery' ) ) ) {
-		remove_theme_support( 'cleaner-gallery' );
-	}
-}
-add_action( 'after_setup_theme', 'ct_chosen_remove_cleaner_gallery', 11 );
 
 /* added to customize the comments. Same as default except -> added use of gravatar images for comment authors */
 if( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
@@ -317,12 +284,6 @@ if( ! function_exists( 'ct_chosen_featured_image' ) ) {
 	}
 }
 
-// fix for bug with Disqus saying comments are closed
-if ( function_exists( 'dsq_options' ) ) {
-    remove_filter( 'comments_template', 'dsq_comments_template' );
-    add_filter( 'comments_template', 'dsq_comments_template', 99 ); // You can use any priority higher than '10'
-}
-
 // associative array of social media sites
 if ( !function_exists( 'ct_chosen_social_array' ) ) {
 	function ct_chosen_social_array() {
@@ -438,15 +399,6 @@ function ct_chosen_wp_page_menu() {
     );
 }
 
-function ct_chosen_wp_backwards_compatibility() {
-
-	// not using this function, simply remove it so use of "has_image_size" doesn't break < 3.9
-	if( version_compare( get_bloginfo('version'), '3.9', '<') ) {
-		remove_filter( 'image_size_names_choose', 'hybrid_image_size_names_choose' );
-	}
-}
-add_action('init', 'ct_chosen_wp_backwards_compatibility');
-
 if ( ! function_exists( '_wp_render_title_tag' ) ) :
     function chosen_add_title_tag() {
         ?>
@@ -516,6 +468,8 @@ add_action( 'admin_notices', 'ct_chosen_delete_settings_notice' );
 
 function ct_chosen_body_class( $classes ) {
 
+	global $post;
+
 	/* get full post setting */
 	$full_post = get_theme_mod('full_post');
 
@@ -533,9 +487,27 @@ function ct_chosen_body_class( $classes ) {
 	if( is_home() && $pagination == 1 && $full_width_post != 'no' ) {
 		$classes[] = 'posts-page-1';
 	}
+	if ( is_singular() ) {
+		$classes[] = 'singular';
+		if ( is_singular('page') ) {
+			$classes[] = 'singular-page';
+			$classes[] = 'singular-page-' . $post->ID;
+		} elseif ( is_singular('post') ) {
+			$classes[] = 'singular-post';
+			$classes[] = 'singular-post-' . $post->ID;
+		}
+	}
 	return $classes;
 }
 add_filter( 'body_class', 'ct_chosen_body_class' );
+
+function ct_chosen_post_class($classes) {
+
+	$classes[] = 'entry';
+
+	return $classes;
+}
+add_filter( 'post_class', 'ct_chosen_post_class' );
 
 // custom css output
 function ct_chosen_custom_css_output(){

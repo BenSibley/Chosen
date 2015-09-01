@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php hybrid_do_atomic( 'post_before' ); ?>
+	<?php do_action( 'post_before' ); ?>
 	<article>
 	    <?php ct_chosen_featured_image(); ?>
 	    <div class='post-header'>
@@ -14,7 +14,7 @@
 	    <div class="post-content">
 	        <?php the_content(); ?>
 	        <?php wp_link_pages(array('before' => '<p class="singular-pagination">' . __('Pages:','chosen'), 'after' => '</p>', ) ); ?>
-	        <?php hybrid_do_atomic( 'post_after' ); ?>
+	        <?php do_action( 'post_after' ); ?>
 	    </div>
 		<div class="post-meta">
 			<?php get_template_part('content/post-categories'); ?>

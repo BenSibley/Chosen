@@ -19,7 +19,7 @@ function ct_chosen_options_content(){
 	?>
 	<div id="chosen-dashboard-wrap" class="wrap">
 		<h2><?php _e('Chosen Dashboard', 'chosen'); ?></h2>
-		<?php hybrid_do_atomic( 'theme_options_before' ); ?>
+		<?php hybrid_do_atomic( 'do_action' ); ?>
 		<div class="content content-customization">
 			<h3><?php _e('Customization', 'chosen'); ?></h3>
 			<p><?php _e('Click the "Customize" link in your menu, or use the button below to get started customizing Chosen', 'chosen'); ?>.</p>
@@ -61,6 +61,6 @@ function ct_chosen_options_content(){
 				</p>
 			</form>
 		</div>
-		<?php hybrid_do_atomic( 'theme_options_after' ); ?>
+		<?php do_action( 'theme_options_after' ); ?>
 	</div>
 <?php } ?>
