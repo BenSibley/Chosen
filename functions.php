@@ -1,5 +1,10 @@
 <?php
 
+// set the content width
+if ( ! isset( $content_width ) ) {
+	$content_width = 891;
+}
+
 // theme setup
 if( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 	function ct_chosen_theme_setup() {
