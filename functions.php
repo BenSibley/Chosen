@@ -98,21 +98,21 @@ if( ! function_exists( 'chosen_update_fields' ) ) {
 
         $fields['author'] =
             '<p class="comment-form-author">
-	            <label>' . __( "Name", "chosen" ) . $label . '</label>
+	            <label for="author">' . __( "Name", "chosen" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['email'] =
             '<p class="comment-form-email">
-	            <label>' . __( "Email", "chosen" ) . $label . '</label>
+	            <label for="email">' . __( "Email", "chosen" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
             '" size="30" ' . $aria_req . ' />
 	        </p>';
 
         $fields['url'] =
             '<p class="comment-form-url">
-	            <label>' . __( "Website", "chosen" ) . '</label>
+	            <label for="url">' . __( "Website", "chosen" ) . '</label>
 	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
             '" size="30" />
 	            </p>';
@@ -127,7 +127,7 @@ if( ! function_exists( 'chosen_update_comment_field' ) ) {
 
         $comment_field =
             '<p class="comment-form-comment">
-	            <label>' . __( "Comment", "chosen" ) . '</label>
+	            <label for="comment">' . __( "Comment", "chosen" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
