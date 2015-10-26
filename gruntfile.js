@@ -41,7 +41,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    sourcemap: 'none'
                 },
                 files: {
                     'style.css': 'sass/style.scss',
@@ -134,7 +135,7 @@ module.exports = function(grunt) {
                     'zip -r chosen.zip chosen'
                 ].join('&&')
             }
-        },
+        }
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
