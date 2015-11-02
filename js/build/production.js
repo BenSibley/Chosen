@@ -194,7 +194,7 @@ jQuery(document).ready(function($){
 
     function removeToggleDropdownKeyboard() {
 
-        if( $(window).width() > 799 ) {
+        if( window.innerWidth > 799 ) {
             toggleDropdown.attr('tabindex', -1);
         } else {
             toggleDropdown.attr('tabindex', '');
