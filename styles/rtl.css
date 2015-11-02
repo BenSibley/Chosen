@@ -368,6 +368,11 @@ a img {
   margin: 0 auto;
 }
 
+.infinite-loader,
+#infinite-handle {
+  clear: both;
+}
+
 .error-404 .search-form-container,
 .search .search-form-container {
   margin: 3em auto 4.5em;
