@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
     var toggleDropdown = $('.toggle-dropdown');
     var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
+    var loop = $('#loop-container');
 
     $(window).resize(function(){
         removeToggleDropdownKeyboard();
@@ -18,6 +19,15 @@ jQuery(document).ready(function($){
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
     });
+
+    // Jetpack infinite scroll event that reloads posts. Reapply fitvids to new featured videos
+    $( document.body ).on( 'post-load', function () {
+
+        // move any posts in infinite wrap to loop-container
+        $('.infinite-wrap').children('.entry').detach().appendTo( loop );
+        $('.infinite-wrap, .infinite-loader').remove();
+
+    } );
 
     toggleNavigation.on('click', openPrimaryMenu);
 
