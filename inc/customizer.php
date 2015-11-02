@@ -163,8 +163,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_chosen_social_media_icons', array(
-		'title'    => __('Social Media Icons', 'chosen'),
-		'priority' => 25
+		'title'       => __( 'Social Media Icons', 'chosen' ),
+		'priority'    => 25,
+		'description' => __( 'Add the URL for each of your social profiles.', 'chosen' )
 	) );
 
 	// create a setting and control for each social site
@@ -172,18 +173,50 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		// if email icon
 		if( $social_site == 'email' ) {
 			// setting
-			$wp_customize->add_setting( "$social_site", array(
+			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
 				'capability'        => 'edit_theme_options',
 				'sanitize_callback' => 'ct_chosen_sanitize_email'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
-				'label'   => $social_site . ' ' . __('address:', 'chosen' ),
+				'label'   => __('Email Address', 'chosen' ),
 				'section' => 'ct_chosen_social_media_icons',
 				'priority'=> $priority
 			) );
 		} else {
+
+			$label = ucfirst( $social_site );
+
+			if ( $social_site == 'google-plus' ) {
+				$label = 'Google Plus';
+			} elseif ( $social_site == 'rss' ) {
+				$label = 'RSS';
+			} elseif ( $social_site == 'soundcloud' ) {
+				$label = 'SoundCloud';
+			} elseif ( $social_site == 'slideshare' ) {
+				$label = 'SlideShare';
+			} elseif ( $social_site == 'codepen' ) {
+				$label = 'CodePen';
+			} elseif ( $social_site == 'stumbleupon' ) {
+				$label = 'StumbleUpon';
+			} elseif ( $social_site == 'deviantart' ) {
+				$label = 'DeviantArt';
+			} elseif ( $social_site == 'hacker-news' ) {
+				$label = 'Hacker News';
+			} elseif ( $social_site == 'whatsapp' ) {
+				$label = 'WhatsApp';
+			} elseif ( $social_site == 'qq' ) {
+				$label = 'QQ';
+			} elseif ( $social_site == 'vk' ) {
+				$label = 'VK';
+			} elseif ( $social_site == 'wechat' ) {
+				$label = 'WeChat';
+			} elseif ( $social_site == 'tencent-weibo' ) {
+				$label = 'Tencent Weibo';
+			} elseif ( $social_site == 'paypal' ) {
+				$label = 'PayPal';
+			}
 			// setting
 			$wp_customize->add_setting( $social_site, array(
 				'type'              => 'theme_mod',
@@ -193,7 +226,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			// control
 			$wp_customize->add_control( new ct_chosen_url_input_control(
 				$wp_customize, $social_site, array(
-					'label'    => $social_site . ' ' . __('url:', 'chosen' ),
+					'label'    => $label,
 					'section'  => 'ct_chosen_social_media_icons',
 					'priority' => $priority
 				)
