@@ -12,8 +12,11 @@ jQuery(document).ready(function($){
     var menuLink = $('.menu-item').children('a');
     var loop = $('#loop-container');
 
+    objectFitAdjustment();
+
     $(window).resize(function(){
         removeToggleDropdownKeyboard();
+        objectFitAdjustment();
     });
 
     $('.post-content').fitVids({
@@ -27,6 +30,9 @@ jQuery(document).ready(function($){
         $('.infinite-wrap').children('.entry').detach().appendTo( loop );
         $('.infinite-wrap, .infinite-loader').remove();
 
+        $(document).ready(function() {
+            objectFitAdjustment();
+        });
     } );
 
     toggleNavigation.on('click', openPrimaryMenu);
@@ -126,6 +132,51 @@ jQuery(document).ready(function($){
     menuLink.focusout(function(){
         $(this).parents('ul, li').removeClass('focused');
     });
+
+    // mimic cover positioning without using cover
+    function objectFitAdjustment() {
+
+        // if the object-fit property is not supported
+        if( !('object-fit' in document.body.style) ) {
+
+            $('.featured-image').each(function () {
+
+                var image = $(this).children('img').add( $(this).children('a').children('img') );
+
+                // don't process images twice (relevant when using infinite scroll)
+                if ( image.hasClass('no-object-fit') ) return;
+
+                image.addClass('no-object-fit');
+
+                // if the image is not tall enough to fill the space
+                if ( image.outerHeight() < $(this).outerHeight()) {
+
+                    // is it also not wide enough?
+                    if ( image.outerWidth() < $(this).outerWidth()) {
+                        image.css({
+                            'min-width': '100%',
+                            'min-height': '100%',
+                            'max-width': 'none',
+                            'max-height': 'none'
+                        });
+                    } else {
+                        image.css({
+                            'height': '100%',
+                            'max-width': 'none'
+                        });
+                    }
+                }
+                // if the image is not wide enough to fill the space
+                else if ( image.outerWidth() < $(this).outerWidth()) {
+
+                    image.css({
+                        'width': '100%',
+                        'max-height': 'none'
+                    });
+                }
+            });
+        }
+    }
 });
 
 /* fix for skip-to-content link bug in Chrome & IE9 */
