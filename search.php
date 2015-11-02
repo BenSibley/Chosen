@@ -15,6 +15,7 @@
         <?php get_search_form(); ?>
     </div>
 
+    <div id="loop-container" class="loop-container">
     <?php
     // The loop
     if ( have_posts() ) :
@@ -24,6 +25,7 @@
         endwhile;
     endif;
     ?>
+    </div>
 
     <?php echo ct_chosen_loop_pagination(); ?>
 
