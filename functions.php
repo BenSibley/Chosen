@@ -22,6 +22,13 @@ if( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 			'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 		) );
 
+		// adds support for Jetpack infinite scroll feature
+		add_theme_support( 'infinite-scroll', array(
+			'container' => 'loop-container',
+			'footer'    => 'overflow-container',
+			'render'    => 'ct_chosen_infinite_scroll_render'
+		) );
+
 		// load theme options page
 		require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
 
@@ -612,3 +619,10 @@ add_action( 'wp_head', 'ct_chosen_add_meta_elements', 1 );
 /* Move the WordPress generator to a better priority. */
 remove_action( 'wp_head', 'wp_generator' );
 add_action( 'wp_head', 'wp_generator', 1 );
+
+function ct_chosen_infinite_scroll_render(){
+	while( have_posts() ) {
+		the_post();
+		get_template_part( 'content', 'archive' );
+	}
+}
