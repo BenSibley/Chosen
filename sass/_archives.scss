@@ -115,7 +115,9 @@
       text-align: left;
     }
   }
-  .blog:not(.posts-page-1) {
+  .blog:not(.posts-page-1),
+  .archive,
+  .search {
 
     .entry:nth-child(odd) {
       margin-right: $column * 1.09;

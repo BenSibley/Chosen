@@ -485,10 +485,14 @@ a img {
     text-align: left;
   }
 
-  .blog:not(.posts-page-1) .entry:nth-child(odd) {
+  .blog:not(.posts-page-1) .entry:nth-child(odd),
+  .archive .entry:nth-child(odd),
+  .search .entry:nth-child(odd) {
     margin-right: 4.54203%;
   }
-  .blog:not(.posts-page-1) .entry:nth-child(even) {
+  .blog:not(.posts-page-1) .entry:nth-child(even),
+  .archive .entry:nth-child(even),
+  .search .entry:nth-child(even) {
     margin-right: 0;
   }
 
