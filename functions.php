@@ -331,6 +331,16 @@ if ( !function_exists( 'ct_chosen_social_array' ) ) {
 			'vk'            => 'chosen_vk_profile',
 			'weibo'         => 'chosen_weibo_profile',
 			'tencent-weibo' => 'chosen_tencent_weibo_profile',
+			'500px'         => 'chosen_500px_profile',
+			'foursquare'    => 'chosen_foursquare_profile',
+			'slack'         => 'chosen_slack_profile',
+			'slideshare'    => 'chosen_slideshare_profile',
+			'qq'            => 'chosen_qq_profile',
+			'whatsapp'      => 'chosen_whatsapp_profile',
+			'skype'         => 'chosen_skype_profile',
+			'wechat'        => 'chosen_wechat_profile',
+			'xing'          => 'chosen_xing_profile',
+			'paypal'        => 'chosen_paypal_profile',
 			'email'         => 'chosen_email_profile'
 		);
 
