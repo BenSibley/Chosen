@@ -583,6 +583,12 @@ function ct_chosen_svg_output($type) {
 
 function ct_chosen_loop_pagination(){
 
+	// don't output if Jetpack infinite scroll is being used
+	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) )
+		return;
+
+	global $wp_query;
+
 	/* Set up some default arguments for the paginate_links() function. */
 	$defaults = array(
 		'base'         => add_query_arg( 'paged', '%#%' ),
