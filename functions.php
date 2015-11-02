@@ -589,6 +589,10 @@ function ct_chosen_loop_pagination(){
 
 	global $wp_query;
 
+	// If there's not more than one page, return nothing.
+	if ( 1 >= $wp_query->max_num_pages )
+		return;
+
 	/* Set up some default arguments for the paginate_links() function. */
 	$defaults = array(
 		'base'         => add_query_arg( 'paged', '%#%' ),
