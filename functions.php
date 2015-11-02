@@ -508,6 +508,9 @@ function ct_chosen_body_class( $classes ) {
 		} elseif ( is_singular('post') ) {
 			$classes[] = 'singular-post';
 			$classes[] = 'singular-post-' . $post->ID;
+		} elseif ( is_singular('attachment') ) {
+			$classes[] = 'singular-attachment';
+			$classes[] = 'singular-attachment-' . $post->ID;
 		}
 	}
 	return $classes;
