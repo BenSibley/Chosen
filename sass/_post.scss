@@ -28,6 +28,9 @@
   iframe {
     max-width: 100%;
   }
+  &:after {
+    @include clearfix;
+  }
 }
 .post-date {
   @extend %ten-pixels;

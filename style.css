@@ -1075,6 +1075,14 @@ a img {
 .post-content iframe {
   max-width: 100%;
 }
+.post-content:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 .post-date {
   display: block;
