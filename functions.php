@@ -332,7 +332,7 @@ if ( !function_exists( 'ct_chosen_social_array' ) ) {
 			'stumbleupon'   => 'chosen_stumbleupon_profile',
 			'deviantart'    => 'chosen_deviantart_profile',
 			'digg'          => 'chosen_digg_profile',
-			'git'           => 'chosen_git_profile',
+			'github'        => 'chosen_github_profile',
 			'hacker-news'   => 'chosen_hacker-news_profile',
 			'steam'         => 'chosen_steam_profile',
 			'vk'            => 'chosen_vk_profile',
