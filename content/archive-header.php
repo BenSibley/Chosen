@@ -6,6 +6,7 @@ if( is_category() ){ ?>
 			<i class="fa fa-folder-open" title="<?php _e('archive icon', 'chosen'); ?>"></i>
 			<?php printf( __('You are viewing the <span>%s</span> category archive.', 'chosen'), single_cat_title('', false) ); ?>
 		</h2>
+		<?php if ( category_description() ) echo category_description(); ?>
 	</div>
 <?php
 }
@@ -16,6 +17,7 @@ elseif( is_tag() ){ ?>
 			<i class="fa fa-tag" title="<?php _e('tag icon', 'chosen'); ?>"></i>
 			<?php printf( __('You are viewing the <span>%s</span> tag archive.', 'chosen'), single_tag_title('', false) ); ?>
 		</h2>
+		<?php if ( tag_description() ) echo tag_description(); ?>
 	</div>
 <?php
 }
@@ -27,6 +29,7 @@ elseif( is_author() ){
 			<i class="fa fa-user" title="<?php _e('author icon', 'chosen'); ?>"></i>
 			<?php printf( __("You are viewing <span>%s</span>'s post archive.", "chosen"), $author->nickname ); ?>
 		</h2>
+		<?php if ( get_the_author_meta( 'description' ) ) echo '<p>' . get_the_author_meta( 'description' ) . '</p>'; ?>
 	</div>
 <?php
 }

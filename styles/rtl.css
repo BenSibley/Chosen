@@ -530,6 +530,9 @@ a img {
 .archive-header i {
   margin-left: 2px;
 }
+.archive-header p {
+  font-style: italic;
+}
 
 @media all and (min-width: 56.25em) {
   .archive-header {
