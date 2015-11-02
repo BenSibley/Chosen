@@ -79,10 +79,6 @@ textarea, .archive-header h2, .post-content, .further-reading a {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   height: 100%;
   font-size: 100%;
