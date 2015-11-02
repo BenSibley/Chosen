@@ -386,8 +386,8 @@ if( ! function_exists('ct_chosen_social_icons_output') ) {
 		            </li>
 	            <?php } else { ?>
 		            <li>
-			            <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
-				            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'chosen'), $active_site ); ?>"></i>
+			            <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>" title="<?php echo esc_attr( $active_site ); ?>">
+				            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>"></i>
 			            </a>
 		            </li>
 	            <?php
