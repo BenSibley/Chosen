@@ -355,39 +355,20 @@ if ( !function_exists( 'ct_chosen_social_array' ) ) {
 	}
 }
 
-// used in ct_chosen_social_icons_output to return urls
-function ct_chosen_get_social_url($source, $site){
-
-    if( $source == 'header' ) {
-        return get_theme_mod($site);
-    } elseif( $source == 'author' ) {
-        return get_the_author_meta($site);
-    }
-}
-
 // output social icons
 if( ! function_exists('ct_chosen_social_icons_output') ) {
-    function ct_chosen_social_icons_output($source) {
+    function ct_chosen_social_icons_output() {
 
         // get social sites array
         $social_sites = ct_chosen_social_array();
 
-        // store the site name and url
-        foreach ( $social_sites as $social_site => $profile ) {
+	    // store the site name and url
+	    foreach ( $social_sites as $social_site => $profile ) {
 
-            if( $source == 'header') {
-
-                if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
-                    $active_sites[$social_site] = $social_site;
-                }
-            }
-            elseif( $source == 'author' ) {
-
-                if ( strlen( get_the_author_meta( $profile ) ) > 0 ) {
-                    $active_sites[$profile] = $social_site;
-                }
-            }
-        }
+		    if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
+			    $active_sites[$social_site] = $social_site;
+		    }
+	    }
 
         // for each active social site, add it as a list item
         if ( ! empty( $active_sites ) ) {
@@ -399,13 +380,13 @@ if( ! function_exists('ct_chosen_social_icons_output') ) {
 	            if ( $active_site == 'email' ) {
 		            ?>
 		            <li>
-			            <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( ct_chosen_get_social_url( $source, $key ) ) ); ?>">
+			            <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
 				            <i class="fa fa-envelope" title="<?php _e('email icon', 'chosen'); ?>"></i>
 			            </a>
 		            </li>
 	            <?php } else { ?>
 		            <li>
-			            <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( ct_chosen_get_social_url( $source, $key ) ); ?>">
+			            <a class="<?php echo esc_attr( $active_site ); ?>" target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
 				            <i class="fa fa-<?php echo esc_attr( $active_site ); ?>" title="<?php printf( __('%s icon', 'chosen'), $active_site ); ?>"></i>
 			            </a>
 		            </li>
