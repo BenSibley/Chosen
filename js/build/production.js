@@ -109,12 +109,10 @@ jQuery(document).ready(function($){
     // Jetpack infinite scroll event that reloads posts. Reapply fitvids to new featured videos
     $( document.body ).on( 'post-load', function () {
 
-        // move any posts in infinite wrap to loop-container
-        $('.infinite-wrap').children('.entry').detach().appendTo( loop );
-        $('.infinite-wrap, .infinite-loader').remove();
-
-        $(document).ready(function() {
-            objectFitAdjustment();
+        $.when(moveInfinitePosts()).then(function(){
+            $(document).ready(function() {
+                objectFitAdjustment();
+            });
         });
     } );
 
@@ -259,6 +257,12 @@ jQuery(document).ready(function($){
                 }
             });
         }
+    }
+
+    function moveInfinitePosts(){
+        // move any posts in infinite wrap to loop-container
+        $('.infinite-wrap').children('.entry').detach().appendTo( loop );
+        $('.infinite-wrap, .infinite-loader').remove();
     }
 });
 
