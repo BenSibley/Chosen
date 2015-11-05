@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.08\n"
+"Project-Id-Version: Chosen 1.09\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-09-01 15:48:49+00:00\n"
+"POT-Creation-Date: 2015-11-05 16:51:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,27 +54,27 @@ msgstr ""
 msgid "You are viewing the <span>%s</span> category archive."
 msgstr ""
 
-#: content/archive-header.php:16
+#: content/archive-header.php:17
 msgid "tag icon"
 msgstr ""
 
-#: content/archive-header.php:17
+#: content/archive-header.php:18
 msgid "You are viewing the <span>%s</span> tag archive."
 msgstr ""
 
-#: content/archive-header.php:27
+#: content/archive-header.php:29
 msgid "author icon"
 msgstr ""
 
-#: content/archive-header.php:28
+#: content/archive-header.php:30
 msgid "You are viewing <span>%s</span>'s post archive."
 msgstr ""
 
-#: content/archive-header.php:37
+#: content/archive-header.php:40
 msgid "calendar icon"
 msgstr ""
 
-#: content/archive-header.php:38
+#: content/archive-header.php:41
 msgid "You are viewing the date archive for <span>%s</span>."
 msgstr ""
 
@@ -122,19 +122,19 @@ msgstr ""
 msgid "No Older Posts"
 msgstr ""
 
-#: content/post-nav.php:22 content/post-nav.php:44
+#: content/post-nav.php:22 content/post-nav.php:48
 msgid "Return to Blog"
 msgstr ""
 
-#: content/post-nav.php:33
+#: content/post-nav.php:37
 msgid "Next Post"
 msgstr ""
 
-#: content/post-nav.php:35
+#: content/post-nav.php:39
 msgid "The Next Post"
 msgstr ""
 
-#: content/post-nav.php:42
+#: content/post-nav.php:46
 msgid "No Newer Posts"
 msgstr ""
 
@@ -158,63 +158,59 @@ msgstr ""
 msgid "<a href=\"%s\">Chosen WordPress Theme</a> by Compete Themes."
 msgstr ""
 
-#: functions.php:33
+#: functions.php:45
 msgid "Primary"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:67
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:63
+#: functions.php:75
 msgid "Reply"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:79
 msgid "Edit"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:100
 msgid "optional"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:108
 msgid "Name"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:115
 msgid "Email"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:122
 msgid "Website"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:137
 msgid "Comment"
 msgstr ""
 
-#: functions.php:163 functions.php:170 functions.php:183
+#: functions.php:175 functions.php:182 functions.php:195
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:381
-msgid "email icon"
+#: functions.php:355
+msgid "email"
 msgstr ""
 
-#: functions.php:387
-msgid "%s icon"
-msgstr ""
-
-#: functions.php:424 header.php:27 inc/scripts.php:13
+#: functions.php:398 header.php:27 inc/scripts.php:13
 msgid "open menu"
 msgstr ""
 
-#: functions.php:435
+#: functions.php:409
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:470
+#: functions.php:444
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -274,95 +270,95 @@ msgstr ""
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:182
-msgid "address:"
+#: inc/customizer.php:168
+msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:196
-msgid "url:"
+#: inc/customizer.php:183
+msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:210
+#: inc/customizer.php:243
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:256
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:228 inc/customizer.php:271 inc/customizer.php:492
+#: inc/customizer.php:261 inc/customizer.php:304 inc/customizer.php:525
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:229 inc/customizer.php:272 inc/customizer.php:493
+#: inc/customizer.php:262 inc/customizer.php:305 inc/customizer.php:526
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:242
+#: inc/customizer.php:275
 msgid "Excerpt length"
 msgstr ""
 
-#: inc/customizer.php:253
+#: inc/customizer.php:286
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:266
+#: inc/customizer.php:299
 msgid "Make first post on blog extra wide?"
 msgstr ""
 
-#: inc/customizer.php:280
+#: inc/customizer.php:313
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:293
+#: inc/customizer.php:326
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:307
+#: inc/customizer.php:340
 msgid "Header Image"
 msgstr ""
 
-#: inc/customizer.php:329
+#: inc/customizer.php:362
 msgid "Colors"
 msgstr ""
 
-#: inc/customizer.php:351
+#: inc/customizer.php:384
 msgid "Font"
 msgstr ""
 
-#: inc/customizer.php:373
+#: inc/customizer.php:406
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:395
+#: inc/customizer.php:428
 msgid "Footer Text"
 msgstr ""
 
-#: inc/customizer.php:417
+#: inc/customizer.php:450
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer.php:445
+#: inc/customizer.php:478
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:446
+#: inc/customizer.php:479
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:470
+#: inc/customizer.php:503
 msgid "Posts"
 msgstr ""
 
-#: inc/customizer.php:471
+#: inc/customizer.php:504
 msgid "Pages"
 msgstr ""
 
-#: inc/customizer.php:472
+#: inc/customizer.php:505
 msgid "Attachments"
 msgstr ""
 
-#: inc/customizer.php:473
+#: inc/customizer.php:506
 msgid "Do not show"
 msgstr ""
 
@@ -378,17 +374,17 @@ msgstr ""
 msgid "close dropdown menu"
 msgstr ""
 
-#: search.php:9
+#: search.php:10
 msgid "%d search result for \"%s\""
 msgid_plural "%d search results for \"%s\""
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:11
+#: search.php:12
 msgid "No search results for \"%s\""
 msgstr ""
 
-#: search.php:36
+#: search.php:39
 msgid "Can't find what you're looking for?  Try refining your search:"
 msgstr ""
 
