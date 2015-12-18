@@ -8,8 +8,7 @@
     <div class="design-credit">
         <span>
             <?php
-                $site_url = 'https://www.competethemes.com/chosen/';
-                $footer_text = sprintf( __( '<a href="%s">Chosen WordPress Theme</a> by Compete Themes.', 'chosen' ), esc_url( $site_url ) );
+                $footer_text = sprintf( __( '<a href="%s">Chosen WordPress Theme</a> by Compete Themes.', 'chosen' ), 'https://www.competethemes.com/chosen/' );
                 $footer_text = apply_filters( 'ct_chosen_footer_text', $footer_text );
                 echo wp_kses_post( $footer_text );
             ?>
