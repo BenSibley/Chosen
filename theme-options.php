@@ -2,7 +2,7 @@
 
 /* create theme options page */
 function ct_chosen_register_theme_page(){
-	add_theme_page( 'Chosen Dashboard', 'Chosen Dashboard', 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content');
+	add_theme_page( __( 'Chosen Dashboard', 'chosen' ), __( 'Chosen Dashboard', 'chosen' ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content');
 }
 add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
 
