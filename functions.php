@@ -352,7 +352,7 @@ if( ! function_exists('ct_chosen_social_icons_output') ) {
 		            ?>
 		            <li>
 			            <a class="email" target="_blank" href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-				            <i class="fa fa-envelope" title="<?php esc_attr( _e('email', 'chosen') ); ?>"></i>
+				            <i class="fa fa-envelope" title="<?php esc_attr_e('email', 'chosen'); ?>"></i>
 			            </a>
 		            </li>
 	            <?php } else { ?>
