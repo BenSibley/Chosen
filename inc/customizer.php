@@ -540,7 +540,7 @@ function ct_chosen_sanitize_yes_no_settings($input){
 
 function ct_chosen_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">View the Chosen Pro Plugin <span>&rarr;</span></a></div>')</script>";
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">" . __('View the Chosen Pro Plugin', 'chosen') . " <span>&rarr;</span></a></div>')</script>";
 	echo apply_filters('ct_chosen_customizer_ad', $content);
 }
 add_action('customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js');
