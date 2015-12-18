@@ -22,20 +22,6 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	
 	/***** Add Custom Controls *****/
 
-	// create textarea control
-	class ct_chosen_textarea_control extends WP_Customize_Control {
-		public $type = 'textarea';
-
-		public function render_content() {
-			?>
-			<label>
-				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-				<textarea rows="8" style="width:100%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
-			</label>
-		<?php
-		}
-	}
-
 	/* Ad Controls */
 	class chosen_description_header_image_control extends WP_Customize_Control {
 
@@ -269,12 +255,11 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'sanitize_callback' => 'wp_filter_nohtml_kses'
 	) );
 	// control
-	$wp_customize->add_control( new ct_chosen_textarea_control(
-		$wp_customize, 'custom_css', array(
-			'label'          => __( 'Add Custom CSS Here:', 'chosen' ),
-			'section'        => 'chosen_custom_css',
-			'settings'       => 'custom_css'
-		)
+	$wp_customize->add_control( 'custom_css', array(
+		'type'     => 'textarea',
+		'label'    => __( 'Add Custom CSS Here:', 'chosen' ),
+		'section'  => 'chosen_custom_css',
+		'settings' => 'custom_css'
 	) );
 
 	/*
