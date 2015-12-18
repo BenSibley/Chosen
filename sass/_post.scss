@@ -46,6 +46,9 @@
 .post-content {
   @extend %seventeen-pixels; // just a bit too hard to read at 16px;
 
+  a {
+    text-decoration: underline;
+  }
   iframe {
     max-width: 100%;
   }
