@@ -775,20 +775,20 @@ a img {
     /* 90px */
   }
 }
-.loop-pagination {
+.pagination {
   clear: both;
   margin: 3em auto;
   text-align: center;
 }
-.loop-pagination a,
-.loop-pagination span {
+.pagination a,
+.pagination span {
   display: inline-block;
   margin: 0 18px;
 }
-.loop-pagination a:focus {
+.pagination a:focus {
   text-decoration: underline;
 }
-.loop-pagination .current {
+.pagination .current {
   border: solid 1px #3a3a3a;
   padding: 5px 12px;
 }
