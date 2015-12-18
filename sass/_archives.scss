@@ -22,8 +22,8 @@
 .comments-link {
   @extend %ten-pixels;
   @extend %uppercase;
-  transition: color 0.1s ease-in-out;
   color: $color-gray-17;
+  transition: color 0.1s ease-in-out;
 
   i {
     margin-right: 3px;
@@ -41,6 +41,13 @@
       text-decoration: underline;
       color: $color-gray-17;
     }
+  }
+}
+.post-content {
+
+  .more-link,
+  .comments-link a {
+    text-decoration: none;
   }
 }
 .full-post {

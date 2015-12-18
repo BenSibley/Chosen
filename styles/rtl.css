@@ -397,9 +397,9 @@ a img {
 }
 
 .comments-link {
+  color: #2B2B2B;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
-  color: #2B2B2B;
 }
 .comments-link i {
   margin-left: 3px;
@@ -413,6 +413,11 @@ a img {
 .comments-link a:hover, .comments-link a:active, .comments-link a:focus {
   text-decoration: underline;
   color: #2B2B2B;
+}
+
+.post-content .more-link,
+.post-content .comments-link a {
+  text-decoration: none;
 }
 
 .full-post .comments-link {
