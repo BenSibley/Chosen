@@ -597,3 +597,17 @@ function ct_chosen_get_content_template() {
 		get_template_part( 'content' );
 	}
 }
+
+// prevent odd number of posts on page 2+ of blog if extra-wide post used
+function ct_chosen_adjust_post_count( $query ) {
+
+	$extra_wide = get_theme_mod( 'full_width_post' );
+
+	if ( $extra_wide != 'no' ) {
+
+		if ( $query->is_home() && $query->is_main_query() && $query->is_paged() ) {
+			$query->set( 'posts_per_page', get_option('posts_per_page') - 1 );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count' );
