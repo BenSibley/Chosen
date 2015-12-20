@@ -384,28 +384,6 @@ function ct_chosen_sanitize_email( $input ) {
 	return sanitize_email( $input );
 }
 
-// sanitize comment display multi-check
-function ct_chosen_sanitize_comments_setting($input){
-
-	$valid = array(
-		'post'        => __('Posts', 'chosen'),
-		'page'        => __('Pages', 'chosen'),
-		'attachment'  => __('Attachments', 'chosen'),
-		'none'        => __('Do not show', 'chosen')
-	);
-
-	// loop through array
-	foreach( $input as $selection ) {
-
-		// if it's in the valid data, return it
-		if ( array_key_exists( $selection, $valid ) ) {
-			return $input;
-		} else {
-			return '';
-		}
-	}
-}
-
 // sanitize yes/no settings
 function ct_chosen_sanitize_yes_no_settings($input){
 
