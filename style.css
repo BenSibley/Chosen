@@ -59,7 +59,7 @@ textarea, .archive-header h2, .post-content, .further-reading a {
   /* 18px */
 }
 
-.more-link, .comments-link, .tagline, .post-date, .further-reading span {
+.more-link, .comments-link, .tagline, .post-byline, .further-reading span {
   font-size: 0.625em;
   /* 10px / 16px */
   line-height: 1.8;
@@ -67,7 +67,7 @@ textarea, .archive-header h2, .post-content, .further-reading a {
 }
 
 .more-link, .comments-link, .sticky-status, .comment-footer span,
-.comment-footer a, .tagline, .menu-primary a, .post-date, .post-categories span,
+.comment-footer a, .tagline, .menu-primary a, .post-byline, .post-categories span,
 .post-tags span, .further-reading span {
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -1113,8 +1113,10 @@ a img {
   height: 0;
 }
 
-.post-date {
-  display: block;
+.post-author span {
+  font-style: italic;
+  text-transform: lowercase;
+  letter-spacing: 0;
 }
 
 .post-meta {
@@ -1165,7 +1167,7 @@ a img {
     /* 51px */
   }
 
-  .post-date {
+  .post-byline {
     font-size: 0.75em;
     /* 12px / 16px */
     line-height: 1.5;
