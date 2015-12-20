@@ -233,6 +233,11 @@ a img {
   border: none;
 }
 
+// Yoast SEO breadcrumbs
+#breadcrumbs {
+  text-align: center;
+}
+
 // stop iphone from zooming in on landscape view
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)
 {

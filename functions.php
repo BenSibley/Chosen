@@ -119,7 +119,7 @@ if( ! function_exists( 'ct_chosen_update_fields' ) ) {
         return $fields;
     }
 }
-add_filter('comment_form_default_fields','chosen_update_fields');
+add_filter('comment_form_default_fields','ct_chosen_update_fields');
 
 if( ! function_exists( 'ct_chosen_update_comment_field' ) ) {
     function ct_chosen_update_comment_field( $comment_field ) {
@@ -133,7 +133,7 @@ if( ! function_exists( 'ct_chosen_update_comment_field' ) ) {
         return $comment_field;
     }
 }
-add_filter('comment_form_field_comment','chosen_update_comment_field');
+add_filter('comment_form_field_comment','ct_chosen_update_comment_field');
 
 // remove allowed tags text after comment form
 if( ! function_exists( 'ct_chosen_remove_comments_notes_after' ) ) {
@@ -209,7 +209,7 @@ if( ! function_exists( 'ct_chosen_custom_excerpt_length' ) ) {
 		}
 	}
 }
-add_filter( 'excerpt_length', 'chosen_custom_excerpt_length', 99 );
+add_filter( 'excerpt_length', 'ct_chosen_custom_excerpt_length', 99 );
 
 // switch [...] to ellipsis on automatic excerpt
 if( ! function_exists( 'ct_chosen_new_excerpt_more' ) ) {
