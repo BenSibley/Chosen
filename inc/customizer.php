@@ -367,17 +367,13 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
  * Used in: search bar
  */
 function ct_chosen_sanitize_all_show_hide_settings($input){
-	// create array of valid values
+
 	$valid = array(
 		'show' => __('Show', 'chosen'),
 		'hide' => __('Hide', 'chosen')
 	);
-	// if returned data is in array use it, else return nothing
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	} else {
-		return '';
-	}
+
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
 /*
@@ -385,14 +381,12 @@ function ct_chosen_sanitize_all_show_hide_settings($input){
  * Used in: Social Media Icons
  */
 function ct_chosen_sanitize_email( $input ) {
-
 	return sanitize_email( $input );
 }
 
 // sanitize comment display multi-check
 function ct_chosen_sanitize_comments_setting($input){
 
-	// valid data
 	$valid = array(
 		'post'        => __('Posts', 'chosen'),
 		'page'        => __('Pages', 'chosen'),
