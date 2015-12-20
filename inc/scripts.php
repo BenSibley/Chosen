@@ -5,7 +5,7 @@
  */
 function ct_chosen_load_scripts_styles() {
 
-	wp_register_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic');
+	wp_enqueue_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic');
 
 	// main JS file
 	wp_enqueue_script('ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array('jquery'),'', true);
@@ -16,10 +16,6 @@ function ct_chosen_load_scripts_styles() {
 		'closeChildMenu' => __( 'close dropdown menu', 'chosen' )
 	) );
 
-	// Google Fonts
-	wp_enqueue_style('ct-chosen-google-fonts');
-
-	// Font Awesome
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_style('ct-chosen-style', get_stylesheet_uri() );
