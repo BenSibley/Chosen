@@ -51,7 +51,7 @@ function ct_chosen_options_content(){
 		<div class="content content-delete-settings">
 			<h3><?php _e('Reset Customizer Settings', 'chosen'); ?></h3>
 			<p>
-				<?php printf( __( '<strong>Warning:</strong> Clicking this button will erase your current settings in the <a href="%s">Customizer</a>.', 'chosen' ), esc_url( $customizer_url ) ); ?>
+				<?php printf( __( "<strong>Warning:</strong> Clicking this button will erase the Chosen theme's current settings in the <a href='%s'>Customizer</a>.", 'chosen' ), esc_url( $customizer_url ) ); ?>
 			</p>
 			<form method="post">
 				<input type="hidden" name="chosen_reset_customizer" value="chosen_reset_customizer_settings" />

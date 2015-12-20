@@ -430,8 +430,28 @@ function ct_chosen_reset_customizer_options() {
 	if( ! current_user_can( 'edit_theme_options' ) )
 		return;
 
-	// delete customizer mods
-	remove_theme_mods();
+	$mods_array = array(
+		'logo_upload',
+		'full_post',
+		'excerpt_length',
+		'read_more_text',
+		'full_width_post',
+		'author_byline',
+		'custom_css'
+	);
+
+	$social_sites = ct_chosen_social_array();
+
+	// add social site settings to mods array
+	foreach ( $social_sites as $social_site => $value ) {
+		$mods_array[] = $social_site;
+	}
+
+	$mods_array = apply_filters( 'ct_chosen_mods_to_remove', $mods_array );
+
+	foreach ( $mods_array as $theme_mod ) {
+		remove_theme_mod( $theme_mod );
+	}
 
 	$redirect = admin_url( 'themes.php?page=chosen-options' );
 	$redirect = add_query_arg( 'chosen_status', 'deleted', $redirect );
