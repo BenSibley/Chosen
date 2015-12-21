@@ -667,6 +667,7 @@ a img {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    margin-right: -4px;
   }
   .comment-pagination .next-comment {
     text-align: right;
