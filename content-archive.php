@@ -11,7 +11,7 @@
 		</div>
 		<div class="post-content">
 			<?php ct_chosen_excerpt(); ?>
-			<?php get_template_part('content/comments-link'); ?>
+			<?php get_template_part( 'content/comments-link' ); ?>
 		</div>
 	</article>
 	<?php do_action( 'archive_post_after' ); ?>

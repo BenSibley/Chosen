@@ -7,7 +7,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	/***** Reorder default sections *****/
 
-	$wp_customize->get_section('title_tagline')->priority = 1;
+	$wp_customize->get_section( 'title_tagline' )->priority = 1;
 
 	// check if exists in case user has no pages
 	if ( is_object( $wp_customize->get_section( 'static_front_page' ) ) ) {
@@ -17,12 +17,12 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	/***** Add PostMessage Support *****/
 
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	
-	/***** Add Custom Controls *****/
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
+	/***** Add Custom Controls *****/
 	/* Ad Controls */
+
 	class chosen_description_control extends WP_Customize_Control {
 
 		public function render_content() {
@@ -34,8 +34,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'ct_chosen_logo_upload', array(
-		'title'      => __( 'Logo', 'chosen' ),
-		'priority'   => 20
+		'title'    => __( 'Logo', 'chosen' ),
+		'priority' => 20
 	) );
 	// setting
 	$wp_customize->add_setting( 'logo_upload', array(
@@ -66,18 +66,18 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	) );
 
 	// create a setting and control for each social site
-	foreach( $social_sites as $social_site => $value ) {
+	foreach ( $social_sites as $social_site => $value ) {
 		// if email icon
-		if( $social_site == 'email' ) {
+		if ( $social_site == 'email' ) {
 			// setting
 			$wp_customize->add_setting( $social_site, array(
 				'sanitize_callback' => 'ct_chosen_sanitize_email'
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
-				'label'   => __('Email Address', 'chosen' ),
-				'section' => 'ct_chosen_social_media_icons',
-				'priority'=> $priority
+				'label'    => __( 'Email Address', 'chosen' ),
+				'section'  => 'ct_chosen_social_media_icons',
+				'priority' => $priority
 			) );
 		} else {
 
@@ -118,7 +118,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			) );
 			// control
 			$wp_customize->add_control( $social_site, array(
-				'type' => 'url',
+				'type'     => 'url',
 				'label'    => $label,
 				'section'  => 'ct_chosen_social_media_icons',
 				'priority' => $priority
@@ -132,8 +132,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_search_bar', array(
-		'title'      => __( 'Search Bar', 'chosen' ),
-		'priority'   => 37
+		'title'    => __( 'Search Bar', 'chosen' ),
+		'priority' => 37
 	) );
 	// setting
 	$wp_customize->add_setting( 'search_bar', array(
@@ -156,8 +156,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_blog', array(
-		'title'      => __( 'Blog', 'chosen' ),
-		'priority'   => 45
+		'title'    => __( 'Blog', 'chosen' ),
+		'priority' => 45
 	) );
 	// setting
 	$wp_customize->add_setting( 'full_post', array(
@@ -166,13 +166,13 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	) );
 	// control
 	$wp_customize->add_control( 'full_post', array(
-		'label'          => __( 'Show full posts on blog?', 'chosen' ),
-		'section'        => 'chosen_blog',
-		'settings'       => 'full_post',
-		'type'           => 'radio',
-		'choices'        => array(
-			'yes' => __('Yes', 'chosen'),
-			'no'  => __('No', 'chosen')
+		'label'    => __( 'Show full posts on blog?', 'chosen' ),
+		'section'  => 'chosen_blog',
+		'settings' => 'full_post',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
 		)
 	) );
 	// setting
@@ -182,10 +182,10 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	) );
 	// control
 	$wp_customize->add_control( 'excerpt_length', array(
-		'label'          => __( 'Excerpt word count', 'chosen' ),
-		'section'        => 'chosen_blog',
-		'settings'       => 'excerpt_length',
-		'type'           => 'number'
+		'label'    => __( 'Excerpt word count', 'chosen' ),
+		'section'  => 'chosen_blog',
+		'settings' => 'excerpt_length',
+		'type'     => 'number'
 	) );
 	// Read More text - setting
 	$wp_customize->add_setting( 'read_more_text', array(
@@ -204,8 +204,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_additional', array(
-		'title'      => __( 'Additional Options', 'chosen' ),
-		'priority'   => 70
+		'title'    => __( 'Additional Options', 'chosen' ),
+		'priority' => 70
 	) );
 	// extra-wide post - setting
 	$wp_customize->add_setting( 'full_width_post', array(
@@ -219,8 +219,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'settings' => 'full_width_post',
 		'type'     => 'radio',
 		'choices'  => array(
-			'yes' => __('Yes', 'chosen'),
-			'no'  => __('No', 'chosen')
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
 		)
 	) );
 	// author byline - setting
@@ -235,8 +235,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		'settings' => 'author_byline',
 		'type'     => 'radio',
 		'choices'  => array(
-			'yes' => __('Yes', 'chosen'),
-			'no'  => __('No', 'chosen')
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
 		)
 	) );
 
@@ -244,8 +244,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_custom_css', array(
-		'title'      => __( 'Custom CSS', 'chosen' ),
-		'priority'   => 75
+		'title'    => __( 'Custom CSS', 'chosen' ),
+		'priority' => 75
 	) );
 	// setting
 	$wp_customize->add_setting( 'custom_css', array(
@@ -267,8 +267,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_header_image', array(
-		'title'      => __( 'Header Image', 'chosen' ),
-		'priority'   => 35
+		'title'    => __( 'Header Image', 'chosen' ),
+		'priority' => 35
 	) );
 	// setting
 	$wp_customize->add_setting( 'header_image_ad', array(
@@ -277,9 +277,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'header_image_ad', array(
-			'section'        => 'chosen_header_image',
-			'settings'       => 'header_image_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> for advanced header image functionality.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_header_image',
+			'settings'    => 'header_image_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> for advanced header image functionality.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 
@@ -287,8 +287,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_colors', array(
-		'title'      => __( 'Colors', 'chosen' ),
-		'priority'   => 50
+		'title'    => __( 'Colors', 'chosen' ),
+		'priority' => 50
 	) );
 	// setting
 	$wp_customize->add_setting( 'colors_ad', array(
@@ -297,9 +297,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'colors_ad', array(
-			'section'        => 'chosen_colors',
-			'settings'       => 'colors_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your colors.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_colors',
+			'settings'    => 'colors_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your colors.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 
@@ -307,8 +307,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_font', array(
-		'title'      => __( 'Font', 'chosen' ),
-		'priority'   => 40
+		'title'    => __( 'Font', 'chosen' ),
+		'priority' => 40
 	) );
 	// setting
 	$wp_customize->add_setting( 'font_ad', array(
@@ -317,9 +317,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'font_ad', array(
-			'section'        => 'chosen_font',
-			'settings'       => 'font_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your font.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_font',
+			'settings'    => 'font_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your font.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 
@@ -327,8 +327,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_display_control', array(
-		'title'      => __( 'Display Controls', 'chosen' ),
-		'priority'   => 70
+		'title'    => __( 'Display Controls', 'chosen' ),
+		'priority' => 70
 	) );
 	// setting
 	$wp_customize->add_setting( 'display_control_ad', array(
@@ -337,9 +337,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'display_control_ad', array(
-			'section'        => 'chosen_display_control',
-			'settings'       => 'display_control_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to get hide/show controls.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_display_control',
+			'settings'    => 'display_control_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to get hide/show controls.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 
@@ -347,8 +347,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_footer_text', array(
-		'title'      => __( 'Footer Text', 'chosen' ),
-		'priority'   => 85
+		'title'    => __( 'Footer Text', 'chosen' ),
+		'priority' => 85
 	) );
 	// setting
 	$wp_customize->add_setting( 'footer_text_ad', array(
@@ -357,9 +357,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'footer_text_ad', array(
-			'section'        => 'chosen_footer_text',
-			'settings'       => 'footer_text_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to customize the footer text.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_footer_text',
+			'settings'    => 'footer_text_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to customize the footer text.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 
@@ -367,8 +367,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_layout', array(
-		'title'      => __( 'Layout', 'chosen' ),
-		'priority'   => 47
+		'title'    => __( 'Layout', 'chosen' ),
+		'priority' => 47
 	) );
 	// setting
 	$wp_customize->add_setting( 'layout_text_ad', array(
@@ -377,9 +377,9 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	// control
 	$wp_customize->add_control( new chosen_description_control(
 		$wp_customize, 'layout_ad', array(
-			'section'        => 'chosen_layout',
-			'settings'       => 'layout_text_ad',
-			'description' => sprintf( __('Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your layout.', 'chosen'), 'https://www.competethemes.com/chosen-pro/' )
+			'section'     => 'chosen_layout',
+			'settings'    => 'layout_text_ad',
+			'description' => sprintf( __( 'Activate the <a target="_blank" href="%s">Chosen Pro Plugin</a> to change your layout.', 'chosen' ), 'https://www.competethemes.com/chosen-pro/' )
 		)
 	) );
 }
@@ -390,11 +390,11 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
  * Sanitize settings with show/hide as options
  * Used in: search bar
  */
-function ct_chosen_sanitize_all_show_hide_settings($input){
+function ct_chosen_sanitize_all_show_hide_settings( $input ) {
 
 	$valid = array(
-		'show' => __('Show', 'chosen'),
-		'hide' => __('Hide', 'chosen')
+		'show' => __( 'Show', 'chosen' ),
+		'hide' => __( 'Hide', 'chosen' )
 	);
 
 	return array_key_exists( $input, $valid ) ? $input : '';
@@ -409,11 +409,11 @@ function ct_chosen_sanitize_email( $input ) {
 }
 
 // sanitize yes/no settings
-function ct_chosen_sanitize_yes_no_settings($input){
+function ct_chosen_sanitize_yes_no_settings( $input ) {
 
 	$valid = array(
-		'yes' => __('Yes', 'chosen'),
-		'no'  => __('No', 'chosen'),
+		'yes' => __( 'Yes', 'chosen' ),
+		'no'  => __( 'No', 'chosen' ),
 	);
 
 	return array_key_exists( $input, $valid ) ? $input : '';
@@ -427,7 +427,8 @@ function ct_chosen_sanitize_text( $input ) {
 
 function ct_chosen_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">" . __('View the Chosen Pro Plugin', 'chosen') . " <span>&rarr;</span></a></div>')</script>";
-	echo apply_filters('ct_chosen_customizer_ad', $content);
+	$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">" . __( 'View the Chosen Pro Plugin', 'chosen' ) . " <span>&rarr;</span></a></div>')</script>";
+	echo apply_filters( 'ct_chosen_customizer_ad', $content );
 }
-add_action('customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js');
+
+add_action( 'customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js' );
