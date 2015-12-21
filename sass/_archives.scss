@@ -82,7 +82,7 @@
 .entry.sticky {
   position: relative;
 }
-.sticky-status {
+.sticky-status span {
   @extend %twelve-pixels;
   @extend %uppercase;
   position: absolute;
@@ -91,6 +91,16 @@
   padding: 9px 18px;
   background: $color-gray-17;
   color: white;
+}
+.entry:not(.has-post-thumbnail) {
+
+  .sticky-status {
+    margin-bottom: $baseline-height;
+
+    span {
+      position: relative;
+    }
+  }
 }
 
 @media all and (min-width: $seven-hundred) {

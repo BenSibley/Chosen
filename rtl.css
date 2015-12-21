@@ -50,7 +50,7 @@ textarea, .archive-header h2, .post-content, .further-reading a {
 }
 
 .wp-caption-text,
-.gallery-caption, input[type="submit"], .sticky-status, .comment-respond label, .comment-footer span,
+.gallery-caption, input[type="submit"], .sticky-status span, .comment-respond label, .comment-footer span,
 .comment-footer a, .menu-primary a, .post-categories,
 .post-tags {
   font-size: 0.75em;
@@ -66,7 +66,7 @@ textarea, .archive-header h2, .post-content, .further-reading a {
   /* 18px */
 }
 
-.more-link, .comments-link, .sticky-status, .comment-footer span,
+.more-link, .comments-link, .sticky-status span, .comment-footer span,
 .comment-footer a, .tagline, .menu-primary a, .post-byline, .post-categories span,
 .post-tags span, .further-reading span {
   text-transform: uppercase;
@@ -455,13 +455,20 @@ a img {
   position: relative;
 }
 
-.sticky-status {
+.sticky-status span {
   position: absolute;
   top: 0;
   right: 0;
   padding: 9px 18px;
   background: #2B2B2B;
   color: white;
+}
+
+.entry:not(.has-post-thumbnail) .sticky-status {
+  margin-bottom: 1.5em;
+}
+.entry:not(.has-post-thumbnail) .sticky-status span {
+  position: relative;
 }
 
 @media all and (min-width: 43.75em) {
