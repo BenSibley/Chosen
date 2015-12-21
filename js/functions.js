@@ -180,6 +180,54 @@ jQuery(document).ready(function($){
         $('.infinite-wrap').children('.entry').detach().appendTo( loop );
         $('.infinite-wrap, .infinite-loader').remove();
     }
+
+    // open search bar
+    body.on('click', '#search-icon', openSearchBar);
+
+    function openSearchBar(){
+
+        // get the social icons
+        var socialIcons = siteHeader.find('.social-media-icons');
+
+        // if search bar already open
+        if( $(this).hasClass('open') ) {
+
+            // remove styling class
+            $(this).removeClass('open');
+
+            // remove styling class
+            if( socialIcons.hasClass('fade') ) {
+                socialIcons.removeClass('fade');
+            }
+
+            // make search input inaccessible to keyboards
+            siteHeader.find('.search-field').attr('tabindex', -1);
+
+            // handle mobile width search bar sizing
+            if( window.innerWidth < 900 ) {
+                siteHeader.find('.search-form').attr('style', '');
+            }
+
+        } else {
+
+            // add styling class
+            $(this).addClass('open');
+
+            socialIcons.addClass('fade');
+
+            // make search input keyboard accessible
+            siteHeader.find('.search-field').attr('tabindex', 0);
+
+            // handle mobile width search bar sizing
+            if( window.innerWidth < 900 ) {
+
+                // distance to other side (35px is width of icon space)
+                var leftDistance = window.innerWidth * 0.83332 - 24;
+
+                siteHeader.find('.search-form').css('left', -leftDistance + 'px')
+            }
+        }
+    }
 });
 
 /* fix for skip-to-content link bug in Chrome & IE9 */

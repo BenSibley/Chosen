@@ -61,8 +61,15 @@
     display: none;
   }
   .social-media-icons {
+    float: right;
     margin: 0;
     text-align: right;
+    transition: all 0.1s ease-in-out;
+
+    &.fade {
+      opacity: 0;
+      transform: translateX(4px);
+    }
   }
 }
 

@@ -763,8 +763,17 @@ a img {
   }
 
   .social-media-icons {
+    float: right;
     margin: 0;
     text-align: right;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .social-media-icons.fade {
+    opacity: 0;
+    -webkit-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    transform: translateX(4px);
   }
 }
 @media all and (min-width: 68.75em) {
@@ -807,6 +816,7 @@ a img {
 }
 
 .menu-primary-container {
+  position: relative;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
@@ -1243,6 +1253,84 @@ a img {
   vertical-align: top;
 }
 
+.site-header .search-form-container {
+  position: absolute;
+  top: -6px;
+  right: 4.167%;
+}
+.site-header .search-form-container button {
+  position: relative;
+  z-index: 9;
+  background: none;
+  border: none;
+  margin: 5px -10px 0 0;
+  padding: 6px 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.site-header .search-form-container button:hover {
+  cursor: pointer;
+}
+.site-header .search-form-container button:focus {
+  outline: none;
+}
+.site-header .search-form-container button:focus i {
+  color: #ABABAB;
+}
+.site-header .search-form-container button.open + form {
+  opacity: 1;
+}
+.site-header .search-form-container i {
+  color: #2B2B2B;
+  z-index: -1;
+}
+.site-header .search-form-container form {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  left: 0;
+  padding-top: 6px;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-in-out, left 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out, left 0.15s ease-in-out;
+}
+.site-header .search-form-container .search-field {
+  max-width: none !important;
+  outline: none !important;
+  padding: 6px 12px !important;
+}
+.site-header .search-form-container .search-field::-webkit-search-decoration, .site-header .search-form-container .search-field::-webkit-search-cancel-button, .site-header .search-form-container .search-field::-webkit-search-results-button, .site-header .search-form-container .search-field::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+.site-header .search-form-container .search-field:focus {
+  background: #EDEDED !important;
+  outline: solid 1px #D9D9D9 !important;
+}
+
+@media all and (min-width: 56.25em) {
+  .site-header .search-form-container {
+    position: relative;
+    float: right;
+    top: -6px;
+    right: 0;
+    z-index: 9;
+    text-align: right;
+    margin: 0 0 0 1.5em;
+  }
+  .site-header .search-form-container button {
+    margin: 0;
+  }
+  .site-header .search-form-container button:hover {
+    cursor: pointer;
+  }
+  .site-header .search-form-container button.open + form {
+    left: -266px;
+  }
+  .site-header .search-form-container form {
+    padding-top: 0;
+    right: 0;
+  }
+}
 .search .search-header {
   text-align: center;
 }
