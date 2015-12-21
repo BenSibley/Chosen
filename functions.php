@@ -380,6 +380,7 @@ function ct_chosen_reset_customizer_options() {
 
 	$mods_array = array(
 		'logo_upload',
+		'search_bar',
 		'full_post',
 		'excerpt_length',
 		'read_more_text',
