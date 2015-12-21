@@ -250,7 +250,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	) );
 	// setting
 	$wp_customize->add_setting( 'custom_css', array(
-		'sanitize_callback' => 'wp_filter_nohtml_kses'
+		'sanitize_callback' => 'wp_filter_nohtml_kses',
+		'transport'         => 'postMessage'
 	) );
 	// control
 	$wp_customize->add_control( 'custom_css', array(
