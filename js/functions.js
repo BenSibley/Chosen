@@ -12,15 +12,16 @@ jQuery(document).ready(function($){
     var menuLink = $('.menu-item').children('a');
     var loop = $('#loop-container');
 
+    removeToggleDropdownKeyboard();
     objectFitAdjustment();
+
+    toggleNavigation.on('click', openPrimaryMenu);
+    toggleDropdown.on('click', openDropdownMenu);
+    body.on('click', '#search-icon', openSearchBar);
 
     $(window).resize(function(){
         removeToggleDropdownKeyboard();
         objectFitAdjustment();
-    });
-
-    $('.post-content').fitVids({
-        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
     });
 
     // Jetpack infinite scroll event that reloads posts. Reapply fitvids to new featured videos
@@ -31,13 +32,23 @@ jQuery(document).ready(function($){
         });
     } );
 
-    toggleNavigation.on('click', openPrimaryMenu);
+    // allow keyboard access/visibility for dropdown menu items
+    menuLink.focus(function(){
+        $(this).parents('ul, li').addClass('focused');
+    });
+    menuLink.focusout(function(){
+        $(this).parents('ul, li').removeClass('focused');
+    });
+
+    $('.post-content').fitVids({
+        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
+    });
 
     function openPrimaryMenu() {
 
         if( menuPrimaryContainer.hasClass('open') ) {
-            menuPrimaryContainer.removeClass('open');
 
+            menuPrimaryContainer.removeClass('open');
             menuPrimaryContainer.css('max-height', '');
 
             // change screen reader text
@@ -47,10 +58,10 @@ jQuery(document).ready(function($){
             $(this).attr('aria-expanded', 'false');
 
         } else {
-            menuPrimaryContainer.addClass('open');
 
             var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight(true);
 
+            menuPrimaryContainer.addClass('open');
             menuPrimaryContainer.css('max-height', menuHeight);
 
             // change screen reader text
@@ -61,18 +72,13 @@ jQuery(document).ready(function($){
         }
     }
 
-    // display the dropdown menus
-    toggleDropdown.on('click', openDropdownMenu);
-
     function openDropdownMenu() {
 
-        // get the buttons parent (li)
+        // get the button's parent (li)
         var menuItem = $(this).parent();
 
-        // if already opened
         if( menuItem.hasClass('open') ) {
 
-            // remove open class
             menuItem.removeClass('open');
 
             // remove max-height added by JS when opened
@@ -85,11 +91,9 @@ jQuery(document).ready(function($){
             $(this).attr('aria-expanded', 'false');
         } else {
 
-            // add class to open the menu
-            menuItem.addClass('open');
-
-            // set var for current height
             var ulHeight = 0;
+
+            menuItem.addClass('open');
 
             // get all dropdown children and use their height to set the new max height
             $(this).siblings('ul').find('li').each(function () {
@@ -119,21 +123,12 @@ jQuery(document).ready(function($){
             toggleDropdown.attr('tabindex', '');
         }
     }
-    removeToggleDropdownKeyboard();
-
-    /* allow keyboard access/visibility for dropdown menu items */
-    menuLink.focus(function(){
-        $(this).parents('ul, li').addClass('focused');
-    });
-    menuLink.focusout(function(){
-        $(this).parents('ul, li').removeClass('focused');
-    });
 
     // mimic cover positioning without using cover
     function objectFitAdjustment() {
 
         // if the object-fit property is not supported
-        if( !('object-fit' in document.body.style) ) {
+        if( ! ('object-fit' in document.body.style) ) {
 
             $('.featured-image').each(function () {
 
@@ -142,7 +137,9 @@ jQuery(document).ready(function($){
                     var image = $(this).children('img').add($(this).children('a').children('img'));
 
                     // don't process images twice (relevant when using infinite scroll)
-                    if (image.hasClass('no-object-fit')) return;
+                    if ( image.hasClass('no-object-fit') ) {
+                        return;
+                    }
 
                     image.addClass('no-object-fit');
 
@@ -181,24 +178,14 @@ jQuery(document).ready(function($){
         $('.infinite-wrap, .infinite-loader').remove();
     }
 
-    // open search bar
-    body.on('click', '#search-icon', openSearchBar);
-
     function openSearchBar(){
 
-        // get the social icons
         var socialIcons = siteHeader.find('.social-media-icons');
 
-        // if search bar already open
         if( $(this).hasClass('open') ) {
 
-            // remove styling class
             $(this).removeClass('open');
-
-            // remove styling class
-            if( socialIcons.hasClass('fade') ) {
-                socialIcons.removeClass('fade');
-            }
+            socialIcons.removeClass('fade');
 
             // make search input inaccessible to keyboards
             siteHeader.find('.search-field').attr('tabindex', -1);
@@ -207,12 +194,9 @@ jQuery(document).ready(function($){
             if( window.innerWidth < 900 ) {
                 siteHeader.find('.search-form').attr('style', '');
             }
-
         } else {
 
-            // add styling class
             $(this).addClass('open');
-
             socialIcons.addClass('fade');
 
             // make search input keyboard accessible
@@ -243,5 +227,4 @@ window.addEventListener("hashchange", function(event) {
 
         element.focus();
     }
-
 }, false);
