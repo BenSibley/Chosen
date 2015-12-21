@@ -1,13 +1,10 @@
 <?php
 
-/*
- * Front-end scripts
- */
+// Front-end scripts
 function ct_chosen_load_scripts_styles() {
 
 	wp_enqueue_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic' );
 
-	// main JS file
 	wp_enqueue_script( 'ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
 	wp_localize_script( 'ct-chosen-js', 'objectL10n', array(
 		'openMenu'       => __( 'open menu', 'chosen' ),
@@ -27,10 +24,8 @@ function ct_chosen_load_scripts_styles() {
 
 	/* Load Polyfills */
 
-	// HTML5 shiv
 	wp_enqueue_script( 'ct-chosen-html5-shiv', get_template_directory_uri() . '/js/build/html5shiv.min.js' );
 
-	// respond.js - media query support
 	wp_enqueue_script( 'ct-chosen-respond', get_template_directory_uri() . '/js/build/respond.min.js', '', '', true );
 
 	// prevent fatal error on < WP 4.2 (load files unconditionally instead)
@@ -39,34 +34,21 @@ function ct_chosen_load_scripts_styles() {
 		wp_script_add_data( 'ct-chosen-respond', 'conditional', 'IE 8' );
 	}
 }
-
 add_action( 'wp_enqueue_scripts', 'ct_chosen_load_scripts_styles' );
 
-/*
- * Back-end scripts
- */
+// Back-end scripts
 function ct_chosen_enqueue_admin_styles( $hook ) {
 
-	// if theme options page
-	if ( 'appearance_page_chosen-options' == $hook ) {
-
-		// Admin styles
+	if ( $hook == 'appearance_page_chosen-options' ) {
 		wp_enqueue_style( 'ct-chosen-admin-styles', get_template_directory_uri() . '/styles/admin.min.css' );
 	}
 }
-
 add_action( 'admin_enqueue_scripts', 'ct_chosen_enqueue_admin_styles' );
 
-/*
- * Customizer scripts
- */
+// Customizer scripts
 function ct_chosen_enqueue_customizer_scripts() {
-
-	// stylesheet for customizer
 	wp_enqueue_style( 'ct-chosen-customizer-styles', get_template_directory_uri() . '/styles/customizer.min.css' );
-
 }
-
 add_action( 'customize_controls_enqueue_scripts', 'ct_chosen_enqueue_customizer_scripts' );
 
 /*
@@ -74,10 +56,7 @@ add_action( 'customize_controls_enqueue_scripts', 'ct_chosen_enqueue_customizer_
  * transport => postMessage
  */
 function ct_chosen_enqueue_customizer_post_message_scripts() {
-
-	// JS for live updating with customizer input
 	wp_enqueue_script( 'ct-chosen-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js', array( 'jquery' ), '', true );
 
 }
-
 add_action( 'customize_preview_init', 'ct_chosen_enqueue_customizer_post_message_scripts' );

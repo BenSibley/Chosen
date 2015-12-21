@@ -21,7 +21,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	/***** Add Custom Controls *****/
-	/* Ad Controls */
+
+	// Ad Control
 
 	class chosen_description_control extends WP_Customize_Control {
 
