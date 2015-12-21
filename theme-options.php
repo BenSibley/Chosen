@@ -20,8 +20,7 @@ function ct_chosen_options_content() {
 		<?php do_action( 'theme_options_before' ); ?>
 		<div class="content content-customization">
 			<h3><?php _e( 'Customization', 'chosen' ); ?></h3>
-			<p><?php _e( 'Click the "Customize" link in your menu, or use the button below to get started customizing Chosen', 'chosen' ); ?>
-				.</p>
+			<p><?php _e( 'Click the "Customize" link in your menu, or use the button below to get started customizing Chosen', 'chosen' ); ?>.</p>
 			<p>
 				<a class="button-primary"
 				   href="<?php echo esc_url( $customizer_url ); ?>"><?php _e( 'Use Customizer', 'chosen' ) ?></a>
@@ -29,8 +28,7 @@ function ct_chosen_options_content() {
 		</div>
 		<div class="content content-support">
 			<h3><?php _e( 'Support', 'chosen' ); ?></h3>
-			<p><?php _e( "You can find the knowledgebase, changelog, support forum, and more in the chosen Support Center", "chosen" ); ?>
-				.</p>
+			<p><?php _e( "You can find the knowledgebase, changelog, support forum, and more in the chosen Support Center", "chosen" ); ?>.</p>
 			<p>
 				<a target="_blank" class="button-primary"
 				   href="https://www.competethemes.com/documentation/chosen-support-center/"><?php _e( 'Visit Support Center', 'chosen' ); ?></a>
@@ -38,8 +36,7 @@ function ct_chosen_options_content() {
 		</div>
 		<div class="content content-premium-upgrade">
 			<h3><?php _e( 'Get More Features & Flexibility', 'chosen' ); ?></h3>
-			<p><?php _e( 'Download the Chosen Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen' ); ?>
-				...</p>
+			<p><?php _e( 'Download the Chosen Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen' ); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary"
 				   href="https://www.competethemes.com/chosen-pro/"><?php _e( 'See Full Feature List', 'chosen' ); ?></a>
@@ -47,8 +44,7 @@ function ct_chosen_options_content() {
 		</div>
 		<div class="content content-resources">
 			<h3><?php _e( 'WordPress Resources', 'chosen' ); ?></h3>
-			<p><?php _e( 'Save time and money searching for WordPress products by following our recommendations', 'chosen' ); ?>
-				.</p>
+			<p><?php _e( 'Save time and money searching for WordPress products by following our recommendations', 'chosen' ); ?>.</p>
 			<p>
 				<a target="_blank" class="button-primary"
 				   href="https://www.competethemes.com/wordpress-resources/"><?php _e( 'View Resources', 'chosen' ); ?></a>
