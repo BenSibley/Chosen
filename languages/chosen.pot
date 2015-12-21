@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.09\n"
+"Project-Id-Version: Chosen 1.11\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-11-05 16:51:28+00:00\n"
+"POT-Creation-Date: 2015-12-21 17:29:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,59 +23,27 @@ msgid ""
 "correct or try the search form below to find what you were looking for."
 msgstr ""
 
-#: comments.php:11 comments.php:30 comments.php:51
+#: comments.php:12 comments.php:32 comments.php:54
 msgid "Be First to Comment"
 msgstr ""
 
-#: comments.php:11 comments.php:30 comments.php:51
+#: comments.php:12 comments.php:32 comments.php:54
 msgid "One Comment"
 msgstr ""
 
-#: comments.php:11 comments.php:30 comments.php:51 content/comments-link.php:5
+#: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:5
 #: content/comments-link.php:8
 msgid "% Comments"
 msgstr ""
 
-#: comments.php:43
+#: comments.php:46
 msgid ""
 "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this "
 "post\">trackbacks</a> and pingbacks are open."
 msgstr ""
 
-#: comments.php:64 comments.php:70
+#: comments.php:68 comments.php:74
 msgid "Comments are closed."
-msgstr ""
-
-#: content/archive-header.php:6
-msgid "archive icon"
-msgstr ""
-
-#: content/archive-header.php:7
-msgid "You are viewing the <span>%s</span> category archive."
-msgstr ""
-
-#: content/archive-header.php:17
-msgid "tag icon"
-msgstr ""
-
-#: content/archive-header.php:18
-msgid "You are viewing the <span>%s</span> tag archive."
-msgstr ""
-
-#: content/archive-header.php:29
-msgid "author icon"
-msgstr ""
-
-#: content/archive-header.php:30
-msgid "You are viewing <span>%s</span>'s post archive."
-msgstr ""
-
-#: content/archive-header.php:40
-msgid "calendar icon"
-msgstr ""
-
-#: content/archive-header.php:41
-msgid "You are viewing the date archive for <span>%s</span>."
 msgstr ""
 
 #: content/comments-link.php:2
@@ -94,11 +62,19 @@ msgstr ""
 msgid "Leave a Comment"
 msgstr ""
 
-#: content/post-categories.php:16
+#: content/post-byline.php:5
+msgid "Published %s"
+msgstr ""
+
+#: content/post-byline.php:12
+msgid "By"
+msgstr ""
+
+#: content/post-categories.php:9
 msgid "Categories:"
 msgstr ""
 
-#: content/post-categories.php:19
+#: content/post-categories.php:11
 msgid "View all posts in %s"
 msgstr ""
 
@@ -110,31 +86,31 @@ msgstr ""
 msgid "Next Image"
 msgstr ""
 
-#: content/post-nav.php:11
+#: content/post-nav.php:8
 msgid "Previous Post"
 msgstr ""
 
-#: content/post-nav.php:13
+#: content/post-nav.php:9
 msgid "The Previous Post"
 msgstr ""
 
-#: content/post-nav.php:20
+#: content/post-nav.php:12
 msgid "No Older Posts"
 msgstr ""
 
-#: content/post-nav.php:22 content/post-nav.php:48
+#: content/post-nav.php:13 content/post-nav.php:27
 msgid "Return to Blog"
 msgstr ""
 
-#: content/post-nav.php:37
+#: content/post-nav.php:22
 msgid "Next Post"
 msgstr ""
 
-#: content/post-nav.php:39
+#: content/post-nav.php:23
 msgid "The Next Post"
 msgstr ""
 
-#: content/post-nav.php:46
+#: content/post-nav.php:26
 msgid "No Newer Posts"
 msgstr ""
 
@@ -146,283 +122,293 @@ msgstr ""
 msgid "View all posts tagged %s"
 msgstr ""
 
-#: content-archive.php:13 content.php:10
-msgid "Published %s"
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
 msgstr ""
 
-#: content-page.php:10 content.php:16
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr ""
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr ""
+
+#: content-page.php:11 content.php:12
 msgid "Pages:"
 msgstr ""
 
-#: footer.php:12
+#: footer.php:11
 msgid "<a href=\"%s\">Chosen WordPress Theme</a> by Compete Themes."
 msgstr ""
 
-#: functions.php:45
+#: functions.php:32
 msgid "Primary"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:55
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:75
+#: functions.php:63
 msgid "Reply"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:67
 msgid "Edit"
 msgstr ""
 
-#: functions.php:100
-msgid "optional"
+#: functions.php:79
+msgid "(optional)"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:84
 msgid "Name"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:91
 msgid "Email"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:98
 msgid "Website"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:113
 msgid "Comment"
 msgstr ""
 
-#: functions.php:175 functions.php:182 functions.php:195
+#: functions.php:144 functions.php:153 functions.php:169
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:355
+#: functions.php:306
 msgid "email"
 msgstr ""
 
-#: functions.php:398 header.php:27 inc/scripts.php:13
+#: functions.php:351 header.php:22 inc/scripts.php:10
 msgid "open menu"
 msgstr ""
 
-#: functions.php:409
+#: functions.php:362
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:444
+#: functions.php:419
 msgid "Customizer settings deleted"
 msgstr ""
 
-#: header.php:16
+#: header.php:11
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:12
+#: inc/customizer.php:15
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:93
+#: inc/customizer.php:38
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Upload custom logo."
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:66
+msgid "Add the URL for each of your social profiles."
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Email Address"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Search Bar"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Show search bar at top of site?"
+msgstr ""
+
+#: inc/customizer.php:151 inc/customizer.php:398
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:152 inc/customizer.php:399
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:170
+msgid "Show full posts on blog?"
+msgstr ""
+
+#: inc/customizer.php:175 inc/customizer.php:223 inc/customizer.php:239
+#: inc/customizer.php:417
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:176 inc/customizer.php:224 inc/customizer.php:240
+#: inc/customizer.php:418
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:186
+msgid "Excerpt word count"
+msgstr ""
+
+#: inc/customizer.php:193
+msgid "Continue Reading"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "Read More button text"
+msgstr ""
+
+#: inc/customizer.php:208
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:218
+msgid "Make first post on blog extra wide?"
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "Display post author name in byline?"
+msgstr ""
+
+#: inc/customizer.php:248
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:259
+msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/customizer.php:272
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer.php:284
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> for "
 "advanced header image functionality."
 msgstr ""
 
-#: inc/customizer.php:100
+#: inc/customizer.php:292
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:304
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
 "change your colors."
 msgstr ""
 
-#: inc/customizer.php:107
+#: inc/customizer.php:312
+msgid "Font"
+msgstr ""
+
+#: inc/customizer.php:324
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
 "change your font."
 msgstr ""
 
-#: inc/customizer.php:114
+#: inc/customizer.php:332
+msgid "Display Controls"
+msgstr ""
+
+#: inc/customizer.php:344
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to get "
 "hide/show controls."
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:352
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:364
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
 "customize the footer text."
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:372
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:384
 msgid ""
 "Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
 "change your layout."
 msgstr ""
 
-#: inc/customizer.php:136
-msgid "Logo"
+#: inc/customizer.php:432
+msgid "View the Chosen Pro Plugin"
 msgstr ""
 
-#: inc/customizer.php:150
-msgid "Upload custom logo."
-msgstr ""
-
-#: inc/customizer.php:166
-msgid "Social Media Icons"
-msgstr ""
-
-#: inc/customizer.php:168
-msgid "Add the URL for each of your social profiles."
-msgstr ""
-
-#: inc/customizer.php:183
-msgid "Email Address"
-msgstr ""
-
-#: inc/customizer.php:243
-msgid "Blog"
-msgstr ""
-
-#: inc/customizer.php:256
-msgid "Show full posts on blog?"
-msgstr ""
-
-#: inc/customizer.php:261 inc/customizer.php:304 inc/customizer.php:525
-msgid "Yes"
-msgstr ""
-
-#: inc/customizer.php:262 inc/customizer.php:305 inc/customizer.php:526
-msgid "No"
-msgstr ""
-
-#: inc/customizer.php:275
-msgid "Excerpt length"
-msgstr ""
-
-#: inc/customizer.php:286
-msgid "Additional Options"
-msgstr ""
-
-#: inc/customizer.php:299
-msgid "Make first post on blog extra wide?"
-msgstr ""
-
-#: inc/customizer.php:313
-msgid "Custom CSS"
-msgstr ""
-
-#: inc/customizer.php:326
-msgid "Add Custom CSS Here:"
-msgstr ""
-
-#: inc/customizer.php:340
-msgid "Header Image"
-msgstr ""
-
-#: inc/customizer.php:362
-msgid "Colors"
-msgstr ""
-
-#: inc/customizer.php:384
-msgid "Font"
-msgstr ""
-
-#: inc/customizer.php:406
-msgid "Display Controls"
-msgstr ""
-
-#: inc/customizer.php:428
-msgid "Footer Text"
-msgstr ""
-
-#: inc/customizer.php:450
-msgid "Layout"
-msgstr ""
-
-#: inc/customizer.php:478
-msgid "Show"
-msgstr ""
-
-#: inc/customizer.php:479
-msgid "Hide"
-msgstr ""
-
-#: inc/customizer.php:503
-msgid "Posts"
-msgstr ""
-
-#: inc/customizer.php:504
-msgid "Pages"
-msgstr ""
-
-#: inc/customizer.php:505
-msgid "Attachments"
-msgstr ""
-
-#: inc/customizer.php:506
-msgid "Do not show"
-msgstr ""
-
-#: inc/scripts.php:14
+#: inc/scripts.php:11
 msgid "close menu"
 msgstr ""
 
-#: inc/scripts.php:15
+#: inc/scripts.php:12
 msgid "open dropdown menu"
 msgstr ""
 
-#: inc/scripts.php:16
+#: inc/scripts.php:13
 msgid "close dropdown menu"
 msgstr ""
 
-#: search.php:10
+#: search.php:9
 msgid "%d search result for \"%s\""
 msgid_plural "%d search results for \"%s\""
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:12
+#: search.php:11
 msgid "No search results for \"%s\""
 msgstr ""
 
-#: search.php:39
+#: search.php:35
 msgid "Can't find what you're looking for?  Try refining your search:"
 msgstr ""
 
-#: searchform.php:3
-msgid "Search"
-msgstr ""
-
-#: searchform.php:4
-msgid "Search for:"
-msgstr ""
-
-#: searchform.php:5
+#: searchform.php:6
 msgid "Go"
 msgstr ""
 
-#: theme-options.php:21
+#: theme-options.php:4 theme-options.php:19
 msgid "Chosen Dashboard"
 msgstr ""
 
-#: theme-options.php:24
+#: theme-options.php:22
 msgid "Customization"
 msgstr ""
 
-#: theme-options.php:25
+#: theme-options.php:23
 msgid ""
 "Click the \"Customize\" link in your menu, or use the button below to get "
 "started customizing Chosen"
 msgstr ""
 
-#: theme-options.php:27
+#: theme-options.php:26
 msgid "Use Customizer"
 msgstr ""
 
-#: theme-options.php:31
+#: theme-options.php:30
 msgid "Support"
 msgstr ""
 
-#: theme-options.php:32
+#: theme-options.php:31
 msgid ""
 "You can find the knowledgebase, changelog, support forum, and more in the "
 "chosen Support Center"
@@ -442,32 +428,32 @@ msgid ""
 "sliders, and more"
 msgstr ""
 
-#: theme-options.php:41
+#: theme-options.php:42
 msgid "See Full Feature List"
 msgstr ""
 
-#: theme-options.php:45
+#: theme-options.php:46
 msgid "WordPress Resources"
 msgstr ""
 
-#: theme-options.php:46
+#: theme-options.php:47
 msgid ""
 "Save time and money searching for WordPress products by following our "
 "recommendations"
 msgstr ""
 
-#: theme-options.php:48
+#: theme-options.php:50
 msgid "View Resources"
 msgstr ""
 
-#: theme-options.php:52 theme-options.php:60
+#: theme-options.php:54 theme-options.php:62
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:54
+#: theme-options.php:56
 msgid ""
-"<strong>Warning:</strong> Clicking this button will erase your current "
-"settings in the <a href=\"%s\">Customizer</a>."
+"<strong>Warning:</strong> Clicking this button will erase the Chosen "
+"theme's current settings in the <a href='%s'>Customizer</a>."
 msgstr ""
 
 #. Theme Name of the plugin/theme
