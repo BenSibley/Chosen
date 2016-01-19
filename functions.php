@@ -548,24 +548,26 @@ function ct_chosen_get_content_template() {
 }
 
 // prevent odd number of posts on page 2+ of blog if extra-wide post used
-function ct_chosen_adjust_post_count( $query) {
+if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
+	function ct_chosen_adjust_post_count( $query ) {
 
-	$extra_wide = get_theme_mod( 'full_width_post' );
+		$extra_wide = get_theme_mod( 'full_width_post' );
 
-	if ( $extra_wide != 'no' ) {
+		if ( $extra_wide != 'no' ) {
 
-		if ( $query->is_home() && $query->is_main_query() && $query->is_paged() ) {
+			if ( $query->is_home() && $query->is_main_query() && $query->is_paged() ) {
 
-			$posts_per_page = get_option('posts_per_page');
+				$posts_per_page = get_option( 'posts_per_page' );
 
-			// get number of previous posts
-			$offset = ( $query->query_vars['paged'] - 1 ) * $posts_per_page;
+				// get number of previous posts
+				$offset = ( $query->query_vars['paged'] - 1 ) * $posts_per_page;
 
-			// offset post count minus one for every page after page 2
-			$query->set( 'offset', $offset - ( $query->query_vars['paged'] - 2 ) );
+				// offset post count minus one for every page after page 2
+				$query->set( 'offset', $offset - ( $query->query_vars['paged'] - 2 ) );
 
-			// drop the posts per page by 1
-			$query->set( 'posts_per_page', $posts_per_page - 1 );
+				// drop the posts per page by 1
+				$query->set( 'posts_per_page', $posts_per_page - 1 );
+			}
 		}
 	}
 }
