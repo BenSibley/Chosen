@@ -1,14 +1,14 @@
-# Copyright (C) 2015 Compete Themes
+# Copyright (C) 2016 Compete Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.11\n"
+"Project-Id-Version: Chosen 1.12\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-12-21 17:29:10+00:00\n"
+"POT-Creation-Date: 2016-01-19 14:52:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -352,7 +352,7 @@ msgid ""
 "change your layout."
 msgstr ""
 
-#: inc/customizer.php:432
+#: inc/customizer.php:439
 msgid "View the Chosen Pro Plugin"
 msgstr ""
 
