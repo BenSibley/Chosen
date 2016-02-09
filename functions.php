@@ -306,6 +306,14 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 							<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'chosen' ); ?>"></i>
 						</a>
 					</li>
+				<?php } elseif ( $active_site == 'skype' ) { ?>
+					<li>
+						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+						   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
+							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
+							   title="<?php echo esc_attr( $active_site ); ?>"></i>
+						</a>
+					</li>
 				<?php } else { ?>
 					<li>
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
@@ -572,3 +580,10 @@ if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 	}
 }
 add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count' );
+
+// allow skype URIs to be used
+function ct_chosen_allow_skype_protocol( $protocols ){
+	$protocols[] = 'skype';
+	return $protocols;
+}
+add_filter( 'kses_allowed_protocols' , 'ct_chosen_allow_skype_protocol' );
