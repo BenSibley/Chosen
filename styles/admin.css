@@ -27,10 +27,14 @@
     min-height: 57px;
   }
   #chosen-dashboard-wrap .content-premium-upgrade p {
-    min-height: 0px;
+    min-height: 0;
+  }
+  #chosen-dashboard-wrap .content-review p {
+    min-height: 75px;
   }
   #chosen-dashboard-wrap .content-customization,
-  #chosen-dashboard-wrap .content-premium-upgrade {
+  #chosen-dashboard-wrap .content-premium-upgrade,
+  #chosen-dashboard-wrap .content-review {
     margin-right: 2%;
   }
 }
@@ -44,7 +48,8 @@
   }
   #chosen-dashboard-wrap .content-customization,
   #chosen-dashboard-wrap .content-support,
-  #chosen-dashboard-wrap .content-resources {
+  #chosen-dashboard-wrap .content-resources,
+  #chosen-dashboard-wrap .content-review {
     margin-right: 1%;
   }
   #chosen-dashboard-wrap .content-premium-upgrade {

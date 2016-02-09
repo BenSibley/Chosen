@@ -50,6 +50,11 @@ function ct_chosen_options_content() {
 				   href="https://www.competethemes.com/wordpress-resources/"><?php _e( 'View Resources', 'chosen' ); ?></a>
 			</p>
 		</div>
+		<div class="content content-review">
+			<h3><?php _e( 'Leave a Review', 'chosen' ); ?></h3>
+			<p><?php _e( 'Help others find Chosen by leaving a review on wordpress.org.', 'chosen' ); ?></p>
+			<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/chosen"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
+		</div>
 		<div class="content content-delete-settings">
 			<h3><?php _e( 'Reset Customizer Settings', 'chosen' ); ?></h3>
 			<p>
