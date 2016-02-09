@@ -273,7 +273,8 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'wechat'        => 'chosen_wechat_profile',
 			'xing'          => 'chosen_xing_profile',
 			'paypal'        => 'chosen_paypal_profile',
-			'email'         => 'chosen_email_profile'
+			'email'         => 'chosen_email_profile',
+			'email-form'    => 'chosen_email_form_profile'
 		);
 
 		return apply_filters( 'ct_chosen_social_array_filter', $social_sites );
@@ -311,6 +312,14 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 						   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
 							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
+							   title="<?php echo esc_attr( $active_site ); ?>"></i>
+						</a>
+					</li>
+				<?php } elseif ( $active_site == 'email-form' ) { ?>
+					<li>
+						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
+							<i class="fa fa-envelope-o"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
 						</a>
 					</li>
