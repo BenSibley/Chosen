@@ -35,28 +35,6 @@
   }
 }
 
-/* Locked Sections */
-
-#accordion-section-chosen_colors,
-#accordion-section-chosen_header_image,
-#accordion-section-chosen_background,
-#accordion-section-chosen_font,
-#accordion-section-chosen_display_control,
-#accordion-section-chosen_footer_text,
-#accordion-section-chosen_layout {
-
-  .accordion-section-title,
-  .accordion-section-title:hover {
-    background-image: url('../assets/images/gray-lines.png');
-    background-size: 100%;
-
-    &:after {
-      content: '\f023';
-      font-family: 'FontAwesome';
-    }
-  }
-}
-
 #accordion-section-colors {
   display: none !important;
 }
