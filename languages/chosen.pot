@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chosen 1.13\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-02-04 19:10:01+00:00\n"
+"POT-Creation-Date: 2016-02-10 16:37:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,7 +42,7 @@ msgid ""
 "post\">trackbacks</a> and pingbacks are open."
 msgstr ""
 
-#: comments.php:68 comments.php:74
+#: comments.php:68 comments.php:75
 msgid "Comments are closed."
 msgstr ""
 
@@ -182,19 +182,19 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:306
+#: functions.php:307
 msgid "email"
 msgstr ""
 
-#: functions.php:351 header.php:22 inc/scripts.php:10
+#: functions.php:368 header.php:22 inc/scripts.php:10
 msgid "open menu"
 msgstr ""
 
-#: functions.php:362
+#: functions.php:379
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:419
+#: functions.php:436
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -206,153 +206,93 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:38
+#: inc/customizer.php:27
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:48
+#: inc/customizer.php:37
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:64
+#: inc/customizer.php:53
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:66
+#: inc/customizer.php:55
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:79
+#: inc/customizer.php:68
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:136
+#: inc/customizer.php:135
 msgid "Search Bar"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:146
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:151 inc/customizer.php:398
+#: inc/customizer.php:150 inc/customizer.php:273
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:152 inc/customizer.php:399
+#: inc/customizer.php:151 inc/customizer.php:274
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:160
+#: inc/customizer.php:159
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:170
+#: inc/customizer.php:169
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:175 inc/customizer.php:223 inc/customizer.php:239
-#: inc/customizer.php:417
+#: inc/customizer.php:174 inc/customizer.php:222 inc/customizer.php:238
+#: inc/customizer.php:292
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:176 inc/customizer.php:224 inc/customizer.php:240
-#: inc/customizer.php:418
+#: inc/customizer.php:175 inc/customizer.php:223 inc/customizer.php:239
+#: inc/customizer.php:293
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:186
+#: inc/customizer.php:185
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:193
+#: inc/customizer.php:192
 msgid "Continue Reading"
 msgstr ""
 
-#: inc/customizer.php:198
+#: inc/customizer.php:197
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:208
+#: inc/customizer.php:207
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:218
+#: inc/customizer.php:217
 msgid "Make first post on blog extra wide?"
 msgstr ""
 
-#: inc/customizer.php:234
+#: inc/customizer.php:233
 msgid "Display post author name in byline?"
 msgstr ""
 
-#: inc/customizer.php:248
+#: inc/customizer.php:247
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:259
+#: inc/customizer.php:258
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:272
-msgid "Header Image"
-msgstr ""
-
-#: inc/customizer.php:284
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> for "
-"advanced header image functionality."
-msgstr ""
-
-#: inc/customizer.php:292
-msgid "Colors"
-msgstr ""
-
-#: inc/customizer.php:304
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
-"change your colors."
-msgstr ""
-
-#: inc/customizer.php:312
-msgid "Font"
-msgstr ""
-
-#: inc/customizer.php:324
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
-"change your font."
-msgstr ""
-
-#: inc/customizer.php:332
-msgid "Display Controls"
-msgstr ""
-
-#: inc/customizer.php:344
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to get "
-"hide/show controls."
-msgstr ""
-
-#: inc/customizer.php:352
-msgid "Footer Text"
-msgstr ""
-
-#: inc/customizer.php:364
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
-"customize the footer text."
-msgstr ""
-
-#: inc/customizer.php:372
-msgid "Layout"
-msgstr ""
-
-#: inc/customizer.php:384
-msgid ""
-"Activate the <a target=\"_blank\" href=\"%s\">Chosen Pro Plugin</a> to "
-"change your layout."
-msgstr ""
-
-#: inc/customizer.php:439
+#: inc/customizer.php:318
 msgid "View the Chosen Pro Plugin"
 msgstr ""
 
@@ -446,11 +386,19 @@ msgstr ""
 msgid "View Resources"
 msgstr ""
 
-#: theme-options.php:54 theme-options.php:62
+#: theme-options.php:54 theme-options.php:56
+msgid "Leave a Review"
+msgstr ""
+
+#: theme-options.php:55
+msgid "Help others find Chosen by leaving a review on wordpress.org."
+msgstr ""
+
+#: theme-options.php:59 theme-options.php:67
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:56
+#: theme-options.php:61
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase the Chosen "
 "theme's current settings in the <a href='%s'>Customizer</a>."
