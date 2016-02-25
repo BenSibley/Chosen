@@ -45,7 +45,7 @@ Chosen Pro: https://www.competethemes.com/chosen-pro/
     Additional Info:
 -------------------------------------------------------
 
-    * All menus in Apex can have 1-3 tiers
+    * All menus in Chosen can have 1-3 tiers
     * Featured Images have a 2x1 ratio at all screen sizes
     * Chosen is child theme compatible. Download a starter child theme here:
         https://www.competethemes.com/help/child-theme-chosen/
