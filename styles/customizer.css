@@ -6,30 +6,17 @@
 /***** Silent Classes *****/
 .upgrades-ad {
   text-align: center;
-  border-bottom: solid 1px #eee;
-}
-.upgrades-ad a {
-  display: block;
-  padding: 9px 0;
-  color: white;
-  background: #43b3c4;
-  -webkit-transition: background 0.15s ease-in-out;
-  transition: background 0.15s ease-in-out;
-}
-.upgrades-ad a:link, .upgrades-ad a:visited, .upgrades-ad a:hover, .upgrades-ad a:active, .upgrades-ad a:focus {
-  color: white;
-}
-.upgrades-ad a:hover, .upgrades-ad a:active, .upgrades-ad a:focus {
-  background: #3ea5b3;
-}
-.upgrades-ad a:hover span, .upgrades-ad a:active span, .upgrades-ad a:focus span {
-  right: -3px;
+  border: solid 3px #000;
+  padding: 8px 16px 12px;
+  margin-bottom: -15px;
+  background: white;
 }
 .upgrades-ad span {
-  position: relative;
-  right: 0;
-  -webkit-transition: right 0.15s ease-in-out;
-  transition: right 0.15s ease-in-out;
+  font-size: 12px;
+}
+.upgrades-ad a {
+  font-weight: 700;
+  text-decoration: underline !important;
 }
 
 #accordion-section-colors {
