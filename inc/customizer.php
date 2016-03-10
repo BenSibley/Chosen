@@ -315,7 +315,7 @@ function ct_chosen_sanitize_css( $css ) {
 
 function ct_chosen_customize_preview_js() {
 
-	$content = "<script>jQuery('#customize-info').append('<div class=\"upgrades-ad\"><span>Add more features with <a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">" . __( 'Chosen Pro', 'chosen' ) . " <span>&rarr;</span></a></span></div>')</script>";
+	$content = "<script>jQuery('#customize-info').append('<div class=\"upgrades-ad\"><span>Add more features with <a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">Chosen Pro<span>&rarr;</span></a></span></div>')</script>";
 	echo apply_filters( 'ct_chosen_customizer_ad', $content );
 }
 
