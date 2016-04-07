@@ -305,6 +305,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 						<a class="email" target="_blank"
 						   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
 							<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'chosen' ); ?>"></i>
+							<span class="screen-reader-text"><?php esc_attr_e('email', 'chosen'); ?></span>
 						</a>
 					</li>
 				<?php } elseif ( $active_site == 'skype' ) { ?>
@@ -313,6 +314,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 						   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
 							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
+							<span class="screen-reader-text"><?php echo esc_attr( $active_site );  ?></span>
 						</a>
 					</li>
 				<?php } elseif ( $active_site == 'email-form' ) { ?>
@@ -321,6 +323,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
 							<i class="fa fa-envelope-o"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
+							<span class="screen-reader-text"><?php echo esc_attr( $active_site );  ?></span>
 						</a>
 					</li>
 				<?php } else { ?>
@@ -329,6 +332,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
 							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
+							<span class="screen-reader-text"><?php echo esc_attr( $active_site );  ?></span>
 						</a>
 					</li>
 					<?php
