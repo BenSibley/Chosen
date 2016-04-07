@@ -13,6 +13,11 @@ get_template_part( 'content/archive-header' ); ?>
 	?>
 </div>
 
-<?php the_posts_pagination(); ?>
+<?php
 
-<?php get_footer(); ?>
+the_posts_pagination( array(
+	'prev_text' => __( 'Previous', 'chosen' ),
+	'next_text' => __( 'Next', 'chosen' )
+) );
+
+get_footer();
