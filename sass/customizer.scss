@@ -2,17 +2,36 @@
 
 .upgrades-ad {
   text-align: center;
-  border: solid 3px #000;
-  padding: 8px 16px 12px;
-  margin-bottom: -15px;
-  background: white;
+  border-bottom: solid 1px #eee;
 
-  span {
-    font-size: 12px;
-  }
   a {
-    font-weight: 700;
-    text-decoration: underline !important;
+    display: block;
+    padding: 9px 0;
+    color: white;
+    background: #43b3c4;
+    transition: background 0.15s ease-in-out;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus  {
+      color: white;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: #3ea5b3;
+
+      span {
+        right: -3px;
+      }
+    }
+  }
+  span {
+    position: relative;
+    right: 0;
+    transition: right 0.15s ease-in-out;
   }
 }
 #accordion-section-colors {
