@@ -119,6 +119,9 @@
   .previous {
     margin-bottom: $baseline-height;
   }
+  &:after {
+    @include clearfix;
+  }
 }
 
 @media all and (min-width: $seven-hundred) {
@@ -154,8 +157,7 @@
     }
     .previous {
       float: left;
-      margin-right: 6%;
-      margin-bottom: $baseline-height * 1.5;
+      margin: 0 6% 0 0;
     }
   }
 }

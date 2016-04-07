@@ -1199,6 +1199,14 @@ a img {
 .further-reading .previous {
   margin-bottom: 1.5em;
 }
+.further-reading:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 @media all and (min-width: 43.75em) {
   .entry {
@@ -1239,8 +1247,7 @@ a img {
   }
   .further-reading .previous {
     float: left;
-    margin-right: 6%;
-    margin-bottom: 2.25em;
+    margin: 0 6% 0 0;
   }
 }
 @media all and (min-width: 56.25em) {
