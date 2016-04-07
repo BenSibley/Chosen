@@ -3,7 +3,7 @@
 	<article>
 		<?php ct_chosen_featured_image(); ?>
 		<div class='post-header'>
-			<h2 class='post-title'><?php the_title(); ?></h2>
+			<h1 class='post-title'><?php the_title(); ?></h1>
 			<?php get_template_part( 'content/post-byline' ); ?>
 		</div>
 		<div class="post-content">

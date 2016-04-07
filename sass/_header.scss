@@ -18,6 +18,7 @@
 }
 .site-title {
   @extend %thirty-eight-pixels;
+  font-family: $playfair;
 }
 .tagline {
   @extend %ten-pixels;

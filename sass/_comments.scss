@@ -1,6 +1,10 @@
 .comments-number,
 .comment-reply-title {
   @extend %twenty-one-pixels;
+
+  h2 {
+    font-size: 1em;
+  }
 }
 
 .comment-list {
