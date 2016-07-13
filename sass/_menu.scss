@@ -204,6 +204,13 @@
     }
     .menu-item-has-children {
 
+      // for wide tablets
+      &.open > ul {
+        visibility: visible;
+        top: 100%;
+        top: calc(100% + 1px);
+        opacity: 1;
+      }
       &:hover,
       &.focused {
 

@@ -1008,6 +1008,12 @@ a img {
   .menu-primary-items ul .toggle-dropdown:after {
     content: '\f105';
   }
+  .menu-primary-items .menu-item-has-children.open > ul {
+    visibility: visible;
+    top: 100%;
+    top: calc(100% + 1px);
+    opacity: 1;
+  }
   .menu-primary-items .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children.focused > button {
     -webkit-transform: translate(0, 2px);
     -ms-transform: translate(0, 2px);
