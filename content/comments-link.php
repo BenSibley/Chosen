@@ -1,5 +1,5 @@
 <span class="comments-link">
-	<i class="fa fa-comment" title="<?php _e( 'comment icon', 'chosen' ); ?>"></i>
+	<i class="fa fa-comment" title="<?php esc_attr_e( 'comment icon', 'chosen' ); ?>"></i>
 	<?php
 	if ( ! comments_open() && get_comments_number() < 1 ) :
 		comments_number( __( 'Comments closed', 'chosen' ), __( '1 Comment', 'chosen' ), __( '% Comments', 'chosen' ) );
