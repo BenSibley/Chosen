@@ -7,7 +7,7 @@ Description: Chosen is a bold and minimalist theme for publishers who want to ge
 Version: 1.18
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: gray, silver, tan, white, light, fluid-layout, responsive-layout, one-column, two-columns, accessibility-ready, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: blog, entertainment, photography, one-column, two-columns, accessibility-ready, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: chosen
 
 Chosen WordPress Theme, Copyright 2016 Compete Themes
@@ -122,7 +122,7 @@ a {
   color: #2B2B2B;
   text-decoration: none;
   -webkit-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
+          transition: color 0.1s ease-in-out;
 }
 a:link, a:visited {
   color: #2B2B2B;
@@ -258,7 +258,7 @@ textarea {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):focus,
 textarea:focus {
@@ -283,7 +283,7 @@ input[type="submit"] {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
 input[type="submit"]:hover {
   cursor: pointer;
@@ -356,7 +356,7 @@ a img {
   padding: 1.5em;
   background: #3a3a3a;
   -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
+          transition: top 0.2s ease-in-out;
 }
 .skip-content:focus {
   top: 0;
@@ -390,7 +390,7 @@ a img {
   background: #2B2B2B;
   color: white;
   -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
 .more-link:link, .more-link:visited {
   color: white;
@@ -403,7 +403,7 @@ a img {
 .comments-link {
   color: #2B2B2B;
   -webkit-transition: color 0.1s ease-in-out;
-  transition: color 0.1s ease-in-out;
+          transition: color 0.1s ease-in-out;
 }
 .comments-link i {
   margin-right: 3px;
@@ -784,13 +784,12 @@ a img {
     margin: 0;
     text-align: right;
     -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
   }
   .social-media-icons.fade {
     opacity: 0;
     -webkit-transform: translateX(4px);
-    -ms-transform: translateX(4px);
-    transform: translateX(4px);
+            transform: translateX(4px);
   }
 }
 @media all and (min-width: 68.75em) {
@@ -841,7 +840,7 @@ a img {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out;
+          transition: max-height 0.2s ease-in-out;
 }
 
 .menu-primary {
@@ -886,7 +885,7 @@ a img {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out;
+          transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items ul li {
   margin: 0;
@@ -896,8 +895,7 @@ a img {
 }
 .menu-primary-items .open > .toggle-dropdown {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .toggle-dropdown {
@@ -909,7 +907,7 @@ a img {
   border: none;
   color: #666666;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out;
+          transition: transform 0.1s ease-in-out;
 }
 .toggle-dropdown:hover {
   cursor: pointer;
@@ -975,11 +973,11 @@ a img {
     top: calc(100% + 6px);
     left: -1.5em;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+            backface-visibility: hidden;
     background: white;
     padding: 0 1.5em 0.75em;
     -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
   }
   .menu-primary-items ul:hover, .menu-primary-items ul.focused {
     visibility: visible;
@@ -1016,8 +1014,7 @@ a img {
   }
   .menu-primary-items .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children.focused > button {
     -webkit-transform: translate(0, 2px);
-    -ms-transform: translate(0, 2px);
-    transform: translate(0, 2px);
+            transform: translate(0, 2px);
   }
   .menu-primary-items .menu-item-has-children li {
     margin-right: 0;
@@ -1034,8 +1031,7 @@ a img {
   }
   .menu-primary-items .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(0, 2px);
-    -ms-transform: translate(0, 2px);
-    transform: translate(0, 2px);
+            transform: translate(0, 2px);
   }
   .menu-primary-items .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children > a:active:after {
     content: '';
@@ -1047,13 +1043,11 @@ a img {
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children .menu-item-has-children.focused > button {
     -webkit-transform: translate(2px, 0);
-    -ms-transform: translate(2px, 0);
-    transform: translate(2px, 0);
+            transform: translate(2px, 0);
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(2px, 0);
-    -ms-transform: translate(2px, 0);
-    transform: translate(2px, 0);
+            transform: translate(2px, 0);
   }
   .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus ~ ul {
     top: 0;
@@ -1088,8 +1082,7 @@ a img {
   }
   .rtl .menu-primary-items ul .menu-item-has-children > a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children > a:active + button, .rtl .menu-primary-items ul .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(-2px, 0);
-    -ms-transform: translate(-2px, 0);
-    transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
   }
 }
 .entry {
@@ -1116,7 +1109,8 @@ a img {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .featured-image > img.no-object-fit,
 .featured-image > a > img.no-object-fit {
@@ -1130,8 +1124,7 @@ a img {
   right: 50%;
   left: auto;
   -webkit-transform: translateX(50%) translateY(-50%);
-  -ms-transform: translateX(50%) translateY(-50%);
-  transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 .featured-image .ccfic {
   position: absolute;
@@ -1336,7 +1329,7 @@ a img {
   padding-top: 6px;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease-in-out, left 0.15s ease-in-out;
-  transition: opacity 0.15s ease-in-out, left 0.15s ease-in-out;
+          transition: opacity 0.15s ease-in-out, left 0.15s ease-in-out;
 }
 .site-header .search-form-container .search-field {
   max-width: none !important;
