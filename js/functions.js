@@ -52,7 +52,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.css('max-height', '');
 
             // change screen reader text
-            $(this).children('span').text(objectL10n.openMenu);
+            $(this).children('span').text(ct_chosen_objectL10n.openMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -65,7 +65,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.css('max-height', menuHeight);
 
             // change screen reader text
-            $(this).children('span').text(objectL10n.closeMenu);
+            $(this).children('span').text(ct_chosen_objectL10n.closeMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
             $(this).siblings('ul').css('max-height', 0);
 
             // change screen reader text
-            $(this).children('span').text(objectL10n.openChildMenu);
+            $(this).children('span').text(ct_chosen_objectL10n.openChildMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
             menuPrimaryContainer.css('max-height', 'none');
 
             // change screen reader text
-            $(this).children('span').text(objectL10n.closeChildMenu);
+            $(this).children('span').text(ct_chosen_objectL10n.closeChildMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');

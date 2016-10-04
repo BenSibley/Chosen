@@ -6,11 +6,11 @@ function ct_chosen_load_scripts_styles() {
 	wp_enqueue_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic' );
 
 	wp_enqueue_script( 'ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
-	wp_localize_script( 'ct-chosen-js', 'objectL10n', array(
-		'openMenu'       => __( 'open menu', 'chosen' ),
-		'closeMenu'      => __( 'close menu', 'chosen' ),
-		'openChildMenu'  => __( 'open dropdown menu', 'chosen' ),
-		'closeChildMenu' => __( 'close dropdown menu', 'chosen' )
+	wp_localize_script( 'ct-chosen-js', 'ct_chosen_objectL10n', array(
+		'openMenu'       => esc_html__( 'open menu', 'chosen' ),
+		'closeMenu'      => esc_html__( 'close menu', 'chosen' ),
+		'openChildMenu'  => esc_html__( 'open dropdown menu', 'chosen' ),
+		'closeChildMenu' => esc_html__( 'close dropdown menu', 'chosen' )
 	) );
 
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );
