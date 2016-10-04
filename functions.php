@@ -578,7 +578,7 @@ if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 
 		if ( $extra_wide != 'no' ) {
 
-			if ( $query->is_home() && $query->is_main_query() && $query->is_paged() ) {
+			if ( !is_admin() && $query->is_home() && $query->is_main_query() && $query->is_paged() ) {
 
 				$posts_per_page = get_option( 'posts_per_page' );
 
@@ -587,6 +587,19 @@ if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 
 				// offset post count minus one for every page after page 2
 				$query->set( 'offset', $offset - ( $query->query_vars['paged'] - 2 ) );
+
+				// drop the posts per page by 1
+				$query->set( 'posts_per_page', $posts_per_page - 1 );
+			} elseif ( !is_admin() && $query->is_main_query() && $query->is_archive() ) {
+
+				$posts_per_page = get_option( 'posts_per_page' );
+
+				// get number of previous posts
+				$offset = ( $query->query_vars['paged'] - 1 ) * $posts_per_page;
+
+				if ( $query->is_paged() ) {
+					$query->set( 'offset', $offset - ( $query->query_vars['paged'] - 1 ) );
+				}
 
 				// drop the posts per page by 1
 				$query->set( 'posts_per_page', $posts_per_page - 1 );
