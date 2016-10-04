@@ -3,7 +3,13 @@
 // Front-end scripts
 function ct_chosen_load_scripts_styles() {
 
-	wp_enqueue_style( 'ct-chosen-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic' );
+	$font_args = array(
+		'family' => urlencode( 'Playfair Display:400|Raleway:400,700,400italic' ),
+		'subset' => urlencode( 'latin,latin-ext' )
+	);
+	$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
+
+	wp_enqueue_style( 'ct-chosen-google-fonts', $fonts_url );
 
 	wp_enqueue_script( 'ct-chosen-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
 	wp_localize_script( 'ct-chosen-js', 'ct_chosen_objectL10n', array(
