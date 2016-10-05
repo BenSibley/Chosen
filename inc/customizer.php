@@ -25,15 +25,15 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	class ct_chosen_pro_ad extends WP_Customize_Control {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Chosen Pro</a> is the plugin that makes advanced customization simple - and fun too.', 'chosen'), $link) . "</p>";
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Chosen Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link) . "</p>";
 			echo "<ul>
 					<li>" . __('6 New Layouts', 'chosen') . "</li>
 					<li>" . __('Custom Colors', 'chosen') . "</li>
 					<li>" . __('Featured Videos', 'chosen') . "</li>
 					<li>" . __('+ 7 more features', 'chosen') . "</li>
 				  </ul>";
-			echo "<p>" . __('Download the Chosen Pro Plugin to get started now.', 'chosen') . "</p>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . __('Get Chosen Pro', 'chosen') . "</a></p>";
+			echo "<p>" . __('View our gallery of screenshots and videos now to see if Chosen Pro is right for your site.', 'chosen') . "</p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . __('View Chosen Pro', 'chosen') . "</a></p>";
 		}
 	}
 
