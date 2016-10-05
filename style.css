@@ -464,6 +464,10 @@ a img {
   color: white;
 }
 
+.search .sticky-status {
+  display: none;
+}
+
 .entry:not(.has-post-thumbnail) .sticky-status {
   margin-bottom: 1.5em;
 }

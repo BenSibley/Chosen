@@ -92,6 +92,9 @@
   background: $color-gray-17;
   color: white;
 }
+.search .sticky-status {
+  display: none;
+}
 .entry:not(.has-post-thumbnail) {
 
   .sticky-status {
