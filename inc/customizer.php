@@ -20,43 +20,63 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
-	/***** Chosen Pro Control *****/
-
-	class ct_chosen_pro_ad extends WP_Customize_Control {
-		public function render_content() {
-			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Chosen Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link) . "</p>";
-			echo "<ul>
-					<li>" . __('6 New Layouts', 'chosen') . "</li>
-					<li>" . __('Custom Colors', 'chosen') . "</li>
-					<li>" . __('Featured Videos', 'chosen') . "</li>
-					<li>" . __('+ 7 more features', 'chosen') . "</li>
-				  </ul>";
-			echo "<p>" . __('View our gallery of screenshots and videos now to see if Chosen Pro is right for your site.', 'chosen') . "</p>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . __('View Chosen Pro', 'chosen') . "</a></p>";
-		}
-	}
+//	/***** Chosen Pro Control *****/
+//
+//	class ct_chosen_pro_ad extends WP_Customize_Control {
+//		public function render_content() {
+//			$link = 'https://www.competethemes.com/chosen-pro/';
+//			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Chosen Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link) . "</p>";
+//			echo "<ul>
+//					<li>" . __('6 New Layouts', 'chosen') . "</li>
+//					<li>" . __('Custom Colors', 'chosen') . "</li>
+//					<li>" . __('Featured Videos', 'chosen') . "</li>
+//					<li>" . __('+ 7 more features', 'chosen') . "</li>
+//				  </ul>";
+//			echo "<p>" . __('View our gallery of screenshots and videos now to see if Chosen Pro is right for your site.', 'chosen') . "</p>";
+//			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . __('View Chosen Pro', 'chosen') . "</a></p>";
+//		}
+//	}
 
 	/***** Chosen Pro Section *****/
 
+	// Load custom sections.
+	require_once( trailingslashit( get_template_directory() ) . 'inc/section-pro.php' );
+
+	// Register custom section types.
+	$wp_customize->register_section_type( 'chosen_Customize_Section_Pro' );
+
 	// don't add if Chosen Pro is active
 	if ( !function_exists( 'ct_chosen_pro_init' ) ) {
-		// section
-		$wp_customize->add_section( 'ct_chosen_pro', array(
-			'title'    => __( 'Chosen Pro', 'chosen' ),
-			'priority' => 1
-		) );
-		// Upload - setting
-		$wp_customize->add_setting( 'chosen_pro', array(
-			'sanitize_callback' => 'absint'
-		) );
-		// Upload - control
-		$wp_customize->add_control( new ct_chosen_pro_ad(
-			$wp_customize, 'chosen_pro', array(
-				'section'  => 'ct_chosen_pro',
-				'settings' => 'chosen_pro'
+//		// section
+//		$wp_customize->add_section( 'ct_chosen_pro', array(
+//			'title'    => __( 'Chosen Pro', 'chosen' ),
+//			'priority' => 1
+//		) );
+//		// Upload - setting
+//		$wp_customize->add_setting( 'chosen_pro', array(
+//			'sanitize_callback' => 'absint'
+//		) );
+//		// Upload - control
+//		$wp_customize->add_control( new ct_chosen_pro_ad(
+//			$wp_customize, 'chosen_pro', array(
+//				'section'  => 'ct_chosen_pro',
+//				'settings' => 'chosen_pro'
+//			)
+//		) );
+
+		// Register sections.
+		$wp_customize->add_section(
+			new chosen_Customize_Section_Pro(
+				$wp_customize,
+				'chosen-pro',
+				array(
+					'title'    => esc_html__( 'Chosen Pro', 'chosen' ),
+					'pro_text' => esc_html__( 'Go Pro', 'chosen' ),
+					'pro_url'  => esc_url( 'https://www.competethemes.com/chosen-pro/' ),
+					'priority' => 1
+				)
 			)
-		) );
+		);
 	}
 
 	/***** Logo Upload *****/

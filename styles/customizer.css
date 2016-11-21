@@ -51,3 +51,12 @@
 #customize-control-chosen_pro .chosen-pro-button:hover, #customize-control-chosen_pro .chosen-pro-button:active, #customize-control-chosen_pro .chosen-pro-button:focus {
   background: #ff9233;
 }
+
+#customize-theme-controls #accordion-section-chosen-pro h3 {
+  color: white;
+  border-color: #05B0E7;
+  background: #05B0E7;
+}
+#customize-theme-controls #accordion-section-chosen-pro a {
+  margin-top: -3px;
+}
