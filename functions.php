@@ -1,9 +1,8 @@
 <?php
 
 require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
-foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
-	include $filename;
-}
+require_once( trailingslashit( get_template_directory() ) . 'inc/customizer.php' );
+require_once( trailingslashit( get_template_directory() ) . 'inc/scripts.php' );
 
 if ( ! function_exists( ( 'ct_chosen_set_content_width' ) ) ) {
 	function ct_chosen_set_content_width() {
