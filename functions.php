@@ -273,6 +273,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'slideshare'    => 'chosen_slideshare_profile',
 			'qq'            => 'chosen_qq_profile',
 			'whatsapp'      => 'chosen_whatsapp_profile',
+			'snapchat'      => 'chosen_snapchat_profile',
 			'bandcamp'      => 'chosen_bandcamp_profile',
 			'etsy'          => 'chosen_etsy_profile',
 			'quora'         => 'chosen_quora_profile',
