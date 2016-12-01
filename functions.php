@@ -502,7 +502,11 @@ add_filter( 'post_class', 'ct_chosen_post_class' );
 if ( ! function_exists( 'ct_chosen_custom_css_output' ) ) {
 	function ct_chosen_custom_css_output() {
 
-		$custom_css = get_theme_mod( 'custom_css' );
+		if ( function_exists( 'wp_get_custom_css' ) ) {
+			$custom_css = wp_get_custom_css();
+		} else {
+			$custom_css = get_theme_mod( 'custom_css' );
+		}
 
 		if ( $custom_css ) {
 			$custom_css = ct_chosen_sanitize_css( $custom_css );
