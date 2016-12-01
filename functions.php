@@ -661,3 +661,8 @@ function ct_chosen_welcome_redirect() {
 	wp_redirect( esc_url( $welcome_url ) );
 }
 add_action( 'after_switch_theme', 'ct_chosen_welcome_redirect' );
+
+if ( function_exists( 'ct_chosen_pro_plugin_updater' ) ) {
+	remove_action( 'admin_init', 'ct_chosen_pro_plugin_updater', 0 );
+	add_action( 'admin_init', 'ct_chosen_pro_plugin_updater', 0 );
+}
