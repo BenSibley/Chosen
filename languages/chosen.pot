@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.19\n"
+"Project-Id-Version: Chosen 1.20\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-11-21 21:23:06+00:00\n"
+"POT-Creation-Date: 2016-12-05 15:59:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -186,20 +186,24 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:318 functions.php:319
+#: functions.php:319 functions.php:320
 msgid "email"
 msgstr ""
 
-#: functions.php:377 header.php:22 inc/scripts.php:16
+#: functions.php:378 header.php:22 inc/scripts.php:16
 msgid "open menu"
 msgstr ""
 
-#: functions.php:390
+#: functions.php:391
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:451
-msgid "Customizer settings deleted"
+#: functions.php:454
+msgid "Customizer settings deleted."
+msgstr ""
+
+#: functions.php:460
+msgid "Chosen successfully activated!"
 msgstr ""
 
 #: header.php:11
@@ -210,103 +214,129 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:40
+#: inc/customizer.php:29
+msgid ""
+"<a target=\"_blank\" href=\"%s\">Chosen Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too!"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Chosen Pro adds the following features to Chosen:"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "6 new layouts"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Custom colors"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "New fonts"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "+ 7 more features"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "View Chosen Pro"
+msgstr ""
+
+#: inc/customizer.php:47 theme-options.php:32
 msgid "Chosen Pro"
 msgstr ""
 
-#: inc/customizer.php:41
-msgid "Go Pro"
-msgstr ""
-
-#: inc/customizer.php:53
+#: inc/customizer.php:67
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:63
+#: inc/customizer.php:77
 msgid "Upload custom logo."
 msgstr ""
 
-#: inc/customizer.php:79
+#: inc/customizer.php:93
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:81
+#: inc/customizer.php:95
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:94
+#: inc/customizer.php:108
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:143
+#: inc/customizer.php:157
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:169
+#: inc/customizer.php:183
 msgid "Search Bar"
 msgstr ""
 
-#: inc/customizer.php:180
+#: inc/customizer.php:194
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:184 inc/customizer.php:307
+#: inc/customizer.php:198 inc/customizer.php:334
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:185 inc/customizer.php:308
+#: inc/customizer.php:199 inc/customizer.php:335
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:193
+#: inc/customizer.php:207
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:203
+#: inc/customizer.php:217
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:208 inc/customizer.php:256 inc/customizer.php:272
-#: inc/customizer.php:326
+#: inc/customizer.php:222 inc/customizer.php:270 inc/customizer.php:286
+#: inc/customizer.php:353
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:209 inc/customizer.php:257 inc/customizer.php:273
-#: inc/customizer.php:327
+#: inc/customizer.php:223 inc/customizer.php:271 inc/customizer.php:287
+#: inc/customizer.php:354
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:219
+#: inc/customizer.php:233
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:226
+#: inc/customizer.php:240
 msgid "Continue Reading"
 msgstr ""
 
-#: inc/customizer.php:231
+#: inc/customizer.php:245
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:241
+#: inc/customizer.php:255
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:251
+#: inc/customizer.php:265
 msgid "Make first post on blog extra wide?"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:281
 msgid "Display post author name in byline?"
 msgstr ""
 
-#: inc/customizer.php:281
+#: inc/customizer.php:307
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:292
+#: inc/customizer.php:318
 msgid "Add Custom CSS Here:"
 msgstr ""
 
@@ -352,75 +382,43 @@ msgstr ""
 msgid "Chosen Dashboard"
 msgstr ""
 
-#: theme-options.php:22
-msgid "Customization"
-msgstr ""
-
 #: theme-options.php:23
+msgid "Get Started"
+msgstr ""
+
+#: theme-options.php:24
 msgid ""
-"Click the \"Customize\" link in your menu, or use the button below to get "
-"started customizing Chosen"
+"Not sure where to start? The <strong>Chosen Getting Started Guide</strong> "
+"will take you step-by-step through every feature in Chosen."
 msgstr ""
 
-#: theme-options.php:26
-msgid "Use Customizer"
+#: theme-options.php:27
+msgid "View Guide"
 msgstr ""
 
-#: theme-options.php:30
-msgid "Support"
-msgstr ""
-
-#: theme-options.php:31
-msgid ""
-"You can find the knowledgebase, changelog, support forum, and more in the "
-"chosen Support Center"
-msgstr ""
-
-#: theme-options.php:34
-msgid "Visit Support Center"
-msgstr ""
-
-#: theme-options.php:38
-msgid "Get More Features & Flexibility"
-msgstr ""
-
-#: theme-options.php:39
+#: theme-options.php:33
 msgid ""
 "Download the Chosen Pro plugin and unlock custom colors, new layouts, "
 "sliders, and more"
 msgstr ""
 
-#: theme-options.php:42
+#: theme-options.php:36
 msgid "See Full Feature List"
 msgstr ""
 
-#: theme-options.php:46
-msgid "WordPress Resources"
-msgstr ""
-
-#: theme-options.php:47
-msgid ""
-"Save time and money searching for WordPress products by following our "
-"recommendations"
-msgstr ""
-
-#: theme-options.php:50
-msgid "View Resources"
-msgstr ""
-
-#: theme-options.php:54 theme-options.php:56
+#: theme-options.php:41 theme-options.php:43
 msgid "Leave a Review"
 msgstr ""
 
-#: theme-options.php:55
+#: theme-options.php:42
 msgid "Help others find Chosen by leaving a review on wordpress.org."
 msgstr ""
 
-#: theme-options.php:59 theme-options.php:67
+#: theme-options.php:46 theme-options.php:54
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:61
+#: theme-options.php:48
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase the Chosen "
 "theme's current settings in the <a href='%s'>Customizer</a>."
@@ -431,6 +429,6 @@ msgid ""
 "Chosen is a bold and minimalist theme for publishers who want to get their "
 "visitors' attention and keep it. Present your best content in a clean, "
 "uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
-"See our fully-setup live demo here: "
-"https://www.competethemes.com/chosen-live-demo/"
+"Preview on desktop, tablets, and mobile with our interactive live demo: "
+"https://www.competethemes.com/demos/?theme=chosen"
 msgstr ""
