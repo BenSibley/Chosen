@@ -447,11 +447,20 @@ if ( ! function_exists( 'ct_chosen_delete_settings_notice' ) ) {
 	function ct_chosen_delete_settings_notice() {
 
 		if ( isset( $_GET['chosen_status'] ) ) {
-			?>
-			<div class="updated">
-				<p><?php _e( 'Customizer settings deleted', 'chosen' ); ?>.</p>
-			</div>
-			<?php
+
+			if ( $_GET['chosen_status'] == 'deleted' ) {
+				?>
+				<div class="updated">
+					<p><?php _e( 'Customizer settings deleted.', 'chosen' ); ?></p>
+				</div>
+				<?php
+			} else if ( $_GET['chosen_status'] == 'activated' ) {
+				?>
+				<div class="updated">
+					<p><?php _e( 'Chosen successfully activated!', 'chosen' ); ?></p>
+				</div>
+				<?php
+			}
 		}
 	}
 }
@@ -654,11 +663,12 @@ function ct_chosen_welcome_redirect() {
 
 	$welcome_url = add_query_arg(
 		array(
-			'page' => 'chosen-options'
+			'page'          => 'chosen-options',
+			'chosen_status' => 'activated'
 		),
 		admin_url( 'themes.php' )
 	);
-	wp_redirect( esc_url( $welcome_url ) );
+	wp_safe_redirect( esc_url_raw( $welcome_url ) );
 }
 add_action( 'after_switch_theme', 'ct_chosen_welcome_redirect' );
 
