@@ -29,7 +29,7 @@ function ct_chosen_options_content() {
 			</div>
 			<?php if ( !function_exists( 'ct_chosen_pro_init' ) ) : ?>
 				<div class="content content-premium-upgrade">
-					<h3><?php _e( 'Get More Features & Flexibility', 'chosen' ); ?></h3>
+					<h3><?php _e( 'Chosen Pro', 'chosen' ); ?></h3>
 					<p><?php _e( 'Download the Chosen Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen' ); ?>...</p>
 					<p>
 						<a target="_blank" class="button-primary"
@@ -40,7 +40,7 @@ function ct_chosen_options_content() {
 			<div class="content content-review">
 				<h3><?php _e( 'Leave a Review', 'chosen' ); ?></h3>
 				<p><?php _e( 'Help others find Chosen by leaving a review on wordpress.org.', 'chosen' ); ?></p>
-				<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/chosen"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
+				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/chosen/reviews/"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'chosen' ); ?></h3>
