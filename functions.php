@@ -64,11 +64,11 @@ if ( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 			<div class="comment-footer">
 				<span class="comment-date"><?php comment_date(); ?></span>
 				<?php comment_reply_link( array_merge( $args, array(
-					'reply_text' => __( 'Reply', 'chosen' ),
+					'reply_text' => _x( 'Reply', 'verb: reply to this comment', 'chosen' ),
 					'depth'      => $depth,
 					'max_depth'  => $args['max_depth']
 				) ) ); ?>
-				<?php edit_comment_link( __( 'Edit', 'chosen' ) ); ?>
+				<?php edit_comment_link( _x( 'Edit', 'verb: edit this comment', 'chosen' ) ); ?>
 			</div>
 		</article>
 		<?php
@@ -85,14 +85,14 @@ if ( ! function_exists( 'ct_chosen_update_fields' ) ) {
 
 		$fields['author'] =
 			'<p class="comment-form-author">
-	            <label for="author">' . __( "Name", "chosen" ) . $label . '</label>
+	            <label for="author">' . __( "Name", "noun", "chosen" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . __( "Email", "chosen" ) . $label . '</label>
+	            <label for="email">' . __( "Email", "noun", "chosen" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
@@ -114,7 +114,7 @@ if ( ! function_exists( 'ct_chosen_update_comment_field' ) ) {
 
 		$comment_field =
 			'<p class="comment-form-comment">
-	            <label for="comment">' . __( "Comment", "chosen" ) . '</label>
+	            <label for="comment">' . __( "Comment", "noun", "chosen" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
@@ -319,8 +319,8 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="email" target="_blank"
 						   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-							<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'chosen' ); ?>"></i>
-							<span class="screen-reader-text"><?php esc_html_e('email', 'chosen'); ?></span>
+							<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'chosen' ); ?>"></i>
+							<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'chosen'); ?></span>
 						</a>
 					</li>
 				<?php } elseif ( $active_site == 'skype' ) { ?>
@@ -378,7 +378,7 @@ if ( ! function_exists( 'ct_chosen_nav_dropdown_buttons' ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . __( "open menu", "chosen" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . _x( "open menu", "verb: open the menu", "chosen" ) . '</span></button>', $item_output );
 			}
 		}
 

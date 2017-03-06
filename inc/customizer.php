@@ -206,7 +206,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'chosen_blog', array(
-		'title'    => __( 'Blog', 'chosen' ),
+		'title'    => _x( 'Blog', 'noun: the blog section', 'chosen' ),
 		'priority' => 45
 	) );
 	// setting

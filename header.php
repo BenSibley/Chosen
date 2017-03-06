@@ -19,7 +19,7 @@
 					<?php ct_chosen_social_icons_output(); ?>
 				</div>
 				<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
-					<span class="screen-reader-text"><?php _e( 'open menu', 'chosen' ); ?></span>
+					<span class="screen-reader-text"><?php _ex( 'open menu', 'verb: open the menu', 'chosen' ); ?></span>
 					<?php echo ct_chosen_svg_output( 'toggle-navigation' ); ?>
 				</button>
 				<div id="title-container" class="title-container">

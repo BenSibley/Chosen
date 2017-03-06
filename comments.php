@@ -9,7 +9,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), __( '% Comments', 'chosen' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), _x( '% Comments', 'noun: 5 comments', 'chosen' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -29,7 +29,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), __( '% Comments', 'chosen' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), _x( '% Comments', 'noun: 5 comments', 'chosen' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">
@@ -51,7 +51,7 @@ if ( comments_open() ) { ?>
 	<section id="comments" class="comments">
 		<div class="comments-number">
 			<h2>
-				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), __( '% Comments', 'chosen' ) ); ?>
+				<?php comments_number( __( 'Be First to Comment', 'chosen' ), __( 'One Comment', 'chosen' ), _x( '% Comments', 'noun: 5 comments', 'chosen' ) ); ?>
 			</h2>
 		</div>
 		<ol class="comment-list">

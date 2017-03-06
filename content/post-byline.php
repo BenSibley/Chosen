@@ -2,14 +2,14 @@
     <span class="post-date">
 		<?php
 		$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'r' ) ) );
-		printf( __( 'Published %s', 'chosen' ), $date );
+		printf( _x( 'Published %s', 'Published DATE', 'chosen' ), $date );
 		?>
 	</span>
 	<?php
 	$author = get_theme_mod( 'author_byline' );
 	if ( $author == 'yes' ) { ?>
 		<span class="post-author">
-			<span><?php _e( 'By', 'chosen' ); ?></span>
+			<span><?php _ex( 'By', 'Published DATE by AUTHOR ', 'chosen' ); ?></span>
 			<?php the_author(); ?>
 		</span>
 	<?php } ?>
