@@ -460,7 +460,7 @@ if ( ! function_exists( 'ct_chosen_delete_settings_notice' ) ) {
 			} else if ( $_GET['chosen_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Chosen successfully activated!', 'chosen' ); ?></p>
+					<p><?php printf( __( '%s successfully activated!', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}

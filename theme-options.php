@@ -1,7 +1,7 @@
 <?php
 
 function ct_chosen_register_theme_page() {
-	add_theme_page( __( 'Chosen Dashboard', 'chosen' ), __( 'Chosen Dashboard', 'chosen' ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content' );
+	add_theme_page( sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ), sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content' );
 }
 add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
 
@@ -16,12 +16,12 @@ function ct_chosen_options_content() {
 	);
 	?>
 	<div id="chosen-dashboard-wrap" class="wrap">
-		<h2><?php _e( 'Chosen Dashboard', 'chosen' ); ?></h2>
+		<h2><?php printf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
 		<div class="content-boxes">
 			<div class="content content-support">
 				<h3><?php _e( 'Get Started', 'chosen' ); ?></h3>
-				<p><?php _e( "Not sure where to start? The <strong>Chosen Getting Started Guide</strong> will take you step-by-step through every feature in Chosen.", "chosen" ); ?></p>
+				<p><?php printf( __( 'Not sure where to start? The <strong>%1$s Getting Started Guide</strong> will take you step-by-step through every feature in %1$s.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
 				<p>
 					<a target="_blank" class="button-primary"
 					   href="https://www.competethemes.com/help/getting-started-chosen/"><?php _e( 'View Guide', 'chosen' ); ?></a>
@@ -29,8 +29,8 @@ function ct_chosen_options_content() {
 			</div>
 			<?php if ( !function_exists( 'ct_chosen_pro_init' ) ) : ?>
 				<div class="content content-premium-upgrade">
-					<h3><?php _e( 'Chosen Pro', 'chosen' ); ?></h3>
-					<p><?php _e( 'Download the Chosen Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen' ); ?>...</p>
+					<h3><?php printf( __( '%s Pro', 'chosen' ), wp_get_theme( get_template() ) ); ?></h3>
+					<p><?php printf( __( 'Download the %s Pro plugin and unlock custom colors, new layouts, sliders, and more', 'chosen' ), wp_get_theme( get_template() ) ); ?>...</p>
 					<p>
 						<a target="_blank" class="button-primary"
 						   href="https://www.competethemes.com/chosen-pro/"><?php _e( 'See Full Feature List', 'chosen' ); ?></a>
@@ -39,13 +39,13 @@ function ct_chosen_options_content() {
 			<?php endif; ?>
 			<div class="content content-review">
 				<h3><?php _e( 'Leave a Review', 'chosen' ); ?></h3>
-				<p><?php _e( 'Help others find Chosen by leaving a review on wordpress.org.', 'chosen' ); ?></p>
+				<p><?php printf( __( 'Help others find %s by leaving a review on wordpress.org.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
 				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/chosen/reviews/"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'chosen' ); ?></h3>
 				<p>
-					<?php printf( __( "<strong>Warning:</strong> Clicking this button will erase the Chosen theme's current settings in the <a href='%s'>Customizer</a>.", 'chosen' ), esc_url( $customizer_url ) ); ?>
+					<?php printf( __( '<strong>Warning:</strong> Clicking this button will erase the %2$s theme\'s current settings in the <a href="%1$s">Customizer</a>.', 'chosen' ), esc_url( $customizer_url ), wp_get_theme( get_template() ) ); ?>
 				</p>
 				<form method="post">
 					<input type="hidden" name="chosen_reset_customizer" value="chosen_reset_customizer_settings"/>

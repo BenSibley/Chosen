@@ -26,15 +26,15 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/chosen-pro/';
 			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/chosen-pro.png' srcset='" . get_template_directory_uri() . "/assets/images/chosen-pro-2x.png 2x' /></a>";
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Chosen Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link) . "</p>";
-			echo "<p>" . __('Chosen Pro adds the following features to Chosen:', 'chosen') . "</p>";
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link, wp_get_theme( get_template() ) ) . "</p>";
+			echo "<p>" . sprintf( __( '%1$s Pro adds the following features to %1$s:', 'chosen' ), wp_get_theme( get_template() ) ) . "</p>";
 			echo "<ul>
 					<li>" . __('6 new layouts', 'chosen') . "</li>
 					<li>" . __('Custom colors', 'chosen') . "</li>
 					<li>" . __('New fonts', 'chosen') . "</li>
 					<li>" . __('+ 7 more features', 'chosen') . "</li>
 				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . __('View Chosen Pro', 'chosen') . "</a></p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . sprintf( __('View %s Pro', 'chosen'), wp_get_theme( get_template() ) ) . "</a></p>";
 		}
 	}
 
@@ -44,7 +44,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	if ( !function_exists( 'ct_chosen_pro_init' ) ) {
 		// section
 		$wp_customize->add_section( 'ct_chosen_pro', array(
-			'title'    => __( 'Chosen Pro', 'chosen' ),
+			'title'    => sprintf( __( '%s Pro', 'chosen' ), wp_get_theme( get_template() ) ),
 			'priority' => 1
 		) );
 		// Upload - setting
