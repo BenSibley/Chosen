@@ -434,21 +434,16 @@ a img {
 .search .post-content {
   text-align: center;
 }
-.blog .post-content ul,
-.blog .post-content p:not(:last-of-type),
-.archive .post-content ul,
-.archive .post-content p:not(:last-of-type),
-.search .post-content ul,
-.search .post-content p:not(:last-of-type) {
+.blog .post-content p,
+.archive .post-content p,
+.search .post-content p {
   text-align: right;
 }
-.blog .post-content p:last-of-type,
-.archive .post-content p:last-of-type,
-.search .post-content p:last-of-type {
-  font-size: 0.9412em;
-  line-height: 1.5;
+
+.more-link-wrapper {
   display: inline-block;
   margin: 0.75em 0 0;
+  text-align: center;
 }
 
 .entry.sticky {

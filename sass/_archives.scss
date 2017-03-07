@@ -57,7 +57,6 @@
     margin: $baseline-height * 2 0;
   }
 }
-// allow comments to sit next to button
 .blog,
 .archive,
 .search {
@@ -65,19 +64,15 @@
   .post-content {
     text-align: center;
 
-    // so i can un-center everything except the p containing more-link
-    // this allows the more-link and comments link to both be centered next to each other
-    ul,
-    p:not(:last-of-type) {
+    p {
       text-align: left;
     }
-    p:last-of-type {
-      font-size: 0.9412em;
-      line-height: 1.5; // to keep from scaling up smaller text due to 17px post-content
-      display: inline-block;
-      margin: $baseline-height / 2 0 0;
-    }
   }
+}
+.more-link-wrapper {
+  display: inline-block;
+  margin: $baseline-height/2 0 0;
+  text-align: center;
 }
 .entry.sticky {
   position: relative;
