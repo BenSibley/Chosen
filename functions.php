@@ -261,6 +261,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'yelp'          => 'chosen_yelp_profile',
 			'amazon'        => 'chosen_amazon_profile',
 			'google-wallet' => 'chosen_google-wallet_profile',
+			'twitch'        => 'chosen_twitch_profile',
 			'steam'         => 'chosen_steam_profile',
 			'vk'            => 'chosen_vk_profile',
 			'weibo'         => 'chosen_weibo_profile',
