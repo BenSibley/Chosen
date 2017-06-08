@@ -42,6 +42,11 @@ function ct_chosen_options_content() {
 				<p><?php printf( __( 'Help others find %s by leaving a review on wordpress.org.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
 				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/chosen/reviews/"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
 			</div>
+			<div class="content content-presspad">
+				<h3><?php _e( 'Turn Chosen into a Mobile App', 'chosen' ); ?></h3>
+				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store with the help of PressPad News. Read our tutorial to learn more.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
+				<a target="_blank" class="button-primary" href="https://www.competethemes.com/help/convert-mobile-app-chosen/"><?php _e( 'Read Tutorial', 'chosen' ); ?></a>
+			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'chosen' ); ?></h3>
 				<p>
