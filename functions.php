@@ -3,6 +3,14 @@
 require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
 require_once( trailingslashit( get_template_directory() ) . 'inc/customizer.php' );
 require_once( trailingslashit( get_template_directory() ) . 'inc/scripts.php' );
+require_once( trailingslashit( get_template_directory() ) . 'dnh/handler.php' );
+new WP_Review_Me( array(
+		'days_after' => 14,
+		'type'       => 'theme',
+		'slug'       => 'chosen',
+		'message'    => __( 'Hey! Sorry to interrupt, but you\'ve been using Chosen for a little while now. If you\'re happy with this theme, could you take a minute to leave a review? <i>You won\'t see this notice again after closing it.</i>', 'chosen' )
+	)
+);
 
 if ( ! function_exists( ( 'ct_chosen_set_content_width' ) ) ) {
 	function ct_chosen_set_content_width() {
