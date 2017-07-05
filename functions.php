@@ -121,6 +121,13 @@ add_filter( 'comment_form_default_fields', 'ct_chosen_update_fields' );
 if ( ! function_exists( 'ct_chosen_update_comment_field' ) ) {
 	function ct_chosen_update_comment_field( $comment_field ) {
 
+		// don't filter the WooCommerce review form
+		if ( function_exists( 'is_woocommerce' ) ) {
+			if ( is_woocommerce() ) {
+				return $comment_field;
+			}
+		}
+
 		$comment_field =
 			'<p class="comment-form-comment">
 	            <label for="comment">' . _x( "Comment", "noun", "chosen" ) . '</label>

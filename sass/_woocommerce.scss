@@ -1,0 +1,23 @@
+.woocommerce {
+
+  .product {
+
+    .quantity .qty {
+      width: 70px !important;
+    }
+    .single_add_to_cart_button {
+      line-height: 1.5;
+      padding: 11px 24px;
+    }
+  }
+  .product_meta {
+
+    a {
+      text-decoration: underline;
+    }
+  }
+  .woocommerce-Reviews-title,
+  .related h2 {
+    margin-bottom: 24px;
+  }
+}

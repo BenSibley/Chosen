@@ -1477,6 +1477,21 @@ a img {
   display: block;
 }
 
+.woocommerce .product .quantity .qty {
+  width: 70px !important;
+}
+.woocommerce .product .single_add_to_cart_button {
+  line-height: 1.5;
+  padding: 11px 24px;
+}
+.woocommerce .product_meta a {
+  text-decoration: underline;
+}
+.woocommerce .woocommerce-Reviews-title,
+.woocommerce .related h2 {
+  margin-bottom: 24px;
+}
+
 /*
 
 ATTENTION:
