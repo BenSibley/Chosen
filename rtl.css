@@ -1478,7 +1478,9 @@ a img {
 }
 
 .woocommerce .product .quantity .qty {
-  width: 70px !important;
+  width: 50px !important;
+  font-size: 16px !important;
+  padding: 11px 12px !important;
 }
 .woocommerce .product .single_add_to_cart_button {
   line-height: 1.5;
@@ -1487,8 +1489,39 @@ a img {
 .woocommerce .product_meta a {
   text-decoration: underline;
 }
+.woocommerce .woocommerce-review-link {
+  text-decoration: underline;
+}
 .woocommerce .woocommerce-Reviews-title,
-.woocommerce .related h2 {
+.woocommerce .related h2,
+.woocommerce .upsells h2 {
+  margin-bottom: 24px;
+}
+
+.woocommerce-cart th, .woocommerce-cart td {
+  border: none;
+}
+.woocommerce-cart .quantity input {
+  width: 50px !important;
+  font-size: 14px !important;
+  padding: 8px 4px !important;
+}
+.woocommerce-cart .coupon input {
+  max-width: none !important;
+  width: 49% !important;
+  padding: 10px 12px !important;
+}
+.woocommerce-cart .coupon input[type="text"] {
+  font-size: 14px !important;
+}
+.woocommerce-cart table.shop_table td.product-name {
+  padding: 24px 12px;
+}
+.woocommerce-cart table.shop_table .actions {
+  padding: 12px;
+}
+.woocommerce-cart .cross-sells h2,
+.woocommerce-cart .cart_totals h2 {
   margin-bottom: 24px;
 }
 

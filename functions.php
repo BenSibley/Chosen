@@ -40,6 +40,7 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_chosen_infinite_scroll_render'
 		) );
+		add_theme_support( 'woocommerce' );
 
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'chosen' )

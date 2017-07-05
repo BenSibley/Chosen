@@ -3,7 +3,9 @@
   .product {
 
     .quantity .qty {
-      width: 70px !important;
+      width: 50px !important;
+      font-size: 16px !important;
+      padding: 11px 12px !important;
     }
     .single_add_to_cart_button {
       line-height: 1.5;
@@ -16,8 +18,41 @@
       text-decoration: underline;
     }
   }
+  .woocommerce-review-link {
+    text-decoration: underline;
+  }
   .woocommerce-Reviews-title,
-  .related h2 {
+  .related h2,
+  .upsells h2 {
+    margin-bottom: 24px;
+  }
+}
+.woocommerce-cart {
+
+  th,td {
+    border: none;
+  }
+  .quantity input {
+    width: 50px !important;
+    font-size: 14px !important;
+    padding: 8px 4px !important;
+  }
+  .coupon input {
+    max-width: none !important;
+    width: 49% !important;
+    padding: 10px 12px !important;
+  }
+  .coupon input[type="text"] {
+    font-size: 14px !important;
+  }
+  table.shop_table td.product-name {
+    padding: 24px 12px;
+  }
+  table.shop_table .actions {
+    padding: 12px;
+  }
+  .cross-sells h2,
+  .cart_totals h2 {
     margin-bottom: 24px;
   }
 }
