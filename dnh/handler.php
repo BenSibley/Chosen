@@ -156,7 +156,7 @@ if ( ! class_exists( 'Dismissible_Notices_Handler' ) ) {
 		 * @return void
 		 */
 		public function load_script() {
-			wp_register_script( 'dnh', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'assets/js/main.js', array( 'jquery' ), self::$instance->version, true );
+			wp_register_script( 'dnh', trailingslashit( get_template_directory_uri() ) . 'dnh/assets/js/main.js', array( 'jquery' ), self::$instance->version, true );
 			wp_enqueue_script( 'dnh' );
 		}
 
