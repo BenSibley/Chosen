@@ -80,19 +80,17 @@
     position: relative;
     border: solid 1px $color-gray-93;
     border-radius: 6px;
-    padding: $baseline-height;
+    //padding: $baseline-height;
     min-height: 260px;
   }
   .woocommerce-MyAccount-navigation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
     background: $color-gray-96;
+    padding: $baseline-height;
 
     ul {
       list-style: none;
-      margin: $baseline-height;
+      //margin: $baseline-height;
+      margin: 0;
     }
     li {
       margin-bottom: 12px;
@@ -118,6 +116,7 @@
     }
   }
   .woocommerce-MyAccount-content {
+    padding: $baseline-height;
 
     > p:first-child {
       margin-top: 0;
@@ -130,5 +129,18 @@
     z-index: 9;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     top: -26px;
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  .woocommerce-account {
+
+    .woocommerce-MyAccount-navigation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
   }
 }
