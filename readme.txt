@@ -5,11 +5,11 @@ Requires at least: 4.5
 Tested up to: 4.8
 Stable tag: 1.11
 
-Chosen is a sophisticated, minimalist theme.
+Chosen is a bold and minimalist theme for publishers who want to get their visitors' attention and keep it.
 
 == Description ==
 
-Chosen is a sophisticated, minimalist theme. It looks great and performs wonderfully on mobile devices, tablets, laptops, and everything in between. Use it to setup a business blog, newspaper website, fashion magazine, or travel blog. Now with WooCommerce support, you can even setup an eCommerce store with Chosen. The design of this minimal theme also suits media-rich sites well like food blogs and personal photography portfolios. As a simple, responsive, and SEO optimized theme, you can trust Chosen to present your best content to the world.
+Chosen is a bold and minimalist theme for publishers who want to get their visitors' attention and keep it. Present your best content in a simple, uncluttered fashion on phones, tablets, and desktop computers with Chosen. Use Chosen to start a blog, magazine, or news site in any niche: fashion, business, gaming, food, travel. As a free theme, you can use Chosen for as many sites as you want. It can even be used for video, podcasts, and personal resumes. Now with WooCommerce support, you can also add an eCommerce store to your website.
 
 **Live Demo**
 
