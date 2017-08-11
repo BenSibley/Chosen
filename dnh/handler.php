@@ -146,7 +146,7 @@ if ( ! class_exists( 'Dismissible_Notices_Handler' ) ) {
 		 * @return void
 		 */
 		private function includes() {
-			require( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/helper-functions.php' );
+			require( trailingslashit( get_template_directory() ) . 'dnh/includes/helper-functions.php' );
 		}
 
 		/**
