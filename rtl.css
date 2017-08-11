@@ -703,17 +703,20 @@ a img {
   }
 }
 @media all and (min-width: 56.25em) {
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 9.08406%;
   }
 }
 @media all and (min-width: 68.75em) {
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 13.62609%;
   }
 }
 @media all and (min-width: 75em) {
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 18.16812%;
   }
 }

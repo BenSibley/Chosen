@@ -115,21 +115,24 @@
 
 @media all and (min-width: $nine-hundred) {
 
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 $column * 2 * 1.09;
   }
 }
 
 @media all and (min-width: $eleven-hundred) {
 
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 $column * 3 * 1.09;
   }
 }
 
 @media all and (min-width: $twelve-hundred) {
 
-  .comments {
+  .comments,
+  #disqus_thread {
     padding: 0 $column * 4 * 1.09;
   }
 }
