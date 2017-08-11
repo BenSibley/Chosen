@@ -1289,6 +1289,10 @@ a img {
     line-height: 1.314;
     /* 67px */
   }
+
+  .page-template-full-width .post-content {
+    padding: 0;
+  }
 }
 @media all and (min-width: 68.75em) {
   .singular .post-content,
@@ -1297,6 +1301,10 @@ a img {
   .error-404 .post-meta {
     padding: 0 13.62609%;
   }
+
+  .page-template-full-width .post-content {
+    padding: 0;
+  }
 }
 @media all and (min-width: 75em) {
   .singular .post-content,
@@ -1304,6 +1312,10 @@ a img {
   .error-404 .post-content,
   .error-404 .post-meta {
     padding: 0 18.16812%;
+  }
+
+  .page-template-full-width .post-content {
+    padding: 0;
   }
 }
 .search-form-container .search-field {
