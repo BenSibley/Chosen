@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chosen 1.26\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2017-07-24 11:54:39+00:00\n"
+"POT-Creation-Date: 2017-08-16 14:32:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Search for:"
 msgstr ""
 
-#: content-page.php:11 content.php:12
+#: content-page.php:11 content.php:12 templates/full-width.php:21
 msgid "Pages:"
 msgstr ""
 
@@ -362,8 +362,9 @@ msgstr ""
 
 #: theme-options.php:47
 msgid ""
-"%s can be converted into a mobile app and listed on the App Store with the "
-"help of PressPad News. Read our tutorial to learn more."
+"%s can be converted into a mobile app and listed on the App Store and "
+"Google Play Store with the help of PressPad News. Read our tutorial to "
+"learn more."
 msgstr ""
 
 #: theme-options.php:48
@@ -383,10 +384,19 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Chosen is a bold and minimalist theme for publishers who want to get their "
-"visitors' attention and keep it. Present your best content in a clean, "
+"visitors' attention and keep it. Present your best content in a simple, "
 "uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
-"Now with WooCommerce support! Preview on desktop, tablets, and mobile with "
-"our interactive live demo: https://www.competethemes.com/demos/?theme=chosen"
+"Use Chosen to start a blog, magazine, or news site in any niche: fashion, "
+"business, gaming, food, travel. As a free theme, you can use Chosen for as "
+"many sites as you want. It can even be used for video, podcasts, and "
+"personal resumes. Now with WooCommerce support, you can also add an "
+"eCommerce store to your website. Preview Chosen now on desktop, tablets, "
+"and mobile devices with the interactive live demo: "
+"https://www.competethemes.com/demos/?theme=chosen"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full-width"
 msgstr ""
 
 #: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:5
