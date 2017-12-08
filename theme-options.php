@@ -1,7 +1,7 @@
 <?php
 
 function ct_chosen_register_theme_page() {
-	add_theme_page( sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ), sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content' );
+	add_theme_page( sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme() ), sprintf( __( '%s Dashboard', 'chosen' ), wp_get_theme() ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content' );
 }
 add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
 
@@ -16,7 +16,7 @@ function ct_chosen_options_content() {
 	);
 	?>
 	<div id="chosen-dashboard-wrap" class="wrap">
-		<h2><?php printf( __( '%s Dashboard', 'chosen' ), wp_get_theme( get_template() ) ); ?></h2>
+		<h2><?php printf( __( '%s Dashboard', 'chosen' ), wp_get_theme() ); ?></h2>
 		<?php do_action( 'theme_options_before' ); ?>
 		<div class="content-boxes">
 			<div class="content content-support">
@@ -39,18 +39,18 @@ function ct_chosen_options_content() {
 			<?php endif; ?>
 			<div class="content content-review">
 				<h3><?php _e( 'Leave a Review', 'chosen' ); ?></h3>
-				<p><?php printf( __( 'Help others find %s by leaving a review on wordpress.org.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
-				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/chosen/reviews/"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
+				<p><?php printf( __( 'Help others find %s by leaving a review on wordpress.org.', 'chosen' ), wp_get_theme() ); ?></p>
+				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/<?php echo sanitize_title(wp_get_theme()); ?>/reviews/"><?php _e( 'Leave a Review', 'chosen' ); ?></a>
 			</div>
 			<div class="content content-presspad">
-				<h3><?php _e( 'Turn Chosen into a Mobile App', 'chosen' ); ?></h3>
-				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store and Google Play Store with the help of PressPad News. Read our tutorial to learn more.', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
+				<h3><?php printf( __( 'Turn %s into a Mobile App', 'chosen' ), wp_get_theme() ); ?></h3>
+				<p><?php printf( __( '%s can be converted into a mobile app and listed on the App Store and Google Play Store with the help of PressPad News. Read our tutorial to learn more.', 'chosen' ), wp_get_theme() ); ?></p>
 				<a target="_blank" class="button-primary" href="https://www.competethemes.com/help/convert-mobile-app-chosen/"><?php _e( 'Read Tutorial', 'chosen' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'chosen' ); ?></h3>
 				<p>
-					<?php printf( __( '<strong>Warning:</strong> Clicking this button will erase the %2$s theme\'s current settings in the <a href="%1$s">Customizer</a>.', 'chosen' ), esc_url( $customizer_url ), wp_get_theme( get_template() ) ); ?>
+					<?php printf( __( '<strong>Warning:</strong> Clicking this button will erase the %2$s theme\'s current settings in the <a href="%1$s">Customizer</a>.', 'chosen' ), esc_url( $customizer_url ), wp_get_theme() ); ?>
 				</p>
 				<form method="post">
 					<input type="hidden" name="chosen_reset_customizer" value="chosen_reset_customizer_settings"/>
