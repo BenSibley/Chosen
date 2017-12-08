@@ -36,7 +36,7 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 				  </ul>";
 			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . sprintf( __('View %s Pro', 'chosen'), wp_get_theme( get_template() ) ) . "</a></p>";
 			if ( wp_get_theme() == 'Chosen Gamer' ) {
-				echo '<p><em>Chosen Pro is 100% compatible with the Chosen Gamer child theme.</em></p>';
+				echo '<p><em>'. esc_html__( "Chosen Pro is 100% compatible with the Chosen Gamer child theme.", "chosen") .'</em></p>';
 			}
 		}
 	}
