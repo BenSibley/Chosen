@@ -293,6 +293,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'twitch'        => 'chosen_twitch_profile',
 			'steam'         => 'chosen_steam_profile',
 			'vk'            => 'chosen_vk_profile',
+			'ok-ru'         => 'chosen_ok_ru_profile',
 			'weibo'         => 'chosen_weibo_profile',
 			'tencent-weibo' => 'chosen_tencent_weibo_profile',
 			'500px'         => 'chosen_500px_profile',
@@ -339,6 +340,12 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 
 			foreach ( $active_sites as $key => $active_site ) {
 
+				if ( $active_site == 'ok-ru' ) {
+					$classes = 'fa fa-odnoklassniki';
+				} else {
+					$classes = 'fa fa-' . esc_attr( $active_site );
+				}
+
 				if ( $active_site == 'email' ) {
 					?>
 					<li>
@@ -352,7 +359,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 						   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
-							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
+							<i class="<?php echo esc_attr( $classes ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
 							<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 						</a>
@@ -370,7 +377,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
-							<i class="fa fa-<?php echo esc_attr( $active_site ); ?>"
+							<i class="<?php echo esc_attr( $classes ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
 							<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 						</a>

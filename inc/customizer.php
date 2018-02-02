@@ -148,6 +148,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 				$label = __('PayPal', 'chosen');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'chosen');
+			} elseif ( $social_site == 'ok-ru' ) {
+				$label = __('OK.ru', 'chosen');
 			}
 
 			if ( $social_site == 'skype' ) {
