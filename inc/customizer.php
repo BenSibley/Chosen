@@ -294,6 +294,22 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'chosen' )
 		)
 	) );
+	// setting - scroll-to-top arrow
+	$wp_customize->add_setting( 'scroll_to_top', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings'
+	) );
+	// control - scroll-to-top arrow
+	$wp_customize->add_control( 'scroll_to_top', array(
+		'label'    => __( 'Display Scroll-to-top arrow?', 'chosen' ),
+		'section'  => 'chosen_additional',
+		'settings' => 'scroll_to_top',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
+		)
+	) );
 
 	/***** Custom CSS *****/
 

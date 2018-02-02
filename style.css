@@ -248,7 +248,7 @@ img,
 
 .wp-caption-text,
 .gallery-caption {
-  margin: 0 0 1.84502em;
+  margin: 0 0 1.8450184502em;
 }
 
 /* Form styles */
@@ -501,7 +501,7 @@ a img {
   .blog .entry,
   .archive .entry,
   .search .entry {
-    width: 47.69132%;
+    width: 47.691315%;
     float: left;
   }
   .blog .entry:nth-child(even),
@@ -729,6 +729,40 @@ a img {
   text-align: center;
   background: #f5f5f5;
   border-top: solid 1px #EDEDED;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  right: 0;
+  z-index: 9;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 4.167%;
+  -webkit-transition: background 0.2s, -webkit-transform 0.3s;
+          transition: background 0.2s, transform 0.3s;
+}
+.scroll-to-top.visible {
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+.scroll-to-top:hover {
+  cursor: pointer;
+  background: #3a3a3a;
+}
+.scroll-to-top:hover i {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+.scroll-to-top:focus {
+  outline: none;
+}
+.scroll-to-top i {
+  font-size: 21px;
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
 }
 
 .site-header {

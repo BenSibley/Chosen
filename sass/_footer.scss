@@ -8,3 +8,34 @@
   background: $color-gray-96;
   border-top: solid 1px $color-gray-93;
 }
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  right: 0;
+  z-index: 9;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: $column;
+  transition: background 0.2s, transform 0.3s;
+
+  &.visible {
+    transform: translateY(-45px);
+  }
+  &:hover {
+    cursor: pointer;
+    background: $color-gray-23;
+
+    i {
+      transform: translateY(-4px);
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  i {
+    font-size: 21px;
+    transition: transform 0.2s;
+  }
+}

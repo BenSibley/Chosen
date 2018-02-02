@@ -712,3 +712,12 @@ if ( ! function_exists( 'ct_chosen_modify_archive_descriptions' ) ) {
 	}
 }
 add_filter( 'get_the_archive_description', 'ct_chosen_modify_archive_descriptions' );
+
+function ct_chosen_scroll_to_top_arrow() {
+	$setting = get_theme_mod('scroll_to_top');
+	
+	if ( $setting == 'yes' ) {
+		echo '<button id="scroll-to-top" class="scroll-to-top"><i class="fa fa-arrow-up"></i></button>';
+	}
+}
+add_action( 'body_bottom', 'ct_chosen_scroll_to_top_arrow');
