@@ -1,0 +1,520 @@
+# Copyright (C) 2017 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Chosen 1.27\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2017-12-08 19:33:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-03-29 21:06+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"Language: pl_PL\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr "404: Strona nie została znaleziona"
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Wygląda na to, że nic nie zostało znalezione pod tym adresem. Dokładnie "
+"sprawdź, czy adres URL jest prawidłowy lub spróbuj z formularza wyszukiwania "
+"poniżej, aby znaleźć to, czego szukasz."
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "Be First to Comment"
+msgstr "Bądź pierwszym, który skomentuje"
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "One Comment"
+msgstr "Jeden komentarz"
+
+#: comments.php:46
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Komentarze są wyłączone, ale <a href=„%s” title=„Trackback URL for this "
+"post”>trackbacki</a> i pingbacki są aktywne."
+
+#: comments.php:68 comments.php:84
+msgid "Comments are closed."
+msgstr "Komentarze są wyłączone."
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr "ikona komentarza"
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr "Komentarze wyłączone"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr "1 Komentarz"
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr "Podziel się opinią"
+
+#: content/post-categories.php:9
+msgid "Categories:"
+msgstr "Kategorie:"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Poprzednie zdjęcie"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Następne zdjęcie"
+
+#: content/post-nav.php:8
+msgid "Previous Post"
+msgstr "Poprzedni wpis"
+
+#: content/post-nav.php:9
+msgid "The Previous Post"
+msgstr "Wcześniejszy wpis"
+
+#: content/post-nav.php:12
+msgid "No Older Posts"
+msgstr "Bark starszych wpisów"
+
+#: content/post-nav.php:13 content/post-nav.php:27
+msgid "Return to Blog"
+msgstr "Powróć do bloga"
+
+#: content/post-nav.php:22
+msgid "Next Post"
+msgstr "Następny wpis"
+
+#: content/post-nav.php:23
+msgid "The Next Post"
+msgstr "Następny wpis"
+
+#: content/post-nav.php:26
+msgid "No Newer Posts"
+msgstr "Brak nowszych postów"
+
+#: content/post-tags.php:6
+msgid "Tags:"
+msgstr "Tagi:"
+
+#: content/post-tags.php:9
+msgid "View all posts tagged %s"
+msgstr "Wyświetl wszystkie wpisy oznaczone jako %s"
+
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
+msgstr "Szukaj"
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr "Szukaj..."
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr "Szukaj:"
+
+#: content-page.php:11 content.php:12 templates/full-width.php:21
+msgid "Pages:"
+msgstr "Stron:"
+
+#: footer.php:11
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes."
+msgstr "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes."
+
+#: functions.php:12
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Chosen for a little while "
+"now. If you're happy with this theme, could you take a minute to leave a "
+"review? <i>You won't see this notice again after closing it.</i>"
+msgstr ""
+"Hej! Przepraszam, że przeszkadzam, ale od niedawna używasz Chosen. Jeśli "
+"jesteś zadowolony z tego tematu, możesz poświęcić chwilę, aby dodać opinię? "
+"<i>Nie zobaczysz tego powiadomienia ponownie po jego zamknięciu. </i>"
+
+#: functions.php:46
+msgid "Primary"
+msgstr "Podstawowy"
+
+#: functions.php:69
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz czaka na sprawdzenie."
+
+#: functions.php:93
+msgid "(optional)"
+msgstr "(opcjonalnie)"
+
+#: functions.php:112
+msgid "Website"
+msgstr "Strona internetowa"
+
+#: functions.php:166 functions.php:180 inc/customizer.php:245
+msgid "Continue Reading"
+msgstr "Czytaj dalej"
+
+#: functions.php:419
+msgid "Featured Post"
+msgstr "Prezentowany wpis"
+
+#: functions.php:482
+msgid "Customizer settings deleted."
+msgstr "Ustawienia modułu dostosowania zostały usunięte."
+
+#: functions.php:488
+msgid "%s successfully activated!"
+msgstr "%s zostało pomyślnie aktywowane!"
+
+#: header.php:11
+msgid "Skip to content"
+msgstr "Przejdź do treści"
+
+#: inc/customizer.php:15
+msgid "Front Page"
+msgstr "Pierwsza strona"
+
+#: inc/customizer.php:29
+msgid ""
+"<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too!"
+msgstr ""
+"<a target=\"_blank\" href=\"%1$s\">%2$s Pro</a> to plugin, który sprawia, że "
+"zaawansowana personalizacja jest prosta - i zabawna!"
+
+#: inc/customizer.php:30
+msgid "%1$s Pro adds the following features to %1$s:"
+msgstr "%1$s Pro dodaje następujące funkcje do %1$s:"
+
+#: inc/customizer.php:32
+msgid "6 new layouts"
+msgstr "6 nowych układów"
+
+#: inc/customizer.php:33
+msgid "Custom colors"
+msgstr "Niestandardowe kolory"
+
+#: inc/customizer.php:34
+msgid "New fonts"
+msgstr "Nowe czcionki"
+
+#: inc/customizer.php:35
+msgid "+ 7 more features"
+msgstr "+7 dodatkowych funkcji"
+
+#: inc/customizer.php:37
+msgid "View %s Pro"
+msgstr "Zobacz %s Pro"
+
+#: inc/customizer.php:39
+msgid "Chosen Pro is 100% compatible with the Chosen Gamer child theme."
+msgstr "Chosen Pro jest w 100% kompatybilny z motywem potomnym Chosen Gamer."
+
+#: inc/customizer.php:50 theme-options.php:32
+msgid "%s Pro"
+msgstr "%s Pro"
+
+#: inc/customizer.php:70
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:80
+msgid "Upload custom logo."
+msgstr "Prześlij niestandardowe logo."
+
+#: inc/customizer.php:96
+msgid "Social Media Icons"
+msgstr "Ikony Social Media"
+
+#: inc/customizer.php:98
+msgid "Add the URL for each of your social profiles."
+msgstr "Dodaj adres URL każdego profilu społecznościowego."
+
+#: inc/customizer.php:111
+msgid "Email Address"
+msgstr "Adres e-mail"
+
+#: inc/customizer.php:162
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+"Akceptuje protokół łącza Skype (<a href=\"%s\" target=\"_blank\">dowiedz się "
+"więcej</a>)"
+
+#: inc/customizer.php:188
+msgid "Search Bar"
+msgstr "Pasek wyszukiwania"
+
+#: inc/customizer.php:199
+msgid "Show search bar at top of site?"
+msgstr "Pokaż pasek wyszukiwania u góry strony?"
+
+#: inc/customizer.php:203 inc/customizer.php:339
+msgid "Show"
+msgstr "Pokaż"
+
+#: inc/customizer.php:204 inc/customizer.php:340
+msgid "Hide"
+msgstr "Ukryj"
+
+#: inc/customizer.php:222
+msgid "Show full posts on blog?"
+msgstr "Pokazać cały wpis na blogu?"
+
+#: inc/customizer.php:227 inc/customizer.php:275 inc/customizer.php:291
+#: inc/customizer.php:358
+msgid "Yes"
+msgstr "Tak"
+
+#: inc/customizer.php:228 inc/customizer.php:276 inc/customizer.php:292
+#: inc/customizer.php:359
+msgid "No"
+msgstr "Nie"
+
+#: inc/customizer.php:238
+msgid "Excerpt word count"
+msgstr "Liczba słów licznika"
+
+#: inc/customizer.php:250
+msgid "Read More button text"
+msgstr "Przeczytaj tekst przycisku Więcej"
+
+#: inc/customizer.php:260
+msgid "Additional Options"
+msgstr "Dodatkowe opcje"
+
+#: inc/customizer.php:270
+msgid "Make first post on blog extra wide?"
+msgstr "Dodać pierwszy wpis na blogu bardzo szeroki?"
+
+#: inc/customizer.php:286
+msgid "Display post author name in byline?"
+msgstr "Wyświetlaj nazwisko autora po linii?"
+
+#: inc/customizer.php:312
+msgid "Custom CSS"
+msgstr "Niestandardowy arkusz CSS"
+
+#: inc/customizer.php:323
+msgid "Add Custom CSS Here:"
+msgstr "Dodaj niestandardowy arkusz CSS tutaj:"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "Kliknij tutaj, aby zostawić swoją opinię"
+
+#: index.php:19
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: index.php:20
+msgid "Next"
+msgstr "Następny"
+
+#: search.php:9
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d wynik wyszukiwania dla \"%2$s\""
+msgstr[1] "%1$d wyniki wyszukiwania dla \"%2$s\""
+msgstr[2] "%1$d wyniki wyszukiwania dla \"%2$s\""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr "Brak wyników wyszukiwania dla \"%s\""
+
+#: search.php:35
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "Nie możesz znaleźć tego, czego szukasz? Spróbuj zawęzić wyszukiwanie:"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "Działaj"
+
+#: theme-options.php:4 theme-options.php:19
+msgid "%s Dashboard"
+msgstr "Kokpit"
+
+#: theme-options.php:23
+msgid "Get Started"
+msgstr "Zaczynamy"
+
+#: theme-options.php:24
+msgid ""
+"Not sure where to start? The <strong>%1$s Getting Started Guide</strong> "
+"will take you step-by-step through every feature in %1$s."
+msgstr ""
+"Nie wiesz od czego zacząć? <strong>%1$s Przewodnik Getting Started</strong> "
+"poprowadzi Cię krok po kroku przez każdą funkcję w %1$s."
+
+#: theme-options.php:27
+msgid "View Guide"
+msgstr "Wyświetl przewodnik"
+
+#: theme-options.php:33
+msgid ""
+"Download the %s Pro plugin and unlock custom colors, new layouts, sliders, "
+"and more"
+msgstr ""
+"Pobierz wtyczkę %s Pro i odblokuj niestandardowe kolory, nowe układy, suwaki "
+"i inne"
+
+#: theme-options.php:36
+msgid "See Full Feature List"
+msgstr "Zobacz pełną listę funkcji"
+
+#: theme-options.php:41 theme-options.php:43
+msgid "Leave a Review"
+msgstr "Pozostaw recenzję"
+
+#: theme-options.php:42
+msgid "Help others find %s by leaving a review on wordpress.org."
+msgstr "Pomóż innym znaleźć %s, zostawiając recenzję na wordpress.org."
+
+#: theme-options.php:46
+msgid "Turn %s into a Mobile App"
+msgstr "Zmień %s w aplikację mobilną"
+
+#: theme-options.php:47
+msgid ""
+"%s can be converted into a mobile app and listed on the App Store and Google "
+"Play Store with the help of PressPad News. Read our tutorial to learn more."
+msgstr ""
+"%s można przekształcić w aplikację mobilną i wyświetlić w App Store i Google "
+"Play Store za pomocą PressPad News. Przeczytaj nasz samouczek, aby "
+"dowiedzieć się więcej."
+
+#: theme-options.php:48
+msgid "Read Tutorial"
+msgstr "Przeczytaj samouczek"
+
+#: theme-options.php:51 theme-options.php:59
+msgid "Reset Customizer Settings"
+msgstr "Zresetuj ustawienia Customizer'a"
+
+#: theme-options.php:53
+msgid ""
+"<strong>Warning:</strong> Clicking this button will erase the %2$s theme's "
+"current settings in the <a href=\"%1$s\">Customizer</a>."
+msgstr ""
+"<strong>Ostrzeżenie:</strong> Kliknięcie tego przycisku usunie bieżące "
+"ustawienia motywu %2$s w <a href=\"%1$s\">Customizer</a>."
+
+#. Description of the plugin/theme
+msgid ""
+"Chosen is a bold and minimalist theme for publishers who want to get their "
+"visitors' attention and keep it. Present your best content in a simple, "
+"uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
+"Use Chosen to start a blog, magazine, or news site in any niche: fashion, "
+"business, gaming, food, travel. As a free theme, you can use Chosen for as "
+"many sites as you want. It can even be used for video, podcasts, and "
+"personal resumes. Now with WooCommerce support, you can also add an "
+"eCommerce store to your website. Preview Chosen now on desktop, tablets, and "
+"mobile devices with the interactive live demo: https://www.competethemes.com/"
+"demos/?theme=chosen"
+msgstr ""
+"Chosen to odważny i minimalistyczny temat dla wydawców, którzy chcą "
+"przyciągnąć uwagę swoich gości i je zatrzymać. Prezentuj swoje najlepsze "
+"treści w prosty, niezakłócony sposób na telefonach, tabletach i komputerach "
+"stacjonarnych z usługą Wybrane. Użyj opcji Wybrane, aby rozpocząć blog, "
+"czasopismo lub serwis informacyjny w dowolnej niszy: moda, biznes, gry, "
+"jedzenie, podróże. Jako darmowy motyw możesz wybrać dowolną liczbę witryn. "
+"Może być również używany do wideo, podcastów i życiorysów osobistych. Teraz "
+"dzięki obsłudze WooCommerce możesz również dodać sklep eCommerce do swojej "
+"witryny. Podgląd Wybrane teraz na komputerach, tabletach i urządzeniach "
+"mobilnych za pomocą interaktywnej wersji demonstracyjnej na żywo: https://"
+"www.competethemes.com/demos/?theme=chosen"
+
+#. Template Name of the plugin/theme
+msgid "Full-width"
+msgstr "Pełna szerokość"
+
+#: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:5
+#: content/comments-link.php:8
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Komentarzy"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title's Posts"
+msgid "Posts"
+msgstr "Wpisy"
+
+#: content/post-byline.php:5
+msgctxt "Published DATE"
+msgid "Published %s"
+msgstr "Opublikowane %s"
+
+#: content/post-byline.php:12
+msgctxt "Published DATE by AUTHOR "
+msgid "By"
+msgstr "Przez"
+
+#: content/post-categories.php:11
+msgctxt "View all posts in CATEGORY"
+msgid "View all posts in %s"
+msgstr "Zobacz wszystkie wpisy w %s"
+
+#: functions.php:77
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr "Odpowiedz"
+
+#: functions.php:81
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr "Edycja"
+
+#: functions.php:98
+msgctxt "noun"
+msgid "Name"
+msgstr "Nazwa"
+
+#: functions.php:105
+msgctxt "noun"
+msgid "Email"
+msgstr "Email"
+
+#: functions.php:134
+msgctxt "noun"
+msgid "Comment"
+msgstr "Komentarz"
+
+#: functions.php:347 functions.php:348
+msgctxt "noun"
+msgid "email"
+msgstr "email"
+
+#: functions.php:406 header.php:22 inc/scripts.php:16
+msgctxt "verb: open the menu"
+msgid "open menu"
+msgstr "otwórz menu"
+
+#: inc/customizer.php:212
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/scripts.php:17
+msgctxt "verb: close the menu"
+msgid "close menu"
+msgstr "zamknij menu"
+
+#: inc/scripts.php:18
+msgctxt "verb: open the dropdown menu"
+msgid "open dropdown menu"
+msgstr "otwórz menu rozwijane"
+
+#: inc/scripts.php:19
+msgctxt "verb: close the dropdown menu"
+msgid "close dropdown menu"
+msgstr "zamknij menu rozwijane"
+
