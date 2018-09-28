@@ -8,7 +8,7 @@ if ( get_theme_mod( 'search_bar' ) != 'show' ) {
 		<i class="fa fa-search"></i>
 	</button>
 	<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-		<label class="screen-reader-text"><?php _e( 'Search', 'chosen' ); ?></label>
+		<label class="screen-reader-text"><?php esc_html_e( 'Search', 'chosen' ); ?></label>
 		<input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search...', 'chosen' ); ?>" value="" name="s"
 		       title="<?php esc_attr_e( 'Search for:', 'chosen' ); ?>" tabindex="-1"/>
 	</form>

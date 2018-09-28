@@ -66,7 +66,7 @@ if ( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 			</div>
 			<div class="comment-content">
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'chosen' ) ?></em>
+					<em><?php esc_html_e( 'Your comment is awaiting moderation.', 'chosen' ) ?></em>
 					<br/>
 				<?php endif; ?>
 				<?php comment_text(); ?>
@@ -74,11 +74,11 @@ if ( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 			<div class="comment-footer">
 				<span class="comment-date"><?php comment_date(); ?></span>
 				<?php comment_reply_link( array_merge( $args, array(
-					'reply_text' => _x( 'Reply', 'verb: reply to this comment', 'chosen' ),
+					'reply_text' => esc_html_x( 'Reply', 'verb: reply to this comment', 'chosen' ),
 					'depth'      => $depth,
 					'max_depth'  => $args['max_depth']
 				) ) ); ?>
-				<?php edit_comment_link( _x( 'Edit', 'verb: edit this comment', 'chosen' ) ); ?>
+				<?php edit_comment_link( esc_html_x( 'Edit', 'verb: edit this comment', 'chosen' ) ); ?>
 			</div>
 		</article>
 		<?php
@@ -90,26 +90,26 @@ if ( ! function_exists( 'ct_chosen_update_fields' ) ) {
 
 		$commenter = wp_get_current_commenter();
 		$req       = get_option( 'require_name_email' );
-		$label     = $req ? '*' : ' ' . __( '(optional)', 'chosen' );
+		$label     = $req ? '*' : ' ' . esc_html__( '(optional)', 'chosen' );
 		$aria_req  = $req ? "aria-required='true'" : '';
 
 		$fields['author'] =
 			'<p class="comment-form-author">
-	            <label for="author">' . _x( "Name", "noun", "chosen" ) . $label . '</label>
+	            <label for="author">' . esc_html_x( "Name", "noun", "chosen" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . _x( "Email", "noun", "chosen" ) . $label . '</label>
+	            <label for="email">' . esc_html_x( "Email", "noun", "chosen" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['url'] =
 			'<p class="comment-form-url">
-	            <label for="url">' . __( "Website", "chosen" ) . '</label>
+	            <label for="url">' . esc_html__( "Website", "chosen" ) . '</label>
 	            <input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
 			'" size="30" />
 	            </p>';
@@ -131,7 +131,7 @@ if ( ! function_exists( 'ct_chosen_update_comment_field' ) ) {
 
 		$comment_field =
 			'<p class="comment-form-comment">
-	            <label for="comment">' . _x( "Comment", "noun", "chosen" ) . '</label>
+	            <label for="comment">' . esc_html_x( "Comment", "noun", "chosen" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
@@ -163,7 +163,7 @@ if ( ! function_exists( 'ct_chosen_filter_read_more_link' ) ) {
 		}
 		// Because i18n text cannot be stored in a variable
 		if ( empty( $read_more_text ) ) {
-			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __( 'Continue Reading', 'chosen' ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
+			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . esc_html__( 'Continue Reading', 'chosen' ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
 		} else {
 			$output .= '<div class="more-link-wrapper"><a class="more-link" href="' . esc_url( get_permalink() ) . '">' . esc_html( $read_more_text ) . '<span class="screen-reader-text">' . esc_html( get_the_title() ) . '</span></a></div>';
 		}
@@ -177,7 +177,7 @@ add_filter( 'excerpt_more', 'ct_chosen_filter_read_more_link', 9999 ); // automa
 function ct_chosen_update_yoast_og_description( $ogdesc ) {
 	$read_more_text = get_theme_mod( 'read_more_text' );
 	if ( empty( $read_more_text ) ) {
-		$read_more_text = __( 'Continue Reading', 'chosen' );
+		$read_more_text = esc_html__( 'Continue Reading', 'chosen' );
 	}
 	$ogdesc = substr( $ogdesc, 0, strpos( $ogdesc, $read_more_text ) );
 
@@ -411,7 +411,7 @@ if ( ! function_exists( 'ct_chosen_nav_dropdown_buttons' ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . _x( "open menu", "verb: open the menu", "chosen" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . esc_html_x( "open menu", "verb: open the menu", "chosen" ) . '</span></button>', $item_output );
 			}
 		}
 
@@ -424,7 +424,7 @@ if ( ! function_exists( 'ct_chosen_sticky_post_marker' ) ) {
 	function ct_chosen_sticky_post_marker() {
 
 		if ( is_sticky() && !is_archive() && !is_search() ) {
-			echo '<div class="sticky-status"><span>' . __( "Featured Post", "chosen" ) . '</span></div>';
+			echo '<div class="sticky-status"><span>' . esc_html__( "Featured Post", "chosen" ) . '</span></div>';
 		}
 	}
 }
@@ -487,13 +487,13 @@ if ( ! function_exists( 'ct_chosen_delete_settings_notice' ) ) {
 			if ( $_GET['chosen_status'] == 'deleted' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Customizer settings deleted.', 'chosen' ); ?></p>
+					<p><?php esc_html_e( 'Customizer settings deleted.', 'chosen' ); ?></p>
 				</div>
 				<?php
 			} else if ( $_GET['chosen_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php printf( __( '%s successfully activated!', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
+					<p><?php printf( esc_html__( '%s successfully activated!', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}

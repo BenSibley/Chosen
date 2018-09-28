@@ -3,10 +3,10 @@ $tags   = get_the_tags( $post->ID );
 $output = '';
 if ( $tags ) {
 	echo '<div class="post-tags">';
-	echo '<span>' . __( "Tags:", "chosen" ) . '</span>';
+	echo '<span>' . esc_html__( "Tags:", "chosen" ) . '</span>';
 	echo '<ul>';
 	foreach ( $tags as $tag ) {
-		echo '<li><a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts tagged %s", 'chosen' ), $tag->name ) ) . '">' . esc_html( $tag->name ) . '</a></li>';
+		echo '<li><a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '" title="' . esc_attr( sprintf( esc_html__( "View all posts tagged %s", 'chosen' ), $tag->name ) ) . '">' . esc_html( $tag->name ) . '</a></li>';
 	}
 	echo '</ul>';
 	echo '</div>';
