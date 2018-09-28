@@ -286,6 +286,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'deviantart'    => 'chosen_deviantart_profile',
 			'digg'          => 'chosen_digg_profile',
 			'github'        => 'chosen_github_profile',
+			'bitbuck'       => 'chosen_bitbucket_profile',
 			'hacker-news'   => 'chosen_hacker-news_profile',
 			'yelp'          => 'chosen_yelp_profile',
 			'amazon'        => 'chosen_amazon_profile',
