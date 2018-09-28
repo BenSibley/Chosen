@@ -150,6 +150,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 				$label = __('Contact Form', 'chosen');
 			} elseif ( $social_site == 'ok-ru' ) {
 				$label = __('OK.ru', 'chosen');
+			} elseif ( $social_site == 'stack-overflow' ) {
+				$label = __('Stack Overflow', 'chosen');
 			}
 
 			if ( $social_site == 'skype' ) {
