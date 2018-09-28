@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
     toggleDropdown.on('click', openDropdownMenu);
     body.on('click', '#search-icon', openSearchBar);
 
-    $(window).resize(function(){
+    $(window).on('resize', function(){
         removeToggleDropdownKeyboard();
         objectFitAdjustment();
     });
@@ -33,10 +33,10 @@ jQuery(document).ready(function($){
     } );
 
     // allow keyboard access/visibility for dropdown menu items
-    menuLink.focus(function(){
+    menuLink.on('focus', function(){
         $(this).parents('ul, li').addClass('focused');
     });
-    menuLink.focusout(function(){
+    menuLink.on('focusout', function(){
         $(this).parents('ul, li').removeClass('focused');
     });
 
@@ -216,7 +216,7 @@ jQuery(document).ready(function($){
     // ===== Scroll to Top ==== //
 
     if ( $('#scroll-to-top').length !== 0 ) {
-        $(window).scroll(function() {
+        $(window).on('scroll', function() {
             if ($(this).scrollTop() >= 800) {        // If page is scrolled more than 50px
                 $('#scroll-to-top').addClass('visible');    // Fade in the arrow
             } else {
