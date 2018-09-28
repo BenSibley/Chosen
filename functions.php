@@ -40,7 +40,12 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_chosen_infinite_scroll_render'
 		) );
+		// WooCommerce support
 		add_theme_support( 'woocommerce' );
+		// Support for WooCommerce image gallery features 
+		add_theme_support( 'wc-product-gallery-zoom' ); 
+		add_theme_support( 'wc-product-gallery-lightbox' ); 
+		add_theme_support( 'wc-product-gallery-slider' );
 
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'chosen' )
