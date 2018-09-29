@@ -966,9 +966,6 @@ a img {
 .toggle-dropdown:hover {
   cursor: pointer;
 }
-.toggle-dropdown:focus {
-  outline: none;
-}
 .toggle-dropdown:after {
   content: '\f107';
   font-family: 'FontAwesome';

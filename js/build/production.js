@@ -94,12 +94,45 @@ jQuery(document).ready(function($){
     var menuPrimaryContainer = $('#menu-primary-container');
     var menuPrimary = $('#menu-primary');
     var menuPrimaryItems = $('#menu-primary-items');
+    var menuItems = menuPrimaryItems.children('li');
     var toggleDropdown = $('.toggle-dropdown');
     var socialMediaIcons = siteHeader.find('.social-media-icons');
+    var socialIcons = socialMediaIcons.children('li');
     var menuLink = $('.menu-item').children('a');
-    var loop = $('#loop-container');
+    var loop = $('#loop-container');  
 
-    removeToggleDropdownKeyboard();
+    keyboardAccessibilityUpdates('ready');
+
+    function keyboardAccessibilityUpdates(menuOpen, target) {
+        if ( window.innerWidth < 900 && menuOpen == 'ready' ) {
+            menuItems.add(socialIcons).find('a, button').attr('tabindex', -1);
+        } else if ( menuOpen == 'menu-open' ) {
+            menuItems.add(socialIcons).children('a, button').attr('tabindex', '');
+            menuPrimaryItems.children(":first").children('a').focus();
+        } else if ( menuOpen == 'dropdown-open' ) {
+            target.children('ul').children('li').children('a').attr('tabindex', '');
+        } else if ( menuOpen == 'dropdown-closed' ) {
+            target.children('ul').children('li').children('a').attr('tabindex', -1);
+        } else if ( window.innerWidth >= 900 && menuOpen == 'ready' ) {
+            menuItems.add(socialIcons).find('a, button').attr('tabindex', '');
+            toggleDropdown.attr('tabindex', -1);
+        }
+
+        if ( window.innerWidth >= 900 ) {
+            // allow keyboard access/visibility for dropdown menu items
+            menuLink.on('focus', function(){
+                $(this).parents('ul, li').addClass('focused');
+            });
+            menuLink.on('focusout', function(){
+                $(this).parents('ul, li').removeClass('focused');
+            });
+        } else {
+            menuLink.off('focus');
+            menuLink.off('focusout');
+        }   
+    }
+
+    // removeToggleDropdownKeyboard();
     objectFitAdjustment();
 
     toggleNavigation.on('click', openPrimaryMenu);
@@ -107,8 +140,8 @@ jQuery(document).ready(function($){
     body.on('click', '#search-icon', openSearchBar);
 
     $(window).on('resize', function(){
-        removeToggleDropdownKeyboard();
         objectFitAdjustment();
+        keyboardAccessibilityUpdates('ready');
     });
 
     // Jetpack infinite scroll event that reloads posts. Reapply fitvids to new featured videos
@@ -118,14 +151,6 @@ jQuery(document).ready(function($){
             objectFitAdjustment();
         });
     } );
-
-    // allow keyboard access/visibility for dropdown menu items
-    menuLink.on('focus', function(){
-        $(this).parents('ul, li').addClass('focused');
-    });
-    menuLink.on('focusout', function(){
-        $(this).parents('ul, li').removeClass('focused');
-    });
 
     $('.post-content').fitVids({
         customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="vine.co"], iframe[src*="wordpress.tv"]'
@@ -144,6 +169,8 @@ jQuery(document).ready(function($){
             // change aria text
             $(this).attr('aria-expanded', 'false');
 
+            keyboardAccessibilityUpdates('ready');
+
         } else {
 
             var menuHeight = menuPrimary.outerHeight(true) + socialMediaIcons.outerHeight(true);
@@ -156,6 +183,8 @@ jQuery(document).ready(function($){
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
+
+            keyboardAccessibilityUpdates('menu-open');
         }
     }
 
@@ -176,6 +205,8 @@ jQuery(document).ready(function($){
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
+
+            keyboardAccessibilityUpdates('dropdown-closed', menuItem);
         } else {
 
             var ulHeight = 0;
@@ -199,15 +230,8 @@ jQuery(document).ready(function($){
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
-        }
-    }
 
-    function removeToggleDropdownKeyboard() {
-
-        if( window.innerWidth > 799 ) {
-            toggleDropdown.attr('tabindex', -1);
-        } else {
-            toggleDropdown.attr('tabindex', '');
+            keyboardAccessibilityUpdates('dropdown-open', menuItem);
         }
     }
 

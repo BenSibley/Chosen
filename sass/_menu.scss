@@ -86,9 +86,9 @@
   &:hover {
     cursor: pointer;
   }
-  &:focus {
-    outline: none;
-  }
+  // &:focus {
+  //   outline: none;
+  // }
   &:after {
     content: '\f107';
     font-family: 'FontAwesome';
