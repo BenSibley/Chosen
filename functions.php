@@ -285,7 +285,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'amazon'        => 'chosen_amazon_profile',
 			'bandcamp'      => 'chosen_bandcamp_profile',
 			'behance'       => 'chosen_behance_profile',
-			'bitbuck'       => 'chosen_bitbucket_profile',
+			'bitbucket'     => 'chosen_bitbucket_profile',
 			'codepen'       => 'chosen_codepen_profile',
 			'delicious'     => 'chosen_delicious_profile',
 			'deviantart'    => 'chosen_deviantart_profile',
@@ -354,11 +354,22 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 
 			foreach ( $active_sites as $key => $active_site ) {
 
-				if ( $active_site == 'ok-ru' ) {
-					$classes = 'fa fa-odnoklassniki';
+				if ( $active_site == 'rss' ) {
+					$class = 'fas fa-rss';
+				} elseif ( $active_site == 'email-form' ) {
+					$class = 'far fa-envelope';
+				} elseif ( $active_site == 'podcast' ) {
+					$class = 'fas fa-podcast';
+				} elseif ( $active_site == 'ok-ru' ) {
+					$class = 'fab fa-odnoklassniki';
+				} elseif ( $active_site == 'wechat' ) {
+					$class = 'fab fa-weixin';
 				} else {
-					$classes = 'fa fa-' . esc_attr( $active_site );
+					$class = 'fab fa-' . esc_attr( $active_site );
 				}
+				// elseif ( $active_site == 'phone' ) {
+				// 	$class = 'fas fa-phone';
+				// }
 
 				if ( $active_site == 'email' ) {
 					?>
@@ -373,16 +384,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 						   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
-							<i class="<?php echo esc_attr( $classes ); ?>"
-							   title="<?php echo esc_attr( $active_site ); ?>"></i>
-							<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
-						</a>
-					</li>
-				<?php } elseif ( $active_site == 'email-form' ) { ?>
-					<li>
-						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
-						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
-							<i class="fa fa-envelope-o"
+							<i class="<?php echo esc_attr( $class ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
 							<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 						</a>
@@ -391,7 +393,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
 						   href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
-							<i class="<?php echo esc_attr( $classes ); ?>"
+							<i class="<?php echo esc_attr( $class ); ?>"
 							   title="<?php echo esc_attr( $active_site ); ?>"></i>
 							<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 						</a>
