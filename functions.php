@@ -692,7 +692,7 @@ if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 		}
 	}
 }
-add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count' );
+add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count', 99 );
 
 // allow skype URIs to be used
 if ( ! function_exists( 'ct_chosen_allow_skype_protocol' ) ) {
