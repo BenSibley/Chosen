@@ -291,6 +291,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'delicious'     => 'chosen_delicious_profile',
 			'deviantart'    => 'chosen_deviantart_profile',
 			'digg'          => 'chosen_digg_profile',
+			'discord'       => 'chosen_discord_profile',
 			'dribbble'      => 'chosen_dribbble_profile',
 			'etsy'          => 'chosen_etsy_profile',
 			'flickr'        => 'chosen_flickr_profile',
