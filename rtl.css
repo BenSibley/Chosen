@@ -1304,17 +1304,17 @@ a img {
   .singular .post-header,
   .singular .post-content,
   .singular .post-meta,
-  .error-404 .post-header,
-  .error-404 .post-content,
-  .error-404 .post-meta {
+  .error404 .post-header,
+  .error404 .post-content,
+  .error404 .post-meta {
     padding: 0 9.08406%;
   }
   .singular .post-header,
-  .error-404 .post-header {
+  .error404 .post-header {
     margin: 3em 0;
   }
   .singular .post-title,
-  .error-404 .post-title {
+  .error404 .post-title {
     font-size: 3.188em;
     /* 51px / 16px */
     line-height: 1.314;
@@ -1328,8 +1328,8 @@ a img {
 @media all and (min-width: 68.75em) {
   .singular .post-content,
   .singular .post-meta,
-  .error-404 .post-content,
-  .error-404 .post-meta {
+  .error404 .post-content,
+  .error404 .post-meta {
     padding: 0 13.62609%;
   }
 
@@ -1340,8 +1340,8 @@ a img {
 @media all and (min-width: 75em) {
   .singular .post-content,
   .singular .post-meta,
-  .error-404 .post-content,
-  .error-404 .post-meta {
+  .error404 .post-content,
+  .error404 .post-meta {
     padding: 0 18.16812%;
   }
 
