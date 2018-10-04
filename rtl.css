@@ -966,10 +966,6 @@ a img {
 .toggle-dropdown:hover {
   cursor: pointer;
 }
-.toggle-dropdown:after {
-  content: '\f107';
-  font-family: 'FontAwesome';
-}
 
 .open.menu-primary-container {
   max-height: 999px;

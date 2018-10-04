@@ -89,10 +89,11 @@
   // &:focus {
   //   outline: none;
   // }
-  &:after {
-    content: '\f107';
-    font-family: 'FontAwesome';
-  }
+  // &:after {
+  //   content: '\f107';
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 500;
+  // }
 }
 
 // when dropdown opened

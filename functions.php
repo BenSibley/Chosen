@@ -377,7 +377,7 @@ if ( ! function_exists( 'ct_chosen_social_icons_output' ) ) {
 					<li>
 						<a class="email" target="_blank"
 						   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-							<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'chosen' ); ?>"></i>
+							<i class="fas fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'chosen' ); ?>"></i>
 							<span class="screen-reader-text"><?php echo esc_html_x('email', 'noun', 'chosen'); ?></span>
 						</a>
 					</li>
@@ -435,7 +435,7 @@ if ( ! function_exists( 'ct_chosen_nav_dropdown_buttons' ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . esc_html_x( "open menu", "verb: open the menu", "chosen" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">' . esc_html_x( "open menu", "verb: open the menu", "chosen" ) . '</span><i class="fas fa-angle-down"></i></button>', $item_output );
 			}
 		}
 
@@ -742,7 +742,7 @@ function ct_chosen_scroll_to_top_arrow() {
 	$setting = get_theme_mod('scroll_to_top');
 	
 	if ( $setting == 'yes' ) {
-		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'chosen') .'</span><i class="fa fa-arrow-up"></i></button>';
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'chosen') .'</span><i class="fas fa-arrow-up"></i></button>';
 	}
 }
 add_action( 'body_bottom', 'ct_chosen_scroll_to_top_arrow');
