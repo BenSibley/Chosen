@@ -189,10 +189,7 @@
       }
       .toggle-dropdown {
         margin: 0 0 0 -2px;
-
-        &:after {
-          content: '\f105';
-        }
+        transform: rotate(-90deg);
       }
     }
     .menu-item-has-children {
@@ -252,7 +249,7 @@
         &.focused {
 
           > button {
-            transform: translate(2px, 0);
+            transform: translate(2px, 0) rotate(-90deg);
           }
         }
         > a {
@@ -261,7 +258,7 @@
           &:focus {
 
             + button {
-              transform: translate(2px, 0);
+              transform: translate(2px, 0) rotate(-90deg);
             }
             ~ ul {
               top: 0;
@@ -306,21 +303,40 @@
 
       .menu-item-has-children {
 
-        > button {
 
-          &:after {
-            content: '\f104';
+        &:hover {
+
+          > a {
+          
+            + button {
+              transform: translate(-2px, 0) rotate(90deg);
+            }
           }
         }
         > a {
 
+          + button {
+            transform: rotate(90deg);
+            margin: 0 0 0 -12px;
+          }
           &:hover,
           &:active,
           &:focus {
 
-            + button {
-              transform: translate(-2px, 0);
+            ~ ul {
+              right: auto;
+              left: calc(100%);
             }
+            + button {
+              transform: translate(-2px, 0) rotate(90deg);
+            }
+          }
+        }
+        ul {
+
+          &:hover {
+            right: auto;
+            left: calc(100%);
           }
         }
       }
