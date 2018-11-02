@@ -55,19 +55,19 @@
   line-height: 1.714;
   margin: 18px 0;
 }
-.chosen-dashboard-wrap .pro-ad {
+.chosen-dashboard-wrap .pro-ad, .chosen-dashboard-wrap .thanks-upgrading {
   padding: 24px;
   background: #05B0E7;
   color: #fff;
   text-align: center;
 }
-.chosen-dashboard-wrap .pro-ad h3 {
+.chosen-dashboard-wrap .pro-ad h3, .chosen-dashboard-wrap .thanks-upgrading h3 {
   color: #fff;
 }
-.chosen-dashboard-wrap .pro-ad p {
+.chosen-dashboard-wrap .pro-ad p, .chosen-dashboard-wrap .thanks-upgrading p {
   margin: 6px 0 24px;
 }
-.chosen-dashboard-wrap .pro-ad a {
+.chosen-dashboard-wrap .pro-ad a, .chosen-dashboard-wrap .thanks-upgrading a {
   display: inline-block;
   padding: 12px 24px;
   text-decoration: none;
@@ -76,7 +76,7 @@
   -webkit-transition: background 0.2s, -webkit-transform 0.2s, box-shadow 0.2s;
           transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
-.chosen-dashboard-wrap .pro-ad a:hover, .chosen-dashboard-wrap .pro-ad a:active, .chosen-dashboard-wrap .pro-ad a:focus {
+.chosen-dashboard-wrap .pro-ad a:hover, .chosen-dashboard-wrap .thanks-upgrading a:hover, .chosen-dashboard-wrap .pro-ad a:active, .chosen-dashboard-wrap .thanks-upgrading a:active, .chosen-dashboard-wrap .pro-ad a:focus, .chosen-dashboard-wrap .thanks-upgrading a:focus {
   background: #FFA33F;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -111,6 +111,9 @@
 .chosen-dashboard-wrap .updated p {
   font-size: 13px;
   line-height: 1.5;
+}
+.chosen-dashboard-wrap .license-container ~ div {
+  margin-top: 24px;
 }
 
 @media all and (min-width: 600px) {
@@ -150,13 +153,13 @@
   .chosen-dashboard-wrap .pro {
     padding: 24px 36px 24px 36px;
   }
-  .chosen-dashboard-wrap .pro-ad {
+  .chosen-dashboard-wrap .pro-ad, .chosen-dashboard-wrap .thanks-upgrading {
     padding: 36px 36px 48px 36px;
   }
-  .chosen-dashboard-wrap .pro-ad h3 {
+  .chosen-dashboard-wrap .pro-ad h3, .chosen-dashboard-wrap .thanks-upgrading h3 {
     font-size: 24px;
   }
-  .chosen-dashboard-wrap .pro-ad p {
+  .chosen-dashboard-wrap .pro-ad p, .chosen-dashboard-wrap .thanks-upgrading p {
     margin-bottom: 36px;
   }
   .chosen-dashboard-wrap .feature-list li {
@@ -165,6 +168,9 @@
   .chosen-dashboard-wrap .feature-list img {
     width: auto;
     margin: 0 0 12px 0;
+  }
+  .chosen-dashboard-wrap .thanks-upgrading p {
+    margin-bottom: 0;
   }
 }
 @media all and (min-width: 1100px) {

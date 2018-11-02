@@ -129,6 +129,15 @@
     font-size: 13px;
     line-height: 1.5;
   }
+  .thanks-upgrading {
+    @extend .pro-ad;
+  }
+  .license-container {
+
+    ~ div {
+      margin-top: 24px;
+    }
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -196,6 +205,12 @@
       img {
         width: auto;
         margin: 0 0 12px 0;
+      }
+    }
+    .thanks-upgrading {
+      
+      p {
+        margin-bottom: 0;
       }
     }
   }
