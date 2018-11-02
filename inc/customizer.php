@@ -20,49 +20,6 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
-	/***** Chosen Pro Control *****/
-
-	class ct_chosen_pro_ad extends WP_Customize_Control {
-		public function render_content() {
-			$link = 'https://www.competethemes.com/chosen-pro/';
-			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/chosen-pro.gif' /></a>";
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'chosen'), $link, wp_get_theme( get_template() ) ) . "</p>";
-			echo "<p>" . sprintf( __( '%1$s Pro adds the following features to %1$s:', 'chosen' ), wp_get_theme( get_template() ) ) . "</p>";
-			echo "<ul>
-					<li>" . __('6 new layouts', 'chosen') . "</li>
-					<li>" . __('Custom colors', 'chosen') . "</li>
-					<li>" . __('New fonts', 'chosen') . "</li>
-					<li>" . __('+ 7 more features', 'chosen') . "</li>
-				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='chosen-pro-button' href='" . $link . "'>" . sprintf( __('View %s Pro', 'chosen'), wp_get_theme( get_template() ) ) . "</a></p>";
-			if ( wp_get_theme() == 'Chosen Gamer' ) {
-				echo '<p><em>'. esc_html__( "Chosen Pro is 100% compatible with the Chosen Gamer child theme.", "chosen") .'</em></p>';
-			}
-		}
-	}
-
-	/***** Chosen Pro Section *****/
-
-	// don't add if Chosen Pro is active
-	if ( !function_exists( 'ct_chosen_pro_init' ) ) {
-		// section
-		$wp_customize->add_section( 'ct_chosen_pro', array(
-			'title'    => sprintf( __( '%s Pro', 'chosen' ), wp_get_theme( get_template() ) ),
-			'priority' => 1
-		) );
-		// Upload - setting
-		$wp_customize->add_setting( 'chosen_pro', array(
-			'sanitize_callback' => 'absint'
-		) );
-		// Upload - control
-		$wp_customize->add_control( new ct_chosen_pro_ad(
-			$wp_customize, 'chosen_pro', array(
-				'section'  => 'ct_chosen_pro',
-				'settings' => 'chosen_pro'
-			)
-		) );
-	}
-
 	/***** Logo Upload *****/
 
 	// section
@@ -416,3 +373,11 @@ function ct_chosen_sanitize_phone( $input ) {
 		return '';
 	}
 }
+
+function ct_chosen_customize_preview_js() {
+	if ( !function_exists( 'ct_chosen_pro_init' ) ) {
+		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">Get New Layouts with Chosen Pro <span>&rarr;</span></a></div>')</script>";
+		echo apply_filters('ct_chosen_customizer_ad', $content);
+	}
+}
+add_action('customize_controls_print_footer_scripts', 'ct_chosen_customize_preview_js');
