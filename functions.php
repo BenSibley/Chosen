@@ -304,6 +304,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'meetup'        => 'chosen_meetup_profile',
 			'mixcloud'			=> 'chosen_mixcloud_profile',
 			'ok-ru'         => 'chosen_ok_ru_profile',
+			'patreon'       => 'chosen_patreon_profile',
 			'paypal'        => 'chosen_paypal_profile',
 			'podcast'       => 'chosen_podcast_profile',
 			'qq'            => 'chosen_qq_profile',
