@@ -29,7 +29,7 @@ function ct_chosen_options_content() {
 			<?php if ( !function_exists( 'ct_chosen_pro_init' ) ) : ?>
 			<div class="getting-started">
 				<h3>Get Started with Chosen</h3>
-				<p>Follow with this step-by-step guide to customize your website with Chosen:</p>
+				<p>Follow this step-by-step guide to customize your website with Chosen:</p>
 				<a href="https://www.competethemes.com/help/getting-started-chosen/" target="_blank">Read the Getting Started Guide</a>
 			</div>
 			<div class="pro">
