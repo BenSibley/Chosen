@@ -38,9 +38,7 @@ function ct_chosen_options_content() {
 				<ul class="feature-list">
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/layouts.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/layouts.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>New Layouts</h4>
@@ -50,9 +48,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/custom-colors.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/custom-colors.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Custom Colors</h4>
@@ -62,9 +58,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/fonts.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/fonts.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>New Fonts</h4>
@@ -74,9 +68,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/header-image.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/header-image.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Flexible Header Image</h4>
@@ -86,9 +78,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-videos.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-videos.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Featured Videos</h4>
@@ -98,9 +88,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-sliders.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-sliders.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Featured Sliders</h4>
@@ -110,9 +98,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-image-size.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-image-size.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Featured Image Size</h4>
@@ -122,9 +108,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/widget-areas.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/widget-areas.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>New Widget Areas</h4>
@@ -134,9 +118,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/display-controls.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/display-controls.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Display Controls</h4>
@@ -146,9 +128,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
-								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/footer-text.png'; ?>" />
-							</a>
+							<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/footer-text.png'; ?>" />
 						</div>
 						<div class="text">
 							<h4>Custom Footer Text</h4>
