@@ -14,6 +14,7 @@ function ct_chosen_options_content() {
 		),
 		admin_url( 'customize.php' )
 	);
+	$pro_url = 'https://www.competethemes.com/chosen-pro/?utm_source=wp-dashboard&utm_medium=Dashboard&utm_campaign=Chosen%20Pro%20-%20Dashboard';
 	?>
 	<div id="chosen-dashboard-wrap" class="wrap chosen-dashboard-wrap">
 		<h2><?php printf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ); ?></h2>
@@ -33,11 +34,11 @@ function ct_chosen_options_content() {
 			</div>
 			<div class="pro">
 				<h3>Customize More with Chosen Pro</h3>
-				<p>Add 10 new customization features to your site with the <a href="https://www.competethemes.com/chosen-pro/" target="_blank">Chosen Pro</a> plugin.</p>
+				<p>Add 10 new customization features to your site with the <a href="<?php echo $pro_url; ?>" target="_blank">Chosen Pro</a> plugin.</p>
 				<ul class="feature-list">
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/layouts.png'; ?>" />
 							</a>
 						</div>
@@ -49,7 +50,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/custom-colors.png'; ?>" />
 							</a>
 						</div>
@@ -61,7 +62,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/fonts.png'; ?>" />
 							</a>
 						</div>
@@ -73,7 +74,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/header-image.png'; ?>" />
 							</a>
 						</div>
@@ -85,7 +86,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-videos.png'; ?>" />
 							</a>
 						</div>
@@ -97,7 +98,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-sliders.png'; ?>" />
 							</a>
 						</div>
@@ -109,7 +110,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/featured-image-size.png'; ?>" />
 							</a>
 						</div>
@@ -121,7 +122,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/widget-areas.png'; ?>" />
 							</a>
 						</div>
@@ -133,7 +134,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/display-controls.png'; ?>" />
 							</a>
 						</div>
@@ -145,7 +146,7 @@ function ct_chosen_options_content() {
 					</li>
 					<li>
 						<div class="image">
-							<a class="image-link" href="https://www.competethemes.com/chosen-pro/" target="_blank">
+							<a class="image-link" href="<?php echo $pro_url; ?>" target="_blank">
 								<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/footer-text.png'; ?>" />
 							</a>
 						</div>
@@ -156,12 +157,12 @@ function ct_chosen_options_content() {
 						</div>
 					</li>
 				</ul>
-				<p><a href="https://www.competethemes.com/chosen-pro/" target="_blank">Click here</a> to view Chosen Pro now, and see what it can do for your site.</p>
+				<p><a href="<?php echo $pro_url; ?>" target="_blank">Click here</a> to view Chosen Pro now, and see what it can do for your site.</p>
 			</div>
 			<div class="pro-ad" style="background-image: url(<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/bg-texture.png'; ?>)">
 				<h3>Add Incredible Flexibility to Your Site</h3>
 				<p>Start customizing with Chosen Pro today</p>
-				<a href="https://www.competethemes.com/chosen-pro/" target="_blank">View Chosen Pro</a>
+				<a href="<?php echo $pro_url; ?>" target="_blank">View Chosen Pro</a>
 			</div>
 			<?php endif; ?>
 		</div>
@@ -175,7 +176,7 @@ function ct_chosen_options_content() {
 					<li><a href="https://www.competethemes.com/help/chosen-css-snippets/" target="_blank">CSS Snippets</a></li>
 					<li><a href="https://www.competethemes.com/help/child-theme-chosen/" target="_blank">Starter child theme</a></li>
 					<li><a href="https://www.competethemes.com/help/chosen-demo-data/" target="_blank">Chosen demo data</a></li>
-					<li><a href="https://www.competethemes.com/chosen-pro/" target="_blank">Chosen Pro</a></li>
+					<li><a href="<?php echo $pro_url; ?>" target="_blank">Chosen Pro</a></li>
 				</ul>
 			</div>
 			<div class="dashboard-widget">

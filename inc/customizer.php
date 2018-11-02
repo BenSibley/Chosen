@@ -376,7 +376,8 @@ function ct_chosen_sanitize_phone( $input ) {
 
 function ct_chosen_customize_preview_js() {
 	if ( !function_exists( 'ct_chosen_pro_init' ) ) {
-		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"https://www.competethemes.com/chosen-pro/\" target=\"_blank\">Get New Layouts with Chosen Pro <span>&rarr;</span></a></div>')</script>";
+		$url = 'https://www.competethemes.com/chosen-pro/?utm_source=wp-dashboard&utm_medium=Customizer&utm_campaign=Chosen%20Pro%20-%20Customizer';
+		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"". $url ."\" target=\"_blank\">Get New Layouts with Chosen Pro <span>&rarr;</span></a></div>')</script>";
 		echo apply_filters('ct_chosen_customizer_ad', $content);
 	}
 }
