@@ -300,6 +300,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'google-plus'   => 'chosen_googleplus_profile',
 			'google-wallet' => 'chosen_google-wallet_profile',
 			'hacker-news'   => 'chosen_hacker-news_profile',
+			'medium'        => 'chosen_medium_profile',
 			'meetup'        => 'chosen_meetup_profile',
 			'mixcloud'			=> 'chosen_mixcloud_profile',
 			'ok-ru'         => 'chosen_ok_ru_profile',
