@@ -174,7 +174,7 @@ function ct_chosen_options_content() {
 					<li><a href="https://www.competethemes.com/help/chosen-changelog/" target="_blank">Changelog</a></li>
 					<li><a href="https://www.competethemes.com/help/chosen-css-snippets/" target="_blank">CSS Snippets</a></li>
 					<li><a href="https://www.competethemes.com/help/child-theme-chosen/" target="_blank">Starter child theme</a></li>
-					<li><a href="">Chosen demo data</a></li>
+					<li><a href="https://www.competethemes.com/help/chosen-demo-data/" target="_blank">Chosen demo data</a></li>
 					<li><a href="https://www.competethemes.com/chosen-pro/" target="_blank">Chosen Pro</a></li>
 				</ul>
 			</div>
