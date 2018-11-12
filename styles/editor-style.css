@@ -354,7 +354,35 @@ a img {
   clear: both;
 }
 
-.mce-content-body {
+.mce-content-body.wp-editor {
   margin: 0 24px;
+  font-size: 1.0625em;
+  line-height: 1.4118;
   -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.editor-block-list__layout {
+  font-size: 1.0625em;
+  line-height: 1.4118;
+}
+
+.editor-post-title textarea {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #2B2B2B;
+  text-align: center;
+}
+
+.wp-block-quote.is-large {
+  padding-left: 0;
+  border-left: none;
+}
+
+.wp-block-embed {
+  margin: 1.5em 0;
 }

@@ -58,7 +58,7 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 		add_theme_support( 'align-full' );
 
 		// Gutenberg - add support for editor styles
-		// add_theme_support('editor-styles');
+		add_theme_support('editor-styles');
 
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'chosen' )
