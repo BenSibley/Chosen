@@ -1267,6 +1267,23 @@ a img {
   height: 0;
 }
 
+.wp-block-image.alignfull,
+.wp-block-cover {
+  position: relative;
+  right: -4.5%;
+  width: 109%;
+  max-width: none;
+}
+
+.wp-block-quote.is-large {
+  padding-right: 0;
+  border-right: none;
+}
+
+.wp-block-embed {
+  margin: 1.5em 0;
+}
+
 @media all and (min-width: 43.75em) {
   .entry {
     margin-bottom: 4.5em;
@@ -1333,6 +1350,19 @@ a img {
   .page-template-full-width .post-content {
     padding: 0;
   }
+
+  .wp-block-image.alignwide {
+    position: relative;
+    right: -10%;
+    width: 120%;
+    max-width: none;
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    right: -16.75%;
+    width: 133.5%;
+  }
 }
 @media all and (min-width: 68.75em) {
   .singular .post-content,
@@ -1345,6 +1375,17 @@ a img {
   .page-template-full-width .post-content {
     padding: 0;
   }
+
+  .wp-block-image.alignwide {
+    right: -15%;
+    width: 130%;
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    right: -25%;
+    width: 150%;
+  }
 }
 @media all and (min-width: 75em) {
   .singular .post-content,
@@ -1356,6 +1397,12 @@ a img {
 
   .page-template-full-width .post-content {
     padding: 0;
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    right: -36%;
+    width: 172%;
   }
 }
 .search-form-container .search-field {
