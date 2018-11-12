@@ -48,6 +48,16 @@ function ct_chosen_enqueue_admin_styles( $hook ) {
 	if ( $hook == 'appearance_page_chosen-options' ) {
 		wp_enqueue_style( 'ct-chosen-admin-styles', get_template_directory_uri() . '/styles/admin.min.css' );
 	}
+	if ( $hook == 'post.php' || $hook == 'post-new.php' ) {
+
+		$font_args = array(
+			'family' => urlencode( 'Playfair Display:400|Raleway:400,700,400italic' ),
+			'subset' => urlencode( 'latin,latin-ext' )
+		);
+		$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
+	
+		wp_enqueue_style( 'ct-chosen-google-fonts', $fonts_url );
+	}
 }
 add_action( 'admin_enqueue_scripts', 'ct_chosen_enqueue_admin_styles' );
 
