@@ -386,3 +386,19 @@ body {
 .wp-block-embed {
   margin: 1.5em 0;
 }
+
+.has-small-font-size {
+  font-size: 12px;
+}
+
+.has-regular-font-size {
+  font-size: 17px;
+}
+
+.has-large-font-size {
+  font-size: 28px;
+}
+
+.has-extra-large-font-size {
+  font-size: 38px;
+}

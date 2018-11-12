@@ -60,6 +60,34 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 		// Gutenberg - add support for editor styles
 		add_theme_support('editor-styles');
 
+		// Gutenberg - modify the font sizes
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+					'name' => __( 'small', 'chosen' ),
+					'shortName' => __( 'S', 'chosen' ),
+					'size' => 12,
+					'slug' => 'small'
+			),
+			array(
+					'name' => __( 'regular', 'chosen' ),
+					'shortName' => __( 'M', 'chosen' ),
+					'size' => 17,
+					'slug' => 'regular'
+			),
+			array(
+					'name' => __( 'large', 'chosen' ),
+					'shortName' => __( 'L', 'chosen' ),
+					'size' => 28,
+					'slug' => 'large'
+			),
+			array(
+					'name' => __( 'larger', 'chosen' ),
+					'shortName' => __( 'XL', 'chosen' ),
+					'size' => 38,
+					'slug' => 'larger'
+			)
+	) );
+
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'chosen' )
 		) );
