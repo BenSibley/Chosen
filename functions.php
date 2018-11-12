@@ -57,6 +57,9 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'align-full' );
 
+		// Gutenberg - add support for editor styles
+		// add_theme_support('editor-styles');
+
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'chosen' )
 		) );
@@ -65,6 +68,16 @@ if ( ! function_exists( ( 'ct_chosen_theme_setup' ) ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'ct_chosen_theme_setup', 10 );
+
+//-----------------------------------------------------------------------------
+// Load custom stylesheet for the post editor
+//-----------------------------------------------------------------------------
+if ( ! function_exists( 'ct_chosen_add_editor_styles' ) ) {
+	function ct_chosen_add_editor_styles() {
+		add_editor_style( 'styles/editor-style.css' );
+	}
+}
+add_action( 'admin_init', 'ct_chosen_add_editor_styles' );
 
 if ( ! function_exists( ( 'ct_chosen_customize_comments' ) ) ) {
 	function ct_chosen_customize_comments( $comment, $args, $depth ) {
