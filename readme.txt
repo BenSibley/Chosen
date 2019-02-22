@@ -2,8 +2,8 @@
 Contributors: bensibley
 Tags: one-column, two-columns, accessibility-ready, custom-logo, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, news, photography
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.28
+Tested up to: 5.0.3
+Stable tag: 1.36
 
 Chosen is a bold and minimalist theme for publishers who want to get their visitors' attention and keep it.
 
