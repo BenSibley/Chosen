@@ -1,14 +1,14 @@
-# Copyright (C) 2018 Compete Themes
+# Copyright (C) 2019 Compete Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chosen 1.33\n"
+"Project-Id-Version: Chosen 1.35\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-11-12 14:39:19+00:00\n"
+"POT-Creation-Date: 2019-02-22 16:41:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Search for:"
 msgstr ""
 
-#: content-page.php:11 content.php:12 templates/full-width.php:21
+#: content-page.php:11 content.php:13 templates/full-width.php:21
 msgid "Pages:"
 msgstr ""
 
@@ -125,79 +125,91 @@ msgstr ""
 msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes."
 msgstr ""
 
-#: functions.php:18
+#: functions.php:19
 msgid ""
 "Hey! Sorry to interrupt, but you've been using Chosen for a little while "
 "now. If you're happy with this theme, could you take a minute to leave a "
 "review? <i>You won't see this notice again after closing it.</i>"
 msgstr ""
 
-#: functions.php:66
+#: functions.php:67
 msgid "small"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:68
 msgid "S"
 msgstr ""
 
-#: functions.php:72
+#: functions.php:73
 msgid "regular"
 msgstr ""
 
-#: functions.php:73
+#: functions.php:74
 msgid "M"
 msgstr ""
 
-#: functions.php:78
+#: functions.php:79
 msgid "large"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:80
 msgid "L"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:85
 msgid "larger"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:86
 msgid "XL"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:93
 msgid "Primary"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:126
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:149
+#: functions.php:150
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:169
 msgid "Website"
 msgstr ""
 
-#: functions.php:222 functions.php:236 inc/customizer.php:218
+#: functions.php:223 functions.php:237 inc/customizer.php:218
 msgid "Continue Reading"
 msgstr ""
 
-#: functions.php:498
+#: functions.php:500
 msgid "Featured Post"
 msgstr ""
 
-#: functions.php:561
+#: functions.php:563
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:567
+#: functions.php:569
 msgid "%s successfully activated!"
 msgstr ""
 
-#: functions.php:792
+#: functions.php:800
 msgid "Scroll to the top"
+msgstr ""
+
+#: functions.php:819
+msgid "Last updated on"
+msgstr ""
+
+#: functions.php:835
+msgid "Previous"
+msgstr ""
+
+#: functions.php:836
+msgid "Next"
 msgstr ""
 
 #: header.php:11
@@ -318,11 +330,11 @@ msgstr ""
 msgid "Show search bar at top of site?"
 msgstr ""
 
-#: inc/customizer.php:176 inc/customizer.php:328
+#: inc/customizer.php:176 inc/customizer.php:344
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:177 inc/customizer.php:329
+#: inc/customizer.php:177 inc/customizer.php:345
 msgid "Hide"
 msgstr ""
 
@@ -331,12 +343,12 @@ msgid "Show full posts on blog?"
 msgstr ""
 
 #: inc/customizer.php:200 inc/customizer.php:248 inc/customizer.php:264
-#: inc/customizer.php:280 inc/customizer.php:347
+#: inc/customizer.php:280 inc/customizer.php:296 inc/customizer.php:363
 msgid "Yes"
 msgstr ""
 
 #: inc/customizer.php:201 inc/customizer.php:249 inc/customizer.php:265
-#: inc/customizer.php:281 inc/customizer.php:348
+#: inc/customizer.php:281 inc/customizer.php:297 inc/customizer.php:364
 msgid "No"
 msgstr ""
 
@@ -364,24 +376,36 @@ msgstr ""
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:301
+#: inc/customizer.php:291
+msgid "Display the date each post was last updated?"
+msgstr ""
+
+#: inc/customizer.php:317
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:312
+#: inc/customizer.php:328
 msgid "Add Custom CSS Here:"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr ""
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
 msgstr ""
 
 #: inc/review.php:113
 msgid "Click here to leave your review"
-msgstr ""
-
-#: index.php:19
-msgid "Previous"
-msgstr ""
-
-#: index.php:20
-msgid "Next"
 msgstr ""
 
 #: search.php:9
@@ -415,8 +439,9 @@ msgid ""
 "business, gaming, food, travel. As a free theme, you can use Chosen for as "
 "many sites as you want. It can even be used for video, podcasts, and "
 "personal resumes. Now with WooCommerce support, you can also add an "
-"eCommerce store to your website. Preview Chosen now on desktop, tablets, "
-"and mobile devices with the interactive live demo: "
+"eCommerce store to your website. Chosen is also fully compatible with the "
+"new Gutenberg post editor. Preview Chosen now on desktop, tablets, and "
+"mobile devices with the interactive live demo: "
 "https://www.competethemes.com/demos/?theme=chosen"
 msgstr ""
 
@@ -430,7 +455,7 @@ msgctxt "noun: 5 comments"
 msgid "% Comments"
 msgstr ""
 
-#: content/archive-header.php:4
+#: content/archive-header.php:10
 msgctxt "noun: Site Title's Posts"
 msgid "Posts"
 msgstr ""
@@ -450,37 +475,37 @@ msgctxt "View all posts in CATEGORY"
 msgid "View all posts in %s"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:134
 msgctxt "verb: reply to this comment"
 msgid "Reply"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:138
 msgctxt "verb: edit this comment"
 msgid "Edit"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:155
 msgctxt "noun"
 msgid "Name"
 msgstr ""
 
-#: functions.php:161
+#: functions.php:162
 msgctxt "noun"
 msgid "Email"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:191
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:427 functions.php:428
+#: functions.php:429 functions.php:430
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:485 header.php:22 inc/scripts.php:16
+#: functions.php:487 header.php:22 inc/scripts.php:16
 msgctxt "verb: open the menu"
 msgid "open menu"
 msgstr ""
