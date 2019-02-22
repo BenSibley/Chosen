@@ -281,6 +281,22 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'chosen' )
 		)
 	) );
+	// setting - last updated
+	$wp_customize->add_setting( 'last_updated', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings'
+	) );
+	// control - last updated
+	$wp_customize->add_control( 'last_updated', array(
+		'label'    => __( 'Display the date each post was last updated?', 'chosen' ),
+		'section'  => 'chosen_additional',
+		'settings' => 'last_updated',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
+		)
+	) );
 
 	/***** Custom CSS *****/
 

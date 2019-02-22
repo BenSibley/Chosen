@@ -794,3 +794,22 @@ function ct_chosen_scroll_to_top_arrow() {
 	}
 }
 add_action( 'body_bottom', 'ct_chosen_scroll_to_top_arrow');
+
+//----------------------------------------------------------------------------------
+// Output the "Last Updated" date on posts
+//----------------------------------------------------------------------------------
+function ct_chosen_output_last_updated_date() {
+	
+	global $post;
+
+	if ( get_the_modified_date() != get_the_date() ) {
+		$updated_post = get_post_meta( $post->ID, 'ct_chosen_last_updated', true );
+		$updated_customizer = get_theme_mod( 'last_updated' );
+		if ( 
+			( $updated_customizer == 'yes' && ($updated_post != 'no') )
+			|| $updated_post == 'yes' 
+			) {
+				echo '<p class="last-updated">'. __("Last updated on", "chosen") . ' ' . get_the_modified_date() . ' </p>';
+			}
+	}
+}
