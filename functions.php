@@ -696,6 +696,12 @@ if ( ! function_exists( 'ct_chosen_infinite_scroll_render' ) ) {
 if ( ! function_exists( 'ct_chosen_get_content_template' ) ) {
 	function ct_chosen_get_content_template() {
 
+		if ( function_exists( 'is_bbpress' ) ) {
+			if ( is_bbpress() ) {
+				get_template_part( 'content/bbpress' );
+				return;
+			} 
+		}
 		if ( is_home() || is_archive() ) {
 			get_template_part( 'content-archive', get_post_type() );
 		} else {
@@ -813,4 +819,20 @@ function ct_chosen_output_last_updated_date() {
 				echo '<p class="last-updated">'. __("Last updated on", "chosen") . ' ' . get_the_modified_date() . ' </p>';
 			}
 	}
+}
+
+//----------------------------------------------------------------------------------
+// Output standard pagination and account for bbPress forum archives
+//----------------------------------------------------------------------------------
+function ct_chosen_pagination() {
+
+	if ( function_exists( 'is_bbpress' ) ) {
+		if ( is_bbpress() ) {
+			return;
+		} 
+	}
+	the_posts_pagination( array(
+    'prev_text' => esc_html__( 'Previous', 'cele' ),
+    'next_text' => esc_html__( 'Next', 'cele' )
+	) );
 }

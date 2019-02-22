@@ -1,5 +1,11 @@
 <?php
 
+if ( function_exists( 'is_bbpress' ) ) {
+	if ( is_bbpress() ) {
+		return;
+	} 
+}
+
 if ( is_home() ) {
 	echo '<h1 class="screen-reader-text">' . esc_html( get_bloginfo("name") ) . ' ' . esc_html_x('Posts', 'noun: Site Title\'s Posts', 'chosen') . '</h1>';
 }
