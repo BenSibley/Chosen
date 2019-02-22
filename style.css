@@ -1757,6 +1757,10 @@ span.bbp-admin-links a,
   margin-bottom: -3px;
 }
 
+.bbp-form textarea {
+  max-width: none;
+}
+
 /*
 
 ATTENTION:
