@@ -906,7 +906,7 @@ a img {
 }
 .menu-primary ul > .current-menu-item:first-child,
 .menu-primary ul > .current_page_item:first-child {
-  margin-top: 1px;
+  padding-top: 1px;
 }
 .menu-primary li {
   margin-bottom: 6px;
@@ -1006,7 +1006,7 @@ a img {
   }
   .menu-primary ul > .current-menu-item:first-child,
   .menu-primary ul > .current_page_item:first-child {
-    margin-top: 0;
+    padding-top: 0;
   }
 
   .menu-primary-items ul {

@@ -13,7 +13,7 @@
 
     > .current-menu-item:first-child,
     > .current_page_item:first-child {
-      margin-top: 1px;
+      padding-top: 1px;
     }
   }
   li {
@@ -139,7 +139,7 @@
 
       > .current-menu-item:first-child,
       > .current_page_item:first-child {
-        margin-top: 0;
+        padding-top: 0;
       }
     }
   }
