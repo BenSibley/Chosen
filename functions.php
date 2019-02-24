@@ -832,7 +832,7 @@ function ct_chosen_pagination() {
 		} 
 	}
 	the_posts_pagination( array(
-    'prev_text' => esc_html__( 'Previous', 'cele' ),
-    'next_text' => esc_html__( 'Next', 'cele' )
+    'prev_text' => esc_html__( 'Previous', 'chosen' ),
+    'next_text' => esc_html__( 'Next', 'chosen' )
 	) );
 }
