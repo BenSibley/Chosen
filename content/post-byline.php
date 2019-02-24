@@ -1,7 +1,7 @@
 <div class="post-byline">
     <span class="post-date">
 		<?php
-		$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date() ) );
+		$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'c' ) ) );
 		printf( esc_html_x( 'Published %s', 'Published DATE', 'chosen' ), $date );
 		?>
 	</span>
