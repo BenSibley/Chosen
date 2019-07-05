@@ -816,7 +816,7 @@ function ct_chosen_output_last_updated_date() {
 			( $updated_customizer == 'yes' && ($updated_post != 'no') )
 			|| $updated_post == 'yes' 
 			) {
-				echo '<p class="last-updated">'. __("Last updated on", "chosen") . ' ' . get_the_modified_date() . ' </p>';
+				echo '<p class="last-updated">'. esc_html__("Last updated on", "chosen") . ' ' . get_the_modified_date() . ' </p>';
 			}
 	}
 }
