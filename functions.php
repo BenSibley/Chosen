@@ -749,6 +749,25 @@ if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 }
 add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count', 99 );
 
+function ct_chosen_fix_pagination_count( $found_posts, $query ) {
+
+	if ( !is_admin() && $query->is_home() && $query->is_main_query() && !$query->is_paged() ) {
+		// The non-homepage posts per page
+		$real_posts_per_page = get_option( 'posts_per_page' ) - 1;
+		// Adjust by the +1 on the homepage for the extra post
+		$found_posts -= 1;
+		// add extra pages based on artificially inflated count
+		$found_posts += $found_posts/$real_posts_per_page;
+		return $found_posts;
+	} elseif ( !is_admin() && $query->is_main_query() && $query->is_paged() ) {
+		// offset for the 1 homepage post to prevent 404 if off by one
+		return $found_posts - 1;
+	} else {
+		return $found_posts;
+	}
+}
+add_filter( 'found_posts', 'ct_chosen_fix_pagination_count', 10, 2 );
+
 // allow skype URIs to be used
 if ( ! function_exists( 'ct_chosen_allow_skype_protocol' ) ) {
 	function ct_chosen_allow_skype_protocol( $protocols ) {
