@@ -797,7 +797,7 @@ function ct_chosen_scroll_to_top_arrow() {
 	$setting = get_theme_mod('scroll_to_top');
 	
 	if ( $setting == 'yes' ) {
-		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. __('Scroll to the top', 'chosen') .'</span><i class="fas fa-arrow-up"></i></button>';
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'chosen') .'</span><i class="fas fa-arrow-up"></i></button>';
 	}
 }
 add_action( 'body_bottom', 'ct_chosen_scroll_to_top_arrow');
