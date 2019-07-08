@@ -1,0 +1,535 @@
+# Copyright (C) 2018 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Chosen 1.33\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2018-11-12 14:39:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-03-03 19:31-0500\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_CA\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr "404: Page Introuvable"
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"Il semble que rien ne soit trouvé à cette adresse.  Vérifier l'url ou "
+"utiliser l'option de recherche ci-bas pour trouver ce que vous recherchez."
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "Be First to Comment"
+msgstr "Soyez le Premier à Commenter"
+
+#: comments.php:12 comments.php:32 comments.php:54
+msgid "One Comment"
+msgstr "Un Commentaire"
+
+# Les mots "trackbacks" et "pingbacks" ne semblent pas avoir de traductions officielles.
+#: comments.php:46
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Les commentaires sont fermés, mais les <a href=\"%s\" title=\"Trackback URL "
+"for this post\">rétroliens</a> et signaux de retour sont ouverts."
+
+#: comments.php:68 comments.php:84
+msgid "Comments are closed."
+msgstr "Les Commentaires sont désactivés."
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr "icône de commentaire"
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr "Commentaires désactivés"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr "Laisser un Commentaire"
+
+#: content/post-categories.php:9
+msgid "Categories:"
+msgstr "Catégories:"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Image Précédente"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Image Suivante"
+
+#: content/post-nav.php:8
+msgid "Previous Post"
+msgstr "Article Précédent"
+
+#: content/post-nav.php:9
+msgid "The Previous Post"
+msgstr "L'Article Précédent"
+
+#: content/post-nav.php:12
+msgid "No Older Posts"
+msgstr "Aucun Article plus Ancien"
+
+#: content/post-nav.php:13 content/post-nav.php:27
+msgid "Return to Blog"
+msgstr "Retour au Blog"
+
+#: content/post-nav.php:22
+msgid "Next Post"
+msgstr "Article Suivant"
+
+#: content/post-nav.php:23
+msgid "The Next Post"
+msgstr "L'Article Suivant"
+
+#: content/post-nav.php:26
+msgid "No Newer Posts"
+msgstr "Aucun Article plus Récent"
+
+#: content/post-tags.php:6
+msgid "Tags:"
+msgstr "Marqueurs:"
+
+#: content/post-tags.php:9
+msgid "View all posts tagged %s"
+msgstr "Voir tous les articles marqués %s"
+
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
+msgstr "Recherche"
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr "Recherche..."
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr "Rechercher:"
+
+#: content-page.php:11 content.php:12 templates/full-width.php:21
+msgid "Pages:"
+msgstr "Pages:"
+
+#: footer.php:11
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes."
+msgstr "<a href=\"%1$s\">%2$s Thème WordPress</a> par Compete Themes."
+
+#: functions.php:18
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Chosen for a little while "
+"now. If you're happy with this theme, could you take a minute to leave a "
+"review? <i>You won't see this notice again after closing it.</i>"
+msgstr ""
+"Bonjour ! Désolé de vous interrompre, mais vous utiliser Chosen depuis un "
+"certain temps. Si vous êtes heureux de ce thème, pourriez-vous prendre une "
+"minute pour laisser une appréciation ? <i>Vous ne verrez plus cette note à "
+"nouveau après l'avoir fermée.</i>"
+
+#: functions.php:66
+msgid "small"
+msgstr "petit"
+
+#: functions.php:67
+msgid "S"
+msgstr "P"
+
+#: functions.php:72
+msgid "regular"
+msgstr "régulier"
+
+#: functions.php:73
+msgid "M"
+msgstr "M"
+
+#: functions.php:78
+msgid "large"
+msgstr "large"
+
+#: functions.php:79
+msgid "L"
+msgstr "L"
+
+#: functions.php:84
+msgid "larger"
+msgstr "plus large"
+
+#: functions.php:85
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:92
+msgid "Primary"
+msgstr "Primaire"
+
+#: functions.php:125
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: functions.php:149
+msgid "(optional)"
+msgstr "(optionnel)"
+
+#: functions.php:168
+msgid "Website"
+msgstr "Site web"
+
+#: functions.php:222 functions.php:236 inc/customizer.php:218
+msgid "Continue Reading"
+msgstr "Continuer la Lecture"
+
+#: functions.php:498
+msgid "Featured Post"
+msgstr "En Vedette"
+
+#: functions.php:561
+msgid "Customizer settings deleted."
+msgstr "Réglages du Personnaliseur effacés."
+
+#: functions.php:567
+msgid "%s successfully activated!"
+msgstr "%s activé avec succès !"
+
+#: functions.php:792
+msgid "Scroll to the top"
+msgstr "Défilement vers le haut"
+
+#: header.php:11
+msgid "Skip to content"
+msgstr "Passer au contenu"
+
+#: inc/customizer.php:15
+msgid "Front Page"
+msgstr "Première Page"
+
+#: inc/customizer.php:27
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:37
+msgid "Upload custom logo."
+msgstr "Téléverser logo personnalisé."
+
+#: inc/customizer.php:53
+msgid "Social Media Icons"
+msgstr "Icônes Réseau Social"
+
+#: inc/customizer.php:55
+msgid "Add the URL for each of your social profiles."
+msgstr "Ajouter les URL pour chacun de vos profils sociaux."
+
+#: inc/customizer.php:68
+msgid "Email Address"
+msgstr "Adresse Courriel"
+
+#: inc/customizer.php:79
+msgid "Phone"
+msgstr "Téléphone"
+
+#: inc/customizer.php:89
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/customizer.php:91
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:93
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: inc/customizer.php:95
+msgid "SlideShare"
+msgstr "SlideShare"
+
+#: inc/customizer.php:97
+msgid "CodePen"
+msgstr "CodePen"
+
+#: inc/customizer.php:99
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: inc/customizer.php:101
+msgid "DeviantArt"
+msgstr "DeviantArt"
+
+#: inc/customizer.php:103
+msgid "Hacker News"
+msgstr "Hacker News"
+
+#: inc/customizer.php:105
+msgid "Google Wallet"
+msgstr "Google Wallet"
+
+#: inc/customizer.php:107
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: inc/customizer.php:109
+msgid "QQ"
+msgstr "QQ"
+
+#: inc/customizer.php:111
+msgid "VK"
+msgstr "VK"
+
+#: inc/customizer.php:113
+msgid "WeChat"
+msgstr "WeChat"
+
+#: inc/customizer.php:115
+msgid "Tencent Weibo"
+msgstr "Tencent Weibo"
+
+#: inc/customizer.php:117
+msgid "PayPal"
+msgstr "PayPal"
+
+#: inc/customizer.php:119
+msgid "Contact Form"
+msgstr "Formulaire de Contact"
+
+#: inc/customizer.php:121
+msgid "OK.ru"
+msgstr "OK.ru"
+
+#: inc/customizer.php:123
+msgid "Stack Overflow"
+msgstr "Stack Overflow"
+
+#: inc/customizer.php:135
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+"Accepte le protocole de lien Skype (<a href=\"%s\" target=\"_blank\">en "
+"savoir plus</a>)"
+
+#: inc/customizer.php:161
+msgid "Search Bar"
+msgstr "Barre de Recherche"
+
+#: inc/customizer.php:172
+msgid "Show search bar at top of site?"
+msgstr "Afficher la barre de recherche en haut du site ?"
+
+#: inc/customizer.php:176 inc/customizer.php:328
+msgid "Show"
+msgstr "Afficher"
+
+#: inc/customizer.php:177 inc/customizer.php:329
+msgid "Hide"
+msgstr "Cacher"
+
+#: inc/customizer.php:195
+msgid "Show full posts on blog?"
+msgstr "Afficher les articles entiers sur le blog ?"
+
+#: inc/customizer.php:200 inc/customizer.php:248 inc/customizer.php:264
+#: inc/customizer.php:280 inc/customizer.php:347
+msgid "Yes"
+msgstr "Oui"
+
+#: inc/customizer.php:201 inc/customizer.php:249 inc/customizer.php:265
+#: inc/customizer.php:281 inc/customizer.php:348
+msgid "No"
+msgstr "Non"
+
+#: inc/customizer.php:211
+msgid "Excerpt word count"
+msgstr "Nombre de mots de l'extrait"
+
+#: inc/customizer.php:223
+msgid "Read More button text"
+msgstr "Texte du bouton Lire Plus"
+
+#: inc/customizer.php:233
+msgid "Additional Options"
+msgstr "Options Additionnelles"
+
+#: inc/customizer.php:243
+msgid "Make first post on blog extra wide?"
+msgstr "Rendre la première publication du blog extra large ?"
+
+#: inc/customizer.php:259
+msgid "Display post author name in byline?"
+msgstr "Afficher le nom de l'auteur de la publication en signature ?"
+
+#: inc/customizer.php:275
+msgid "Display Scroll-to-top arrow?"
+msgstr "Afficher la flèche de Défilement vers le haut ?"
+
+#: inc/customizer.php:301
+msgid "Custom CSS"
+msgstr "CSS Personnalisé"
+
+#: inc/customizer.php:312
+msgid "Add Custom CSS Here:"
+msgstr "Ajouter CSS Personnalisé Ici:"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "Cliquer ici pour laisser votre appréciation"
+
+#: index.php:19
+msgid "Previous"
+msgstr "Précédent"
+
+#: index.php:20
+msgid "Next"
+msgstr "Suivant"
+
+#: search.php:9
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d résultat de recherche pour \"%2$s\""
+msgstr[1] "%1$d résultats de recherche pour \"%2$s\""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr "Aucun résultat de recherche pour \"%s\""
+
+#: search.php:35
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+"Vous ne pouvez trouver ce que vous cherchez ?  Essayez de raffiner votre "
+"recherche:"
+
+# The translation of Go is relative following the context. If in the context it means to "go somewhere", we would say "aller". If it is said in the sens to launch, we would say "lancer". If it in the sens to activate, we would say "activer".
+#: searchform.php:6
+#, fuzzy
+msgid "Go"
+msgstr "Aller"
+
+#: theme-options.php:4 theme-options.php:20
+msgid "%s Dashboard"
+msgstr "%s Tableau de bord"
+
+#. Description of the plugin/theme
+msgid ""
+"Chosen is a bold and minimalist theme for publishers who want to get their "
+"visitors' attention and keep it. Present your best content in a simple, "
+"uncluttered fashion on phones, tablets, and desktop computers with Chosen. "
+"Use Chosen to start a blog, magazine, or news site in any niche: fashion, "
+"business, gaming, food, travel. As a free theme, you can use Chosen for as "
+"many sites as you want. It can even be used for video, podcasts, and "
+"personal resumes. Now with WooCommerce support, you can also add an "
+"eCommerce store to your website. Preview Chosen now on desktop, tablets, and "
+"mobile devices with the interactive live demo: https://www.competethemes.com/"
+"demos/?theme=chosen"
+msgstr ""
+"Chosen est un thème audacieux et minimaliste pour les éditeurs qui veulent "
+"attirer l'attention de leurs visiteurs et la garder. Présentez votre "
+"meilleur contenu d'une manière simple et épuré sur les téléphones, les "
+"tablettes et les ordinateurs de bureau avec Chosen. Utilisez Chosen pour "
+"démarrer un blog, un magazine ou un site de nouvelles dans n'importe quel "
+"créneau: mode, affaires, jeux, nourriture, voyage. En tant que thème "
+"gratuit, vous pouvez utiliser Chosen pour autant de sites que vous le "
+"souhaitez. Il peut même être utilisé pour la vidéo, les podcasts, et les "
+"curriculum vitae personnels. Maintenant, avec la prise en charge de "
+"WooCommerce, vous pouvez également ajouter un magasin de commerce "
+"électronique à votre site Web. Prévisualisez Chosen maintenant sur vos "
+"ordinateurs de bureau, tablettes et appareils mobiles avec la démonstration "
+"interactive en direct: https://www.competethemes.com/demos/?theme=chosen"
+
+#. Template Name of the plugin/theme
+msgid "Full-width"
+msgstr "Pleine largeur"
+
+#: comments.php:12 comments.php:32 comments.php:54 content/comments-link.php:5
+#: content/comments-link.php:8
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title's Posts"
+msgid "Posts"
+msgstr "Articles"
+
+#: content/post-byline.php:5
+msgctxt "Published DATE"
+msgid "Published %s"
+msgstr "Publié le %s"
+
+#: content/post-byline.php:12
+msgctxt "Published DATE by AUTHOR "
+msgid "By"
+msgstr "Par"
+
+#: content/post-categories.php:11
+msgctxt "View all posts in CATEGORY"
+msgid "View all posts in %s"
+msgstr "Voir tous les articles dans %s"
+
+#: functions.php:133
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr "Répondre"
+
+#: functions.php:137
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr "Éditer"
+
+#: functions.php:154
+msgctxt "noun"
+msgid "Name"
+msgstr "Nom"
+
+#: functions.php:161
+msgctxt "noun"
+msgid "Email"
+msgstr "Courriel"
+
+#: functions.php:190
+msgctxt "noun"
+msgid "Comment"
+msgstr "Commentaire"
+
+#: functions.php:427 functions.php:428
+msgctxt "noun"
+msgid "email"
+msgstr "courriel"
+
+#: functions.php:485 header.php:22 inc/scripts.php:16
+msgctxt "verb: open the menu"
+msgid "open menu"
+msgstr "ouvrir menu"
+
+#: inc/customizer.php:185
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/scripts.php:17
+msgctxt "verb: close the menu"
+msgid "close menu"
+msgstr "fermer menu"
+
+#: inc/scripts.php:18
+msgctxt "verb: open the dropdown menu"
+msgid "open dropdown menu"
+msgstr "ouvrir menu déroulant"
+
+#: inc/scripts.php:19
+msgctxt "verb: close the dropdown menu"
+msgid "close dropdown menu"
+msgstr "fermer menu déroulant"
