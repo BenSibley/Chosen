@@ -48,6 +48,17 @@
     padding: 4px;
     font-size: 13px;
   }
+  .ccfic-source a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 4px;
+    font-weight: 400;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+  }
 }
 .post-header {
   margin: $baseline-height 0;

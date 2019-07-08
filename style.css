@@ -1196,6 +1196,15 @@ a img {
   padding: 4px;
   font-size: 13px;
 }
+.featured-image .ccfic-source a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 4px;
+  font-weight: 400;
+}
+.featured-image .ccfic-source a:link, .featured-image .ccfic-source a:visited {
+  color: #fff;
+}
 
 .post-header {
   margin: 1.5em 0;
