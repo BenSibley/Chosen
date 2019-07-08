@@ -330,6 +330,7 @@ if ( ! function_exists( 'ct_chosen_social_array' ) ) {
 			'phone'					=> 'chosen_phone_profile',
 			'email-form'    => 'chosen_email_form_profile',
 			'amazon'        => 'chosen_amazon_profile',
+			'artstation'    => 'chosen_artstation_profile',
 			'bandcamp'      => 'chosen_bandcamp_profile',
 			'behance'       => 'chosen_behance_profile',
 			'bitbucket'     => 'chosen_bitbucket_profile',
