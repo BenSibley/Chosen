@@ -236,8 +236,11 @@ function ct_chosen_update_yoast_og_description( $ogdesc ) {
 	if ( empty( $read_more_text ) ) {
 		$read_more_text = esc_html__( 'Continue Reading', 'chosen' );
 	}
-	$ogdesc = substr( $ogdesc, 0, strpos( $ogdesc, $read_more_text ) );
-
+	// If user has meta description, it will be used causing OG description to NOT use excerpt with read more link
+	if ( strpos( $ogdesc, $read_more_text ) != 0 ) {
+		$ogdesc = substr( $ogdesc, 0, strpos( $ogdesc, $read_more_text ) );
+	}
+	
 	return $ogdesc;
 }
 add_filter( 'wpseo_opengraph_desc', 'ct_chosen_update_yoast_og_description' );
