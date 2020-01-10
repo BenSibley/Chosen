@@ -55,8 +55,7 @@ textarea, .archive-header h1, .post-content, .further-reading a {
   /* 24px */
 }
 
-.wp-caption-text,
-.gallery-caption, input[type="submit"], .sticky-status span, .comment-respond label, .comment-footer span,
+input[type="submit"], .sticky-status span, .comment-respond label, .comment-footer span,
 .comment-footer a, .menu-primary a, .post-categories,
 .post-tags, .singular-attachment .attachment-caption, .woocommerce-account .woocommerce-MyAccount-navigation li a {
   font-size: 0.75em;
@@ -232,6 +231,10 @@ th {
 }
 
 /* Images */
+.wp-block-image {
+  margin: 0;
+}
+
 .alignleft {
   float: right;
   margin: 0 0 1.5em 1.5em;
@@ -261,14 +264,37 @@ img,
 .size-full,
 .size-large,
 .size-medium,
-.size-thumbnail {
+.size-thumbnail,
+.wp-block-image {
   max-width: 100%;
   height: auto;
 }
+img figcaption,
+.alignright figcaption,
+.alignleft figcaption,
+.aligncenter figcaption,
+.alignnone figcaption,
+.size-auto figcaption,
+.size-full figcaption,
+.size-large figcaption,
+.size-medium figcaption,
+.size-thumbnail figcaption,
+.wp-block-image figcaption {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: #3a3a3a;
+  text-align: center;
+}
 
 .wp-caption-text,
-.gallery-caption {
-  margin: 0 0 1.8450184502em;
+.gallery-caption,
+.wp-caption-dd {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: #3a3a3a;
+  text-align: center;
 }
 
 /* Form styles */
