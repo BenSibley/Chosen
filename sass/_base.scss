@@ -123,7 +123,29 @@ table {
 td,
 th {
   padding: $baseline-height / 2;
-  border: solid 1px $color-gray-40;
+  border: solid 1px $color-gray-87;
+}
+.wp-block-table {
+  margin: 0;
+
+  thead,
+  tfoot {
+    background: $color-gray-96;
+  }
+  td,
+  th {
+    border-color: $color-gray-87;
+  }
+}
+.wp-block-table.is-style-stripes {
+
+  thead {
+    background: none;
+  }
+  td,
+  th {
+    border-color: $color-gray-87;
+  }
 }
 
 /* Images */
