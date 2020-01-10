@@ -153,6 +153,13 @@
 .wp-block-embed {
   margin: $baseline-height 0;
 }
+.wp-block-button {
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
 @media all and (min-width: $seven-hundred) {
 
   .entry {

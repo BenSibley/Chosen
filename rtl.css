@@ -1343,6 +1343,11 @@ a img {
   margin: 1.5em 0;
 }
 
+.wp-block-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media all and (min-width: 43.75em) {
   .entry {
     margin-bottom: 4.5em;
