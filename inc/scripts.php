@@ -4,8 +4,9 @@
 function ct_chosen_load_scripts_styles() {
 
 	$font_args = array(
-		'family' => urlencode( 'Playfair Display:400|Raleway:400,700,400italic' ),
-		'subset' => urlencode( 'latin,latin-ext' )
+		'family' 	=> urlencode( 'Playfair Display:400|Raleway:400,700,400italic' ),
+		'subset' 	=> urlencode( 'latin,latin-ext' ),
+		'display' => 'swap'
 	);
 	$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
 
