@@ -25,7 +25,7 @@ function ct_chosen_last_updated_callback( $post ) {
 
   ?>
 	<p>
-		<select name="chosen-last-updated" id="chosen-last-updated" class="widefat">
+		<select name="chosen-last-updated" id="chosen-last-updated" style="box-sizing: border-box; width: 100%;">
 			<option value="default"><?php esc_html_e( 'Use Customizer setting', 'chosen' ); ?></option>
 			<option value="yes" <?php if ( $display == 'yes' ) {
 				echo 'selected';
