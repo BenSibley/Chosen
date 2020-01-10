@@ -1,7 +1,13 @@
 <?php
 
 function ct_chosen_register_theme_page() {
-	add_theme_page( sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), 'edit_theme_options', 'chosen-options', 'ct_chosen_options_content', 'ct_chosen_options_content' );
+	add_theme_page( 
+		sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), 
+		sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), 
+		'edit_theme_options', 
+		'chosen-options', 
+		'ct_chosen_options_content' 
+	);
 }
 add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
 
