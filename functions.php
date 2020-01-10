@@ -567,12 +567,6 @@ if ( ! function_exists( 'ct_chosen_delete_settings_notice' ) ) {
 					<p><?php esc_html_e( 'Customizer settings deleted.', 'chosen' ); ?></p>
 				</div>
 				<?php
-			} else if ( $_GET['chosen_status'] == 'activated' ) {
-				?>
-				<div class="updated">
-					<p><?php printf( esc_html__( '%s successfully activated!', 'chosen' ), wp_get_theme( get_template() ) ); ?></p>
-				</div>
-				<?php
 			}
 		}
 	}
@@ -781,20 +775,6 @@ if ( ! function_exists( 'ct_chosen_allow_skype_protocol' ) ) {
 	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_chosen_allow_skype_protocol' );
-
-// trigger theme switch on link click and send to Appearance menu
-function ct_chosen_welcome_redirect() {
-
-	$welcome_url = add_query_arg(
-		array(
-			'page'          => 'chosen-options',
-			'chosen_status' => 'activated'
-		),
-		admin_url( 'themes.php' )
-	);
-	wp_safe_redirect( esc_url_raw( $welcome_url ) );
-}
-add_action( 'after_switch_theme', 'ct_chosen_welcome_redirect' );
 
 if ( function_exists( 'ct_chosen_pro_plugin_updater' ) ) {
 	remove_action( 'admin_init', 'ct_chosen_pro_plugin_updater', 0 );
