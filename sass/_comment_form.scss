@@ -5,6 +5,16 @@
     display: block;
     margin-bottom: 0.5em;
   }
+  .comment-form-cookies-consent {
+
+    input {
+      position: relative;
+      top: -2px;
+    }
+    label {
+      display: inline-block;
+    }
+  } 
 }
 .comment {
 
