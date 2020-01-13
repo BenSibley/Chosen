@@ -4,7 +4,7 @@
 function ct_chosen_load_scripts_styles() {
 
 	$font_args = array(
-		'family' 	=> urlencode( 'Playfair Display:400|Raleway:400,700,400italic' ),
+		'family' 	=> urlencode( 'Playfair Display:400|Raleway:400,700,400i' ),
 		'subset' 	=> urlencode( 'latin,latin-ext' ),
 		'display' => 'swap'
 	);
