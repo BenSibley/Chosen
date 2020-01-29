@@ -554,6 +554,7 @@ a img {
   .archive .entry:nth-child(even),
   .search .entry:nth-child(even) {
     margin-left: 4.54203%;
+    margin-right: 0;
   }
   .blog .post-header,
   .blog .post-content,

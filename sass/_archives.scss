@@ -123,6 +123,7 @@
 
       &:nth-child(even) {
         margin-right: $column * 1.09;
+        margin-left: 0;
       }
     }
     .post-header,
