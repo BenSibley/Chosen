@@ -751,6 +751,10 @@ add_action( 'pre_get_posts', 'ct_chosen_adjust_post_count', 99 );
 
 function ct_chosen_fix_pagination_count( $found_posts, $query ) {
 
+	// Return right away if there isn't the extra wide post
+	if ( get_theme_mod('full_width_post') == 'no' ) {
+		return $found_posts;
+	}
 	if ( !is_admin() && $query->is_home() && $query->is_main_query() && !$query->is_paged() ) {
 		// The non-homepage posts per page
 		$real_posts_per_page = get_option( 'posts_per_page' ) - 1;
