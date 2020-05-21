@@ -713,6 +713,12 @@ if ( ! function_exists( 'ct_chosen_get_content_template' ) ) {
 if ( ! function_exists( 'ct_chosen_adjust_post_count' ) ) {
 	function ct_chosen_adjust_post_count( $query ) {
 
+		// Don't affect any WC pages...
+		if (function_exists( 'is_woocommerce' ) ) {
+			if ( is_woocommerce() ) {
+				return;
+			}
+		}
 		$extra_wide = get_theme_mod( 'full_width_post' );
 
 		if ( $extra_wide != 'no' ) {
