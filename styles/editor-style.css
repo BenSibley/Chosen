@@ -135,6 +135,13 @@ th {
 .wp-block-table th {
   border-color: #DEDEDE;
 }
+.wp-block-table figcaption {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: -12px 0 0 0;
+  color: #3a3a3a;
+  text-align: center;
+}
 
 .wp-block-table.is-style-stripes thead {
   background: none;
