@@ -850,3 +850,12 @@ function ct_chosen_pagination() {
     'next_text' => esc_html__( 'Next', 'chosen' )
 	) );
 }
+
+//----------------------------------------------------------------------------------
+// Add support for Elementor headers & footers
+//----------------------------------------------------------------------------------
+function ct_chosen_register_elementor_locations( $elementor_theme_manager ) {
+	$elementor_theme_manager->register_location( 'header' );
+	$elementor_theme_manager->register_location( 'footer' );
+}
+add_action( 'elementor/theme/register_locations', 'ct_chosen_register_elementor_locations' ); 
