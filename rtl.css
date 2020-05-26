@@ -1356,6 +1356,10 @@ a img {
   color: #fff;
 }
 
+.wp-block-social-links a {
+  color: #fff;
+}
+
 @media all and (min-width: 43.75em) {
   .entry {
     margin-bottom: 4.5em;
