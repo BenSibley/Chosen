@@ -1,6 +1,6 @@
 <?php
 /*
-** Template Name: Landing Page with Header
+** Template Name: Landing Page
 */
 ?>
 <!DOCTYPE html>
