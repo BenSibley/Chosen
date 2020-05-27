@@ -119,6 +119,15 @@ body {
   height: 0;
 }
 
+.page-template-landing-page .overflow-container,
+.page-template-landing-page-header .overflow-container {
+  padding: 0;
+}
+.page-template-landing-page .max-width,
+.page-template-landing-page-header .max-width {
+  max-width: none;
+}
+
 p {
   margin: 1.5em 0;
 }
@@ -1430,7 +1439,9 @@ a img {
     /* 67px */
   }
 
-  .page-template-full-width .post-content {
+  .page-template-full-width .post-content,
+  .page-template-landing-page .post-content,
+  .page-template-landing-page-header .post-content {
     padding: 0;
   }
 
@@ -1455,7 +1466,9 @@ a img {
     padding: 0 13.62609%;
   }
 
-  .page-template-full-width .post-content {
+  .page-template-full-width .post-content,
+  .page-template-landing-page .post-content,
+  .page-template-landing-page-header .post-content {
     padding: 0;
   }
 
@@ -1478,7 +1491,9 @@ a img {
     padding: 0 18.16812%;
   }
 
-  .page-template-full-width .post-content {
+  .page-template-full-width .post-content,
+  .page-template-landing-page .post-content,
+  .page-template-landing-page-header .post-content {
     padding: 0;
   }
 

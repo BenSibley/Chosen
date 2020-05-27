@@ -33,6 +33,16 @@ body {
     @include clearfix;
   }
 }
+.page-template-landing-page,
+.page-template-landing-page-header {
+
+  .overflow-container {
+    padding: 0;
+  }
+  .max-width {
+    max-width: none;
+  }
+}
 p {
   margin: $baseline-height 0;
 }
