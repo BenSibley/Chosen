@@ -11,4 +11,4 @@ Chosen also uses:
 * Font Awesome, http://fontawesome.io/, Copyright 2011, Dave Gandy, MIT license, https://opensource.org/licenses/mit-license.html
 * HTML5shiv, https://github.com/aFarkas/html5shiv, Copyright 2011, Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, https://opensource.org/licenses/mit-license.html
 * Respond.js, https://github.com/scottjehl/Respond, Copyright 2011, Scott Jehl, MIT, https://opensource.org/licenses/mit-license.html
-* City image in screenshot.png : CC0 by Anthony Indraus, http://unsplash.com, licensed under Public Domain
+* City image in screenshot.png : CC0 by Anthony Indraus, licensed under Public Domain
