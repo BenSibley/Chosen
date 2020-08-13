@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*===== Variables =====*/
 /* Theme Colors */
 /* Media Query widths */
@@ -79,8 +80,8 @@
           transition: background 0.2s;
 }
 #customize-control-chosen_pro .chosen-pro-button:before {
-  content: '\f06e';
-  font-family: 'FontAwesome';
+  content: "";
+  font-family: "FontAwesome";
   margin-right: 6px;
 }
 #customize-control-chosen_pro .chosen-pro-button:hover, #customize-control-chosen_pro .chosen-pro-button:active, #customize-control-chosen_pro .chosen-pro-button:focus {

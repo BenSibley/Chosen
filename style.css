@@ -33,47 +33,47 @@ h1 {
   /* 38px */
 }
 
-h2, .comments-number,
-.comment-reply-title {
+.comments-number,
+.comment-reply-title, h2 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
   /* 24px */
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea, .archive-header h1, .post-content, .further-reading a {
+.further-reading a, .post-content, .archive-header h1, input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
+textarea {
   font-size: 1.0625em;
   /* 17px / 16px */
   line-height: 1.4118;
   /* 24px */
 }
 
-input[type="submit"], .sticky-status span, .comment-respond label, .comment-footer span,
-.comment-footer a, .menu-primary a, .post-categories,
-.post-tags, .singular-attachment .attachment-caption, .woocommerce-account .woocommerce-MyAccount-navigation li a {
+.woocommerce-account .woocommerce-MyAccount-navigation li a, .singular-attachment .attachment-caption, .post-categories,
+.post-tags, .menu-primary a, .comment-footer span,
+.comment-footer a, .comment-respond label, .sticky-status span, input[type=submit] {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
   /* 18px */
 }
 
-.more-link, .comments-link, .tagline, .post-byline, .further-reading span {
+.further-reading span, .post-byline, .tagline, .comments-link, .more-link {
   font-size: 0.625em;
   /* 10px / 16px */
   line-height: 1.8;
   /* 18px */
 }
 
-.more-link, .comments-link, .sticky-status span, .comment-footer span,
-.comment-footer a, .tagline, .menu-primary a, .post-byline, .post-categories span,
-.post-tags span, .further-reading span, .woocommerce-account .woocommerce-MyAccount-navigation li a {
+.woocommerce-account .woocommerce-MyAccount-navigation li a, .further-reading span, .post-categories span,
+.post-tags span, .post-byline, .menu-primary a, .tagline, .comment-footer span,
+.comment-footer a, .sticky-status span, .comments-link, .more-link {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -314,13 +314,13 @@ img figcaption,
 }
 
 /* Form styles */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
 textarea {
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -334,13 +334,13 @@ textarea {
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
 textarea:focus {
   outline: none;
   background: white;
@@ -352,7 +352,7 @@ textarea {
   /* to hide scrollbar in IE */
 }
 
-input[type="submit"] {
+input[type=submit] {
   font-family: "Raleway", sans-serif;
   padding: 14px 16px;
   min-width: 100px;
@@ -365,14 +365,14 @@ input[type="submit"] {
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   cursor: pointer;
 }
-input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
   background: #545454;
 }
 
-input[type="search"] {
+input[type=search] {
   padding-right: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -552,7 +552,7 @@ a img {
 
 @media all and (min-width: 43.75em) {
   .more-link,
-  .comments-link {
+.comments-link {
     font-size: 0.75em;
     /* 12px / 16px */
     line-height: 1.5;
@@ -561,34 +561,34 @@ a img {
 }
 @media all and (min-width: 56.25em) {
   .blog .entry,
-  .archive .entry,
-  .search .entry {
+.archive .entry,
+.search .entry {
     width: 47.691315%;
     float: left;
   }
   .blog .entry:nth-child(even),
-  .archive .entry:nth-child(even),
-  .search .entry:nth-child(even) {
+.archive .entry:nth-child(even),
+.search .entry:nth-child(even) {
     margin-right: 4.54203%;
     margin-left: 0;
   }
   .blog .post-header,
-  .blog .post-content,
-  .archive .post-header,
-  .archive .post-content,
-  .search .post-header,
-  .search .post-content {
+.blog .post-content,
+.archive .post-header,
+.archive .post-content,
+.search .post-header,
+.search .post-content {
     text-align: left;
   }
 
   .blog:not(.posts-page-1) .entry:nth-child(odd),
-  .archive .entry:nth-child(odd),
-  .search .entry:nth-child(odd) {
+.archive .entry:nth-child(odd),
+.search .entry:nth-child(odd) {
     margin-right: 4.54203%;
   }
   .blog:not(.posts-page-1) .entry:nth-child(even),
-  .archive .entry:nth-child(even),
-  .search .entry:nth-child(even) {
+.archive .entry:nth-child(even),
+.search .entry:nth-child(even) {
     margin-right: 0;
   }
 
@@ -603,7 +603,7 @@ a img {
     /* 67px */
   }
   .posts-page-1 .entry:first-of-type .post-header,
-  .posts-page-1 .entry:first-of-type .post-content {
+.posts-page-1 .entry:first-of-type .post-content {
     padding: 0 9.08406%;
     text-align: center;
   }
@@ -725,7 +725,6 @@ a img {
 .comment-footer {
   margin-top: 1.5em;
 }
-
 .comment-reply-link,
 .comment-edit-link {
   position: relative;
@@ -735,7 +734,7 @@ a img {
 .comment-reply-link:after,
 .comment-edit-link:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: -11px;
   height: 100%;
@@ -744,7 +743,7 @@ a img {
 }
 
 .bypostauthor > article .author-name:after {
-  content: '(author)';
+  content: "(author)";
   margin-left: 6px;
   font-size: 12px;
   display: inline-block;
@@ -752,7 +751,7 @@ a img {
 
 @media all and (min-width: 43.75em) {
   .comments-number,
-  .comment-reply-title {
+.comment-reply-title {
     font-size: 1.75em;
     /* 28px / 16px */
     line-height: 1.357;
@@ -774,19 +773,19 @@ a img {
 }
 @media all and (min-width: 56.25em) {
   .comments,
-  #disqus_thread {
+#disqus_thread {
     padding: 0 9.08406%;
   }
 }
 @media all and (min-width: 68.75em) {
   .comments,
-  #disqus_thread {
+#disqus_thread {
     padding: 0 13.62609%;
   }
 }
 @media all and (min-width: 75em) {
   .comments,
-  #disqus_thread {
+#disqus_thread {
     padding: 0 18.16812%;
   }
 }
@@ -1070,12 +1069,12 @@ a img {
     outline: none;
   }
   .menu-primary .current-menu-item.menu-item-has-children > a, .menu-primary .current-menu-item.page_item_has_children > a,
-  .menu-primary .current_page_item.menu-item-has-children > a,
-  .menu-primary .current_page_item.page_item_has_children > a {
+.menu-primary .current_page_item.menu-item-has-children > a,
+.menu-primary .current_page_item.page_item_has_children > a {
     margin-left: 0;
   }
   .menu-primary ul > .current-menu-item:first-child,
-  .menu-primary ul > .current_page_item:first-child {
+.menu-primary ul > .current_page_item:first-child {
     padding-top: 0;
   }
 
@@ -1150,7 +1149,7 @@ a img {
             transform: translate(0, 2px);
   }
   .menu-primary-items .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children > a:active:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 0;
@@ -1396,7 +1395,7 @@ a img {
   }
 
   .post-categories,
-  .post-tags {
+.post-tags {
     display: inline-block;
     margin: 1.5em 0;
   }
@@ -1420,19 +1419,19 @@ a img {
 }
 @media all and (min-width: 56.25em) {
   .singular .post-header,
-  .singular .post-content,
-  .singular .post-meta,
-  .error404 .post-header,
-  .error404 .post-content,
-  .error404 .post-meta {
+.singular .post-content,
+.singular .post-meta,
+.error404 .post-header,
+.error404 .post-content,
+.error404 .post-meta {
     padding: 0 9.08406%;
   }
   .singular .post-header,
-  .error404 .post-header {
+.error404 .post-header {
     margin: 3em 0;
   }
   .singular .post-title,
-  .error404 .post-title {
+.error404 .post-title {
     font-size: 3.188em;
     /* 51px / 16px */
     line-height: 1.314;
@@ -1440,8 +1439,8 @@ a img {
   }
 
   .page-template-full-width .post-content,
-  .page-template-landing-page .post-content,
-  .page-template-landing-page-header .post-content {
+.page-template-landing-page .post-content,
+.page-template-landing-page-header .post-content {
     padding: 0;
   }
 
@@ -1453,22 +1452,22 @@ a img {
   }
 
   .wp-block-image.alignfull,
-  .wp-block-cover {
+.wp-block-cover {
     left: -16.75%;
     width: 133.5%;
   }
 }
 @media all and (min-width: 68.75em) {
   .singular .post-content,
-  .singular .post-meta,
-  .error404 .post-content,
-  .error404 .post-meta {
+.singular .post-meta,
+.error404 .post-content,
+.error404 .post-meta {
     padding: 0 13.62609%;
   }
 
   .page-template-full-width .post-content,
-  .page-template-landing-page .post-content,
-  .page-template-landing-page-header .post-content {
+.page-template-landing-page .post-content,
+.page-template-landing-page-header .post-content {
     padding: 0;
   }
 
@@ -1478,27 +1477,27 @@ a img {
   }
 
   .wp-block-image.alignfull,
-  .wp-block-cover {
+.wp-block-cover {
     left: -25%;
     width: 150%;
   }
 }
 @media all and (min-width: 75em) {
   .singular .post-content,
-  .singular .post-meta,
-  .error404 .post-content,
-  .error404 .post-meta {
+.singular .post-meta,
+.error404 .post-content,
+.error404 .post-meta {
     padding: 0 18.16812%;
   }
 
   .page-template-full-width .post-content,
-  .page-template-landing-page .post-content,
-  .page-template-landing-page-header .post-content {
+.page-template-landing-page .post-content,
+.page-template-landing-page-header .post-content {
     padding: 0;
   }
 
   .wp-block-image.alignfull,
-  .wp-block-cover {
+.wp-block-cover {
     left: -36%;
     width: 172%;
   }
@@ -1694,7 +1693,6 @@ a img {
 .singular-attachment .attachment-container img {
   display: block;
 }
-
 .woocommerce .product .quantity .qty {
   width: 50px !important;
   font-size: 16px !important;
@@ -1742,7 +1740,7 @@ a img {
   width: 49% !important;
   padding: 10px 12px !important;
 }
-.woocommerce-cart .coupon input[type="text"] {
+.woocommerce-cart .coupon input[type=text] {
   font-size: 14px !important;
 }
 .woocommerce-cart table.shop_table td.product-name {
