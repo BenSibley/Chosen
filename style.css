@@ -319,6 +319,13 @@ img figcaption,
   text-align: center;
 }
 
+.wp-block-group.alignwide,
+.wp-block-group .alignwide,
+.wp-block-group.alignfull,
+.wp-block-group .alignfull {
+  line-height: 1.5;
+}
+
 /* Form styles */
 input[type=text],
 input[type=email],
