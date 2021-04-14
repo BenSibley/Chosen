@@ -876,6 +876,10 @@ a img {
 }
 
 .social-media-icons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   list-style: none;
   margin: -6px auto 2.25em;
 }
@@ -885,6 +889,14 @@ a img {
 }
 .social-media-icons li:last-child {
   margin-left: 0;
+}
+.social-media-icons .custom-icon img {
+  display: inline-block;
+  vertical-align: sub;
+  line-height: 0;
+  margin: 0;
+  width: 20px;
+  height: auto;
 }
 
 @media all and (min-width: 43.75em) {

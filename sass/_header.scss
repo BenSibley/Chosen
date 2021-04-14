@@ -26,6 +26,8 @@
   margin: 0;
 }
 .social-media-icons {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: -6px auto $baseline-height * 1.5;
 
@@ -35,6 +37,17 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+  .custom-icon {
+
+    img {
+      display: inline-block;
+      vertical-align: sub;
+      line-height: 0;
+      margin: 0;
+      width: 20px;
+      height: auto;
     }
   }
 }

@@ -158,6 +158,153 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 		// increment the priority for next site
 		$priority = $priority + 5;
 	}
+	// Custom icon 1
+	$wp_customize->add_setting( 'social_icon_custom_1_name', array(
+		'sanitize_callback' => 'ct_chosen_sanitize_text'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_1_name', array(
+		'label'    => __('Custom icon 1 Name', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_1_name',
+		'type'     => 'text',
+		'priority' => $priority + 5
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_1', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_1', array(
+		'label'    => __('Custom icon 1 URL', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_1',
+		'type'     => 'url',
+		'priority' => $priority + 6
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_1_image', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'social_icon_custom_1_image', array(
+		'label'    => __( 'Custom icon 1 image', 'chosen' ),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_1_image',
+		'priority' => $priority + 7
+	)));
+	$wp_customize->add_setting( 'social_icon_custom_1_size', array(
+		'default'			=> '20',
+		'sanitize_callback' => 'absint'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_1_size', array(
+		'label'    => __('Custom icon 1 size (px)', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_1_size',
+		'type'     => 'number',
+		'priority' => $priority + 8
+	) );
+	// Custom icon 2
+	$wp_customize->add_setting( 'social_icon_custom_2_name', array(
+		'sanitize_callback' => 'ct_chosen_sanitize_text'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_2_name', array(
+		'label'    => __('Custom icon 2 Name', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_2_name',
+		'type'     => 'text',
+		'priority' => $priority + 9
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_2', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_2', array(
+		'label'    => __('Custom icon 2 URL', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_2',
+		'type'     => 'url',
+		'priority' => $priority + 10
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_2_image', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'social_icon_custom_2_image', array(
+		'label'    => __( 'Custom icon 2 image', 'chosen' ),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_2_image',
+		'priority' => $priority + 11
+	)));
+	$wp_customize->add_setting( 'social_icon_custom_2_size', array(
+		'default'			=> '20',
+		'sanitize_callback' => 'absint'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_2_size', array(
+		'label'    => __('Custom icon 2 size (px)', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_2_size',
+		'type'     => 'number',
+		'priority' => $priority + 12
+	) );
+	// Custom icon 3
+	$wp_customize->add_setting( 'social_icon_custom_3_name', array(
+		'sanitize_callback' => 'ct_chosen_sanitize_text'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_3_name', array(
+		'label'    => __('Custom icon 3 Name', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_3_name',
+		'type'     => 'text',
+		'priority' => $priority + 13
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_3', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_3', array(
+		'label'    => __('Custom icon 3 URL', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_3',
+		'type'     => 'url',
+		'priority' => $priority + 14
+	) );
+	$wp_customize->add_setting( 'social_icon_custom_3_image', array(
+		'sanitize_callback' => 'esc_url_raw'
+	) );
+	$wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'social_icon_custom_3_image', array(
+		'label'    => __( 'Custom icon 3 image', 'chosen' ),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_3_image',
+		'priority' => $priority + 15
+	)));
+	$wp_customize->add_setting( 'social_icon_custom_3_size', array(
+		'default'			=> '20',
+		'sanitize_callback' => 'absint'
+	) );
+	$wp_customize->add_control( 'social_icon_custom_3_size', array(
+		'label'    => __('Custom icon 3 size (px)', 'chosen'),
+		'section'  => 'ct_chosen_social_media_icons',
+		'settings' => 'social_icon_custom_3_size',
+		'type'     => 'number',
+		'priority' => $priority + 16
+	) );
+
+	/***** Search Bar *****/
+
+	// section
+	$wp_customize->add_section( 'chosen_search_bar', array(
+		'title'    => __( 'Search Bar', 'chosen' ),
+		'priority' => 37
+	) );
+	// setting
+	$wp_customize->add_setting( 'search_bar', array(
+		'default'           => 'hide',
+		'sanitize_callback' => 'ct_chosen_sanitize_all_show_hide_settings'
+	) );
+	// control
+	$wp_customize->add_control( 'search_bar', array(
+		'type'    => 'radio',
+		'label'   => __( 'Show search bar at top of site?', 'chosen' ),
+		'section' => 'chosen_search_bar',
+		'setting' => 'search_bar',
+		'choices' => array(
+			'show' => __( 'Show', 'chosen' ),
+			'hide' => __( 'Hide', 'chosen' )
+		),
+	) );
 
 	/***** Search Bar *****/
 
