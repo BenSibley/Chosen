@@ -401,6 +401,22 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'no'  => __( 'No', 'chosen' )
 		)
 	) );
+	// post title above/below FI - setting
+	$wp_customize->add_setting( 'post_title_position', array(
+		'default'           => 'below',
+		'sanitize_callback' => 'ct_chosen_sanitize_post_title_position_setting'
+	) );
+	// post title above/below FI - control
+	$wp_customize->add_control( 'post_title_position', array(
+		'label'    => __( 'Display post titles above or below Feature Images?', 'chosen' ),
+		'section'  => 'chosen_additional',
+		'settings' => 'post_title_position',
+		'type'     => 'radio',
+		'choices'  => array(
+			'above'  => __( 'Above Featured Image', 'chosen' ),
+			'below' => __( 'Below Featured Image', 'chosen' )
+		)
+	) );
 	// author byline - setting
 	$wp_customize->add_setting( 'author_byline', array(
 		'default'           => 'no',
@@ -540,6 +556,16 @@ function ct_chosen_sanitize_phone( $input ) {
 	} else {
 		return '';
 	}
+}
+
+function ct_chosen_sanitize_post_title_position_setting($input) {
+	
+	$valid = array(
+		'above'  => __( 'Above Featured Image', 'chosen' ),
+		'below' => __( 'Below Featured Image', 'chosen' )
+	);
+
+	return array_key_exists( $input, $valid ) ? $input : '';
 }
 
 function ct_chosen_customize_preview_js() {
