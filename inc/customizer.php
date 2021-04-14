@@ -86,6 +86,10 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'chosen');
+			} elseif ( $social_site == 'imdb' ) {
+				$label = __('IMDB', 'chosen');
+			} elseif ( $social_site == 'diaspora' ) {
+				$label = __('diaspora*', 'chosen');
 			} elseif ( $social_site == 'researchgate' ) {
 				$label = __('ResearchGate', 'chosen');
 			} elseif ( $social_site == 'soundcloud' ) {
