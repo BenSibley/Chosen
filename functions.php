@@ -618,6 +618,10 @@ if ( ! function_exists( 'ct_chosen_body_class' ) ) {
 			}
 		}
 
+		if ( get_theme_mod('keep_mobile_menu') == 'yes' ) {
+			$classes[] = 'mobile-menu-always';
+		}
+
 		return $classes;
 	}
 }

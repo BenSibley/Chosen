@@ -417,6 +417,22 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 			'below' => __( 'Below Featured Image', 'chosen' )
 		)
 	) );
+	// Keep mobile menu - setting
+	$wp_customize->add_setting( 'keep_mobile_menu', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_chosen_sanitize_yes_no_settings'
+	) );
+	// Keep mobile menu - control
+	$wp_customize->add_control( 'keep_mobile_menu', array(
+		'label'    => __( 'Use the mobile menu for all screen sizes?', 'chosen' ),
+		'section'  => 'chosen_additional',
+		'settings' => 'keep_mobile_menu',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'chosen' ),
+			'no'  => __( 'No', 'chosen' )
+		)
+	) );
 	// author byline - setting
 	$wp_customize->add_setting( 'author_byline', array(
 		'default'           => 'no',

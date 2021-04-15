@@ -28,6 +28,7 @@
 .social-media-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   margin: -6px auto $baseline-height * 1.5;
 
@@ -71,18 +72,21 @@
   .title-container {
     margin: $baseline-height * 2 0 $baseline-height * 3;
   }
-  .toggle-navigation {
-    display: none;
-  }
-  .social-media-icons {
-    float: right;
-    margin: 0;
-    text-align: right;
-    transition: all 0.1s ease-in-out;
+  body:not(.mobile-menu-always) {
 
-    &.fade {
-      opacity: 0;
-      transform: translateX(4px);
+    .toggle-navigation {
+      display: none;
+    }
+    .social-media-icons {
+      float: right;
+      margin: 0;
+      text-align: right;
+      transition: all 0.1s ease-in-out;
+  
+      &.fade {
+        opacity: 0;
+        transform: translateX(4px);
+      }
     }
   }
 }

@@ -95,248 +95,250 @@
 
 @media all and (min-width: $nine-hundred) {
 
-  .menu-primary-container {
-    max-height: none;
-    overflow: visible;
-
-    &:after {
-      @include clearfix;
-    }
-  }
-  .menu-primary {
-    display: inline-block;
-    text-align: left;
-    float: left;
-    margin-bottom: 0;
-
-    li {
-      position: relative;
-      display: inline-block;
-      margin: 0;
-
-      &:not(.current-menu-item) {
-
-        > a {
-
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-    }
-    .current-menu-item,
-    .current_page_item {
-
-      &.menu-item-has-children,
-      &.page_item_has_children {
-
-        > a {
-          margin-left: 0;
-        }
-      }
-    }
-    ul {
-
-      > .current-menu-item:first-child,
-      > .current_page_item:first-child {
-        padding-top: 0;
-      }
-    }
-  }
-  .menu-primary-items {
-
-    ul {
-      position: absolute;
+  body:not(.mobile-menu-always) {
+    .menu-primary-container {
       max-height: none;
-      z-index: 29;
-      visibility: hidden;
       overflow: visible;
-      opacity: 0;
-      top: 100%;
-      top: calc(100% + 6px);
-      left: -$baseline-height;
-      backface-visibility: hidden;
-      background: white;
-      padding: 0 $baseline-height $baseline-height / 2;
-      transition: all 0.1s ease-in-out;
 
-      &:hover,
-      &.focused {
-        visibility: visible;
-        top: 100%;
-        top: calc(100% + 1px);
-        opacity: 1;
-      }
-      a {
-        width: 100%;
-      }
-      // make room for dropdown button
-      .menu-item-has-children {
-
-        > a {
-          width: calc(100% - 16px);
-        }
-      }
-      li {
-        display: block;
-        z-index: 9;
-        white-space: nowrap;
-        margin: 0 0 6px 0;
-
-        &:first-child {
-          margin-top: 0;
-        }
-      }
-      .toggle-dropdown {
-        margin: 0 0 0 -2px;
-        transform: rotate(-90deg);
+      &:after {
+        @include clearfix;
       }
     }
-    .menu-item-has-children {
+    .menu-primary {
+      display: inline-block;
+      text-align: left;
+      float: left;
+      margin-bottom: 0;
 
-      // for wide tablets
-      &.open > ul {
-        visibility: visible;
-        top: 100%;
-        top: calc(100% + 1px);
-        opacity: 1;
-      }
-      &:hover,
-      &.focused {
-
-        > button {
-          transform: translate(0, 2px);
-        }
-      }
       li {
-         margin-right: 0;
-      }
-      > a {
         position: relative;
-        z-index: 9;
+        display: inline-block;
+        margin: 0;
 
-        &:hover,
-        &:active,
-        &:focus {
+        &:not(.current-menu-item) {
 
-          ~ ul {
-            visibility: visible;
-            top: 100%;
-            top: calc(100% + 1px);
-            opacity: 1;
-          }
-          + button {
-            transform: translate(0, 2px);
-          }
-        }
-        &:hover,
-        &:active {
+          > a {
 
-          &:after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            height: 24px;
+            &:focus {
+              outline: none;
+            }
           }
         }
       }
-      // tier 3
+      .current-menu-item,
+      .current_page_item {
+
+        &.menu-item-has-children,
+        &.page_item_has_children {
+
+          > a {
+            margin-left: 0;
+          }
+        }
+      }
+      ul {
+
+        > .current-menu-item:first-child,
+        > .current_page_item:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    .menu-primary-items {
+
+      ul {
+        position: absolute;
+        max-height: none;
+        z-index: 29;
+        visibility: hidden;
+        overflow: visible;
+        opacity: 0;
+        top: 100%;
+        top: calc(100% + 6px);
+        left: -$baseline-height;
+        backface-visibility: hidden;
+        background: white;
+        padding: 0 $baseline-height $baseline-height / 2;
+        transition: all 0.1s ease-in-out;
+
+        &:hover,
+        &.focused {
+          visibility: visible;
+          top: 100%;
+          top: calc(100% + 1px);
+          opacity: 1;
+        }
+        a {
+          width: 100%;
+        }
+        // make room for dropdown button
+        .menu-item-has-children {
+
+          > a {
+            width: calc(100% - 16px);
+          }
+        }
+        li {
+          display: block;
+          z-index: 9;
+          white-space: nowrap;
+          margin: 0 0 6px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        .toggle-dropdown {
+          margin: 0 0 0 -2px;
+          transform: rotate(-90deg);
+        }
+      }
       .menu-item-has-children {
 
+        // for wide tablets
+        &.open > ul {
+          visibility: visible;
+          top: 100%;
+          top: calc(100% + 1px);
+          opacity: 1;
+        }
         &:hover,
         &.focused {
 
           > button {
-            transform: translate(2px, 0) rotate(-90deg);
+            transform: translate(0, 2px);
           }
         }
+        li {
+          margin-right: 0;
+        }
         > a {
+          position: relative;
+          z-index: 9;
+
           &:hover,
           &:active,
           &:focus {
 
-            + button {
-              transform: translate(2px, 0) rotate(-90deg);
-            }
             ~ ul {
-              top: 0;
-              left: 100%;
+              visibility: visible;
+              top: 100%;
+              top: calc(100% + 1px);
+              opacity: 1;
+            }
+            + button {
+              transform: translate(0, 2px);
             }
           }
           &:hover,
           &:active {
 
             &:after {
-              top: 0;
-              bottom: 0;
-              left: 100%;
-              width: 36px;
+              content: '';
+              position: absolute;
+              top: 100%;
+              left: 0;
+              right: 0;
+              height: 24px;
             }
           }
         }
-        ul {
-          left: 100%;
-          left: calc(100% + 6px);
-          top: 0;
+        // tier 3
+        .menu-item-has-children {
 
           &:hover,
           &.focused {
-            top: 0;
+
+            > button {
+              transform: translate(2px, 0) rotate(-90deg);
+            }
+          }
+          > a {
+            &:hover,
+            &:active,
+            &:focus {
+
+              + button {
+                transform: translate(2px, 0) rotate(-90deg);
+              }
+              ~ ul {
+                top: 0;
+                left: 100%;
+              }
+            }
+            &:hover,
+            &:active {
+
+              &:after {
+                top: 0;
+                bottom: 0;
+                left: 100%;
+                width: 36px;
+              }
+            }
+          }
+          ul {
             left: 100%;
+            left: calc(100% + 6px);
+            top: 0;
+
+            &:hover,
+            &.focused {
+              top: 0;
+              left: 100%;
+            }
           }
         }
       }
     }
-  }
-  .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {
-    margin: 0 12px 0 8px;
-  }
-  .toggle-dropdown {
-    margin: 0 12px 0 -8px;
-  }
-  // CSSJanus can't do this for RTL stylesheet
-  .rtl {
+    .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {
+      margin: 0 12px 0 8px;
+    }
+    .toggle-dropdown {
+      margin: 0 12px 0 -8px;
+    }
+    // CSSJanus can't do this for RTL stylesheet
+    .rtl {
 
-    .menu-primary-items ul {
+      .menu-primary-items ul {
 
-      .menu-item-has-children {
+        .menu-item-has-children {
 
 
-        &:hover {
+          &:hover {
 
-          > a {
-          
-            + button {
-              transform: translate(-2px, 0) rotate(90deg);
+            > a {
+            
+              + button {
+                transform: translate(-2px, 0) rotate(90deg);
+              }
             }
           }
-        }
-        > a {
+          > a {
 
-          + button {
-            transform: rotate(90deg);
-            margin: 0 0 0 -12px;
+            + button {
+              transform: rotate(90deg);
+              margin: 0 0 0 -12px;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+
+              ~ ul {
+                right: auto;
+                left: calc(100%);
+              }
+              + button {
+                transform: translate(-2px, 0) rotate(90deg);
+              }
+            }
           }
-          &:hover,
-          &:active,
-          &:focus {
+          ul {
 
-            ~ ul {
+            &:hover {
               right: auto;
               left: calc(100%);
             }
-            + button {
-              transform: translate(-2px, 0) rotate(90deg);
-            }
-          }
-        }
-        ul {
-
-          &:hover {
-            right: auto;
-            left: calc(100%);
           }
         }
       }

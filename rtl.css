@@ -880,6 +880,8 @@ a img {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   list-style: none;
   margin: -6px auto 2.25em;
 }
@@ -923,18 +925,17 @@ a img {
     margin: 3em 0 4.5em;
   }
 
-  .toggle-navigation {
+  body:not(.mobile-menu-always) .toggle-navigation {
     display: none;
   }
-
-  .social-media-icons {
+  body:not(.mobile-menu-always) .social-media-icons {
     float: left;
     margin: 0;
     text-align: left;
     -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;
   }
-  .social-media-icons.fade {
+  body:not(.mobile-menu-always) .social-media-icons.fade {
     opacity: 0;
     -webkit-transform: translateX(4px);
             transform: translateX(4px);
@@ -1066,11 +1067,11 @@ a img {
 }
 
 @media all and (min-width: 56.25em) {
-  .menu-primary-container {
+  body:not(.mobile-menu-always) .menu-primary-container {
     max-height: none;
     overflow: visible;
   }
-  .menu-primary-container:after {
+  body:not(.mobile-menu-always) .menu-primary-container:after {
     content: ".";
     display: block;
     clear: both;
@@ -1078,32 +1079,30 @@ a img {
     line-height: 0;
     height: 0;
   }
-
-  .menu-primary {
+  body:not(.mobile-menu-always) .menu-primary {
     display: inline-block;
     text-align: right;
     float: right;
     margin-bottom: 0;
   }
-  .menu-primary li {
+  body:not(.mobile-menu-always) .menu-primary li {
     position: relative;
     display: inline-block;
     margin: 0;
   }
-  .menu-primary li:not(.current-menu-item) > a:focus {
+  body:not(.mobile-menu-always) .menu-primary li:not(.current-menu-item) > a:focus {
     outline: none;
   }
-  .menu-primary .current-menu-item.menu-item-has-children > a, .menu-primary .current-menu-item.page_item_has_children > a,
-.menu-primary .current_page_item.menu-item-has-children > a,
-.menu-primary .current_page_item.page_item_has_children > a {
+  body:not(.mobile-menu-always) .menu-primary .current-menu-item.menu-item-has-children > a, body:not(.mobile-menu-always) .menu-primary .current-menu-item.page_item_has_children > a,
+body:not(.mobile-menu-always) .menu-primary .current_page_item.menu-item-has-children > a,
+body:not(.mobile-menu-always) .menu-primary .current_page_item.page_item_has_children > a {
     margin-right: 0;
   }
-  .menu-primary ul > .current-menu-item:first-child,
-.menu-primary ul > .current_page_item:first-child {
+  body:not(.mobile-menu-always) .menu-primary ul > .current-menu-item:first-child,
+body:not(.mobile-menu-always) .menu-primary ul > .current_page_item:first-child {
     padding-top: 0;
   }
-
-  .menu-primary-items ul {
+  body:not(.mobile-menu-always) .menu-primary-items ul {
     position: absolute;
     max-height: none;
     z-index: 29;
@@ -1120,60 +1119,60 @@ a img {
     -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;
   }
-  .menu-primary-items ul:hover, .menu-primary-items ul.focused {
+  body:not(.mobile-menu-always) .menu-primary-items ul:hover, body:not(.mobile-menu-always) .menu-primary-items ul.focused {
     visibility: visible;
     top: 100%;
     top: calc(100% + 1px);
     opacity: 1;
   }
-  .menu-primary-items ul a {
+  body:not(.mobile-menu-always) .menu-primary-items ul a {
     width: 100%;
   }
-  .menu-primary-items ul .menu-item-has-children > a {
+  body:not(.mobile-menu-always) .menu-primary-items ul .menu-item-has-children > a {
     width: calc(100% - 16px);
   }
-  .menu-primary-items ul li {
+  body:not(.mobile-menu-always) .menu-primary-items ul li {
     display: block;
     z-index: 9;
     white-space: nowrap;
     margin: 0 0 6px 0;
   }
-  .menu-primary-items ul li:first-child {
+  body:not(.mobile-menu-always) .menu-primary-items ul li:first-child {
     margin-top: 0;
   }
-  .menu-primary-items ul .toggle-dropdown {
+  body:not(.mobile-menu-always) .menu-primary-items ul .toggle-dropdown {
     margin: 0 -2px 0 0;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
-  .menu-primary-items .menu-item-has-children.open > ul {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children.open > ul {
     visibility: visible;
     top: 100%;
     top: calc(100% + 1px);
     opacity: 1;
   }
-  .menu-primary-items .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children.focused > button {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children:hover > button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children.focused > button {
     -webkit-transform: translate(0, 2px);
             transform: translate(0, 2px);
   }
-  .menu-primary-items .menu-item-has-children li {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children li {
     margin-left: 0;
   }
-  .menu-primary-items .menu-item-has-children > a {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a {
     position: relative;
     z-index: 9;
   }
-  .menu-primary-items .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children > a:focus ~ ul {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:hover ~ ul, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:active ~ ul, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:focus ~ ul {
     visibility: visible;
     top: 100%;
     top: calc(100% + 1px);
     opacity: 1;
   }
-  .menu-primary-items .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children > a:focus + button {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:hover + button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:active + button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(0, 2px);
             transform: translate(0, 2px);
   }
-  .menu-primary-items .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children > a:active:after {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:hover:after, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children > a:active:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -1181,60 +1180,57 @@ a img {
     left: 0;
     height: 24px;
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button, .menu-primary-items .menu-item-has-children .menu-item-has-children.focused > button {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children:hover > button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children.focused > button {
     -webkit-transform: translate(2px, 0) rotate(-90deg);
             transform: translate(2px, 0) rotate(-90deg);
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active + button, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus + button {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover + button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active + button, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(2px, 0) rotate(-90deg);
             transform: translate(2px, 0) rotate(-90deg);
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active ~ ul, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus ~ ul {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover ~ ul, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active ~ ul, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:focus ~ ul {
     top: 0;
     right: 100%;
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover:after, .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active:after {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:hover:after, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children > a:active:after {
     top: 0;
     bottom: 0;
     right: 100%;
     width: 36px;
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children ul {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children ul {
     right: 100%;
     right: calc(100% + 6px);
     top: 0;
   }
-  .menu-primary-items .menu-item-has-children .menu-item-has-children ul:hover, .menu-primary-items .menu-item-has-children .menu-item-has-children ul.focused {
+  body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children ul:hover, body:not(.mobile-menu-always) .menu-primary-items .menu-item-has-children .menu-item-has-children ul.focused {
     top: 0;
     right: 100%;
   }
-
-  .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {
+  body:not(.mobile-menu-always) .menu-primary .current-menu-item.menu-item-has-children > a + .toggle-dropdown {
     margin: 0 8px 0 12px;
   }
-
-  .toggle-dropdown {
+  body:not(.mobile-menu-always) .toggle-dropdown {
     margin: 0 -8px 0 12px;
   }
-
-  .rtl .menu-primary-items ul .menu-item-has-children:hover > a + button {
+  body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children:hover > a + button {
     -webkit-transform: translate(-2px, 0) rotate(90deg);
             transform: translate(-2px, 0) rotate(90deg);
   }
-  .rtl .menu-primary-items ul .menu-item-has-children > a + button {
+  body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a + button {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     margin: 0 -12px 0 0;
   }
-  .rtl .menu-primary-items ul .menu-item-has-children > a:hover ~ ul, .rtl .menu-primary-items ul .menu-item-has-children > a:active ~ ul, .rtl .menu-primary-items ul .menu-item-has-children > a:focus ~ ul {
+  body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:hover ~ ul, body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:active ~ ul, body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:focus ~ ul {
     left: auto;
     right: calc(100%);
   }
-  .rtl .menu-primary-items ul .menu-item-has-children > a:hover + button, .rtl .menu-primary-items ul .menu-item-has-children > a:active + button, .rtl .menu-primary-items ul .menu-item-has-children > a:focus + button {
+  body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:hover + button, body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:active + button, body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children > a:focus + button {
     -webkit-transform: translate(-2px, 0) rotate(90deg);
             transform: translate(-2px, 0) rotate(90deg);
   }
-  .rtl .menu-primary-items ul .menu-item-has-children ul:hover {
+  body:not(.mobile-menu-always) .rtl .menu-primary-items ul .menu-item-has-children ul:hover {
     left: auto;
     right: calc(100%);
   }
