@@ -165,6 +165,42 @@ function ct_chosen_options_content()
 					<li><a href="<?php echo $pro_url; ?>" target="_blank">Chosen Pro</a></li>
 				</ul>
 			</div>
+			<div class="ad iawp">
+				<div class="logo-container">
+					<img width="308px" height="46px" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/iawp.svg'; ?>" alt="Independent Analytics logo" />
+				</div>
+				<div class="features">
+					<div class="title">Free WordPress Analytics Plugin</div>
+					<ul>
+						<li>Beautiful analytics dashboard</li>
+						<li>Views & traffic sources</li>
+						<li>Easy setup</li>
+						<li>GDPR compliant</li>
+						<li>Google Analytics alternative</li>
+					</ul>
+				</div>
+				<div class="button">
+					<a href="https://independentwp.com" target="_blank" data-product-name="Independent Analytics">Learn More</a>
+				</div>
+			</div>
+			<div class="ad strive">
+				<div class="logo-container">
+					<img width="308px" height="62px" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/strive.svg'; ?>" alt="Strive logo" />
+				</div>
+				<div class="features">
+					<div class="title">Content Calendar for WordPress</div>
+					<ul>
+						<li>Plan your posts visually</li>
+						<li>Track progress with post statuses</li>
+						<li>Create custom post checklists</li>
+						<li>Republish posts with revisions</li>
+						<li>Monitor content using the Pipeline</li>
+					</ul>
+				</div>
+				<div class="button">
+					<a href="https://strivecalendar.com/?utm_source=competethemes&utm_medium=sidebar&utm_campaign=competethemes_sidebar_widget" target="_blank" data-product-name="Strive">Learn More</a>
+				</div>
+			</div>
 			<div class="dashboard-widget">
 				<h4>User Reviews</h4>
 				<img src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/reviews.png'; ?>" />
