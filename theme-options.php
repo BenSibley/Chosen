@@ -1,38 +1,38 @@
 <?php
 
-function ct_chosen_register_theme_page() {
-	add_theme_page( 
-		sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), 
-		sprintf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ), 
-		'edit_theme_options', 
-		'chosen-options', 
-		'ct_chosen_options_content' 
-	);
+function ct_chosen_register_theme_page()
+{
+    add_theme_page(
+        sprintf(esc_html__('%s Dashboard', 'chosen'), wp_get_theme()),
+        sprintf(esc_html__('%s Dashboard', 'chosen'), wp_get_theme()),
+        'edit_theme_options',
+        'chosen-options',
+        'ct_chosen_options_content'
+    );
 }
-add_action( 'admin_menu', 'ct_chosen_register_theme_page' );
+add_action('admin_menu', 'ct_chosen_register_theme_page');
 
-function ct_chosen_options_content() {
-
-	$customizer_url = add_query_arg(
-		array(
-			'url'    => get_home_url(),
-			'return' => add_query_arg( 'page', 'chosen-options', admin_url( 'themes.php' ) )
-		),
-		admin_url( 'customize.php' )
-	);
-	$pro_url = 'https://www.competethemes.com/chosen-pro/?utm_source=wp-dashboard&utm_medium=Dashboard&utm_campaign=Chosen%20Pro%20-%20Dashboard';
-	?>
+function ct_chosen_options_content()
+{
+    $customizer_url = add_query_arg(
+        array(
+            'url'    => get_home_url(),
+            'return' => add_query_arg('page', 'chosen-options', admin_url('themes.php'))
+        ),
+        admin_url('customize.php')
+    );
+    $pro_url = 'https://www.competethemes.com/chosen-pro/?utm_source=wp-dashboard&utm_medium=Dashboard&utm_campaign=Chosen%20Pro%20-%20Dashboard'; ?>
 	<div id="chosen-dashboard-wrap" class="wrap chosen-dashboard-wrap">
-		<h2><?php printf( esc_html__( '%s Dashboard', 'chosen' ), wp_get_theme() ); ?></h2>
-		<?php do_action( 'theme_options_before' ); ?>
+		<h2><?php printf(esc_html__('%s Dashboard', 'chosen'), wp_get_theme()); ?></h2>
+		<?php do_action('theme_options_before'); ?>
 		<div class="main">
-			<?php if ( function_exists( 'ct_chosen_pro_init' ) ) : ?>
+			<?php if (function_exists('ct_chosen_pro_init')) : ?>
 			<div class="thanks-upgrading" style="background-image: url(<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/bg-texture.png'; ?>)">
 				<h3>Thanks for upgrading!</h3>
 				<p>You can find the new features in the Customizer</p>
 			</div>
 			<?php endif; ?>
-			<?php if ( !function_exists( 'ct_chosen_pro_init' ) ) : ?>
+			<?php if (!function_exists('ct_chosen_pro_init')) : ?>
 			<div class="getting-started">
 				<h3>Get Started with Chosen</h3>
 				<p>Follow this step-by-step guide to customize your website with Chosen:</p>
@@ -176,12 +176,13 @@ function ct_chosen_options_content() {
 				<form method="post">
 					<input type="hidden" name="chosen_reset_customizer" value="chosen_reset_customizer_settings"/>
 					<p>
-						<?php wp_nonce_field( 'chosen_reset_customizer_nonce', 'chosen_reset_customizer_nonce' ); ?>
-						<?php submit_button( 'Reset Customizer Settings', 'delete', 'delete', false ); ?>
+						<?php wp_nonce_field('chosen_reset_customizer_nonce', 'chosen_reset_customizer_nonce'); ?>
+						<?php submit_button('Reset Customizer Settings', 'delete', 'delete', false); ?>
 					</p>
 				</form>
 			</div>
 		</div>
-		<?php do_action( 'theme_options_after' ); ?>
+		<?php do_action('theme_options_after'); ?>
 	</div>
-<?php }
+<?php
+}
