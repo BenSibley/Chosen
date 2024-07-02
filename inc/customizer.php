@@ -126,6 +126,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 				$label = __('Stack Overflow', 'chosen');
 			} elseif ( $social_site == 'artstation' ) {
 				$label = __('ArtStation', 'chosen');
+			} elseif ( $social_site == 'twitter' ) {
+				$label = __('X (Twitter)', 'chosen');
 			}
 
 			if ( $social_site == 'skype' ) {

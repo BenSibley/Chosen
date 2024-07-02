@@ -474,6 +474,8 @@ if (! function_exists('ct_chosen_social_icons_output')) {
                     $class = 'fab fa-get-pocket';
                 } elseif ($name == 'phone') {
                     $class = 'fas fa-phone';
+                } elseif ($name == 'twitter') {
+                    $class = 'fab fa-square-x-twitter';
                 } else {
                     $class = 'fab fa-' . $name;
                 }
