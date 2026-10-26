@@ -310,7 +310,7 @@
             > a {
             
               + button {
-                transform: translate(-2px, 0) rotate(90deg);
+                /* @noflip */ transform: translate(-2px, 0) rotate(90deg);
               }
             }
           }
@@ -329,7 +329,7 @@
                 left: calc(100%);
               }
               + button {
-                transform: translate(-2px, 0) rotate(90deg);
+                /* @noflip */ transform: translate(-2px, 0) rotate(90deg);
               }
             }
           }

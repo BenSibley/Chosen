@@ -5,17 +5,13 @@
 /*===== Mixins =====*/
 /***** Silent Classes *****/
 h1 {
-  font-size: 1.75em;
-  /* 28px / 16px */
-  line-height: 1.357;
-  /* 38px */
+  font-size: 1.75em; /* 28px / 16px */
+  line-height: 1.357; /* 38px */
 }
 
 h2 {
-  font-size: 1.3125em;
-  /* 21px / 16px */
-  line-height: 1.143;
-  /* 24px */
+  font-size: 1.3125em; /* 21px / 16px */
+  line-height: 1.143; /* 24px */
 }
 
 .mce-content-body.wp-editor {
@@ -261,5 +257,4 @@ img figcaption,
 .has-extra-large-font-size {
   font-size: 38px;
 }
-
 /*# sourceMappingURL=editor-style.css.map */
