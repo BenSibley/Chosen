@@ -346,6 +346,8 @@ if (! function_exists('ct_chosen_social_array')) {
             'linkedin'      => 'chosen_linkedin_profile',
             'pinterest'     => 'chosen_pinterest_profile',
             'youtube'       => 'chosen_youtube_profile',
+            'tiktok'        => 'chosen_tiktok_profile',
+            'threads'       => 'chosen_threads_profile',
             'rss'           => 'chosen_rss_profile',
             'email'         => 'chosen_email_profile',
             'phone'			=> 'chosen_phone_profile',

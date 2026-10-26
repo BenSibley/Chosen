@@ -128,6 +128,8 @@ function ct_chosen_add_customizer_content( $wp_customize ) {
 				$label = __('ArtStation', 'chosen');
 			} elseif ( $social_site == 'twitter' ) {
 				$label = __('X (Twitter)', 'chosen');
+			} elseif ( $social_site == 'tiktok' ) {
+				$label = __('TikTok', 'chosen');
 			}
 
 			if ( $social_site == 'skype' ) {
